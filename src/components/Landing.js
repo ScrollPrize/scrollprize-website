@@ -272,7 +272,7 @@ const team = {
     {
       name: "Chris Frangione",
       title: "Prize advisor",
-      href: "https://www.chrisfrangione.com/",
+      href: "https://www.linkedin.com/in/chrisfrangione/",
     },
     {
       name: "Ian Janicki",
