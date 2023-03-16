@@ -127,3 +127,7 @@ The fragments are sliced from the side:
   <img src="/img/data/4000.jpg"/>
   <figcaption className="mt-0">fragments/Frag1.volpkg/volumes/20230205142449/4000.tif</figcaption>
 </figure>
+
+Watch a video of a scroll:
+
+<iframe className="w-[100%] mb-4 aspect-square" src="https://www.youtube.com/embed/cY5BIxkf5m0"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
