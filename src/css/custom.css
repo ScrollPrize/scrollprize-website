@@ -135,8 +135,7 @@ aside {
   z-index: 1;
 }
 
-.pagination-nav,
-.theme-doc-footer {
+.pagination-nav {
   display: none;
 }
 

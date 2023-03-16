@@ -39,7 +39,7 @@ const config = {
           breadcrumbs: false,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/ScrollPrize/scrollprize.org/tree/main/",
+          editUrl: "https://github.com/ScrollPrize/scrollprize-website/tree/main/",
         },
         blog: false,
         theme: {
