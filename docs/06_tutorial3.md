@@ -212,8 +212,8 @@ Play around a bit with this interface! You can zoom using the buttons, and go to
 
 <div>Now let’s create our first segment (raw mesh):</div>
 
-* Navigate to layer 1 by clicking *“Previous Slice”* until you’re back at 1 (or type *“1”* and press Enter).
-  * Note that the first layer is actually layer 0, but a later step (“Segmentation Tool”) is buggy at layer 0.
+* Navigate to layer 3 by clicking *“Previous Slice”* or *“Next Slice”* until you’re at 3 (or type *“3”* and press Enter).
+  * We do this because a later step (“Segmentation Tool”) is buggy at low layer indices.
 * Zoom in on the top left, until you can’t zoom any further.
 * Click *“New”* on in the menu on the right. This creates a new segment with a unique ID (the current timestamp). You'll need this ID later!
 * Click *“Pen Tool”* at the top.
@@ -229,11 +229,11 @@ Play around a bit with this interface! You can zoom using the buttons, and go to
 
 Note that your colors might be different, depending on your version of Volume Cartographer. You can customize the colors using the color picker at the bottom. We will use bright red dots for visibility.
 
-You have now created the beginning of a mesh: a two-dimensional line on <code>z=1</code>. This line is really only set for <code>z=1</code>, which you can check by clicking *“Next Slice”* and seeing the line disappear. Let’s go back to 1 by clicking *“Previous Slice”*.
+You have now created the beginning of a mesh: a two-dimensional line on <code>z=3</code>. This line is really only set for <code>z=3</code>, which you can check by clicking *“Next Slice”* and seeing the line disappear. Let’s go back to 3 by clicking *“Previous Slice”*.
 
-<div>We can now automatically create more such lines for all <code>z</code> values from 0 to, say, 100:</div>
+<div>We can now automatically create more such lines for all <code>z</code> values from 3 to, say, 100:</div>
 
-* Be sure you’re at layer 1 (the following instructions are buggy at layer 0).
+* Be sure you’re at layer 3 (the following instructions are [buggy at low layer indices](https://github.com/educelab/volume-cartographer/issues/6#issuecomment-1474407653)).
 * Click *“Segmentation Tool”*.
 * Set *“Maxima Window Width”* to *“10”*.
 * Set *“Ending Slice”* to *“100”*.
