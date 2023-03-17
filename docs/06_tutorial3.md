@@ -80,7 +80,7 @@ docker run -it -v C:\campfire:/campfire --env="DISPLAY=host.docker.internal:0" g
   <TabItem value="mac" label="macOS (using Homebrew)">
 
 
-Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab/casks/volume-cartographer`.
+Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab/casks/volume-cartographer libtiff`.
 
 * The GUI app will be installed to `/Applications/VC.app`.
 * The command line tools are installed to `$(brew --prefix)/bin` and should be available in the terminal immediately (e.g. `vc_packager`) — if not, make sure you have `eval $(/opt/homebrew/bin/brew shellenv)` in your shell profile and restart your terminal.
