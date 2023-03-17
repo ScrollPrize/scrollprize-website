@@ -100,7 +100,7 @@ Of course, in reality the label image on the right doesn’t come out perfectly.
 
 
 <figure>
-  <video autoPlay playsInline loop muted className="w-[100%] max-w-[238px]" poster="/img/landing/fragment-training2.png">
+  <video autoPlay playsInline loop muted className="w-[100%] max-w-[238px]" poster="/img/landing/fragment-training2.jpg">
     <source src="/img/landing/fragment-training2.webm" type="video/webm"/>
     <source src="/img/landing/fragment-training2.mp4" type="video/mp4"/>
   </video>

@@ -53,9 +53,9 @@ To get a basic understanding of the kind of data we’re working with, it’s us
     <figcaption className="mt-0">Word soup in a simulated scroll <a href="https://www.youtube.com/watch?v=tL7rhIFNtQg">(source)</a></figcaption>
   </figure>
   <figure className="sm:w-[50%]">
-    <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/meshlab-small.jpg">
-      <source src="/img/tutorials/meshlab-small.webm" type="video/webm"/>
-      <source src="/img/tutorials/meshlab-small.mp4" type="video/mp4"/>
+    <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/meshlab-small2.jpg">
+      <source src="/img/tutorials/meshlab-small2.webm" type="video/webm"/>
+      <source src="/img/tutorials/meshlab-small2.mp4" type="video/mp4"/>
     </video>
     <figcaption className="mt-0">Mesh representation of the “campfire scroll”</figcaption>
   </figure>
@@ -156,9 +156,9 @@ Note that when you are loading a dataset that hasn’t been reduced in size befo
 In the resulting scan you can vaguely see some features, perhaps even some ink, but it's hard to see what is actually in there:
 
 <figure>
-  <video autoPlay playsInline loop muted className="max-w-[100%] rounded-xl" poster="/img/tutorials2/imagej-raw-xrays2.jpg">
-    <source src="/img/tutorials2/imagej-raw-xrays2.webm" type="video/webm"/>
-    <source src="/img/tutorials2/imagej-raw-xrays2.mp4" type="video/mp4"/>
+  <video autoPlay playsInline loop muted className="max-w-[100%] rounded-xl" poster="/img/tutorials/imagej-raw-xrays2.jpg">
+    <source src="/img/tutorials/imagej-raw-xrays2.webm" type="video/webm"/>
+    <source src="/img/tutorials/imagej-raw-xrays2.mp4" type="video/mp4"/>
   </video>
 </figure>
 
