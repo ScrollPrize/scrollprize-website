@@ -223,7 +223,7 @@ This step is only applicable for fragments, since we don’t have ground truth d
 
 Once we have a surface volume containing a sheet of papyrus, we align the infrared photo to it, so it matches the surface as closely as possible. We have mostly done this manually. We use infrared photos because the ink has better contrast against the papyrus in the infrared spectrum.
 
-The next manual step is to label where we believe there is ink, using the aligned infrared photo. Not all dark areas are ink: some are shadows, burn marks, or other types of damage. In cases where we aren't sure,we consult with papyrologists. The result of this process is a binary mask indicating where there is ink.
+The next manual step is to label where we believe there is ink, using the aligned infrared photo. Not all dark areas are ink: some are shadows, burn marks, or other types of damage. In cases where we aren't sure, we consult with papyrologists. The result of this process is a binary mask indicating where there is ink.
 
 <div className="flex flex-wrap items-end">
   <figure className="w-[33%]">
