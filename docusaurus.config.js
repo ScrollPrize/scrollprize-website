@@ -7,7 +7,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Vesuvius Challenge",
-  tagline: "A $250,000 machine learning and computer vision competition",
+  tagline: "A $400,000 machine learning and computer vision competition",
   url: "https://scrollprize.org",
   baseUrl: "/", // Temporarliy, on https://scrollprize.github.io/scrollprize.org/
   onBrokenLinks: "throw",
@@ -69,7 +69,7 @@ const config = {
         {
           name: "description",
           content:
-            "A $250,000 machine learning and computer vision competition",
+            "A $400,000 machine learning and computer vision competition",
         },
         // Open Graph / Facebook
         {

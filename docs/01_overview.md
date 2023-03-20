@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
   <meta
     name="description"
-    content="A $250,000 machine learning and computer vision competition"
+    content="A $400,000 machine learning and computer vision competition"
   />
 
   <meta property="og:type" content="website" />
@@ -16,7 +16,7 @@ hide_table_of_contents: true
   <meta property="og:title" content="Vesuvius Challenge" />
   <meta
     property="og:description"
-    content="A $250,000 machine learning and computer vision competition"
+    content="A $400,000 machine learning and computer vision competition"
   />
   <meta
     property="og:image"
@@ -28,7 +28,7 @@ hide_table_of_contents: true
   <meta property="twitter:title" content="Vesuvius Challenge" />
   <meta
     property="twitter:description"
-    content="A $250,000 machine learning and computer vision competition"
+    content="A $400,000 machine learning and computer vision competition"
   />
   <meta
     property="twitter:image"
@@ -40,7 +40,7 @@ The objective of the Vesuvius Challenge is to make history by reading an unopene
 
 <div>We are providing all contestants with the following resources:</div>
 
-- **[Prizes](/overview#grand-prize-150000)**: $250,000 in prizes, including a $150,000 Grand Prize and $100,000 in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a [$50,000 ink detection competition on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection).
+- **[Prizes](/overview#grand-prize-150000)**: $400,000 in prizes, including a $300,000 Grand Prize and $100,000 in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a [$50,000 ink detection competition on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection).
 - **[Data](/data)**: 3D X-ray scans of two unopened scrolls from Herculaneum, and scans and images of three papyrus fragments
 - **[Tutorials and tools](/tutorial1)**: the current best tools and techniques for virtually unwrapping papyrus scrolls
 - **[Community](/participate)**: a Discord server where you can connect with other contestants and the Vesuvius Challenge team
@@ -54,7 +54,7 @@ The objective of the Vesuvius Challenge is to make history by reading an unopene
 Our team is available for any questions and feedback on Discord. You can also email us at team@scrollprize.org.
 
 
-### Grand Prize ($150,000)
+### Grand Prize ($300,000)
 
 The Grand Prize will go to the first team to read four passages of text from the inside of the two intact scrolls. More details on the qualifying criteria are available [here](/participate).
 

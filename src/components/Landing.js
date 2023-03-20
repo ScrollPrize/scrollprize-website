@@ -207,7 +207,7 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
 const prizes = [
   {
     title: "Grand Prize",
-    prizeMoney: "$150,000",
+    prizeMoney: "$300,000",
     description: "First team to read a scroll by December 31st 2023",
     requirement: "Success requires that the Review Team can:",
     qualifications: [
@@ -371,6 +371,33 @@ const team = {
       title:
         "Fellow of the American Academy of Arts and Sciences; Professor of Classics, University of Michigan",
       href: "https://lsa.umich.edu/classics/people/departmental-faculty/rjanko.html",
+    },
+  ],
+  more_sponsors: [
+    {
+      name: "Nat Friedman",
+      title: "$125,000",
+      href: "https://nat.org/",
+    },
+    {
+      name: "Daniel Gross",
+      title: "$125,000",
+      href: "https://dcgross.com/",
+    },
+    {
+      name: "Tobi Lutke",
+      title: "$50,000",
+      href: "https://twitter.com/tobi",
+    },
+    {
+      name: "Guillermo Rauch",
+      title: "$50,000",
+      href: "https://rauchg.com/",
+    },
+    {
+      name: "Arthur Breitman",
+      title: "$50,000",
+      href: "https://ex.rs/",
     },
   ],
 };
@@ -739,7 +766,7 @@ export function Landing() {
                       textFillColor: "transparent",
                     }}
                   >
-                    Win $250,000.
+                    Win $400,000.
                   </span>
                 </h1>
                 <p className="max-w-xl md:text-2xl text-lg font-medium mb-8 md:opacity-60 md:w-full w-4/5 opacity-80 leading-none tracking-tight">
@@ -853,6 +880,14 @@ export function Landing() {
                       Papyrology Team
                     </h3>
                     {team.papyrology.map((t, i) => (
+                      <TeamMember member={t} key={i} />
+                    ))}
+                  </div>
+                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%]">
+                    <h3 className="text-3xl font-black tracking-tighter text=[--ifm-color-primary]">
+                      Sponsors
+                    </h3>
+                    {team.more_sponsors.map((t, i) => (
                       <TeamMember member={t} key={i} />
                     ))}
                     &nbsp;
