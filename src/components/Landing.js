@@ -207,7 +207,7 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
 const prizes = [
   {
     title: "Grand Prize",
-    prizeMoney: "$300,000",
+    prizeMoney: "$475,000",
     description: "First team to read a scroll by December 31st 2023",
     requirement: "Success requires that the Review Team can:",
     qualifications: [
@@ -385,6 +385,11 @@ const team = {
       href: "https://dcgross.com/",
     },
     {
+      name: "John & Patrick Collison",
+      title: "$125,000",
+      href: "https://stripe.com/",
+    },
+    {
       name: "Tobi Lutke",
       title: "$50,000",
       href: "https://twitter.com/tobi",
@@ -398,6 +403,11 @@ const team = {
       name: "Arthur Breitman",
       title: "$50,000",
       href: "https://ex.rs/",
+    },
+    {
+      name: "Matt Huang",
+      title: "$50,000",
+      href: "https://twitter.com/matthuang",
     },
   ],
 };
@@ -766,7 +776,7 @@ export function Landing() {
                       textFillColor: "transparent",
                     }}
                   >
-                    Win $400,000.
+                    Win $575,000.
                   </span>
                 </h1>
                 <p className="max-w-xl md:text-2xl text-lg font-medium mb-8 md:opacity-60 md:w-full w-4/5 opacity-80 leading-none tracking-tight">
