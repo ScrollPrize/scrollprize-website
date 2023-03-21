@@ -353,7 +353,7 @@ const team = {
     {
       name: "Federica Nicolardi",
       title: "Professor of Classics, University of Naples Federico II",
-      href: "https://unina.academia.edu/FedericaNicolardi",
+      href: "https://www.docenti.unina.it/federica.nicolardi",
     },
     {
       name: "Gianluca Del Mastro",
