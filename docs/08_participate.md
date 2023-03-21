@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
   <meta
     name="description"
-    content="A $575,000 machine learning and computer vision competition"
+    content="A $1,000,000 machine learning and computer vision competition"
   />
 
   <meta property="og:type" content="website" />
@@ -16,7 +16,7 @@ hide_table_of_contents: true
   <meta property="og:title" content="Vesuvius Challenge" />
   <meta
     property="og:description"
-    content="A $575,000 machine learning and computer vision competition"
+    content="A $1,000,000 machine learning and computer vision competition"
   />
   <meta
     property="og:image"
@@ -28,7 +28,7 @@ hide_table_of_contents: true
   <meta property="twitter:title" content="Vesuvius Challenge" />
   <meta
     property="twitter:description"
-    content="A $575,000 machine learning and computer vision competition"
+    content="A $1,000,000 machine learning and computer vision competition"
   />
   <meta
     property="twitter:image"
@@ -36,7 +36,7 @@ hide_table_of_contents: true
   />
 </head>
 
-The **Grand Prize** ($475,000) will be awarded to the first team to render either one of the fully-scanned scrolls readable by 11:59pm Pacific, December 31st 2023.
+The **Grand Prize** ($700,000) will be awarded to the first team to render either one of the fully-scanned scrolls readable by 11:59pm Pacific, December 31st 2023.
 
 ### Grand Prize Qualifying Criteria
 

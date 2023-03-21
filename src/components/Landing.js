@@ -207,7 +207,7 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
 const prizes = [
   {
     title: "Grand Prize",
-    prizeMoney: "$475,000",
+    prizeMoney: "$700,000",
     description: "First team to read a scroll by December 31st 2023",
     requirement: "Success requires that the Review Team can:",
     qualifications: [
@@ -375,6 +375,11 @@ const team = {
   ],
   more_sponsors: [
     {
+      name: "Joseph Jacks",
+      title: "$250,000",
+      href: "https://twitter.com/JosephJacks_",
+    },
+    {
       name: "Nat Friedman",
       title: "$125,000",
       href: "https://nat.org/",
@@ -408,6 +413,46 @@ const team = {
       name: "Matt Huang",
       title: "$50,000",
       href: "https://twitter.com/matthuang",
+    },
+    {
+      name: "Julia DeWahl & Dan Romero",
+      title: "$50,000",
+      href: "https://twitter.com/natfriedman/status/1637959778558439425",
+    },
+    {
+      name: "Anonymous",
+      title: "$50,000",
+      href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
+    },
+    {
+      name: "Bastian Lehmann",
+      title: "$25,000",
+      href: "https://twitter.com/Basti",
+    },
+    {
+      name: "Aaron Levie",
+      title: "$25,000",
+      href: "https://twitter.com/levie",
+    },
+    {
+      name: "Ivan Zhao",
+      title: "$10,000",
+      href: "https://twitter.com/ivanhzhao",
+    },
+    {
+      name: "Stephanie Sher",
+      title: "$10,000",
+      href: "https://twitter.com/stephxsher",
+    },
+    {
+      name: "Amjad Masad",
+      title: "$5,000",
+      href: "https://twitter.com/amasad",
+    },
+    {
+      name: "Conor White-Sullivan",
+      title: "$5,000",
+      href: "https://twitter.com/Conaw",
     },
   ],
 };
@@ -776,7 +821,7 @@ export function Landing() {
                       textFillColor: "transparent",
                     }}
                   >
-                    Win $575,000.
+                    Win $1,000,000.
                   </span>
                 </h1>
                 <p className="max-w-xl md:text-2xl text-lg font-medium mb-8 md:opacity-60 md:w-full w-4/5 opacity-80 leading-none tracking-tight">
@@ -843,7 +888,7 @@ export function Landing() {
                         textFillColor: "transparent",
                       }}
                     >
-                      $50,000
+                      $250,000
                     </span>{" "}
                     more in prizes TBA
                   </h2>
@@ -869,7 +914,7 @@ export function Landing() {
                   Team
                 </h1>
                 <div className="flex flex-wrap">
-                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4">
+                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
                     <h3 className="text-3xl font-black tracking-tighter">
                       Vesuvius Challenge Team
                     </h3>
@@ -877,7 +922,7 @@ export function Landing() {
                       <TeamMember member={t} key={i} />
                     ))}
                   </div>
-                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4">
+                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
                     <h3 className="text-3xl font-black tracking-tighter">
                       EduceLab Team
                     </h3>
@@ -885,7 +930,7 @@ export function Landing() {
                       <TeamMember member={t} key={i} />
                     ))}
                   </div>
-                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4">
+                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
                     <h3 className="text-3xl font-black tracking-tighter text=[--ifm-color-primary]">
                       Papyrology Team
                     </h3>
@@ -893,7 +938,7 @@ export function Landing() {
                       <TeamMember member={t} key={i} />
                     ))}
                   </div>
-                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4">
+                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
                     <h3 className="text-3xl font-black tracking-tighter text=[--ifm-color-primary]">
                       Sponsors
                     </h3>
@@ -923,7 +968,7 @@ export function Landing() {
                   ))}
                 </div>
                 <div className="flex flex-wrap">
-                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4">
+                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
                     <h3 className="text-3xl font-black tracking-tighter">
                       EduceLab funders
                     </h3>

@@ -178,11 +178,13 @@ main {
 }
 
 .navbar__brand {
+  margin-left: 8px;
   opacity: .5;
 }
 
 @media (max-width: 996px) {
   .navbar__brand {
+    margin-left: 0;
     opacity: 1;
   }
 
