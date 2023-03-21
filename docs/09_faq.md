@@ -170,13 +170,17 @@ At high resolutions the field of view of the camera is too small to capture the 
 <div className="flex flex-wrap items-end">
   <figure className="sm:w-[37%]">
     <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" style={{ clipPath: "inset(55px 7px 40px)", margin: "-55px -7px -40px" }}>
-      <source src="/img/faq/imagej-raw-xrays.mp4" type="video/mp4"/>
+      <video autoPlay playsInline loop muted className="max-w-[100%] rounded-xl" poster="/img/tutorials/imagej-raw-xrays2.jpg">
+        <source src="/img/tutorials/imagej-raw-xrays2.webm" type="video/webm"/>
+        <source src="/img/tutorials/imagej-raw-xrays2.mp4" type="video/mp4"/>
+      </video>
     </video>
     <figcaption className="mt-0">Raw X-ray photos</figcaption>
   </figure>
   <figure className="sm:w-[63%]">
-    <video autoPlay playsInline loop muted className="w-[100%]">
-      <source src="/img/tutorials/fragment-rotating.mp4" type="video/mp4"/>
+    <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/fragment-rotating2.jpg">
+      <source src="/img/tutorials/fragment-rotating2.webm" type="video/webm"/>
+      <source src="/img/tutorials/fragment-rotating2.mp4" type="video/mp4"/>
     </video>
     <figcaption className="mt-0">A fragment rotating <a href="https://www.youtube.com/watch?v=fg_08ukGlMw">(source)</a></figcaption>
   </figure>
@@ -186,13 +190,15 @@ From the X-ray photos from different angles we can reconstruct a 3D volume, usin
 
 <div className="flex flex-wrap items-end justify-between">
   <figure className="sm:w-[38%]">
-    <video autoPlay playsInline loop muted className="w-[100%]">
-      <source src="/img/tutorials/fragment-volume.mp4" type="video/mp4"/>
+    <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/fragment-volume2.jpg">
+      <source src="/img/tutorials/fragment-volume2.webm" type="video/webm"/>
+      <source src="/img/tutorials/fragment-volume2.mp4" type="video/mp4"/>
     </video>
     <figcaption className="mt-0">Volumetric representation of a fragment, showing multiple layers of papyrus</figcaption>
   </figure>
   <figure className="sm:w-[60%]">
-    <video autoPlay playsInline loop muted className="w-[100%]">
+    <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/faq/fragment-pointcloud.png">
+      <source src="/img/faq/fragment-pointcloud.webm" type="video/webm"/>
       <source src="/img/faq/fragment-pointcloud.mp4" type="video/mp4"/>
     </video>
     <figcaption className="mt-0">Mesh representation of the same fragment</figcaption>

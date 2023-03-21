@@ -49,7 +49,8 @@ The Villa of the Papyri at Herculaneum could change that.
 Herculaneum was a Roman town on the Bay of Naples that was buried, along with the neighboring city of Pompeii, by the [eruption of Vesuvius in 79 AD](https://www.youtube.com/watch?v=n-Oaolcu8jQ). After its accidental rediscovery in 1709, Herculaneum was explored by teams of workmen who drove tunnels through the rock-hard volcanic debris blanketing the ruins.
 
 <figure className="max-w-[100%]" style={{ overflow: "hidden" }}>
-  <video autoPlay playsInline loop muted className="w-[800px]" style={{ clipPath: "inset(58px 0px)", margin: "-58px 0" }}>
+  <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/background/vesuvius-pompeii-2014.png">
+    <source src="/img/background/vesuvius-pompeii-2014.webm" type="video/webm"/>
     <source src="/img/background/vesuvius-pompeii-2014.mp4" type="video/mp4"/>
   </video>
   <figcaption className="mt-0">Herculaneum getting buried in pyroclastic material <a href="https://www.imdb.com/title/tt1921064/">(source)</a></figcaption>
