@@ -52,7 +52,7 @@ We will work with the Grand Prize winners to verify their results, put them in a
 
 ### Submitting your result
 
-<div>If you have a qualifying result, submit it for considertion by sending an email to <a href="mailto:grandprize@scrollprize.org">grandprize@scrollprize.org</a> and provide the following:</div>
+<div>If you have a qualifying result, submit it for consideration by sending an email to <a href="mailto:grandprize@scrollprize.org">grandprize@scrollprize.org</a> and provide the following:</div>
 
 * **Images.** Submissions must be in the form of images of the virtuall unrolled papyrus, showing visible and legible text. Specify which scroll each image came from and where in the scroll they were found.
 * **Methodology.** A detailed technical description of how your solution works. We need to be able to reproduce your work, so please make this as easy as possible:
