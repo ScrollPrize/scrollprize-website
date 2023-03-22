@@ -3,7 +3,7 @@ title: "Livestream"
 hide_table_of_contents: true
 ---
 
-We’ll have a livestream Thursday 23rd 11:30am with Stephen, Seth, and JP. Be sure to join us for some heated debates about volcanoes, scrolls, particle accelerators, and more!
+We’ll have a livestream Thursday 23rd 11:30am Pacific Time ([see other timezones](https://www.worldtimebuddy.com/?qm=1&lid=8,5,3169070,30&h=8&date=2023-3-23&sln=11.5-12.5&hf=0)) with Stephen, Seth, and JP. Be sure to join us for some heated debates about volcanoes, scrolls, particle accelerators, and more!
 
 Watch this page, <a href="https://twitter.com/scrollprize">Twitter</a>, or <a href="https://discord.gg/6FgWYNjb4N">Discord</a> for updates.
 
