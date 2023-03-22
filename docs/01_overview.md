@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
   <meta
     name="description"
-    content="A $1,000,000 machine learning and computer vision competition"
+    content="A $1,000,000+ machine learning and computer vision competition"
   />
 
   <meta property="og:type" content="website" />
@@ -16,7 +16,7 @@ hide_table_of_contents: true
   <meta property="og:title" content="Vesuvius Challenge" />
   <meta
     property="og:description"
-    content="A $1,000,000 machine learning and computer vision competition"
+    content="A $1,000,000+ machine learning and computer vision competition"
   />
   <meta
     property="og:image"
@@ -28,7 +28,7 @@ hide_table_of_contents: true
   <meta property="twitter:title" content="Vesuvius Challenge" />
   <meta
     property="twitter:description"
-    content="A $1,000,000 machine learning and computer vision competition"
+    content="A $1,000,000+ machine learning and computer vision competition"
   />
   <meta
     property="twitter:image"
@@ -40,7 +40,7 @@ The objective of the Vesuvius Challenge is to make history by reading an unopene
 
 <div>We are providing all contestants with the following resources:</div>
 
-- **[Prizes](/overview#grand-prize-150000)**: $1,000,000 in prizes, including a $700,000 Grand Prize and $100,000 in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a [$50,000 ink detection competition on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection).
+- **[Prizes](/overview#grand-prize-150000)**: $1,000,000+ in prizes, including a $700,000 Grand Prize and the rest in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a [$50,000 ink detection competition on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection).
 - **[Data](/data)**: 3D X-ray scans of two unopened scrolls from Herculaneum, and scans and images of three papyrus fragments
 - **[Tutorials and tools](/tutorial1)**: the current best tools and techniques for virtually unwrapping papyrus scrolls
 - **[Community](/participate)**: a Discord server where you can connect with other contestants and the Vesuvius Challenge team
@@ -110,7 +110,7 @@ As you will learn in the [tutorials](/tutorial1), one of the big challenges of r
 
 For this important subproblem, we are offering a $50,000 [Ink Detection Progress Prize](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/). This progress prize is hosted on Kaggle, and the final submission deadline is June 14th, 2023.
 
-### Future Progress Prizes ($250,000 total)
+### Future Progress Prizes ($380,000 total)
 
 We have some ideas of what future progress prizes might best accelerate overall progress on the Vesuvius Challenge, but we’re also keeping an open mind. If you have suggestions, please let us know!
 
