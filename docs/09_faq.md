@@ -163,7 +163,7 @@ We take X-ray photographs of the object from different angles. Typically this is
 <div>Just like with any digital camera, there are a lot of settings and parameters. The most important for you to know are:</div>
 
 * **Resolution:** the dimensions of each pixel in an X-ray photo, typically denoted in µm (micrometers or “microns”). Lower is better. We scanned the scrolls at 8µm, which we think should be enough to detect ink patterns, but we scanned the fragments at 4µm just in case. Renting beam time on a particle accelerator is expensive, but if we need to we can go back and scan objects at even lower resolutions.
-* **Energy level:** the energy of the X-ray electrons, typically expressed in keV (kiloelectronvolts). For particle accelerators this is one precise number, whereas for bench top scanners this is more of a range. We think lower is better, since carbon responds better to lower energy levels. We scanned everything twice, at 54keV and 88keV (though for the scrolls we only had time for a smaller slice at 88kEV).
+* **Energy level:** the energy of the X-ray electrons, typically expressed in keV (kiloelectronvolts). For particle accelerators this is one precise number, whereas for bench top scanners this is more of a range. We think lower is better, since carbon responds better to lower energy levels. We scanned everything twice, at 54keV and 88keV (though for the scrolls we only had time for a smaller slice at 88keV).
 
 At high resolutions the field of view of the camera is too small to capture the object in its entirety, so multiple passes have to be made. Typically these are stitched together as part of the scanning process.
 
