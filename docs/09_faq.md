@@ -143,6 +143,11 @@ The two main pieces of software developed by Dr. Seales’ lab are [Volume Carto
 
 In the tutorials we also show you how to use generic software to work with 3D volumes ([Fiji](https://imagej.net/software/fiji/downloads)) and meshes ([MeshLab](https://www.meshlab.net/#download)).
 
+### Where can I find collaborators?
+
+* [Discord thread](https://discord.com/channels/1079907749569237093/1085988126486437959)
+* [Kaggle forum thread](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/395040)
+
 ### What would the papyrus scrolls look like when unrolled?
 
 Something like this:
@@ -206,6 +211,22 @@ From the X-ray photos from different angles we can reconstruct a 3D volume, usin
 </div>
 
 The resulting 3D volume is like a 3D image. Each unit is called a “voxel” (instead of “pixel”), and has a particular brightness (it’s greyscale). This 3D volume is typically represented as a “.tif image stack”. This is just a bunch of .tif images where each image (called a “slice”) represents a different layer the z-direction, typically starting at the bottom and moving upwards.
+
+### What signals might be present in the 3D X-ray scans that ML models are picking up on?
+
+We don’t really know, but we suspect that ink might be filling in between the grid pattern of papyrus, kind of like syrup filling in gaps in a waffle.
+
+<figure className="max-w-[400px]">
+  <img src="/img/faq/waffle.png"/>
+  <figcaption className="mt-0">Syrup filling in gaps in a waffle <a href="https://youtu.be/mwe9sHZ58A0?t=3168">(source)</a></figcaption>
+</figure>
+
+Ink might also be sitting on top of the papyrus, causing a slight bump on the surface. In [Tutorial 4](tutorial4) we should several examples of where the ink is directly visible in slices of 3D X-ray scans, which is promising. The talks at the top of this page also go into some details.
+
+There might be some effect of indentation of the writing instrument, but it’s probably not very significant. The thought has generally been that any indentation effect would be even smaller than ink w.r.t. the scan resolution and maybe not significant when compared against the natural relief of the papyrus fibers. However, this has not been explored in detail on this type of material (look at the paper "Revisiting the Jerash Silver Scroll" for work on an etched metal scroll), so we don’t know for sure.
+
+It could be worthwhile to try to reverse engineer what machine learning models are seeing, so that perhaps we can see it more directly. Perhaps this could influence other ink detection methods or future scanning efforts.
+
 
 ### I would like to read the works that have been recovered from the scrolls so far, where I can I find them?
 

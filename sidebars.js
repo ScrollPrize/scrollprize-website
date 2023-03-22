@@ -34,6 +34,7 @@ const sidebars = {
     { type: 'doc', id: 'participate' },
     { type: 'doc', id: 'faq' },
     { type: 'doc', id: 'background' },
+    { type: 'doc', id: 'livestream' },
     {
       type: 'link',
       label: 'Kaggle',
