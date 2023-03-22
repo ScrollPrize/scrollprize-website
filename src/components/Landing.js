@@ -395,6 +395,11 @@ const team = {
       href: "https://stripe.com/",
     },
     {
+      name: "Matt Mullenweg",
+      title: "$125,000",
+      href: "https://ma.tt/",
+    },
+    {
       name: "Tobi Lutke",
       title: "$50,000",
       href: "https://twitter.com/tobi",
@@ -443,6 +448,21 @@ const team = {
       name: "Stephanie Sher",
       title: "$10,000",
       href: "https://twitter.com/stephxsher",
+    },
+    {
+      name: "Brandon Reeves",
+      title: "$10,000",
+      href: "https://www.luxcapital.com/people/brandon-reeves",
+    },
+    {
+      name: "Raymond Russell",
+      title: "$10,000",
+      href: "https://twitter.com/raymondopolis",
+    },
+    {
+      name: "Vignan Velivela",
+      title: "$10,000",
+      href: "https://vignanv.com/",
     },
     {
       name: "Amjad Masad",
@@ -888,7 +908,7 @@ export function Landing() {
                         textFillColor: "transparent",
                       }}
                     >
-                      $250,000
+                      $380,000
                     </span>{" "}
                     more in prizes TBA
                   </h2>
