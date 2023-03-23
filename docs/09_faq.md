@@ -229,6 +229,14 @@ A great contribution to the community would be to build an open source 3D volume
 
 [Will from Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/396826#2194085) says: if the code can be run on Linux, you can upload it as a dataset and call it from within Python, or using Juptyer's magic command `!`.
 
+### What are the triangle artifacts in the surface volumes?
+
+There are [triangle artifacts](https://discord.com/channels/1079907749569237093/1079907750265499772/1087027890895470602) in the surface volumes, from the way the original volume is sampled using the mesh to create the surface volume. The triangles likely do correspond to mesh triangles. They don’t typically show up so distinctly, so we guess the mess geometry is “interesting” in this area.
+
+<figure>
+<img src="/img/faq/triangles.webp"/>
+</figure>
+
 ### I would like to read the works that have been recovered from the scrolls so far, where I can I find them?
 
 <div>Most are by Philodemus. This is a list of English translations we have found so far:</div>
