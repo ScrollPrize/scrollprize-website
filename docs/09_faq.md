@@ -98,32 +98,18 @@ We’re organizing the Ink Detection Progress Prize, to find the best possible a
 
 This is a risk for models that are trained on letterforms. We strongly recommend that participants guard against the risk of hallucination in their models and, will review all submissions with this in mind.
 
-<!--
 ### What is papyrus and how is it made?
 
-Papyrus is a grassy reed that grows along the banks of the Nile in egypt
-It can grow up to 4.5 meters tall and 7.5cm thick
-The tough outer rind is peeled away
-The green inner pith is peeled or sliced into strips
+[Papyrus](https://en.wikipedia.org/wiki/Papyrus) is a grassy reed that grows along the banks of the Nile in Egypt. It can grow up to 4.5 meters tall and 7.5cm thick. The tough outer rind is peeled away. The green inner pith is peeled or sliced into strips.
 
-The strips are laid out in two layers in a grid pattern
-They are pressed together until the layers merge like velcro
-And then left out in the sun to dry, where they turn light brown
-The sheets – called kollemata – are smoothed out with an ivory or seashell ruler
+The strips are laid out in two layers in a grid pattern. They are pressed together until the layers merge like velcro. And then left out in the sun to dry, where they turn light brown. The sheets – called kollemata – are smoothed out with an ivory or seashell ruler. The kollemata are then glued together with paste made of flour and water. Then the areas where they are joined are hammered smooth. This forms a long piece of papyrus, usually 15-30 feet, comprised of up to 20 kollemata.
 
-INSERT DEJAN VIDEO
+The Papyrus is rolled up around a dowel called an umbilicus. Portions of it are unrolled for writing. The first section, called the protokollon, is usually left blank. Text is written in columns with a quill and inkwell. Inks are made of varied substances.
 
-The kollemata are then glued together with paste made of flour and water
-Then the areas where they are joined are hammered smooth
-This forms a long piece of papyrus, usually 15-30 feet, comprised of up to 20 kollemata
+<div>For some good videos about how papyrus is made see:</div>
 
-The Papyrus is rolled up around a dowel called an umilicus
-Portions of it are unrolled for writing. The first section, called the protokollon,  is usually left blank
-
-Text is written in columns with a quill and inkwell
-Inks are made of varied substances
-Scribes often wrote in ancient greek (to seem cool), or in latin
--->
+* [Meet Some Of The Last Papyrus Makers In Egypt Keeping A 5,000-Year-Old Craft Alive](https://www.youtube.com/watch?v=SBdVhvo2UUM)
+* [Myriam Krutzsch papyrus workshop](https://www.youtube.com/watch?v=3AaZ5C-U-jE)
 
 ### How can we get more ground truth data? Can I make my own carbonized scrolls?
 
@@ -173,12 +159,10 @@ We take X-ray photographs of the object from different angles. Typically this is
 At high resolutions the field of view of the camera is too small to capture the object in its entirety, so multiple passes have to be made. Typically these are stitched together as part of the scanning process.
 
 <div className="flex flex-wrap items-end">
-  <figure className="sm:w-[37%]">
-    <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" style={{ clipPath: "inset(55px 7px 40px)", margin: "-55px -7px -40px" }}>
-      <video autoPlay playsInline loop muted className="max-w-[100%] rounded-xl" poster="/img/tutorials/imagej-raw-xrays2.jpg">
-        <source src="/img/tutorials/imagej-raw-xrays2.webm" type="video/webm"/>
-        <source src="/img/tutorials/imagej-raw-xrays2.mp4" type="video/mp4"/>
-      </video>
+  <figure className="sm:w-[34%] mr-4">
+    <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/imagej-raw-xrays2.jpg">
+      <source src="/img/tutorials/imagej-raw-xrays2.webm" type="video/webm"/>
+      <source src="/img/tutorials/imagej-raw-xrays2.mp4" type="video/mp4"/>
     </video>
     <figcaption className="mt-0">Raw X-ray photos</figcaption>
   </figure>
@@ -234,6 +218,12 @@ This ordering is largely historical and due to the way we’ve constructed label
 For example, the model input of ink detection could be sampled directly from the original 3D X-ray volume, instead of using a “surface volume” as an intermediate step. This could avoid loss of resolution during the sampling process into a differently oriented volume, which happens when constructing a surface volume.
 
 The downside of such an approach is that a lot more data needs to be accessible on disk, since the original 3D X-ray volumes are much bigger than the surface volumes (37GB vs 1.6TB in total for all fragments). This can be problematic for cloud training, which might not have enough available hard drive space. However, since we only need to access the voxels around the mesh, the data size could be reduced (creating something like a surface volume, but retaining the original coordinate space, and avoiding any resampling).
+
+### Fiji/ImageJ crashes, what can I do about that?
+
+Fiji/ImageJ doesn’t work well with extremely large datasets such as our scrolls or fragment volumes, though downsampling might help. If you’re experiencing problems even with the campfire.zip dataset, then it might help to run the software in a different operating system, such as in a Linux VM. For example, on Windows the following setup [seems to work well](https://discord.com/channels/1079907749569237093/1088311252595507242/1088314069519441950): WSL2, Ubuntu 20, Windows 11, using the default WSL X server setup.
+
+A great contribution to the community would be to build an open source 3D volume viewer that is tailored to this problem. If you are interested in building something like that, do let us know in Discord!
 
 ### I would like to read the works that have been recovered from the scrolls so far, where I can I find them?
 
