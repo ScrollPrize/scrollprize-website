@@ -225,7 +225,7 @@ Fiji/ImageJ doesn’t work well with extremely large datasets such as our scroll
 
 A great contribution to the community would be to build an open source 3D volume viewer that is tailored to this problem. If you are interested in building something like that, do let us know in Discord!
 
-### How can I run other (non-Python/R) code in Kaggle notebooks?
+### How can I run non-Python/R code in Kaggle notebooks?
 
 [Will from Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/396826#2194085) says: if the code can be run on Linux, you can upload it as a dataset and call it from within Python, or using Juptyer's magic command `!`.
 
