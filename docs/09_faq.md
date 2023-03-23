@@ -212,7 +212,7 @@ From the X-ray photos from different angles we can reconstruct a 3D volume, usin
 
 The resulting 3D volume is like a 3D image. Each unit is called a “voxel” (instead of “pixel”), and has a particular brightness (it’s greyscale). This 3D volume is typically represented as a “.tif image stack”. This is just a bunch of .tif images where each image (called a “slice”) represents a different layer the z-direction, typically starting at the bottom and moving upwards.
 
-### What signals might be present in the 3D X-ray scans that ML models are picking up on?
+### What signals might be present in the 3D X-ray scans for ink detection?
 
 We don’t really know, but we suspect that ink might be filling in between the grid pattern of papyrus, kind of like syrup filling in gaps in a waffle.
 
@@ -227,6 +227,13 @@ There might be some effect of indentation of the writing instrument, but it’s 
 
 It could be worthwhile to try to reverse engineer what machine learning models are seeing, so that perhaps we can see it more directly. Perhaps this could influence other ink detection methods or future scanning efforts.
 
+### Does segmenting and flattening need to happen before ink detection?
+
+This ordering is largely historical and due to the way we’ve constructed label sets, which relies on doing the segmentation and flattening first. But this can’t be the only way to do it, and we’d love to see the pipeline get shaken up.
+
+For example, the model input of ink detection could be sampled directly from the original 3D X-ray volume, instead of using a “surface volume” as an intermediate step. This could avoid loss of resolution during the sampling process into a differently oriented volume, which happens when constructing a surface volume.
+
+The downside of such an approach is that a lot more data needs to be accessible on disk, since the original 3D X-ray volumes are much bigger than the surface volumes (37GB vs 1.6TB in total for all fragments). This can be problematic for cloud training, which might not have enough available hard drive space. However, since we only need to access the voxels around the mesh, the data size could be reduced (creating something like a surface volume, but retaining the original coordinate space, and avoiding any resampling).
 
 ### I would like to read the works that have been recovered from the scrolls so far, where I can I find them?
 
