@@ -151,6 +151,12 @@ We don’t typically use these photos directly, but they are useful to understan
 **If the count is not exactly 600**: double-check that the unzipping of the dataset resulted in multiple directories. Sometimes zip programs put all files inside one big directory.
 3. Click *“OK”* to load the image stack.
 
+:::tip
+
+If Fiji crashes, or you run into other issues, try to increase the memory limit: *“Edit > Options > Memory and Threads”.*
+
+:::
+
 Note that when you are loading a dataset that hasn’t been reduced in size beforehand, you can do that here. For example, we could have set *“Scale”* to *“25%”* and *“Step”* to *“4”*, to get a similar result.
 
 In the resulting scan you can vaguely see some features, perhaps even some ink, but it's hard to see what is actually in there:
