@@ -40,7 +40,7 @@ The objective of the Vesuvius Challenge is to make history by reading an unopene
 
 <div>We are providing all contestants with the following resources:</div>
 
-- **[Prizes](/overview#grand-prize-150000)**: $1,000,000+ in prizes, including a $700,000 Grand Prize and the rest in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a $50,000 ink detection competition on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). We also have some smaller [Open Source Prizes](/overview#open-source-prizes-3x-2000).
+- **[Prizes](/overview#grand-prize-150000)**: $1,000,000+ in prizes, including a $700,000 Grand Prize and the rest in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a $100,000 ink detection competition on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). We also have some smaller [Open Source Prizes](/overview#open-source-prizes-3x-2000).
 - **[Data](/data)**: 3D X-ray scans of two unopened scrolls from Herculaneum, and scans and images of three papyrus fragments
 - **[Tutorials and tools](/tutorial1)**: the current best tools and techniques for virtually unwrapping papyrus scrolls
 - **[Community](/participate)**: a Discord server where you can connect with other contestants and the Vesuvius Challenge team
@@ -91,13 +91,13 @@ Based on the [landmark results](https://raw.githubusercontent.com/educelab/Educe
 
 The Grand Prize deadline is 11:59pm Pacific, December 31st, 2023.
 
-## Progress prizes ($100,000)
+## Progress prizes
 
 The purpose of progress prizes is to encourage contestants to solve important subproblems and release their work. We also hope that they attract more participants who are interested in starting with a narrower task, and then go on to try to win the Grand Prize.
 
 Progress prizes are optional! You can choose to skip them and work directly on the Grand Prize.
 
-### Ink Detection on Kaggle ($50,000 total)
+### Ink Detection on Kaggle ($100,000 total)
 
 As you will learn in the [tutorials](/tutorial1), one of the big challenges of reading the Herculaneum Papyri is detecting the ink in the 3D X-ray scans.
 
@@ -108,7 +108,7 @@ As you will learn in the [tutorials](/tutorial1), one of the big challenges of r
   </video>
 </figure>
 
-For this important subproblem, we are offering a $50,000 [Ink Detection Progress Prize](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/). This progress prize is hosted on Kaggle, and the final submission deadline is June 14th, 2023.
+For this important subproblem, we are offering a $100,000 [Ink Detection Progress Prize](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/). This progress prize is hosted on Kaggle, and the final submission deadline is June 14th, 2023.
 
 ### Open Source Prizes (3x $2,000)
 
