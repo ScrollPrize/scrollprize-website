@@ -841,7 +841,7 @@ export function Landing() {
                       textFillColor: "transparent",
                     }}
                   >
-                    Win $1,000,000+.
+                    Win $1,000,000.
                   </span>
                 </h1>
                 <p className="max-w-xl md:text-2xl text-lg font-medium mb-8 md:opacity-60 md:w-full w-4/5 opacity-80 leading-none tracking-tight">
