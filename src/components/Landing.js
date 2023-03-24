@@ -908,7 +908,7 @@ export function Landing() {
                         textFillColor: "transparent",
                       }}
                     >
-                      $380,000
+                      $200,000+
                     </span>{" "}
                     more in prizes & TBA
                   </h2>
