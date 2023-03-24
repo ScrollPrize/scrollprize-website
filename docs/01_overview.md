@@ -40,7 +40,7 @@ The objective of the Vesuvius Challenge is to make history by reading an unopene
 
 <div>We are providing all contestants with the following resources:</div>
 
-- **[Prizes](/overview#grand-prize-150000)**: $1,000,000+ in prizes, including a $700,000 Grand Prize and the rest in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a [$50,000 ink detection competition on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection).
+- **[Prizes](/overview#grand-prize-150000)**: $1,000,000+ in prizes, including a $700,000 Grand Prize and the rest in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a $50,000 ink detection competition on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). We also have some smaller [Open Source Prizes](/overview#open-source-prizes-3x-2000).
 - **[Data](/data)**: 3D X-ray scans of two unopened scrolls from Herculaneum, and scans and images of three papyrus fragments
 - **[Tutorials and tools](/tutorial1)**: the current best tools and techniques for virtually unwrapping papyrus scrolls
 - **[Community](/participate)**: a Discord server where you can connect with other contestants and the Vesuvius Challenge team
@@ -110,7 +110,21 @@ As you will learn in the [tutorials](/tutorial1), one of the big challenges of r
 
 For this important subproblem, we are offering a $50,000 [Ink Detection Progress Prize](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/). This progress prize is hosted on Kaggle, and the final submission deadline is June 14th, 2023.
 
-### Future Progress Prizes ($380,000 total)
+### Open Source Prizes (3x $2,000)
+
+All of us organizing the Vesuvius Challenge are big believers in open source and  incremental progress. We want to encourage building in the open and benefiting the whole community — something that is typically disincentivized in a competition format.
+
+That’s why we are introducing “open source prizes”. These are small prizes that may be awarded for any open source or publicly available contributions: software, documentation, research notes, Kaggle notebooks, anything goes.
+
+* **Anything that you release in public** can qualify for an open source prize. You need to publicly release your work before you can win an open source prize.
+* It has to be accessible and usable by other contestants (e.g. licensed under MIT, Apache, GPL, Creative Commons, etc).
+* You may make multiple submissions. Please edit the form when doing so. We may award a single prize to a set of multiple submissions by one person or team.
+* Your submission will be judged subjectively: the Technical Team (Dr. Brent Seales, Nat Friedman, Stephen Parsons, Seth Parker, JP Posma, and Daniel Havíř) will decide what they think are the best open source contributions.
+* The first batch of prizes will be **3 prizes of $2,000 each** (plus a fun surprise!), which you must submit for by **April 11th 11:59pm PT**.
+* If you are submitting as a team, the team leader should make the submission, and is responsible for distributing the prize money (and fun surprise) among the team.
+* Make your submissions [here](https://forms.gle/4qiDBW4uxKET87oh8).
+
+### Future Progress Prizes
 
 We have some ideas of what future progress prizes might best accelerate overall progress on the Vesuvius Challenge, but we’re also keeping an open mind. If you have suggestions, please let us know!
 

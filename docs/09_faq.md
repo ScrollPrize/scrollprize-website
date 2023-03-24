@@ -36,6 +36,21 @@ hide_table_of_contents: true
   />
 </head>
 
+### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
+
+* Consider competing in the Ink Detection Progress Prize on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). It is a lot smaller in scope, and will mark an important milestone towards the Grand Prize. There are 10 prizes available, for a total of $100,000.
+* You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win one of the [Open Source Prizes](/overview#open-source-prizes-3x-2000)! Anything goes here: software, documentation, research notes, Kaggle notebooks, etc.
+
+### I’m a researcher or student, and I would like work on this. Can I publish my results in journals?
+
+<div>Generally <strong>yes</strong>, with the conditions that are specified in the <a href="https://forms.gle/HV1J6dJbmCB2z5QL8">Data Agreement</a>:</div>
+
+* Any publications and presentations must cite the EduceLab-Scrolls Dataset.
+* You won’t publish any revelation of hidden text (or associated code) without the written approval of Vesuvius Challenge.
+* If you find enough hidden text, you’ll win the Grand Prize ($700,000), and we'll work with you to put the texts in historical context, and co-publish them in academic venues. The winning code will be made public under a permissive open source license, so that others can reproduce and build on your work.
+
+We very much encourage researchers and students to work on this! Be sure to reach out to us [on Discord or by email](/overview#join-the-community).
+
 ### What are the key academic papers I should read to understand the work done so far to read the Herculaneum Papyri?
 
 * [EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT](https://raw.githubusercontent.com/educelab/EduceLab-Scrolls/main/paper/EduceLab-Scrolls.pdf) (data paper)

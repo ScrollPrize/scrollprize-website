@@ -218,7 +218,7 @@ const prizes = [
   },
   {
     title: "Ink Detection Prize",
-    prizeMoney: "$50,000",
+    prizeMoney: "$100,000",
     description: "Detect ink from X-rays by June 14th 2023",
     requirement: "",
     qualifications: [
@@ -910,7 +910,7 @@ export function Landing() {
                     >
                       $380,000
                     </span>{" "}
-                    more in prizes TBA
+                    more in prizes & TBA
                   </h2>
                 </div>
               </div>

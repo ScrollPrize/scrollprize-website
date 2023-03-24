@@ -66,9 +66,10 @@ If you’re competing as a team, please have your team leader submit your result
 
 ### Review process
 
-All submissions will be assessed by the Review Team, which consists of a technical team to review your methodology, and an independent team of papyrologists to review your results.
+All submissions will be assessed by the Review Team, which consists of a technical team to review your methodology, and an independent team of papyrologists to review your results. Note that the technical team also judges the [Open Source Prizes](/overview#open-source-prizes-3x-2000).
 
-Technical team
+<div className="font-bold">Technical team</div>
+
 - Dr. Brent Seales
 - Nat Friedman
 - Stephen Parsons
@@ -76,7 +77,8 @@ Technical team
 - JP Posma
 - Daniel Havíř
 
-Papyrology Team
+<div className="font-bold">Papyrology Team</div>
+
 - Robert Fowler, Fellow of the British Academy; Professor Emeritus of Classics, Bristol University
 - Tobias Reinhardt, Corpus Christi Professor of the Latin Language and Literature, Oxford
 - Richard Janko, Professor of Classics, University of Michigan
