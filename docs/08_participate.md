@@ -72,6 +72,7 @@ Technical team
 - Dr. Brent Seales
 - Nat Friedman
 - Stephen Parsons
+- Seth Parker
 - JP Posma
 - Daniel Havíř
 
