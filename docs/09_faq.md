@@ -36,6 +36,13 @@ hide_table_of_contents: true
   />
 </head>
 
+### What are the important dates?
+
+* March 15th 2023: Launch!
+* April 11th 2023: First deadline of [Open Source Prizes](/overview#open-source-prizes-3x-2000).
+* June 14th 2023: Deadline of the Ink Detection Progress Prize on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/).
+* December 31st 2023: Deadline of the [Grand Prize](/overview#grand-prize-700000).
+
 ### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
 
 * Consider competing in the Ink Detection Progress Prize on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). It is a lot smaller in scope, and will mark an important milestone towards the Grand Prize. There are 10 prizes available, for a total of $100,000.
