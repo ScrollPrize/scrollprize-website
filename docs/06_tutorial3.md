@@ -121,6 +121,8 @@ docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" gh
 * Then run:
 
 ```bash
+xhost +local:docker
+
 docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/campfire:/campfire ghcr.io/educelab/volume-cartographer
 ```
 
