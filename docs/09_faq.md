@@ -51,6 +51,12 @@ hide_table_of_contents: true
 
 We very much encourage researchers and students to work on this! Be sure to reach out to us [on Discord or by email](/overview#join-the-community).
 
+### I have made some progress, who do I inform about this?
+
+If you want to share your work privately with the contest organizers, please email us at team@scrollprize.org. We will keep it completely confidential. We really appreciate you keeping us in the loop!
+
+If you're open to sharing your improvements publicly (and be eligible for the [Open Source Prizes](/overview#open-source-prizes-3x-2000)), you can post in Discord.
+
 ### What are the key academic papers I should read to understand the work done so far to read the Herculaneum Papyri?
 
 * [EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT](https://raw.githubusercontent.com/educelab/EduceLab-Scrolls/main/paper/EduceLab-Scrolls.pdf) (data paper)
