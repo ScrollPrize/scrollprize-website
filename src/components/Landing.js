@@ -959,7 +959,7 @@ export function Landing() {
                     ))}
                   </div>
                   <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
-                    <h3 className="text-3xl font-black tracking-tighter text=[--ifm-color-primary]">
+                    <h3 className="text-3xl font-black tracking-tighter text=[--ifm-color-primary]" id="sponsors">
                       Sponsors
                     </h3>
                     {team.more_sponsors.map((t, i) => (

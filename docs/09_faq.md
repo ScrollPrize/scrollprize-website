@@ -304,7 +304,7 @@ We think so! Based on the results that Dr. Seales and his team have been able to
 
 ### I have a lot of money! Can I help sponsor this?
 
-Vesuvius Challenge Inc. is a 501c3 non-profit organization that was formed solely to solve the puzzle of the Herculaneum Papyri. It is currently funded by Nat Friedman and Daniel Gross, and by many hours of volunteer contributions.
+Vesuvius Challenge Inc. is a 501c3 non-profit organization that was formed solely to solve the puzzle of the Herculaneum Papyri. It is currently funded by [the sponsors listed on the homepage](/#sponsors), and by many hours of volunteer contributions.
 
 If you want to contribute money to support our operational costs or to increase the prize amounts, please <a href="mailto:nat@nat.org">get in touch</a>!
 
