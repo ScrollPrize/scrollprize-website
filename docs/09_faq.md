@@ -48,6 +48,14 @@ hide_table_of_contents: true
 * Consider competing in the Ink Detection Progress Prize on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). It is a lot smaller in scope, and will mark an important milestone towards the Grand Prize. There are 10 prizes available, for a total of $100,000.
 * You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win one of the [Open Source Prizes](/overview#open-source-prizes-3x-2000)! Anything goes here: software, documentation, research notes, Kaggle notebooks, etc.
 
+### I’m outside the United States, can I participate and win prizes?
+
+Absolutely! As long as we can legally pay you (no US sanctions) you can win the prize.
+
+### Do I have to pay taxes on my prize earnings?
+
+This depends on the jurisdiction you live in, but generally yes, you do have to pay taxes. Consult your tax advisor for details.
+
 ### I’m a researcher or student, and I would like work on this. Can I publish my results in journals?
 
 <div>Generally <strong>yes</strong>, with the conditions that are specified in the <a href="https://forms.gle/HV1J6dJbmCB2z5QL8">Data Agreement</a>:</div>
