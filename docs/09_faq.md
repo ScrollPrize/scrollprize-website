@@ -77,6 +77,7 @@ If you're open to sharing your improvements publicly (and be eligible for the [O
 * [EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT](https://raw.githubusercontent.com/educelab/EduceLab-Scrolls/main/paper/EduceLab-Scrolls.pdf) (data paper)
 * [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable)
 * [From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi](https://www.science.org/doi/10.1126/sciadv.1601247)
+* [Reading the Invisible Library: A Retrospective](/img/faq/retro.pdf) (history preprint)
 
 For a comprehensive overview of the field, see [this list by Dr. Seales' lab](https://educelab.gitlab.io/publications/bibtex-refs/).
 
