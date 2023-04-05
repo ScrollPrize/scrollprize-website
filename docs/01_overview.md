@@ -40,7 +40,7 @@ The objective of the Vesuvius Challenge is to make history by reading an unopene
 
 <div>We are providing all contestants with the following resources:</div>
 
-- **[Prizes](/overview#grand-prize-150000)**: $1,000,000+ in prizes, including a $700,000 Grand Prize and the rest in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a $100,000 ink detection competition on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). We also have some smaller [Open Source Prizes](/overview#open-source-prizes-3x-2000).
+- **[Prizes](/overview#grand-prize-150000)**: $1,000,000+ in prizes, including a $700,000 Grand Prize and the rest in [Progress Prizes](/overview#progress-prizes-100000). The first progress prize is a $100,000 ink detection competition on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). We also have some smaller [Open Source Prizes](/overview#open-source-prizes-3x-2000) and [Private Prizes](/overview#private-prizes-10x-250).
 - **[Data](/data)**: 3D X-ray scans of two unopened scrolls from Herculaneum, and scans and images of three papyrus fragments
 - **[Tutorials and tools](/tutorial1)**: the current best tools and techniques for virtually unwrapping papyrus scrolls
 - **[Community](/participate)**: a Discord server where you can connect with other contestants and the Vesuvius Challenge team
@@ -123,6 +123,17 @@ That’s why we are introducing “open source prizes”. These are small prizes
 * The first batch of prizes will be **3 prizes of $2,000 each** (plus a fun surprise!), which you must submit for by **April 11th 11:59pm PT**.
 * If you are submitting as a team, the team leader should make the submission, and is responsible for distributing the prize money (and fun surprise) among the team.
 * Make your submissions [here](https://forms.gle/4qiDBW4uxKET87oh8).
+
+### Private Prizes (10x $250)
+
+We're looking to learn what people are working on, and to reward folks who have privately been exploring the data. It's simple:
+
+* Tell us in 1-2 paragraphs what you have done so far and/or are planning to do (privately, we'll keep it confidential).
+* We select **10 submissions** that get **$250**!
+
+You don't need to have made much progress at all to be eligible. Even a solid idea that you haven't implemented yet could win. We will not share anything about your submission with anyone.
+
+Email team@scrollprize.org before **Tuesday, April 11th 11:59pm PT** (same as the open source prize deadline). If you have a team, please have the team leader send the email, and include who is on the team.
 
 ### Future Progress Prizes
 
