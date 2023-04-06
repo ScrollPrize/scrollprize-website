@@ -118,7 +118,7 @@ That’s why we are introducing “open source prizes”. These are small prizes
 
 * **Anything that you release in public** can qualify for an open source prize. You need to publicly release your work before you can win an open source prize.
 * It has to be accessible and usable by other contestants (e.g. licensed under MIT, Apache, GPL, Creative Commons, etc).
-* You may make multiple submissions. Please edit the form when doing so. We may award a single prize to a set of multiple submissions by one person or team.
+* You may make multiple submissions. We may award a single prize to a set of multiple submissions by one person or team.
 * Your submission will be judged subjectively: the Technical Team (Dr. Brent Seales, Nat Friedman, Stephen Parsons, Seth Parker, JP Posma, and Daniel Havíř) will decide what they think are the best open source contributions.
 * The first batch of prizes will be **3 prizes of $2,000 each** (plus a fun surprise!), which you must submit for by **April 11th 11:59pm PT**.
 * If you are submitting as a team, the team leader should make the submission, and is responsible for distributing the prize money (and fun surprise) among the team.
