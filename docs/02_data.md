@@ -83,7 +83,7 @@ hide_table_of_contents: true
   </table>
 </div>
 
-To learn more about the data, read the data paper [“EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT”](https://raw.githubusercontent.com/educelab/EduceLab-Scrolls/main/paper/EduceLab-Scrolls.pdf).
+To learn more about the data, read the data paper [“EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT”](https://arxiv.org/abs/2304.02084).
 
 ## How to Download the Data
 

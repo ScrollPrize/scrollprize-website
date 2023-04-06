@@ -74,7 +74,7 @@ If you're open to sharing your improvements publicly (and be eligible for the [O
 
 ### What are the key academic papers I should read to understand the work done so far to read the Herculaneum Papyri?
 
-* [EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT](https://raw.githubusercontent.com/educelab/EduceLab-Scrolls/main/paper/EduceLab-Scrolls.pdf) (data paper)
+* [EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT](https://arxiv.org/abs/2304.02084) (data paper)
 * [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable)
 * [From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi](https://www.science.org/doi/10.1126/sciadv.1601247)
 * [Reading the Invisible Library: A Retrospective](/img/faq/retro.pdf) (history preprint)

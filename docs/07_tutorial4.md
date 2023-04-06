@@ -54,7 +54,7 @@ In the video below Dr. Seales talks about how ink detection works in the Hercula
 
 <iframe className="w-[100%] aspect-video mb-4" src="https://www.youtube.com/embed/g-7-Xg75CCI?start=5930" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>
 
-There is hope: not only can machine learning models detect the ink, on occasion we can see the ink directly in the 3D X-ray volumes. Here are some examples, with slices from the 3D surface volumes on the left, and infrared photos showing ink on the right (from the recent [data paper](https://raw.githubusercontent.com/educelab/EduceLab-Scrolls/main/paper/EduceLab-Scrolls.pdf)):
+There is hope: not only can machine learning models detect the ink, on occasion we can see the ink directly in the 3D X-ray volumes. Here are some examples, with slices from the 3D surface volumes on the left, and infrared photos showing ink on the right (from the recent [data paper](https://arxiv.org/abs/2304.02084)):
 
 <figure className="">
   <img src="/img/tutorials/ink2-alpha.png" />

@@ -79,7 +79,7 @@ You can approach this challenge through any means necessary: machine learning, c
 
 #### Why is this difficult?
 
-As you will read in the [tutorials](/tutorial1), advanced tools and techniques exist for virtually unwrapping papyrus scrolls. This was demonstrated in 2015 when Dr. Seales's team [unwrapped the En-Gedi scroll](https://www2.cs.uky.edu/dri/the-scroll-from-en-gedi/), and in their recent result [identifying ink from 3D X-ray scans in the Herculaneum scrolls](https://raw.githubusercontent.com/educelab/EduceLab-Scrolls/main/paper/EduceLab-Scrolls.pdf).
+As you will read in the [tutorials](/tutorial1), advanced tools and techniques exist for virtually unwrapping papyrus scrolls. This was demonstrated in 2015 when Dr. Seales's team [unwrapped the En-Gedi scroll](https://www2.cs.uky.edu/dri/the-scroll-from-en-gedi/), and in their recent result [identifying ink from 3D X-ray scans in the Herculaneum scrolls](https://arxiv.org/abs/2304.02084).
 
 <div>But the Herculaneum scrolls have proved more challenging. The remaining challenges include:</div>
 
@@ -87,7 +87,7 @@ As you will read in the [tutorials](/tutorial1), advanced tools and techniques e
 - Finding the ink. The ink used in the Herculaneum scrolls is [radiolucent](https://en.wikipedia.org/wiki/Radiodensity), making it difficult to see in the scans. Recently, Dr. Seales's team has trained a machine learning model which can detect the ink from subtle patterns in the 3D X-rays. This works in the fragments, but these models are not yet perfect and will probably need to be improved to work at the scale of an entire scroll.
 - Putting it all together. Applying the ink detection models to the segmented scroll has not yet been successfully demonstrated.
 
-Based on the [landmark results](https://raw.githubusercontent.com/educelab/EduceLab-Scrolls/main/paper/EduceLab-Scrolls.pdf) that Dr. Seales and his team have recently produced, we believe that it is possible to read the Herculaneum scrolls using the [scans](/data) that we already have and the tools and tecniques that they have developed. And that is the Vesuvius Challenge!
+Based on the [landmark results](https://arxiv.org/abs/2304.02084) that Dr. Seales and his team have recently produced, we believe that it is possible to read the Herculaneum scrolls using the [scans](/data) that we already have and the tools and tecniques that they have developed. And that is the Vesuvius Challenge!
 
 The Grand Prize deadline is 11:59pm Pacific, December 31st, 2023.
 
