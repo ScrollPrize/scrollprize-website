@@ -154,6 +154,12 @@ The Papyrus is rolled up around a dowel called an umbilicus. Portions of it are 
 * [Meet Some Of The Last Papyrus Makers In Egypt Keeping A 5,000-Year-Old Craft Alive](https://www.youtube.com/watch?v=SBdVhvo2UUM)
 * [Myriam Krutzsch papyrus workshop](https://www.youtube.com/watch?v=3AaZ5C-U-jE)
 
+### How big are the letters?
+
+Letter sizes vary, and of course we don’t know what’s inside the unopened scrolls, but we expect the opened fragments to be fairly representative. You can measure how big the letters are by looking at the aligned surface images, which have a voxel resolution of approximately 4µm, like the original CT data (though there can be some local variation due to the registration / flattening process). So you could open, for example, <code>fragments/Frag1.volpkg/working/54keV_exposed_surface/ir.png</code>, measure a letter size in pixels, and multiply by 4µm.
+
+There are also some measurements in [this paper by Richard Janko](http://www-personal.umich.edu/~rjanko/how-to-read-and-reconstruct-a-herculaneum-papyrus.pdf), though it’s a little hard to infer actual letter sizing from it. If someone wants to do a more thorough review of the range of letter sizes found in all the Herculaneum papyri, we’d happily include your results here!
+
 ### How can we get more ground truth data? Can I make my own carbonized scrolls?
 
 Yes! Just buy [this papyrus on Amazon](https://www.amazon.com/gp/product/B005D75WYE/), roll it up, and put it inside a Dutch oven at 500F+ (260C+) for a few hours.
