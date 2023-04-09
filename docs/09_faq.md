@@ -48,6 +48,12 @@ hide_table_of_contents: true
 * Consider competing in the Ink Detection Progress Prize on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). It is a lot smaller in scope, and will mark an important milestone towards the Grand Prize. There are 10 prizes available, for a total of $100,000.
 * You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win one of the [Open Source Prizes](/overview#open-source-prizes-3x-2000)! Anything goes here: software, documentation, research notes, Kaggle notebooks, etc.
 
+### Can I share my progress on social media?
+
+Yes, in fact we encourage you to share your progress. Be sure to also post in our Discord, to get feedback from the community.
+
+The only exception is that per the data agreement, you’re not allowed to share material revelation of text (e.g. entire words) without our permission (including the associated code), or share the raw data.
+
 ### I’m outside the United States, can I participate and win prizes?
 
 Absolutely! As long as we can legally pay you (no US sanctions) you can win the prize.
