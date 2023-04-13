@@ -98,8 +98,8 @@ If you are just entering the [Kaggle competition](https://www.kaggle.com/competi
 The two full scrolls are from the [Institut de France](https://en.wikipedia.org/wiki/Institut_de_France) and were scanned at about 8µm resolution at the [Diamond Light Source](https://en.wikipedia.org/wiki/Diamond_Light_Source) particle accelerator. We are only releasing data from the top halves of these scrolls (they were standing on end when they were scanned). We will work with you to apply your techniques to the bottom halves in order to validate your submission.
 
 <div className="flex w-[100%]">
-    <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1</figcaption></div>
-    <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 2</figcaption></div>
+    <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1</figcaption></div>
+    <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 2</figcaption></div>
 </div>
 
 At 8µm resolution, the data files are big. We believe this resolution is necessary to detect ink, as suggested by the excellent paper [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable). Each .tif file in the full scroll sans is 8 micrometers tall so if you want to grab a centimeter of them from the middle of the scroll, you can just download 1,250 of them from the middle of the scan. We provide scripts for doing this once you've [registered](https://forms.gle/HV1J6dJbmCB2z5QL8).
