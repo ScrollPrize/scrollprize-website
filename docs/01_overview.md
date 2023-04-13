@@ -61,8 +61,8 @@ The Grand Prize will go to the first team to read four passages of text from the
 Here are the scrolls in question:
 
 <div className="flex w-[100%]">
-    <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1</figcaption></div>
-    <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 2</figcaption></div>
+    <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1</figcaption></div>
+    <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 2</figcaption></div>
 </div>
 
 We have provided you with 8µm 3D X-ray scans of each of these scrolls, which you can find [here](/data). Your job is to extract the text from these scans.

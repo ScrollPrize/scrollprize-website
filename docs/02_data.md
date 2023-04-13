@@ -44,8 +44,8 @@ hide_table_of_contents: true
         <td>
           <div className="mb-4">8µm 3D X-ray scans of two intact scrolls (top halves only), scanned in horizontal slices from bottom to top. Each half scroll scan is 14,000 .tif files, 120MB each. Each slice is 8µm tall, so this scroll half is 11.2cm tall. Both were scanned at 54keV, though we also released a smaller slice of Scroll 2 at 88keV. These are the scans you need to read to win the Grand Prize. See the <code>meta.json</code> files for details.</div>
           <div className="flex flex-wrap max-w-[500px]">
-            <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small.jpg" className="w-[100%]"/><strong>Scroll 1</strong></div>
-            <div className="sm:w-[45%] mb-2"><img src="/img/overview/scroll2-small.jpg" className="w-[100%]"/><strong>Scroll 2</strong></div>
+            <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><strong>Scroll 1</strong></div>
+            <div className="sm:w-[45%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><strong>Scroll 2</strong></div>
           </div>
         </td>
       </tr>
