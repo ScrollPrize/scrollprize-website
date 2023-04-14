@@ -36,6 +36,8 @@ hide_table_of_contents: true
   />
 </head>
 
+**We're live:** https://www.youtube.com/watch?v=_LBI0DtTl80
+
 Our next livestream will be Friday 14 April at 11:00am PT. We’ll be awarding the first [Open Source Prizes](/overview#open-source-prizes-3x-2000), and unveiling the fun surprise that the winners get! There will be also a short Q&A.
 
 ## Previous livestreams
