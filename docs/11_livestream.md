@@ -36,12 +36,18 @@ hide_table_of_contents: true
   />
 </head>
 
-**We're live:** https://www.youtube.com/watch?v=_LBI0DtTl80
-
-Our next livestream will be Friday 14 April at 11:00am PT. We’ll be awarding the first [Open Source Prizes](/overview#open-source-prizes-3x-2000), and unveiling the fun surprise that the winners get! There will be also a short Q&A.
-
 ## Previous livestreams
 
+### Q&A
+
 <iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/Cr8xIqFnBdw"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+### Announcing first open source prize winners
+
+<iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/_LBI0DtTl80"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+With accompanying [newsletter](https://scrollprize.substack.com/p/first-prizes-awarded-open-source).
+
+### More livestreams
 
 We might have more. Be sure to check [Twitter](https://twitter.com/scrollprize), [Discord](https://discord.gg/6FgWYNjb4N), and [Substack](https://scrollprize.substack.com/) for updates.
