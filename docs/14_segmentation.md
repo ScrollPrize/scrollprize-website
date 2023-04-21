@@ -51,6 +51,7 @@ We are awarding prizes to make it easier and faster to segment the scrolls, with
 * $35,000 total, 6 prizes. 1x10k, 5x5k.
 * Any tools, documentation, notebooks, analysis, to help with segmentation and flattening of the scrolls. Must be open source.
 * What we would like to see:
+  * A list of feature requests from people actively segmenting [can be found here](https://docs.google.com/document/d/1r3FDJIUP1Kx3EamxFwPVX9O_-lGMoWQsbHbOrcoTSvk/edit?usp=sharing). We **strongly recommend** you to look at this list and get in touch with active segmenters on Discord. Let's make their life easier!
   * In general, we would love to see people build on existing open source tools, especially those that have been built in the community. But all submissions are welcome!
   * **Improvements that make the tools super fast to use.** For example, the ability to start segmenting without downloading all of the scroll data; streaming from our download server, for example. (We are happy to host some server-side software if this helps!)
   * Making it faster to move between slices in tools like Volume Cartographer, by only loading the parts of the images that are relevant for your current segmentation task.
