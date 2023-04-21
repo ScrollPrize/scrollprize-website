@@ -1,6 +1,6 @@
 ---
 title: "Tutorial 1: Technical Overview"
-sidebar_label: "Technical Overview"
+sidebar_label: "1. Technical Overview"
 hide_table_of_contents: true
 ---
 
@@ -212,7 +212,7 @@ The output of this process is a flattened 3D volume that has been sampled around
   <figcaption className="mt-0">The resulting “surface volume” is another .tif image stack.</figcaption>
 </figure>
 
-In [“Tutorial 3: Virtual Unwrapping”](tutorial3) we’ll dive deeper into segmentation and virtual unwrapping.
+In [“Tutorial 3: Segmentation and Flattening”](tutorial3) we’ll dive deeper into segmentation and virtual unwrapping.
 
 ### 4. Ground truth data alignment
 

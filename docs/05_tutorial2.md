@@ -1,6 +1,6 @@
 ---
 title: "Tutorial 2: Scanning"
-sidebar_label: "Scanning"
+sidebar_label: "2. Scanning"
 hide_table_of_contents: true
 ---
 
@@ -86,6 +86,12 @@ Stephen then _carbonized_ the scroll in process that is similar to that of makin
 </figure>
 
 ### Fiji
+
+:::tip
+
+We now also have a community contribution that is worth trying out: [Scroll Viewer](https://github.com/lukeboi/scroll-viewer).
+
+:::
 
 We’ll use the [“Fiji”](https://imagej.net/software/fiji/downloads) open source program, which is a versatile tool for all sorts of image-based operations. It is a distribution of ImageJ, but the main version of ImageJ doesn’t include all the features we need. (In fact, “Fiji” is a recursive acronym for “Fiji Is Just ImageJ”.)
 
@@ -244,7 +250,7 @@ Here is a video showing the whole process:
 
 That is a what we call a “word soup” — letters floating in the air. Our real datasets aren’t nearly as pretty as this, but this should you give some idea of what volumetric data of papyrus scrolls look like in the best case scenario.
 
-However, it’s still hard to read anything. [“Tutorial 3: Virtual Unwrapping”](tutorial3) should help with this.
+However, it’s still hard to read anything. [“Tutorial 3: Segmentation and Flattening”](tutorial3) should help with this.
 
 ### Meshes
 

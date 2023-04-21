@@ -1,6 +1,6 @@
 ---
-title: "Tutorial 3: Segmenting and Flattening"
-sidebar_label: "Segmenting and Flattening"
+title: "Tutorial 3: Segmentation and Flattening"
+sidebar_label: "3. Segmentation and Flattening"
 hide_table_of_contents: true
 ---
 
@@ -56,6 +56,12 @@ Two key steps to virtually unwrapping a scroll or manuscript are _segmenting_ a 
 </figure>
 
 To perform segmentation and flattening, we'll use [Volume Cartographer](https://github.com/educelab/volume-cartographer), a virtual unwrapping toolkit built by [EduceLab](https://www2.cs.uky.edu/dri). Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer installs many tools and utilities. In this tutorial we’ll be looking at the main `VC` GUI as well as the `vc_render` tool.
+
+:::tip
+
+We now also have a community contribution that is worth trying out: [VolumeAnnotate](https://github.com/MosheLevy20/VolumeAnnotate).
+
+:::
 
 First, let's install it:
 
