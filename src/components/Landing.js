@@ -380,6 +380,11 @@ const team = {
       href: "https://twitter.com/JosephJacks_",
     },
     {
+      name: "Alex Gerko",
+      title: "$250,000",
+      href: "https://twitter.com/AlexanderGerko",
+    },
+    {
       name: "Nat Friedman",
       title: "$125,000",
       href: "https://nat.org/",
