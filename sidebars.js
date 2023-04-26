@@ -41,7 +41,6 @@ const sidebars = {
         { type: 'doc', id: 'tutorial4' },
       ],
     },
-    { type: 'doc', id: 'participate' },
     { type: 'doc', id: 'faq' },
     { type: 'doc', id: 'background' },
     { type: 'doc', id: 'livestream' },

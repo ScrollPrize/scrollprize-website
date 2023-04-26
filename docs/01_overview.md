@@ -47,7 +47,7 @@ The objective of the Vesuvius Challenge is to make history by reading an unopene
   - We’ve also [awarded](previous) some prizes already.
 - **[Data](/data)**: 3D X-ray scans of two unopened scrolls from Herculaneum, and scans and images of three papyrus fragments
 - **[Tutorials and tools](/tutorial1)**: the current best tools and techniques for virtually unwrapping papyrus scrolls
-- **[Community](/participate)**: a Discord server where you can connect with other contestants and the Vesuvius Challenge team
+- **[Community](https://discord.gg/6FgWYNjb4N)**: a Discord server where you can connect with other contestants and the Vesuvius Challenge team
 
 ### Join the community
 
