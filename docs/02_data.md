@@ -40,7 +40,7 @@ hide_table_of_contents: true
   <table>
     <tbody>
       <tr>
-        <td><a href="https://forms.gle/HV1J6dJbmCB2z5QL8">full-scrolls/</a><br/>4.7TB</td>
+        <td><a href="https://forms.gle/HV1J6dJbmCB2z5QL8">full-scrolls/</a><br/>5.5TB</td>
         <td>
           <div className="mb-4">8µm 3D X-ray scans of two intact scrolls (top halves only), scanned in horizontal slices from bottom to top. Each half scroll scan is 14,000 .tif files, 120MB each. Each slice is 8µm tall, so this scroll half is 11.2cm tall. Both were scanned at 54keV, though we also released a smaller slice of Scroll 2 at 88keV. These are the scans you need to read to win the Grand Prize. See the <code>meta.json</code> files for details.</div>
           <div className="flex flex-wrap max-w-[500px]">
@@ -50,7 +50,7 @@ hide_table_of_contents: true
         </td>
       </tr>
       <tr>
-        <td><a href="https://forms.gle/HV1J6dJbmCB2z5QL8">fragments/</a><br/>1.6TB</td>
+        <td><a href="https://forms.gle/HV1J6dJbmCB2z5QL8">fragments/</a><br/>1.8TB</td>
         <td>
           <div className="mb-4">4µm 3D X-ray scans, infrared images, and hand-labeled ink masks for three broken-off fragments of papyrus. Each fragment scan is 7,000 - 14,000 .tif files. The 3D scans are in vertical slices from side to side. Both 54keV and 88keV volumes are a released for every fragment. These data are for use in training ink detection models and entering the Kaggle competition.</div>
           <div className="flex flex-wrap max-w-[500px]">
