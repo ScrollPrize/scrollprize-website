@@ -75,7 +75,7 @@ hide_table_of_contents: true
       <tr>
         <td><a href="https://gist.github.com/janpaul123/280262ebce904f7366fe4cc155593e90">campfire.zip</a><br/>338MB</td>
         <td>
-          <div className="mb-4">X-ray scans and images of the Campfire Scroll</div>
+          <div className="mb-4">X-ray scans and images of the Campfire Scroll (used in tutorials).</div>
           <div className="flex flex-wrap">
             <div className="sm:w-[35%] max-w-[100px] sm:max-w-[1000px] mb-2 mr-2"><img src="/img/tutorials/campfire-rolled2.jpg" className="max-w-[100px]"/><br/><strong>Campfire scroll</strong></div>
           </div>
