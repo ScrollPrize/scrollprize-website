@@ -149,6 +149,13 @@ The strips are laid out in two layers in a grid pattern. They are pressed togeth
 
 The Papyrus is rolled up around a dowel called an umbilicus. Portions of it are unrolled for writing. The first section, called the protokollon, is usually left blank. Text is written in columns with a quill and inkwell. Inks are made of varied substances.
 
+There are two ways you can write on papyrus: horizontally (“volumen”) or [vertically](https://en.wikipedia.org/wiki/Rotulus) (“rotulus”). All of the Herculaneum papyri are horizontal scrolls.
+
+<figure>
+<img src="/img/faq/Volumen_y_Rotulus.jpg"/>
+<figcaption className="mt-0">Horizontal and vertical scrolls <a href="https://commons.wikimedia.org/wiki/File:Volumen_y_Rotulus.jpg">(source)</a></figcaption>
+</figure>
+
 <div>For some good videos about how papyrus is made see:</div>
 
 * [Meet Some Of The Last Papyrus Makers In Egypt Keeping A 5,000-Year-Old Craft Alive](https://www.youtube.com/watch?v=SBdVhvo2UUM)
