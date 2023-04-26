@@ -47,6 +47,7 @@ hide_table_of_contents: true
             <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><strong>Scroll 1</strong></div>
             <div className="sm:w-[45%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><strong>Scroll 2</strong></div>
           </div>
+          <div>We are working on creating 3D segmentations of the scrolls (see <a href="tutorial3">Tutorial 3: Segmentation and Flattening</a>). Preliminary segment data can be found on <a href="https://discord.gg/6FgWYNjb4N">Discord</a>.</div>
         </td>
       </tr>
       <tr>
@@ -68,6 +69,7 @@ hide_table_of_contents: true
             <li>3D X-ray scans (54keV) were transformed into “surface volumes”, as described in the <a href="/tutorial1">tutorials</a>.</li>
             <li>Infrared photos were aligned with these surface volumes, and binary ink masks were created to denote the presence of ink.</li>
           </ul>
+          <div>Files used for post-processing the fragments (such as the segment files) can be found in the fragments/ folder mentioned above.</div>
         </td>
       </tr>
       <tr>
