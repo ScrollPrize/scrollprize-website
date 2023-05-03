@@ -50,6 +50,7 @@ We are awarding prizes to make it easier and faster to segment the scrolls, with
 
 * $35,000 total, 6 prizes. 1x10k, 5x5k.
 * Any tools, documentation, notebooks, analysis, to help with segmentation and flattening of the scrolls. Must be open source.
+* Anything that actually gets used by the community (by people doing segmentation) will have a much higher chance of winning.
 * What we would like to see:
   * A list of feature requests from people actively segmenting [can be found here](https://docs.google.com/document/d/1r3FDJIUP1Kx3EamxFwPVX9O_-lGMoWQsbHbOrcoTSvk/edit?usp=sharing). We **strongly recommend** you to look at this list and get in touch with active segmenters on Discord. Let's make their life easier!
   * In general, we would love to see people build on existing open source tools, especially those that have been built in the community. But all submissions are welcome!
