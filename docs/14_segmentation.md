@@ -1,5 +1,5 @@
 ---
-title: "$35,000 Segmentation Tooling (May 15th)"
+title: "$45,000 Segmentation Tooling (June 14th)"
 hide_table_of_contents: true
 ---
 
@@ -48,7 +48,7 @@ We are awarding prizes to make it easier and faster to segment the scrolls, with
   <figcaption className="mt-0">Segmentation: finding a surface of papyrus.</figcaption>
 </figure>
 
-* $35,000 total, 6 prizes. 1x10k, 5x5k.
+* $45,000 total, 7 prizes. 2x10k, 5x5k.
 * Any tools, documentation, notebooks, analysis, to help with segmentation and flattening of the scrolls. Must be open source.
 * Anything that actually gets used by the community (by people doing segmentation) will have a much higher chance of winning.
 * What we would like to see:
@@ -62,7 +62,7 @@ We are awarding prizes to make it easier and faster to segment the scrolls, with
 * You may make multiple submissions. We may award a single prize to a set of multiple submissions by one person or team.
 * Your submission will be judged subjectively: the Technical Review Team will decide what they think are the best open source contributions.
 * If you are submitting as a team, the team leader should make the submission, and is responsible for distributing the prize money among the team.
-* Submissions are closed on Monday May 15th 11:59pm PT.
+* Submissions are closed on Wednesday June 14th 11:59pm PT.
 * Submit using [this form](https://docs.google.com/forms/d/e/1FAIpQLSeT-6ucyUUSOJGYIcx6Wp5wozQzvjfDMTwL9i152yrCnXbE_w/viewform).
 
 To get a sense of what segmentation looks like right now, watch this stream of JP doing some segmentation using [Volume Cartographer](https://github.com/educelab/volume-cartographer):

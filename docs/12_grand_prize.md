@@ -88,7 +88,7 @@ We will work with the Grand Prize winners to verify their results, put them in a
 
 <div>If you have a qualifying result, submit it for consideration by sending an email to <a href="mailto:grandprize@scrollprize.org">grandprize@scrollprize.org</a> and provide the following:</div>
 
-* **Images.** Submissions must be in the form of images of the virtuall unrolled papyrus, showing visible and legible text. Specify which scroll each image came from and where in the scroll they were found.
+* **Images.** Submissions must be in the form of images of the virtually unrolled papyrus, showing visible and legible text. Specify which scroll each image came from and where in the scroll they were found.
 * **Methodology.** A detailed technical description of how your solution works. We need to be able to reproduce your work, so please make this as easy as possible:
     * For fully automated software, please create a Docker image that we can easily run to reproduce your work, and please include system requirements.
     * For software with a human in the loop, please provide written instructions and a video explaining how to use your tool. We’ll work with you to learn how to use it, but we’d like to have a strong starting point.

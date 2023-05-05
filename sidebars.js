@@ -26,6 +26,7 @@ const sidebars = {
         { type: 'doc', id: 'grand_prize' },
         { type: 'doc', id: 'ink_detection' },
         { type: 'doc', id: 'segmentation' },
+        { type: 'doc', id: 'first_letters' },
         { type: 'doc', id: 'previous' },
       ],
     },
