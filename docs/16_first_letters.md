@@ -36,7 +36,7 @@ hide_table_of_contents: true
   />
 </head>
 
-A $40,000 prize is awarded to the first team that uncovers 10 letters within a single area of 4cm<sup>2</sup> from [Scroll 1 or 2](data), and open sources their methods (***after*** winning the prize). There is also a prize for the second team to reach this milestone: $10,000.
+We’re announcing $50,000 in new prizes for finding the first letters in the scrolls! $40,000 for the first team that uncovers 10 letters within a single area of 4cm<sup>2</sup> from [Scroll 1 or 2](data), and open sources their methods and results (***after*** winning the prize). And a $10,000 prize for the second team to reach this milestone.
 
 The purpose of this prize is to close the gap between the [Ink Detection Prize on Kaggle](ink_detection), and the much more difficult [Grand Prize](grand_prize). We want to prove that ink detection can work on the scrolls. We’ll learn a lot from this: what techniques work best, do we need to adjust how we do segmentation, etc.
 
