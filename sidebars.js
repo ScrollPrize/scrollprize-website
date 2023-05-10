@@ -30,7 +30,14 @@ const sidebars = {
         { type: 'doc', id: 'previous' },
       ],
     },
-    { type: 'doc', id: 'data' },
+    {
+      type: 'category',
+      label: 'Data',
+      link: { type: 'doc', id: 'data' },
+      items: [
+        { type: 'doc', id: 'data_organization' },
+      ],
+    },
     {
       type: 'category',
       label: 'Tutorials',

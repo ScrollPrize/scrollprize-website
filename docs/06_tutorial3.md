@@ -188,11 +188,11 @@ Saving to volpkg [■■■■■■■■■■■■■■■■■■■■�
 
 <div>You now have a <code>campfire.volpkg</code> with 4 items in it:</div>
 
-* `config.json`: Contains some metadata.
-* `path/`: Currently empty: this is where raw mesh points will be stored, which we’ll be doing soon.
-* `renders/`: Also empty: this is where any rendering data will be stored.
-* `volumes/`: Contains a single directory with the processed `.tif` image stack.
-  * `volumes/<id>/meta.json`: Contains metadata about the processed image stack.
+* `/config.json`: Contains some metadata.
+* `/paths`: Currently empty: this is where raw mesh points will be stored, which we’ll be doing soon.
+* `/renders`: Also empty: this is where any rendering data will be stored.
+* `/volumes`: Contains a single directory with the processed `.tif` image stack.
+  * `/volumes/<id>/meta.json`: Contains metadata about the processed image stack.
 
 Note that all these directories must be present for Volume Cartographer to work, even if they are empty. This is useful to know if you check these directories into git, since git by default does not keep empty directories. In such cases, it's a good idea to put a `.gitkeep` file in any empty directories (per [convention](https://www.freecodecamp.org/news/what-is-gitkeep/)).
 

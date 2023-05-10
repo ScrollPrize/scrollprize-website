@@ -133,3 +133,15 @@ The fragments are sliced from the side:
 Watch a video of a scroll:
 
 <iframe className="w-[100%] mb-4 aspect-square" src="https://www.youtube.com/embed/cY5BIxkf5m0"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+The Monster Segment (in Scroll 1) (see the [Data Organization page](data_organization) for more details):
+
+<figure>
+  <img src="/img/first-letters/Scroll1_wrap_recto_smaller.png" className="w-[100%]"/>
+  <figcaption className="mt-0">Monster Segment texture</figcaption>
+</figure>
+
+<figure>
+  <img src="/img/first-letters/monster_slices.png" className="w-[100%]"/>
+  <figcaption className="mt-0">Location of the Monster Segment in the scroll</figcaption>
+</figure>

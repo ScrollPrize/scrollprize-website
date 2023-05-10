@@ -59,3 +59,17 @@ The purpose of this prize is to close the gap between the [Ink Detection Prize o
 * By submitting you agree to make your method open source. It does not have to be open source at the time of submission, but you have to make it open source to accept the prize.
 * The first team to make a valid submission by 11:59pm Pacific, December 31st, 2023 wins the $50,000.
 * Make your submissions using [this form](https://forms.gle/s6f656m3KSTWkAtN8).
+
+### How to get started?
+
+We have a bunch of segments and surface volumes ready to apply your ink detection algorithms on (e.g. which you made for the [Ink Detection Prize on Kaggle](ink_detection)). See the [Data Organization page](data_organization) for more details. In particular, we recommend you trying out the Monster Segment (in Scroll 1), which is huge:
+
+<figure>
+  <img src="/img/first-letters/Scroll1_wrap_recto_smaller.png" className="w-[100%]"/>
+  <figcaption className="mt-0">Monster Segment texture</figcaption>
+</figure>
+
+<figure>
+  <img src="/img/first-letters/monster_slices.png" className="w-[100%]"/>
+  <figcaption className="mt-0">Location of the Monster Segment in the scroll</figcaption>
+</figure>
