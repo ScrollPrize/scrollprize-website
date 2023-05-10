@@ -62,7 +62,7 @@ The purpose of this prize is to close the gap between the [Ink Detection Prize o
 
 ### How to get started?
 
-We have a bunch of segments and surface volumes ready to apply your ink detection algorithms on (e.g. which you made for the [Ink Detection Prize on Kaggle](ink_detection)). See the [Data Organization page](data_organization) for more details. In particular, we recommend you trying out the Monster Segment (in Scroll 1), which is huge:
+We have a bunch of segments and surface volumes ready to apply your ink detection algorithms on (e.g. which you made for the [Ink Detection Prize on Kaggle](ink_detection), or the original [ink-id](https://github.com/educelab/ink-id/)). See the [Data Organization page](data_organization) for more details. In particular, we recommend you trying out the Monster Segment (in Scroll 1), which is huge:
 
 <figure>
   <img src="/img/first-letters/Scroll1_wrap_recto_smaller.png" className="w-[100%]"/>
