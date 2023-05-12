@@ -39,14 +39,14 @@ hide_table_of_contents: true
 ### What are the important dates?
 
 * March 15th 2023: Launch!
-* April 11th 2023: First deadline of [Open Source Prizes](/overview#open-source-prizes-3x-2000) and [Private Prizes](/overview#private-prizes-10x-250).
-* June 14th 2023: Deadline of the Ink Detection Progress Prize on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/).
+* June 14th 2023: Deadline of the [Ink Detection Progress Prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/) and the [Segmentation Tooling Prize](segmentation).
 * December 31st 2023: Deadline of the [Grand Prize](/overview#grand-prize-700000).
 
 ### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
 
-* Consider competing in the Ink Detection Progress Prize on [Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). It is a lot smaller in scope, and will mark an important milestone towards the Grand Prize. There are 10 prizes available, for a total of $100,000.
-* You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win one of the [Open Source Prizes](/overview#open-source-prizes-3x-2000)! Anything goes here: software, documentation, research notes, Kaggle notebooks, etc.
+* Consider competing in the [Ink Detection Progress Prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). It is a lot smaller in scope, and will mark an important milestone towards the Grand Prize. There are 10 prizes available, for a total of $100,000.
+* The [First Letters Prize](first_letters) is similar to the Grand Prize, but much smaller in scope.
+* You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win a [Segmentation Tooling Prize](segmentation)!
 
 ### Can I share my progress on social media?
 
@@ -56,11 +56,11 @@ The only exception is that per the data agreement, you’re not allowed to share
 
 ### I’m outside the United States, can I participate and win prizes?
 
-Absolutely! As long as we can legally pay you (no US sanctions) you can win the prize.
+Absolutely! As long as we can legally pay you (no US sanctions) you can win prizes.
 
 ### Do I have to pay taxes on my prize earnings?
 
-This depends on the jurisdiction you live in, but generally yes, you do have to pay taxes. Consult your tax advisor for details.
+This depends on the jurisdiction you live in, but generally yes, you do have to pay taxes. Consult your tax advisor.
 
 ### I’m a researcher or student, and I would like work on this. Can I publish my results in journals?
 
@@ -76,7 +76,7 @@ We very much encourage researchers and students to work on this! Be sure to reac
 
 If you want to share your work privately with the contest organizers, please email us at team@scrollprize.org. We will keep it completely confidential. We really appreciate you keeping us in the loop!
 
-If you're open to sharing your improvements publicly (and be eligible for the [Open Source Prizes](/overview#open-source-prizes-3x-2000)), you can post in Discord.
+If you're open to sharing your improvements publicly (and be eligible for the [Segmentation Tooling Prize](segmentation)), you can post in Discord.
 
 ### What are the key academic papers I should read to understand the work done so far to read the Herculaneum Papyri?
 

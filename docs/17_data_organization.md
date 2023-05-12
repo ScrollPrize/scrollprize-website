@@ -36,7 +36,9 @@ hide_table_of_contents: true
   />
 </head>
 
-The community continues to create derived data (particularly for the full scrolls), based on the original dataset. We’re also doing some segmentation of the scrolls ourselves, and releasing that data. This page serves as an overview for all the data that is currently hosted on the server. To download the data, see [here](data#how-to-download-the-data).
+The community continues to create derived data (particularly for the full scrolls), based on the original dataset. We’re also doing some segmentation of the scrolls ourselves, and releasing that data. This page serves as an overview for all the data that is currently hosted on the server.
+
+To download the data, fill out the [registration form](https://forms.gle/HV1J6dJbmCB2z5QL8) and you will be provided with a download link automatically. The license terms of the data are specified in the form.
 
 The top-level structure is as follows:
 * `/fragments/` - the fragment data
@@ -54,56 +56,62 @@ The data format used by [Volume Cartographer](tutorial3) is a `.volpkg` director
 
 A `.volpkg` needs to have the following files and directories, otherwise Volume Cartographer will crash. You can, however, add more files or directories.
 
-* `/config.json`: Contains some metadata, such as the name and the thickness of the papyrus.
-* `/volumes/`: The actual CT scans.
-  * `/<id>/meta.json`: Contains metadata about the image stack.
-  * `/<id>/<number>.tif`: The actual image stack itself.
-* `/renders/`: Where rendering data will be stored. May be empty.
-* `/paths/`: This is where segments are stored. May be empty.
-  * `/<id>/meta.json`: Metadata of a segment.
-  * `/<id>/pointset.vcps`: Pointset of a segment. This is a custom data format specific to Volume Cartographer.
+* `*.volpkg/`
+    * `/config.json`: Contains some metadata, such as the name and the thickness of the papyrus.
+    * `/volumes/`: The actual CT scans.
+        * `/<id>/meta.json`: Contains metadata about the image stack.
+        * `/<id>/<number>.tif`: The actual image stack itself.
+    * `/renders/`: Where rendering data will be stored. May be empty.
+    * `/paths/`: This is where segments are stored. May be empty.
+        * `/<id>/meta.json`: Metadata of a segment.
+        * `/<id>/pointset.vcps`: Pointset of a segment. This is a custom data format specific to Volume Cartographer.
 
 By convention, there is often a `working` directory with miscellaneous data.
 
 ## Fragments
 
 The data for each of the fragments is the same for all the fragments:
-* `/config.json`: Metadata.
-* `/volumes/`: Two volumes each: one scan at 54keV, one at 88keV. Both have a 4µm pixel size.
-* `/paths/`: Empty.
-* `/renders/`: Empty.
-* `/working/<name>.mp4`: Video montage of the slices.
-* `/working/reference/`: Photos (normal and infrared) of the fragment.
-* `/54keV_exposed_surface/`: Data about the processed surface volume, used in the Ink Detection Prize on Kaggle.
-  * `/*.ply`: Surface mesh at different stages (manually cleaned up in Meshlab).
-  * `/alignment.psd`: Photoshop file for the manual alignment of the infrared photo to the surface volume.
-  * `/inklabels.png`: Manually created binary labels for the aligned photo (ink vs no-ink).
-  * `/mask.png`: Mask of where there is actually a surface (so you don't train on empty space).
-  * `/surface_volume/{*.tif,meta.json}`: The actual surface volume of 65 layers. The same data as on Kaggle.
+* `/fragments/Frag{1,2,3}.volpkg/`
+    * `/config.json`: Metadata.
+    * `/volumes/`: Two volumes each: one scan at 54keV, one at 88keV. Both have a 4µm pixel size.
+    * `/paths/`: Empty.
+    * `/renders/`: Empty.
+    * `/working/<name>.mp4`: Video montage of the slices.
+    * `/working/reference/`: Photos (normal and infrared) of the fragment.
+    * `/54keV_exposed_surface/`: Data about the processed surface volume, used in the Ink Detection Prize on Kaggle.
+        * `/*.ply`: Surface mesh at different stages (manually cleaned up in Meshlab).
+        * `/alignment.psd`: Photoshop file for the manual alignment of the infrared photo to the surface volume.
+        * `/inklabels.png`: Manually created binary labels for the aligned photo (ink vs no-ink).
+        * `/mask.png`: Mask of where there is actually a surface (so you don't train on empty space).
+        * `/surface_volume/{*.tif,meta.json}`: The actual surface volume of 65 layers. The same data as on Kaggle.
 
 ## Scrolls
 
 The basic data for the two scrolls is pretty simple:
-* `/config.json`: Metadata.
-* `/volumes/`: Both scrolls have a main volume at 54keV. Scroll 2 also has a much smaller volume (“central slab”) taken at 88keV. Both have a 8µm pixel size. Scroll 2 has a scanning artifact in the middle of the scroll.
-* `/renders/`: Empty.
-* `/working/<name>.mp4`: Video montage of the slices.
+* `/full-scrolls/Scroll{1,2}.volpkg/`
+    * `/config.json`: Metadata.
+    * `/volumes/`: Both scrolls have a main volume at 54keV. Scroll 2 also has a much smaller volume (“central slab”) taken at 88keV. Both have a 8µm pixel size. Scroll 2 has a scanning artifact in the middle of the scroll.
+    * `/renders/`: Empty.
+    * `/working/<name>.mp4`: Video montage of the slices.
 
-Both scrolls have some derived that data the community has added:
-* `/paths/<id>/`: Segments created by the contest organizers and the community (except for the Monster Segment, see below).
-  * Only `meta.json` and `pointset.vcps` are necessary here.
-  * The other files were generated using: `export SLICE=20230504094316 && cd /Scroll1.volpkg/paths/${SLICE} && vc_convert_pointset -i pointset.vcps -o "${SLICE}_points.obj" && vc_render -v ../../ -s "${SLICE}" -o "${SLICE}.obj" --output-ppm "${SLICE}.ppm" && mkdir -p layers && vc_layers_from_ppm -v ../../ -p "${SLICE}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G`
-  * `/<id>_points.obj`: Pointcloud.
-  * `/<id>.obj`: Mesh of the segment.
-  * `/<id>.tif`: Texture of the surrounding voxels.
-  * `/layers/{*.tif,meta.json}`: Surface volumes of 65 layers.
-* `/volumes_small/`: 10x smaller “thumbnails” of the slices.
-  * `/<volume_id>/{*.tif,meta.json}`: Image stack of the 10x smaller volume, e.g. for use in Volume Cartographer. Generated using [`build_small`](https://github.com/spelufo/vesuvius-build/).
-  * `/<volume_id>_small.tif`: The same data, but in a single tif file with multiple layers. Generated using [`build_small_volume`](https://github.com/spelufo/vesuvius-build/).
-  * `/<volume_id>_volumes_small_axis{1,2}/*.png`: The same data but across the two orthogonal axes, and as pngs instead of tifs (for some reason :)). Generated using [`perpSlices.py`](https://discord.com/channels/1079907749569237093/1104099152469704838/1104105003314053191)
-* `/volumes_masked/`: Same as `/volumes/`, but with non-scroll data blacked out, and the files compressed. About 2x smaller than the original volumes, though may take longer to load in software due to the compression. See [this repo](https://github.com/JamesDarby345/segment-anything-vesuvius) for more details (and [this thread](https://discord.com/channels/1079907749569237093/1105181650415001741) for details about the compression vs performance tradeoff).
-* `/volume_grids/<volume_id>/cell_yxz_*.tif`: The volume split into “cells” of 500x500x500 voxels. Generated using [`build_grid_layer`](https://github.com/spelufo/vesuvius-build/).
-
-Misc stuff:
+We’ve created a bunch of segments for each scroll:
+* `/full-scrolls/Scroll{1,2}.volpkg/paths/<id>/`: Segments created by the contest organizers and the community (except for the Monster Segment, see below).
+    * Only `meta.json` and `pointset.vcps` are necessary here.
+    * The other files were generated using: `export SLICE=20230504094316 && cd /Scroll1.volpkg/paths/${SLICE} && vc_convert_pointset -i pointset.vcps -o "${SLICE}_points.obj" && vc_render -v ../../ -s "${SLICE}" -o "${SLICE}.obj" --output-ppm "${SLICE}.ppm" && mkdir -p layers && vc_layers_from_ppm -v ../../ -p "${SLICE}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G && vc_area ../.. ${SLICE} | grep cm | awk '{print $2}' > area_cm2.txt`
+    * `/<id>_points.obj`: Pointcloud.
+    * `/<id>.obj`: Mesh of the segment.
+    * `/<id>.tif`: Texture of the surrounding voxels.
+    * `/author.txt`: Name of the author of the segment.
+    * `/area_cm2.txt`: Total surface area, in cm<sup>2</sup>.
+    * `/layers/{*.tif,meta.json}`: Surface volumes of 65 layers.
 * `/stephen-parsons-uploads/`: A massive segment in Scroll 1, which we call the Monster Segment. At the time of writing, it is larger than all our other segments combined, so we recommend trying this one first. More information [here](https://discord.com/channels/1079907749569237093/1079907750265499772/1104116512396161144) and [here](https://discord.com/channels/1079907749569237093/1079907750265499772/1102710816656064663).
 * `/hari-seldon-uploads/surface-volume-larger-scroll2-20230426144221.zip`: An extra deep surface volume, spanning two papyrus sheets. Also see `slice4_r100.avi` for a video montage of the slices.
+
+Both scrolls have some derived that data the community has added:
+* `/full-scrolls/Scroll{1,2}.volpkg/`
+    * `/volumes_small/`: 10x smaller “thumbnails” of the slices.
+    * `/<volume_id>/{*.tif,meta.json}`: Image stack of the 10x smaller volume, e.g. for use in Volume Cartographer. Generated using [`build_small`](https://github.com/spelufo/vesuvius-build/).
+    * `/<volume_id>_small.tif`: The same data, but in a single tif file with multiple layers. Generated using [`build_small_volume`](https://github.com/spelufo/vesuvius-build/).
+    * `/<volume_id>_volumes_small_axis{1,2}/*.png`: The same data but across the two orthogonal axes, and as pngs instead of tifs (for some reason :)). Generated using [`perpSlices.py`](https://discord.com/channels/1079907749569237093/1104099152469704838/1104105003314053191)
+    * `/volumes_masked/`: Same as `/volumes/`, but with non-scroll data blacked out, and the files compressed. About 2x smaller than the original volumes, though may take longer to load in software due to the compression. See [this repo](https://github.com/JamesDarby345/segment-anything-vesuvius) for more details (and [this thread](https://discord.com/channels/1079907749569237093/1105181650415001741) for details about the compression vs performance tradeoff).
+    * `/volume_grids/<volume_id>/cell_yxz_*.tif`: The volume split into “cells” of 500x500x500 voxels. Generated using [`build_grid_layer`](https://github.com/spelufo/vesuvius-build/).
