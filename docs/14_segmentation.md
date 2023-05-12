@@ -42,7 +42,7 @@ We have a couple of contractors and volunteers who have been segmenting, and thi
 
 <figure>
   <img src="/img/segmentation/leaderboard-2023-05-12.png" className="w-[100%] max-w-[500px]"/>
-  <figcaption className="mt-0">Segmentation progress and leaderboard <a href="https://docs.google.com/spreadsheets/d/104GIFhiXff9yCwO52-71beIet1bn423ypygxMVlqEGc/edit?usp=sharing">(source)</a></figcaption>
+  <figcaption className="mt-0">Segmentation progress and leaderboard with data from 2023-05-11 <a href="https://docs.google.com/spreadsheets/d/104GIFhiXff9yCwO52-71beIet1bn423ypygxMVlqEGc/edit?usp=sharing">(source)</a></figcaption>
 </figure>
 
 We’d like to get to 1000-2000 cm<sup>2</sup> of high-quality segments, and for that we need better tools and algorithms. Good tools and algorithms make a huge difference: you can see the enourmous jump when UKy/EduceLab released their Monster Segment, which was enabled by their new tool, [Quick Segment](https://github.com/educelab/quick-segment).
