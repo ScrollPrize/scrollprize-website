@@ -94,10 +94,10 @@ The basic data for the two scrolls is pretty simple:
     * `/renders/`: Empty.
     * `/working/<name>.mp4`: Video montage of the slices.
 
-We’ve created a bunch of segments for each scroll:
+We’ve created a bunch of segments for each scroll (see <a href="https://docs.google.com/spreadsheets/d/104GIFhiXff9yCwO52-71beIet1bn423ypygxMVlqEGc/edit?usp=sharing">this spreadsheet</a> for an overview and leaderboard):
 * `/full-scrolls/Scroll{1,2}.volpkg/paths/<id>/`: Segments created by the contest organizers and the community (except for the Monster Segment, see below).
     * Only `meta.json` and `pointset.vcps` are necessary here.
-    * The other files were generated using: `export SLICE=20230504094316 && cd /Scroll1.volpkg/paths/${SLICE} && vc_convert_pointset -i pointset.vcps -o "${SLICE}_points.obj" && vc_render -v ../../ -s "${SLICE}" -o "${SLICE}.obj" --output-ppm "${SLICE}.ppm" && mkdir -p layers && vc_layers_from_ppm -v ../../ -p "${SLICE}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G && vc_area ../.. ${SLICE} | grep cm | awk '{print $2}' > area_cm2.txt`
+    * The other files were generated using: `export SLICE=20230503225234 && cd /Scroll1.volpkg/paths/${SLICE} && nice vc_convert_pointset -i pointset.vcps -o "${SLICE}_points.obj" && nice vc_render -v ../../ -s "${SLICE}" -o "${SLICE}.obj" --output-ppm "${SLICE}.ppm" && mkdir -p layers && nice vc_layers_from_ppm -v ../../ -p "${SLICE}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G && vc_area ../.. ${SLICE} | grep cm | awk '{print $2}' > area_cm2.txt`
     * `/<id>_points.obj`: Pointcloud.
     * `/<id>.obj`: Mesh of the segment.
     * `/<id>.tif`: Texture of the surrounding voxels.

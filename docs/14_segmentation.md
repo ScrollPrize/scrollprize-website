@@ -38,15 +38,16 @@ hide_table_of_contents: true
 
 “Segmentation” means identifying sheets of papyrus in a 3D scan of a scroll. Learn more in [“Tutorial 3: Segmentation and Flattening”](tutorial3).
 
-We are awarding prizes to make it easier and faster to segment the scrolls, with the ultimate goal of fully mapping both scrolls.
+We have a couple of contractors and volunteers who have been segmenting, and this is their progress so far.
 
 <figure>
-  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/segmentation2.jpg">
-    <source src="/img/tutorials/segmentation2.webm" type="video/webm"/>
-    <source src="/img/tutorials/segmentation2.mp4" type="video/mp4"/>
-  </video>
-  <figcaption className="mt-0">Segmentation: finding a surface of papyrus.</figcaption>
+  <img src="/img/segmentation/leaderboard-2023-05-12.png" className="w-[100%] max-w-[500px]"/>
+  <figcaption className="mt-0">Segmentation progress and leaderboard <a href="https://docs.google.com/spreadsheets/d/104GIFhiXff9yCwO52-71beIet1bn423ypygxMVlqEGc/edit?usp=sharing">(source)</a></figcaption>
 </figure>
+
+We’d like to get to 1000-2000 cm<sup>2</sup> of high-quality segments, and for that we need better tools and algorithms. Good tools and algorithms make a huge difference: you can see the enourmous jump when UKy/EduceLab released their Monster Segment, which was enabled by their new tool, [Quick Segment](https://github.com/educelab/quick-segment).
+
+We are awarding prizes to make it easier and faster to segment the scrolls, with the ultimate goal of fully mapping both scrolls.
 
 * $45,000 total, 7 prizes. 2x10k, 5x5k.
 * Any tools, documentation, notebooks, analysis, to help with segmentation and flattening of the scrolls. Must be open source.
@@ -65,6 +66,12 @@ We are awarding prizes to make it easier and faster to segment the scrolls, with
 * Submissions are closed on Wednesday June 14th 11:59pm PT.
 * Submit using [this form](https://docs.google.com/forms/d/e/1FAIpQLSeT-6ucyUUSOJGYIcx6Wp5wozQzvjfDMTwL9i152yrCnXbE_w/viewform).
 
-To get a sense of what segmentation looks like right now, watch this stream of JP doing some segmentation using [Volume Cartographer](https://github.com/educelab/volume-cartographer):
+To get a sense of what segmentation looks like right now, check out the segmentation videos linked in [Tutorial 5: Advanced Topics](tutorial5).
 
-<iframe className="w-[100%] aspect-video mb-4" src="https://www.youtube.com/embed/zKMVNaA2GdU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>
+<figure>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/segmentation2.jpg">
+    <source src="/img/tutorials/segmentation2.webm" type="video/webm"/>
+    <source src="/img/tutorials/segmentation2.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">Segmentation: finding a surface of papyrus.</figcaption>
+</figure>
