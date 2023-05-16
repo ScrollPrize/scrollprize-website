@@ -36,6 +36,8 @@ hide_table_of_contents: true
   />
 </head>
 
+The next livestream is **Thursday May 25th at 8am PST**. We’ll have several members of our [Papyrology Team](grand_prize#review-process) present to answer your questions. We’re collecting questions in the [#papyrology-qa](https://discord.com/channels/1079907749569237093/1108134343295127592) channel on Discord.
+
 ## Previous livestreams
 
 ### Q&A
