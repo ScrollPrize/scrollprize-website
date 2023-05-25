@@ -161,11 +161,23 @@ There are two ways you can write on papyrus: horizontally (“volumen”) or [ve
 * [Meet Some Of The Last Papyrus Makers In Egypt Keeping A 5,000-Year-Old Craft Alive](https://www.youtube.com/watch?v=SBdVhvo2UUM)
 * [Myriam Krutzsch papyrus workshop](https://www.youtube.com/watch?v=3AaZ5C-U-jE)
 
-### How big are the letters?
+### How big are the letters, and where can we expect to find text?
 
 Letter sizes vary, and of course we don’t know what’s inside the unopened scrolls, but we expect the opened fragments to be fairly representative. You can measure how big the letters are by looking at the aligned surface images, which have a voxel resolution of approximately 4µm, like the original CT data (though there can be some local variation due to the registration / flattening process). So you could open, for example, <code>fragments/Frag1.volpkg/working/54keV_exposed_surface/ir.png</code>, measure a letter size in pixels, and multiply by 4µm.
 
 There are also some measurements in [this paper by Richard Janko](http://www-personal.umich.edu/~rjanko/how-to-read-and-reconstruct-a-herculaneum-papyrus.pdf), though it’s a little hard to infer actual letter sizing from it. If someone wants to do a more thorough review of the range of letter sizes found in all the Herculaneum papyri, we’d happily include your results here!
+
+From our first [Q&A with the Papyrology Team](https://www.youtube.com/watch?v=gielO5WHdu4), we learned (summary courtesey of [Santiago Pelufo on Discord](https://discord.com/channels/1079907749569237093/1108134343295127592/1111352271809302558)):
+* 2 orthogonal layers of fibers in a sheet.
+* ~100um sheet thickness
+* Scroll outer layer of a sheet = back of a sheet = vertical fibers.
+* Scroll inner layer of a sheet = front of a sheet with writing = horizontal fibers (text written here).
+* Sheet layers unlikely to delaminate with carbonization
+* Carbonization likely fuses multiple sheets (big issue IMO)
+* 10-20cm blank at start and end of scroll.
+* 4.5-6cm columns, 1/6 of column space between columns
+* ~1/8 height paddings top and bottom
+* Text typically written on the inside (to protect against damage), and on the side with horizontal fibers (easier to write on).
 
 ### How can we get more ground truth data? Can I make my own carbonized scrolls?
 
