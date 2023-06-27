@@ -53,8 +53,12 @@ After a successful [first round](https://scrollprize.substack.com/p/segmentation
 * Any tools, documentation, notebooks, analysis, to help with segmentation and flattening of the scrolls. Must be open source.
 * We are heavily favoring submissions that:
   * help segment **large and/or hard segments**
+    * We want people to read [passages](/grand_prize) of 140 characters, for which we need large segments.
+      * For the [First Letters Prize](/first_letters) we're looking for 10 letters in 4cm<sup>2</sup>, so extrapolating, we might need segments of 14\*4=56cm<sup>2</sup>. This is a very rough estimate, because you might not find a properly aligned passage that way (so the required area might be higher), and we were pretty conservative in our estimate for the First Letters Prize (so the required area might be lower).
+      * In any case, most of our current segments are 2-8cm<sup>2</sup>, so we need ways to make much larger segments.
+    * To get large segments, we need to be able to better segment in hard regions.
     * Hard segments include those in regions without clear separation.
-    * Hard segments might require operating in full 3D or using semi-automated methods that can follow papyrus fibers.
+    * Hard segments might require operating in full 3D, or using semi-automated methods that can follow papyrus fibers.
   * are actually **used by segmenters**!
     * We discourage late submissions! Work with the segmenters early on (in Discord; ask in #general) to have them try out your tools, get their feedback, and iterate.
     * We encourage building on top of existing tools that are proven to work.
