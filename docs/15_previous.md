@@ -38,6 +38,10 @@ hide_table_of_contents: true
 
 We’ve completed some progress prizes already. The winners are listed here.
 
+### Segmentation Tooling Prize 1 (June 14 2023)
+
+We awarded 7 prizes! See the announcement blog post [here](https://scrollprize.substack.com/p/segmentation-tooling-winners-new).
+
 ### Open Source Prizes batch 1 (April 11 2023)
 
 We awarded 4 prizes of $2500 each, to:
