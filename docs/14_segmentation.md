@@ -1,5 +1,5 @@
 ---
-title: "$50,000 Segmentation Tooling 2 (September 15th)"
+title: "$50,000 Segmentation Tooling 2 (August 28th / Sept 15th)"
 hide_table_of_contents: true
 ---
 
@@ -66,7 +66,7 @@ After a successful [first round](https://scrollprize.substack.com/p/segmentation
 * You may make multiple submissions. We may award a single prize to a set of multiple submissions by one person or team.
 * Your submission will be judged subjectively: the Technical Review Team will decide what they think are the best open source contributions.
 * If you are submitting as a team, the team leader should make the submission, and is responsible for distributing the prize money among the team.
-* Submissions are closed on September 15th 11:59pm PT.
+* Submissions are closed on **Monday August 28th 11:59pm PT**, after which there is some time to work with the segmenters to actually use your tools and get feedback. This period runs until **Friday September 15th 11:59pm PT**, after which the Review Team will select winners.
 * Submit using [this form](https://forms.gle/miJiAwD6pcP2PnGEA).
 
 To get a sense of what segmentation looks like right now, check out the segmentation videos linked in [Tutorial 5: Advanced Topics](tutorial5).

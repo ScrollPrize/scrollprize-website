@@ -38,6 +38,16 @@ hide_table_of_contents: true
 
 We’ve completed some progress prizes already. The winners are listed here.
 
+### Ink Detection Progress Prize (June 14 2023)
+<figure>
+  <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/ink-detection-anim2-dark.jpg">
+    <source src="/img/tutorials/ink-detection-anim2-dark.webm" type="video/webm"/>
+    <source src="/img/tutorials/ink-detection-anim2-dark.mp4" type="video/mp4"/>
+  </video>
+</figure>
+
+For this important subproblem, we offered a $100,000 [Ink Detection Progress Prize](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/).
+
 ### Segmentation Tooling Prize 1 (June 14 2023)
 
 We awarded 7 prizes! See the announcement blog post [here](https://scrollprize.substack.com/p/segmentation-tooling-winners-new).
