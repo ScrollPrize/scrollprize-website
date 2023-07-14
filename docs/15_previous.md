@@ -46,7 +46,7 @@ We’ve completed some progress prizes already. The winners are listed here.
   </video>
 </figure>
 
-For this important subproblem, we offered a $100,000 [Ink Detection Progress Prize](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/).
+For this important subproblem, we offered a $100,000 [Ink Detection Progress Prize](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/). See the blog post with links to the winners [here](https://scrollprize.substack.com/p/12000-ink-detection-followup-prize).
 
 ### Segmentation Tooling Prize 1 (June 14 2023)
 
