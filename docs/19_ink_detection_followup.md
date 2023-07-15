@@ -100,8 +100,6 @@ The 10 winning teams have now all published their code, and made writeups and vi
 
 <p><a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/417430">Writeup</a> / <a href="https://github.com/MIC-DKFZ/OverthINKingSegmenter">Github</a> / inference in repo</p>
 
-<iframe className="w-[100%] max-w-[400px] mb-4 aspect-video" src="https://www.youtube-nocookie.com/embed/zlP1Ig1eVJ0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
-
 ### 8th place: Luck is all you need
 
 <p><a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/417383">Writeup</a> / <a href="https://github.com/flyyufelix/vesuvius_challenge_8th_place_solution">Github</a> / inference in repo</p>
