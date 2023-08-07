@@ -305,6 +305,36 @@ There are [triangle artifacts](https://discord.com/channels/1079907749569237093/
 <img src="/img/faq/triangles.webp"/>
 </figure>
 
+### How are the scroll slices oriented?
+
+#### Scroll 1
+
+<figure>
+  <img src="/img/faq/scroll1-orientation.png"/>
+</figure>
+
+The segmentation team believes the orientation of Scroll 1 follows the above image. When viewing one of the TIF cross-sections from the scan, the image number increases from the screen toward the viewer’s eye.
+
+Based on the counterclockwise spiral direction in the middle of Scroll 1, we believe the released scans are of the top of the scroll: Slice 0 is in the middle and Slice 14000+ is the top.
+
+Lastly, all of the Herculaneum papyri are known to be "volumen"/horizontal scrolls (see FAQ: https://scrollprize.org/faq#what-is-papyrus-and-how-is-it-made).
+
+Therefore, the direction of a given line of writing should be clockwise around the TIF cross-sections. The bottom of the letters should be on the lower-numbered images, and the top of the letters should be on the higher-numbered images.
+
+#### Scroll 2
+
+<figure>
+  <img src="/img/faq/scroll2-orientation.png"/>
+</figure>
+
+Relatedly, we can likely assume handedness is consistent between the scans of Scroll 1 and Scroll 2 (the TIF cross-section image number increases from the screen toward the viewer’s eye).
+
+There's a region in Scroll 2 where the scroll center appears to have drifted/squished its way outside of the center scanning artifact. Only a few slices are as clear as this example (Slice 4680). The center spiral of Scroll 2 appears to be clockwise, unlike Scroll 1's counterclockwise spiral.
+
+Assuming consistent handedness, a counterclockwise spiral suggests the released half of Scroll 2 is the bottom half of the scroll: Slice 0 is in the middle and Slice 14000+ is the bottom.
+
+The direction of a given line of writing in Scroll 2 would be counterclockwise around the TIF cross-sections, with the bottom of the letters on higher-numbered images and the top of the letters on lower-numbered images.
+
 ### I would like to read the works that have been recovered from the scrolls so far, where I can I find them?
 
 <div>Most are by Philodemus. This is a list of English translations we have found so far:</div>
