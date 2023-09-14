@@ -27,7 +27,7 @@ const sidebars = {
         { type: 'doc', id: 'first_letters' },
         // { type: 'doc', id: 'ink_detection' },
         // { type: 'doc', id: 'ink_detection_followup' },
-        // { type: 'doc', id: 'segmentation' },
+        { type: 'doc', id: 'segmentation' },
         { type: 'doc', id: 'previous' },
       ],
     },
