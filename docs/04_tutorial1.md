@@ -67,8 +67,10 @@ Let's go through each of the key steps one by one.
 
 ### 1. Scanning
 
-**Input:** physical scroll or fragment.<br/>
-**Output:** 3D volume (.tif “image stack”).
+<div class="bg-gray-800 p-4 rounded mb-4">
+<strong>Input:</strong> physical scroll or fragment.<br/>
+<strong>Output:</strong> 3D volume (.tif “image stack”).
+</div>
 
 If you've ever had a CT scan at a hospital, this is exactly the same process, except our scans were made in a particle accelerator and are much higher resolution.
 
@@ -131,8 +133,10 @@ Image stacks can be visualized using 3D volume rendering software. We will learn
 
 ### 2. Segmentation
 
-**Input:** 3D volume (.tif “image stack”).<br/>
-**Output:** 3D mesh (.obj).
+<div class="bg-gray-800 p-4 rounded mb-4">
+<strong>Input:</strong> 3D volume (.tif “image stack”).<br/>
+<strong>Output:</strong> 3D mesh (.obj).
+</div>
 
 The goal of segmentation is to identify and capture the 3D shape of each of the layers of the rolled papyrus scroll. Each individual surface in our 3D volume that we are able to identify is called a "segment."
 
@@ -172,8 +176,10 @@ The result is a 3D mesh (.obj file) called a “segment” which intersects the 
 
 ### 3. Surface volumes
 
-**Input:** 3D volume (.tif “image stack”) and 3D mesh (.obj).<br/>
-**Output:** 3D “surface volume” around the mesh (.tif “image stack”).
+<div class="bg-gray-800 p-4 rounded mb-4">
+<strong>Input:</strong> 3D volume (.tif “image stack”) and 3D mesh (.obj).<br/>
+<strong>Output:</strong> 3D “surface volume” around the mesh (.tif “image stack”).
+</div>
 
 To detect ink from the 3D X-ray scan, it is not sufficient to only examine the voxels which intersect our segment mesh; we also want to sample the voxels _around_ the mesh:
 
@@ -216,8 +222,10 @@ In [“Tutorial 3: Segmentation and Flattening”](tutorial3) we’ll dive deepe
 
 ### 4. Ground truth data alignment
 
-**Input:** Raw infrared photo and 3D “surface volume” (.tif “image stack”).<br/>
-**Output:** Aligned infrared photo and hand-labeled binary mask.
+<div class="bg-gray-800 p-4 rounded mb-4">
+<strong>Input:</strong> Raw infrared photo and 3D “surface volume” (.tif “image stack”).<br/>
+<strong>Output:</strong> Aligned infrared photo and hand-labeled binary mask.
+</div>
 
 This step is only applicable for fragments, since we don’t have ground truth data for scrolls.
 
@@ -225,25 +233,33 @@ Once we have a surface volume containing a sheet of papyrus, we align the infrar
 
 The next manual step is to label where we believe there is ink, using the aligned infrared photo. Not all dark areas are ink: some are shadows, burn marks, or other types of damage. In cases where we aren't sure, we consult with papyrologists. The result of this process is a binary mask indicating where there is ink.
 
-<div className="flex flex-wrap items-end">
-  <figure className="w-[33%]">
-    <img src="/img/tutorials/fragment-unaligned-alpha.png"/>
+<div className="flex flex-wrap items-start justify-between">
+  <figure className="w-[22%]">
+    <img className="max-h-[250px]" src="/img/data/surface32-fr1.png"/>
+    <figcaption className="mt-0">Middle layer (32.tif) of Fragment 1’s surface volume</figcaption>
   </figure>
-  <figure className="w-[33%]">
-    <img src="/img/tutorials/fragment-aligned-alpha.png"/>
+  <figure className="w-[22%]">
+    <img className="max-h-[250px]" src="/img/tutorials/fragment-unaligned-alpha.png"/>
+    <figcaption className="mt-0">Unaligned infrared photo</figcaption>
   </figure>
-  <figure className="w-[33%]">
-    <img src="/img/tutorials/fragment-mask-alpha.png"/>
+  <figure className="w-[22%]">
+    <img className="max-h-[250px]" src="/img/tutorials/fragment-aligned-alpha.png"/>
+    <figcaption className="mt-0">Aligned photo</figcaption>
   </figure>
-  <figcaption className="mt-0">Unaligned and aligned infrared photos of a fragment, and the binary mask</figcaption>
+  <figure className="w-[22%]">
+    <img className="max-h-[250px]" src="/img/tutorials/fragment-mask-alpha.png"/>
+    <figcaption className="mt-0">Binary mask</figcaption>
+  </figure>
 </div>
 
 It may not be strictly necessary to label the ink; you could instead learn to infer the infrared images from the x-ray data with no manual labeling. We have chosen to use binary labels to make it easier to quantify ink detection performance.
 
 ### 5. Ink detection
 
-**Input:** 3D “surface volume” around the mesh (.tif “image stack”) and hand-labeled binary mask.<br/>
-**Output:** Predicted ink mask.
+<div class="bg-gray-800 p-4 rounded mb-4">
+<strong>Input:</strong> 3D “surface volume” around the mesh (.tif “image stack”) and hand-labeled binary mask.<br/>
+<strong>Output:</strong> Predicted ink mask.
+</div>
 
 We use machine learning models to detect ink, training them on ground truth data of fragments where we know the location of ink from the infrared photos.
 
@@ -256,12 +272,14 @@ Since the input is a “surface volume” consisting of several “slices” of 
   </video>
 </figure>
 
-This is what our first progress prize is all about, and we go into great detail in [“Tutorial 4: Ink Detection”](tutorial4).
+We go into great detail in [“Tutorial 4: Ink Detection”](tutorial4).
 
 ### 6. Interpretation
 
-**Input:** One or more predicted ink masks.<br/>
-**Output:** Words, sentences, whole books, translations, journal papers, worldwide news coverage, eternal fame.
+<div class="bg-gray-800 p-4 rounded mb-4">
+<strong>Input:</strong> One or more predicted ink masks.<br/>
+<strong>Output:</strong> Words, sentences, whole books, translations, journal papers, worldwide news coverage, eternal fame.
+</div>
 
 <figure className="">
   <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/engedi-reconstruction3.webm">

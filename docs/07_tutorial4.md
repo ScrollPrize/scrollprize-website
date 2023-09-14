@@ -68,7 +68,9 @@ There is hope: not only can machine learning models detect the ink, on occasion 
 
 You have to look closely, but the shapes are visible!
 
-So it seems reasonable that the machine learning models can see patterns like this in more places. We train our models on detached fragments, since we have ground truth data in the form of actual visible ink. The idea is to then apply those models to the inside layers of the intact scrolls.
+Recent work from the community have shown more examples. In particular the [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) discovered by Casey Handmer seems promising.
+
+It seems reasonable that the machine learning models can see patterns like this in more places. We train our models on detached fragments, since we have ground truth data in the form of actual visible ink. The idea is to then apply those models to the inside layers of the intact scrolls.
 
 At a high level, training on a fragment works like this:
 
@@ -96,7 +98,7 @@ We can then use the model to predict what a label image would have looked like, 
   </video>
 </figure>
 
-Of course, in reality the label image on the right doesn’t come out perfectly. The current state of the art is Stephen Parsons’ [ink-id](https://github.com/educelab/ink-id/) program, which produces outputs like this (showing different training epochs in k-fold training/prediction):
+Of course, in reality the label image on the right doesn’t come out perfectly. Stephen Parsons’ [ink-id](https://github.com/educelab/ink-id/) program is one example of an ML-based approach. It produces outputs like this (showing different training epochs in k-fold training/prediction):
 
 
 <figure>

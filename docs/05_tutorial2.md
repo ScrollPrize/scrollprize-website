@@ -134,7 +134,7 @@ We’ll use the [“Fiji”](https://imagej.net/software/fiji/downloads) open so
 
 :::
 
-<div>To follow along, download the tutorial data (campfire.zip) from the <a href="/data">Data page</a>. In here there are three folders:</div>
+<div>To follow along, download the tutorial data: <a href="https://gist.github.com/janpaul123/280262ebce904f7366fe4cc155593e90">campfire.zip</a>. In here there are three folders:</div>
 
 * `raw`: the raw X-ray photos of the scroll.
 * `rec`: the reconstructed 3D image volume (“rec” = “reconstructed”).

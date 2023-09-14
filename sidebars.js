@@ -24,10 +24,10 @@ const sidebars = {
       link: { type: 'doc', id: 'overview' },
       items: [
         { type: 'doc', id: 'grand_prize' },
-        // { type: 'doc', id: 'ink_detection' },
-        { type: 'doc', id: 'ink_detection_followup' },
-        { type: 'doc', id: 'segmentation' },
         { type: 'doc', id: 'first_letters' },
+        // { type: 'doc', id: 'ink_detection' },
+        // { type: 'doc', id: 'ink_detection_followup' },
+        // { type: 'doc', id: 'segmentation' },
         { type: 'doc', id: 'previous' },
       ],
     },
@@ -36,9 +36,20 @@ const sidebars = {
       label: 'Data',
       link: { type: 'doc', id: 'data' },
       items: [
-        { type: 'doc', id: 'data_organization' },
+        // { type: 'doc', id: 'data_server' },
+        { type: 'doc', id: 'data_scrolls' },
+        { type: 'doc', id: 'data_segments' },
+        { type: 'doc', id: 'data_fragments' },
+        // { type: 'doc', id: 'data_organization' },
       ],
     },
+    // {
+    //   type: 'category',
+    //   label: 'Progress',
+    //   link: { type: 'doc', id: 'progress' },
+    //   items: [
+    //   ],
+    // },
     {
       type: 'category',
       label: 'Tutorials',

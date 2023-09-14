@@ -212,19 +212,17 @@ const prizes = [
     requirement: "Success requires that the Review Team can:",
     qualifications: [
       "Read at least 4 separate passages of continuous and plausible text from the scrolls, each at least 140 characters long",
-      "In each passage, at most 15% of the characters can be missing or illegible",
       "Qualifying submissions reviewed by team of developers and papyrologists for legitimacy and plausibility",
     ],
   },
   {
-    title: "Ink Detection Prize",
-    prizeMoney: "$100,000",
-    description: "Detect ink from X-rays by June 14th 2023",
+    title: "First Letters Prize",
+    prizeMoney: "$50,000",
+    description: "Detect 10 letters in a 4 cm² area in a scroll",
     requirement: "",
     qualifications: [
-      "A Kaggle competition to detect ink in detached fragments of papyri",
-      "Uses ground truth data obtained from infrared imaging",
-      "Real-time leaderboard and multiple prizes",
+      "First team to find 10 legible letters in a 4 cm² area wins $40,000, second prize $10,000",
+      "Also reviewed by developers and papyrologists",
     ],
   },
 ];
@@ -913,7 +911,7 @@ export function Landing() {
                         textFillColor: "transparent",
                       }}
                     >
-                      $200,000+
+                      $100,000+
                     </span>{" "}
                     more in prizes & TBA
                   </h2>
