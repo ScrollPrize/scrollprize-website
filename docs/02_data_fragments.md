@@ -47,6 +47,13 @@ Just like the scrolls, the four fragments are from the [Institut de France](http
   <div className="w-[45%] mb-2 mr-2 max-w-[200px]"><img src="/img/data/fr4.png" className="w-[100%]"/><figcaption class="mt-[-6px]">Fragment 4</figcaption></div>
 </div>
 
+The fragments are really tiny! Here you can see them in context:
+
+<figure>
+  <img src="/img/data/francoise.png"/>
+  <figcaption className="mt-0">Françoise Bérard (Director of the Library at the Institute de France) holding a tray of fragments; Fragment 1 up close; a fragment vertically mounted for scanning at Diamond Light Source</figcaption>
+</figure>
+
 The idea is to train ML models on these fragments, since we have the ground truth data of where the ink is. Then, those ML models can be applied to the scrolls.
 
 <figure>

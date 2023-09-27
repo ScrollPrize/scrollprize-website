@@ -62,6 +62,8 @@ The resulting 3D shape is called a “mesh”. You can view the meshes of all ou
   <figcaption className="mt-0">Some segments from Scroll 1</figcaption></div>
 </figure>
 
+For more technical details about how the segmentation team operates, check out this doc: [The Segmenter’s Guide to Volume Cartographer (for contractors)](https://docs.google.com/document/d/11B9Gy1gJRye_NQHphwbIxINvactUchJJsJOJi1FKrgI/edit?usp=sharing).
+
 ## Data format
 
 The `.volpkg` format used by Volume Cartographer (learn more in [Tutorial 3](tutorial3)) has a `paths` folder, in which each segment has its own subfolder. Each subfolder contains two files:
@@ -99,7 +101,7 @@ All these extra files were generated using the following script: `export SLICE=2
 
 ## Monster segment
 
-The team at the University of Kentucky created special tooling ([“Quick Segment”](https://github.com/educelab/quick-segment/)) to create the “Monster Segment”: a massive segment in Scroll 1. At the time of writing, it is larger than all our other segments combined, so we recommend trying this one first. More information [here](https://discord.com/channels/1079907749569237093/1079907750265499772/1104116512396161144) and [here](https://discord.com/channels/1079907749569237093/1079907750265499772/1102710816656064663).
+The EduceLab team created special tooling ([“Quick Segment”](https://github.com/educelab/quick-segment/)) to create the “Monster Segment”: a massive segment in Scroll 1. At the time of writing, it is larger than all our other segments combined, so we recommend trying this one first. More information [here](https://discord.com/channels/1079907749569237093/1079907750265499772/1104116512396161144) and [here](https://discord.com/channels/1079907749569237093/1079907750265499772/1102710816656064663).
 
 The data for this can be found on the data server at [`/stephen-parsons-uploads/`](http://dl.ash2txt.org/stephen-parsons-uploads/). There are two segments, which were created by projecting in different directions from a large air gap. The `recto` segment is the one where we expect written text.
 
