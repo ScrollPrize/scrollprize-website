@@ -28,7 +28,16 @@ const sidebars = {
         // { type: 'doc', id: 'ink_detection' },
         // { type: 'doc', id: 'ink_detection_followup' },
         // { type: 'doc', id: 'segmentation' },
-        { type: 'doc', id: 'previous' },
+        // { type: 'doc', id: 'previous' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Prize Winners & Tools',
+      link: { type: 'doc', id: 'winners' },
+      items: [
+        { type: 'doc', id: 'tools_segmentation' },
+        { type: 'doc', id: 'tools_ink_detection' },
       ],
     },
     {
@@ -45,8 +54,8 @@ const sidebars = {
     },
     // {
     //   type: 'category',
-    //   label: 'Progress',
-    //   link: { type: 'doc', id: 'progress' },
+    //   label: 'Community tools',
+    //   link: { type: 'doc', id: 'community_tools' },
     //   items: [
     //   ],
     // },
@@ -59,7 +68,7 @@ const sidebars = {
         { type: 'doc', id: 'tutorial2' },
         { type: 'doc', id: 'tutorial3' },
         { type: 'doc', id: 'tutorial4' },
-        { type: 'doc', id: 'tutorial5' },
+        // { type: 'doc', id: 'tutorial5' },
       ],
     },
     { type: 'doc', id: 'faq' },

@@ -36,7 +36,7 @@ hide_table_of_contents: true
   />
 </head>
 
-With the [Ink Detection](previous#ink-detection-progress-prize-june-14-2023) winners announced, the world now has ten high-performance open source models that can detect ink in CT scans of Herculaneum papyrus. It’s time to put them to work!
+With the [Ink Detection](winners#100000-ink-detection-july-14-2023) winners announced, the world now has ten high-performance open source models that can detect ink in CT scans of Herculaneum papyrus. It’s time to put them to work!
 
 Today we’re announcing the **Ink Detection Followup Prize**, which will be awarded to open source contributors who advance the state of the art in open source ink detection model in a way that brings us all closer to reading the full scrolls.
 

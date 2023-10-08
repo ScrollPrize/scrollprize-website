@@ -36,13 +36,19 @@ hide_table_of_contents: true
   />
 </head>
 
-The next livestream is **Thursday May 25th at 8am PST**. We’ll have several members of our [Papyrology Team](grand_prize#review-process) present to answer your questions. We’re collecting questions in the [#papyrology-qa](https://discord.com/channels/1079907749569237093/1108134343295127592) channel on Discord.
+We will have more live streams. Be sure to check [Twitter](https://twitter.com/scrollprize), [Discord](https://discord.gg/6FgWYNjb4N), and [Substack](https://scrollprize.substack.com/) for updates.
 
-View the livestream [here on Youtube](https://youtube.com/live/gielO5WHdu4)!
+<!-- The next livestream is **Thursday May 25th at 8am PST**. We’ll have several members of our [Papyrology Team](grand_prize#review-process) present to answer your questions. We’re collecting questions in the [#papyrology-qa](https://discord.com/channels/1079907749569237093/1108134343295127592) channel on Discord. -->
+
+<!-- View the livestream [here on Youtube](https://youtube.com/live/gielO5WHdu4)! -->
 
 ## Previous livestreams
 
-### Q&A
+### Papyrology team Q&A
+
+<iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/gielO5WHdu4"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+### Vesuvius Challenge team Q&A
 
 <iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/Cr8xIqFnBdw"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
@@ -51,7 +57,3 @@ View the livestream [here on Youtube](https://youtube.com/live/gielO5WHdu4)!
 <iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/_LBI0DtTl80"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 With accompanying [newsletter](https://scrollprize.substack.com/p/first-prizes-awarded-open-source).
-
-### More livestreams
-
-We might have more. Be sure to check [Twitter](https://twitter.com/scrollprize), [Discord](https://discord.gg/6FgWYNjb4N), and [Substack](https://scrollprize.substack.com/) for updates.

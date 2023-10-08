@@ -69,8 +69,6 @@ After a successful [first round](https://scrollprize.substack.com/p/segmentation
 * Submissions are closed on **Monday August 28th 11:59pm PT**, after which there is some time to work with the segmenters to actually use your tools and get feedback. This period runs until **Friday September 15th 11:59pm PT**, after which the Review Team will select winners.
 * Submit using [this form](https://forms.gle/miJiAwD6pcP2PnGEA).
 
-To get a sense of what segmentation looks like right now, check out the segmentation videos linked in [Tutorial 5: Advanced Topics](tutorial5).
-
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/segmentation2.jpg">
     <source src="/img/tutorials/segmentation2.webm" type="video/webm"/>
