@@ -106,7 +106,7 @@ All submissions will be assessed by the Review Team, which consists of a technic
 
 - Dr. Brent Seales
 - Nat Friedman
-- Stephen Parsons
+- Dr. Stephen Parsons
 - Seth Parker
 - JP Posma
 - Daniel Havíř

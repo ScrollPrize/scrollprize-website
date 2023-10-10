@@ -263,6 +263,11 @@ const team = {
       href: "https://janpaulposma.nl/",
     },
     {
+      name: "Dr. Stephen Parsons",
+      title: "Research advisor",
+      href: "https://www2.cs.uky.edu/dri/stephen-parsons/",
+    },
+    {
       name: "Daniel Havíř",
       title: "Machine learning advisor",
       href: "https://danielhavir.github.io/about/",
@@ -298,11 +303,6 @@ const team = {
       name: "Dr. Brent Seales",
       title: "Principal Investigator",
       href: "https://educelab.engr.uky.edu/w-brent-seales",
-    },
-    {
-      name: "Stephen Parsons",
-      title: "PhD candidate",
-      href: "https://www2.cs.uky.edu/dri/stephen-parsons/",
     },
     {
       name: "Seth Parker",

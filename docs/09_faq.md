@@ -39,14 +39,13 @@ hide_table_of_contents: true
 ### What are the important dates?
 
 * March 15th 2023: Launch!
-* June 14th 2023: Deadline of the [Ink Detection Progress Prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/) and the [Segmentation Tooling Prize](segmentation).
 * December 31st 2023: Deadline of the [Grand Prize](/overview#grand-prize-700000).
+* We have also [awarded](previous) a number of progress prizes with shorter deadlines, and more may follow.
 
 ### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
 
-* Consider competing in the [Ink Detection Progress Prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection). It is a lot smaller in scope, and will mark an important milestone towards the Grand Prize. There are 10 prizes available, for a total of $100,000.
-* The [First Letters Prize](first_letters) is similar to the Grand Prize, but much smaller in scope.
-* You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win a [Segmentation Tooling Prize](segmentation)!
+* Join our [Discord](https://discord.gg/6FgWYNjb4N) to learn about current efforts and how you can pitch in.
+* You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win a prize - see those [already awarded](previous)!
 
 ### Can I share my progress on social media?
 
@@ -139,7 +138,7 @@ We’re organizing the Ink Detection Progress Prize, to find the best possible a
 
 ### Can machine learning models hallucinate letters that aren't there?
 
-This is a risk for models that are trained on letterforms. We strongly recommend that participants guard against the risk of hallucination in their models and, will review all submissions with this in mind.
+This is a risk for models that are trained on letterforms. We strongly recommend that participants guard against the risk of hallucination in their models, and will review all submissions with this in mind.
 
 ### What is papyrus and how is it made?
 
@@ -196,6 +195,8 @@ Of course, for it to be useful as ground truth data, you will need to find someo
 The two main pieces of software developed by Dr. Seales’ lab are [Volume Cartographer](https://github.com/educelab/volume-cartographer/) and [ink-id](https://github.com/educelab/ink-id/). Both are open source and available on Github.
 
 In the tutorials we also show you how to use generic software to work with 3D volumes ([Fiji](https://imagej.net/software/fiji/downloads)) and meshes ([MeshLab](https://www.meshlab.net/#download)).
+
+There is a growing body of open source software now available as a result of Vesuvius Challenge. To learn more, check out the [previous prizes](previous) that have been awarded to many of these efforts.
 
 ### Where can I find collaborators?
 
@@ -266,7 +267,7 @@ The resulting 3D volume is like a 3D image. Each unit is called a “voxel” (i
 
 ### What signals might be present in the 3D X-ray scans for ink detection?
 
-We don’t really know, but we suspect that ink might be filling in between the grid pattern of papyrus, kind of like syrup filling in gaps in a waffle.
+There remain open questions, but we suspect that ink might be filling in between the grid pattern of papyrus, kind of like syrup filling in gaps in a waffle.
 
 <figure className="max-w-[400px]">
   <img src="/img/faq/waffle.png"/>
@@ -278,6 +279,8 @@ Ink might also be sitting on top of the papyrus, causing a slight bump on the su
 There might be some effect of indentation of the writing instrument, but it’s probably not very significant. The thought has generally been that any indentation effect would be even smaller than ink w.r.t. the scan resolution and maybe not significant when compared against the natural relief of the papyrus fibers. However, this has not been explored in detail on this type of material (look at the paper "Revisiting the Jerash Silver Scroll" for work on an etched metal scroll), so we don’t know for sure.
 
 It could be worthwhile to try to reverse engineer what machine learning models are seeing, so that perhaps we can see it more directly. Perhaps this could influence other ink detection methods or future scanning efforts.
+
+In some cases, the ink is thick enough to show up clearly in the CT images. In these instances, the ink has a cracked surface, like mud that has cracked after drying.
 
 ### Does segmenting and flattening need to happen before ink detection?
 
@@ -292,10 +295,6 @@ The downside of such an approach is that a lot more data needs to be accessible 
 Fiji/ImageJ doesn’t work well with extremely large datasets such as our scrolls or fragment volumes, though downsampling might help. If you’re experiencing problems even with the <a href="https://gist.github.com/janpaul123/280262ebce904f7366fe4cc155593e90">campfire.zip</a> dataset, then try to increase the memory limit: *“Edit > Options > Memory and Threads”*. It might also help to run the software in a different operating system, such as in a Linux VM. For example, on Windows the following setup [seems to work well](https://discord.com/channels/1079907749569237093/1088311252595507242/1088314069519441950): WSL2, Ubuntu 20, Windows 11, using the default WSL X server setup.
 
 A great contribution to the community would be to build an open source 3D volume viewer that is tailored to this problem. If you are interested in building something like that, do let us know in Discord!
-
-### How can I run non-Python/R code in Kaggle notebooks?
-
-[Will from Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/396826#2194085) says: if the code can be run on Linux, you can upload it as a dataset and call it from within Python, or using Juptyer's magic command `!`.
 
 ### What are the triangle artifacts in the surface volumes?
 
@@ -383,7 +382,7 @@ Nat read [24 Hours in Ancient Rome](https://www.amazon.com/24-Hours-Ancient-Rome
 
 ### Is this going to work?
 
-We think so! Based on the results that Dr. Seales and his team have been able to produce so far, we believe that it is possible to read the Herculnaeum scrolls using the scans that we already have. We don’t think it’s easy, and we’re not certain, but we believe it’s possible.
+We think so! Based on the results that Dr. Seales and his team have been able to produce so far, as well as the progress that has already resulted from this challenge, we believe that it is possible to read the Herculaneum scrolls using the scans that we already have. We don’t think it’s easy, but we believe it’s possible.
 
 ### I have a lot of money! Can I help sponsor this?
 
