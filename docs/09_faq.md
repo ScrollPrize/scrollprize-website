@@ -40,12 +40,12 @@ hide_table_of_contents: true
 
 * March 15th 2023: Launch!
 * December 31st 2023: Deadline of the [Grand Prize](/overview#grand-prize-700000).
-* We have also [awarded](previous) a number of progress prizes with shorter deadlines, and more may follow.
+* We have also [awarded](winners) a number of progress prizes with shorter deadlines, and more may follow.
 
 ### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
 
 * Join our [Discord](https://discord.gg/6FgWYNjb4N) to learn about current efforts and how you can pitch in.
-* You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win a prize - see those [already awarded](previous)!
+* You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win a prize - see those [already awarded](winners)!
 
 ### Can I share my progress on social media?
 
@@ -196,7 +196,7 @@ The two main pieces of software developed by Dr. Seales’ lab are [Volume Carto
 
 In the tutorials we also show you how to use generic software to work with 3D volumes ([Fiji](https://imagej.net/software/fiji/downloads)) and meshes ([MeshLab](https://www.meshlab.net/#download)).
 
-There is a growing body of open source software now available as a result of Vesuvius Challenge. To learn more, check out the [previous prizes](previous) that have been awarded to many of these efforts.
+There is a growing body of open source software now available as a result of Vesuvius Challenge. To learn more, check out the [previous prizes](winners) that have been awarded to many of these efforts.
 
 ### Where can I find collaborators?
 
