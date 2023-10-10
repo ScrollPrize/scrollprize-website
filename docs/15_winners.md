@@ -1,5 +1,5 @@
 ---
-title: "Prize Winners & Tools"
+title: "Prize Winners"
 hide_table_of_contents: true
 ---
 
@@ -38,11 +38,6 @@ hide_table_of_contents: true
 
 Since the Vesuvius Challenge was launched in March 2023, a lot has happened. On this page we document all the prizes that have been won.
 
-Efforts can be grouped into two categories. For more information on the current state of tooling, check out these subpages:
-
-* [**Segmentation:**](tools_segmentation) the mapping of sheets of papyrus (“segments”) in a 3D X-ray volume. See [Tutorial 3](tutorial3) and [Data > Segments](data_segments).
-* [**Ink Detection:**](tools_ink_detection) detecting ink in segments. See [Tutorial 4](tutorial4).
-
 We have awarded **$200,000** in prizes so far!
 
 ### $45,000 Segmentation Tooling 2 (3 October 2023)
@@ -56,7 +51,7 @@ We have awarded **$200,000** in prizes so far!
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd217256a-d1f9-4487-b846-e55c28691591_600x338.gif"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/schillij95/volume-cartographer-papyrus">
-    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$10,000</div><span class="font-bold">Extremely Fast Segmentation</span> by Jualian / @RICHI</div>
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$10,000</div><span class="font-bold">Extremely Fast Segmentation</span> by Julian / @RICHI</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0d5ccba-7813-49d3-9e81-e7699b418452_2490x1415.png"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/KhartesViewer/khartes">
@@ -226,9 +221,9 @@ We have awarded **$200,000** in prizes so far!
   </a>
 </div>
 
-### Other major tools
+### EduceLab tools
 
-Before and during the competition, EduceLab has put out various works. With these tools, they have laid the foundation for the community.
+Before and during the competition, EduceLab has put out various works. With these tools, they have laid the foundation for the community. While EduceLab members are ineligible for prizes, we want to recognize their efforts.
 
 <div class="flex flex-row flex-wrap">
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/educelab/quick-segment">

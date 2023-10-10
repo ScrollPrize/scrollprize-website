@@ -31,15 +31,8 @@ const sidebars = {
         // { type: 'doc', id: 'previous' },
       ],
     },
-    {
-      type: 'category',
-      label: 'Prize Winners & Tools',
-      link: { type: 'doc', id: 'winners' },
-      items: [
-        { type: 'doc', id: 'tools_segmentation' },
-        { type: 'doc', id: 'tools_ink_detection' },
-      ],
-    },
+    { type: 'doc', id: 'winners' },
+    { type: 'doc', id: 'community_projects' },
     {
       type: 'category',
       label: 'Data',
