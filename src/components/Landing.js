@@ -273,6 +273,21 @@ const team = {
       href: "https://danielhavir.github.io/about/",
     },
     {
+      name: "Ben Kyles",
+      title: "Segmentation team lead",
+      href: "",
+    },
+    {
+      name: "David Josey",
+      title: "Segmentation team member",
+      href: "https://ca.linkedin.com/in/davidsjosey",
+    },
+    {
+      name: "Konrad Rosenberg",
+      title: "Segmentation team member",
+      href: "https://www.linkedin.com/in/konradrosenberg/",
+    },
+    {
       name: "Chris Frangione",
       title: "Prize advisor",
       href: "https://www.linkedin.com/in/chrisfrangione/",
