@@ -51,7 +51,7 @@ We have awarded **$260,000** in prizes so far!
     <img src="/img/firstletters/luke-submission.png"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/younader/Vesuvius-First-Letters">
-    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$10,000</div><span class="font-bold">First Letters (2nd prize)</span>: Youssef Nader / @YoussefNader</div>
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$10,000</div><span class="font-bold">First Letters, 2nd place</span>: Youssef Nader / @YoussefNader</div>
     <img src="/img/firstletters/youssef-submission.png"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/">
