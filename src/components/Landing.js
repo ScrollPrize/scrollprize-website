@@ -270,7 +270,7 @@ const team = {
     {
       name: "Daniel Havíř",
       title: "Machine learning advisor",
-      href: "https://danielhavir.github.io/about/",
+      href: "https://danielhavir.com",
     },
     {
       name: "Ben Kyles",
