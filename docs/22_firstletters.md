@@ -238,7 +238,7 @@ The segmentation team and contestants continue to make progress, and a few days 
   <figcaption className="mt-0">Youssef’s <a target="_blank" href="/img/firstletters/youssef-new.png">latest image</a> (<a target="_blank" href="/img/firstletters/composite_fullsize.png">variant</a>), from segments <a href="http://dl.ash2txt.org/hari-seldon-uploads/team-finished-paths/scroll1/20230929220924/">20230929220924</a> and <a href="http://dl.ash2txt.org/hari-seldon-uploads/team-finished-paths/scroll1/20231005123333/">20231005123333</a>.</figcaption>
 </figure>
 
-In this image you can clearly see four and a half columns of text, separated by margins. Many more letters are now visible, though not all are immediately legible.
+In this image you can clearly see four and a half columns of text, separated by margins. Many more letters are now visible, though not all are immediately legible. Our papyrological team is working hard to further investigate this result, and we’ll have updates on this soon.
 
 These advancements demonstrate that the <a href="grand_prize">$700,000 Grand Prize</a> is within reach. Our optimism is at an all time high.
 
