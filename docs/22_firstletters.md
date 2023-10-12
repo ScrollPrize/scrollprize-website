@@ -14,13 +14,13 @@ hide_title: true
   <meta property="og:url" content="https://scrollprize.org/firstletters" />
   <meta property="og:title" content="First word discovered in unopened Herculaneum scroll by 21yo computer science student" />
   <meta property="og:description" content="Vesuvius Challenge $700,000 Grand Prize “now definitely achievable”" />
-  <meta property="og:image" content="https://scrollprize.org/img/firstletters/purple_card.png" />
+  <meta property="og:image" content="https://scrollprize.org/img/firstletters/purple_card-new.png" />
 
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://scrollprize.org/firstletters" />
   <meta property="twitter:title" content="First word discovered in unopened Herculaneum scroll by 21yo computer science student" />
   <meta property="twitter:description" content="Vesuvius Challenge $700,000 Grand Prize “now definitely achievable”" />
-  <meta property="twitter:image" content="https://scrollprize.org/img/firstletters/purple_card.png" />
+  <meta property="twitter:image" content="https://scrollprize.org/img/firstletters/purple_card-new.png" />
 </head>
 
 <img src="/img/firstletters/composite_thumb.png" />
@@ -48,7 +48,7 @@ hide_title: true
 
 
 <figure className="">
-  <img src="/img/firstletters/purple_3840-clipped.png" />
+  <img src="/img/firstletters/image_3840-clipped-new.png" />
   <figcaption className="mt-0">This handwriting has been hidden for 2000 years.</figcaption>
 </figure>
 
