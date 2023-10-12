@@ -56,7 +56,7 @@ We have awarded **$260,000** in prizes so far!
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd217256a-d1f9-4487-b846-e55c28691591_600x338.gif"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/schillij95/volume-cartographer-papyrus">
-    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$10,000</div><span class="font-bold">Extremely Fast Segmentation</span> by Julian / @RICHI</div>
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$10,000</div><span class="font-bold">Extremely Fast Segmentation</span> by Julian Schilliger / @RICHI</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0d5ccba-7813-49d3-9e81-e7699b418452_2490x1415.png"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/KhartesViewer/khartes">
@@ -67,15 +67,15 @@ We have awarded **$260,000** in prizes so far!
     </video>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1079907750265499772/1150930251824779424">
-    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold">CT scanning campfire scrolls</span> by Ahron / @WayneWayneHello</div>
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold">CT scanning campfire scrolls</span> by Ahron Wayne / @WayneWayneHello</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0c96a39-e383-4012-86ce-f2e828d5fbba_679x434.png"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/segment-viewer">
-    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold">Segment-viewer</span> by Yao / @Yao_Hsiao and Dalufishe / @Dalufish</div>
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold">Segment-viewer</span> by Yao Hsiao / @Yao_Hsiao and Dalufishe / @Dalufish</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F56e58854-ba5d-4eb9-92c7-3edf1c93cb6f_600x338.gif"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/spelufo/vesuvius-build/blob/main/docs/ilastik_top_pipeline_segmentation.md">
-    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold">Ilastik integration</span> by Santiago / @spelufo</div>
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold">Ilastik integration</span> by Santiago Pelufo / @spelufo</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff73becde-7a4e-4944-a906-fbe2d833b7f5_1456x832.png"/>
   </a>
 </div>
