@@ -42,8 +42,30 @@ We have awarded **$260,000** in prizes so far!
 
 ### $60,000 First Letters & Ink (12 October 2023)
 
-**Goal:** Finding the first letters within the scrolls.
+**Goal:** Finding the first letters within the scrolls.<br/>
 **Announcement:** <a href="firstletters">Announcement page</a>
+
+<div class="flex flex-row flex-wrap">
+  <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/lukeboi/scroll-first-letters">
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$40,000</div><span class="font-bold">First Letters</span>: Luke Farritor / @lukeboi</div>
+    <img src="/img/firstletters/luke-submission.png"/>
+  </a>
+  <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/younader/Vesuvius-First-Letters">
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$10,000</div><span class="font-bold">First Letters (2nd prize)</span>: Youssef Nader / @YoussefNader</div>
+    <img src="/img/firstletters/youssef-submission.png"/>
+  </a>
+  <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/">
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$10,000</div><span class="font-bold">First Ink</span>: Casey Handmer / @cjhandmer</div>
+    <div className="flex flex-wrap justify-between items-end max-w-[500px]">
+      <figure className="w-[49%] mb-0">
+        <img src="/img/firstletters/pi1.png" />
+      </figure>
+      <figure className="w-[49%] mb-0">
+        <img src="/img/firstletters/pi2.png" />
+      </figure>
+    </div>
+  </a>
+</div>
 
 ### $45,000 Segmentation Tooling 2 (3 October 2023)
 

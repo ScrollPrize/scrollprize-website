@@ -171,7 +171,7 @@ Indeed, the word held up to scrutiny. “Porphyras” is an exciting word: it me
 
 If you’re trying to find these letters in the image, keep in mind that our modern characters look a little bit different. The letters in this ancient script look more like this: ΠΟΡΦΥΡΑϹ. Note that texts from this time didn’t use spaces, making it harder to determine word boundaries.
 
-Luke’s First Letters Prize submission is available now on <a href="https://github.com/lukeboi/scroll-first-letters">Github</a>.
+Luke’s First Letters Prize submission is available now on <a href="https://github.com/lukeboi/scroll-first-letters">GitHub</a>.
 
 <figure>
   <img className="max-w-[300px]" src="/img/firstletters/luke-reaction.gif" />
@@ -215,7 +215,7 @@ This time, the papyrologists agreed more strongly about the letters. They even b
 
 If these words are indeed what we think they are, this papyrus scroll likely contains an entirely new text, unseen by the modern world.
 
-Youssef’s First Letters Prize submission is available now on <a href="https://github.com/younader/Vesuvius-First-Letters">Github</a>.
+Youssef’s First Letters Prize submission is available now on <a href="https://github.com/younader/Vesuvius-First-Letters">GitHub</a>.
 
 ### Why were we successful?
 
@@ -224,7 +224,7 @@ There were many contributions from different people in the critical path for the
 * Youssef used a model from the Kaggle competition and was inspired by Luke’s results to look in the same area.
 * Luke’s search for crackle was directly inspired by Casey’s work.
 * Casey was able to look through many sheets of papyrus because our segmentation team had mapped out hundreds of cm2.
-* The segmentation team was able to map out a lot of papyrus because of tooling built by contestants who worked on “Segmentation Tooling Prizes” (work by Julian Schillinger, Chuck, Yao Hsiao, and many others).
+* The segmentation team was able to map out a lot of papyrus because of tooling built by contestants who worked on “Segmentation Tooling Prizes” (work by Julian Schilliger, Chuck, Yao Hsiao, and many others).
 * The segmentation tooling advances were possible because contestants built on top of existing open source tools by professor Seales’ team (work by Seth Parker, Stephen Parsons, and many others). And of course, the contest itself wouldn’t have been possible without the foundation that Dr. Seales and his team, along with their [funders](/#educelab-funders), have laid out and continue to support.
 
 Looking back at what got us to this point, it seems that almost every single thing we did in running this contest so far has been load-bearing. We’re not quite sure what to make of this! Perhaps that progress is more fragile and success is more contingent than it often seems in retrospect.

@@ -36,9 +36,7 @@ hide_table_of_contents: true
   />
 </head>
 
-The next livestream is **Thursday October 12th at 4pm EDT**, hosted by EduceLab at the University of Kentucky. There will be a fun announcement, so be sure to tune in!
-
-We’ll update this page and Discord with the livestream link.
+The next livestream is **Thursday October 12th at 4pm EDT**, hosted by EduceLab at the University of Kentucky, to talk more about the <a href="firstletters">First Letters Prize announcement</a>. Tune in at: <a href="https://engr.uky.edu/live">https://engr.uky.edu/live</a>
 
 <!-- We will have more live streams. Be sure to check [Twitter](https://twitter.com/scrollprize), [Discord](https://discord.gg/6FgWYNjb4N), and [Substack](https://scrollprize.substack.com/) for updates. -->
 
