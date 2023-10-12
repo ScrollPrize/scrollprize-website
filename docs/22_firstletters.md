@@ -171,7 +171,7 @@ Indeed, the word held up to scrutiny. “Porphyras” is an exciting word: it me
 
 If you’re trying to find these letters in the image, keep in mind that our modern characters look a little bit different. The letters in this ancient script look more like this: ΠΟΡΦΥΡΑϹ. Note that texts from this time didn’t use spaces, making it harder to determine word boundaries.
 
-<!-- Luke’s First Letters Prize submission is available now on <a href="">Github</a>. -->
+Luke’s First Letters Prize submission is available now on <a href="https://github.com/lukeboi/scroll-first-letters">Github</a>.
 
 <figure>
   <img className="max-w-[300px]" src="/img/firstletters/luke-reaction.gif" />
@@ -215,7 +215,7 @@ This time, the papyrologists agreed more strongly about the letters. They even b
 
 If these words are indeed what we think they are, this papyrus scroll likely contains an entirely new text, unseen by the modern world.
 
-<!-- Youssef’s First Letters Prize submission is available now on <a href="https://github.com/younader/Vesuvius-First-Letters">Github</a>. -->
+Youssef’s First Letters Prize submission is available now on <a href="https://github.com/younader/Vesuvius-First-Letters">Github</a>.
 
 ### Why were we successful?
 
