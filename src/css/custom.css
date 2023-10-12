@@ -128,7 +128,7 @@ figcaption {
   /* --ifm-color-primary: rgb(188, 134, 249); */
 }
 
-.docs-doc-id-firstletters a {
+.docs-doc-id-firstletters a:not(.menu__link) {
   font-weight: bold;
 }
 
