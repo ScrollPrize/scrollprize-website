@@ -53,10 +53,9 @@ This has been going on recently:
 #### Current prizes
 
 - [Grand Prize](grand_prize): $700,000 prize, by December 31st 2023.
-- [First Letters Prize](first_letters): $50,000 in prizes.
 - More prizes coming soon!
 
-*We have awarded [$200,000](winners) in prizes already.*
+*We have awarded [$260,000](winners) in prizes already.*
 
 #### Segmentation Tooling
 
@@ -65,5 +64,6 @@ This has been going on recently:
 
 #### Ink Detection Tooling
 
-- Recent developments: [Ink Detection Followup Prize](winners#ink-detection-followup-8-september-2023) completed (8 September 2023).
-- Next milestone: [First Letters Prize](first_letters).
+- Recent developments: [FIRST LETTERS PRIZE WON!!!](firstletters) (12 October 2023).
+- Next milestone: [Grand Prize?!](grand_prize)
+- New intermediate prizes to be announced.
