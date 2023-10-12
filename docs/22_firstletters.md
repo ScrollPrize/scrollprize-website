@@ -55,7 +55,7 @@ hide_title: true
 </figure>
 
 
-**Join our [livestream](/livestream) today (Oct 12th) at 4:00pm EDT.**
+**Join our [livestream](/livestream) today (Oct 12th) at 4:00pm EDT. Code is on Github: [Luke](https://github.com/lukeboi/scroll-first-letters), [Youssef](https://github.com/younader/Vesuvius-First-Letters).**
 
 The Herculaneum papyri, ancient scrolls housed in the library of a private villa near Pompeii, were buried and carbonized by the eruption of Vesuvius in 79 AD. For almost 2,000 years, this lone surviving library from antiquity was buried underground under 20 meters of volcanic mud. In the 1700s, they were excavated, and while they were in some ways preserved by the eruption, they were so fragile that they would turn to dust if mishandled. How do you read a scroll you can’t open? For hundreds of years, this question went unanswered.
 
@@ -250,4 +250,4 @@ Will you be the one unlocking the knowledge in hundreds of scrolls — doubling 
 
 The race is on.
 
-**Join our [livestream](/livestream) today (Oct 12th) at 4:00pm EDT.**
+**Join our [livestream](/livestream) today (Oct 12th) at 4:00pm EDT. Code is on Github: [Luke](https://github.com/lukeboi/scroll-first-letters), [Youssef](https://github.com/younader/Vesuvius-First-Letters).**
