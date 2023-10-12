@@ -35,7 +35,9 @@ hide_title: true
 }}>unopened Herculaneum scroll</span> by 21yo computer science student
 </h1>
 
-<div className="md:text-3xl text-lg font-medium mt-6 mb-8 opacity-80 leading-none tracking-tight">Vesuvius Challenge $700,000 Grand Prize “now definitely achievable”</div>
+<div className="md:text-3xl text-lg font-medium mt-6 mb-2 opacity-80 leading-none tracking-tight">Vesuvius Challenge $700,000 Grand Prize “now definitely achievable”</div>
+
+<div className="opacity-60 mb-8 italic">October 12th, 2023</div>
 
 <!-- <div class="color-white text-2xl md:text-5xl font-black !mb-2 leading-none tracking-tighter" style={{
   background:
