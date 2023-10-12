@@ -23,7 +23,7 @@ hide_title: true
   <meta property="twitter:image" content="https://scrollprize.org/img/firstletters/purple_card.png" />
 </head>
 
-<img src="/img/firstletters/composite_fullsize.png" />
+<img src="/img/firstletters/composite_thumb.png" />
 
 <h1 class="color-white text-4xl md:text-7xl font-black !mb-2 leading-none tracking-tighter">First word discovered in <span style={{
   background:
