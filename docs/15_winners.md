@@ -38,7 +38,12 @@ hide_table_of_contents: true
 
 Since the Vesuvius Challenge was launched in March 2023, a lot has happened. On this page we document all the prizes that have been won.
 
-We have awarded **$200,000** in prizes so far!
+We have awarded **$260,000** in prizes so far!
+
+### $60,000 First Letters & Ink (12 October 2023)
+
+**Goal:** Finding the first letters within the scrolls.
+**Announcement:** <a href="firstletters">Announcement page</a>
 
 ### $45,000 Segmentation Tooling 2 (3 October 2023)
 

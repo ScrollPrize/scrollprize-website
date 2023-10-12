@@ -132,9 +132,7 @@ We are releasing about 5.5TB worth of 3D volumetric data of the scrolls (8µm), 
 
 ### If an algorithm can read ink from a fragment X-ray, is it likely to work on a scroll?
 
-We hope so, but we suspect this will be a key challenge.
-
-We’re organizing the Ink Detection Progress Prize, to find the best possible approach for detecting ink on fragments. With this solid foundation we hope it will be easier to apply these algorithms to the scrolls.
+There is a known domain shift between the existing CT scans of fragments and scrolls, but the exciting results of the First Letters prize confirm the ink presence is captured in the scroll scans and can be detected!
 
 ### Can machine learning models hallucinate letters that aren't there?
 

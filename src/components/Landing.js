@@ -15,12 +15,10 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
       <>
         <div className="mb-8 max-w-3xl">
           In Herculaneum, twenty meters of hot mud and ash bury an enormous
-          villa once owned by the father-in-law of Julius Caesar. Inside, there is a vast
-          library of papyrus scrolls.
+          villa once owned by the father-in-law of Julius Caesar. Inside, there
+          is a vast library of papyrus scrolls.
         </div>
-        {inlineImage(
-          "/img/landing/rocio-espin-pinar-villa-papyri-small.jpg"
-        )}
+        {inlineImage("/img/landing/rocio-espin-pinar-villa-papyri-small.jpg")}
         <div className="mb-8 max-w-3xl">
           The scrolls are carbonized by the heat of the volcanic debris. But
           they are also preserved. For centuries, as virtually every ancient
@@ -210,6 +208,7 @@ const prizes = [
     prizeMoney: "$700,000",
     description: "First team to read a scroll by December 31st 2023",
     requirement: "Success requires that the Review Team can:",
+    won: false,
     qualifications: [
       "Read at least 4 separate passages of continuous and plausible text from the scrolls, each at least 140 characters long",
       "Qualifying submissions reviewed by team of developers and papyrologists for legitimacy and plausibility",
@@ -220,6 +219,7 @@ const prizes = [
     prizeMoney: "$50,000",
     description: "Detect 10 letters in a 4 cm² area in a scroll",
     requirement: "",
+    won: true,
     qualifications: [
       "First team to find 10 legible letters in a 4 cm² area wins $40,000, second prize $10,000",
       "Also reviewed by developers and papyrologists",
@@ -587,8 +587,31 @@ const StoryBackground = ({ story, index }) => (
 );
 
 const Prize = ({ prize }) => (
-  <div className="flex-1 flex flex-col md:border-8 border-4 border-white border-solid md:p-6 p-4 lg:aspect-square rounded-2xl">
-    <h2 className="text-4xl md:text-6xl font-black !mb-0 leading-none tracking-tighter !mt-0">
+  <div
+    className={`flex-1 flex flex-col border-2 border-solid md:p-6 p-4 lg:aspect-square rounded-2xl relative ${
+      prize.won ? `border-[#F5653F]` : `border-white`
+    }`}
+    style={{
+      boxShadow: prize.won
+        ? "0px 3.26536px 2.21381px 0px rgba(70, 23, 11, 0.08), 0px 7.84712px 5.32008px 0px rgba(70, 23, 11, 0.11), 0px 14.77543px 10.01724px 0px rgba(70, 23, 11, 0.14), 0px 26.35684px 17.86905px 0px rgba(70, 23, 11, 0.16), 0px 49.29758px 33.42209px 0px rgba(70, 23, 11, 0.19), 0px 118px 80px 0px rgba(70, 23, 11, 0.27)"
+        : "",
+    }}
+  >
+    {prize.won && (
+      <div
+        className="absolute top-0 right-0 p-8 md:p-10 rounded-full bg-[#1C1A1D] flex items-center justify-center rotate-6 -m-4 md:-m-5 border-[#F5653F] border-2 border-solid"
+        style={{
+          boxShadow:
+            prize.won &&
+            "0px 3.26536px 2.21381px 0px rgba(70, 23, 11, 0.08), 0px 7.84712px 5.32008px 0px rgba(70, 23, 11, 0.11), 0px 14.77543px 10.01724px 0px rgba(70, 23, 11, 0.14), 0px 26.35684px 17.86905px 0px rgba(70, 23, 11, 0.16), 0px 49.29758px 33.42209px 0px rgba(70, 23, 11, 0.19), 0px 118px 80px 0px rgba(70, 23, 11, 0.27)",
+        }}
+      >
+        <p className="text-[#e5502b] m-0 text-3xl md:text-4xl uppercase font-black tracking-tighter">
+          won
+        </p>
+      </div>
+    )}
+    <h2 className="text-4xl md:text-6xl lg:w-3/4 font-black !mb-0 leading-none tracking-tighter !mt-0">
       {prize.title}
     </h2>
     <h3
@@ -825,11 +848,11 @@ export function Landing() {
         <div className="z-20 relative">
           {/* Hero */}
           <section
-            style={{
-              minHeight: "75vh",
-            }}
+          // style={{
+          //   minHeight: "75vh",
+          // }}
           >
-            <div className="container mx-auto z-20 relative h-[75vh]">
+            <div className="container mx-auto z-20 relative">
               <div className="md:pt-20 pt-6 max-w-3xl">
                 <h1 className="text-4xl md:text-7xl font-black !mb-2 leading-none tracking-tighter mix-blend-exclusion">
                   Resurrect an ancient library from the ashes of a volcano.
@@ -851,6 +874,45 @@ export function Landing() {
                   The Vesuvius Challenge is a machine learning and computer
                   vision competition to read the Herculaneum Papyri.
                 </p>
+                <a className="cursor-pointer group hover:no-underline" href="/firstletters">
+                  <div
+                    className="max-w-2xl relative rounded-3xl py-4 md:py-5 px-5 md:px-7 border-solid border-2 border-[#F5653F] flex overflow-hidden"
+                    style={{
+                      background:
+                        "radial-gradient(circle at bottom right, #FFF 0%, #F5653F 28%, #4D2514 63.02%, #0F0400 100%)",
+                      boxShadow:
+                        "0px 3.26536px 2.21381px 0px rgba(70, 23, 11, 0.08), 0px 7.84712px 5.32008px 0px rgba(70, 23, 11, 0.11), 0px 14.77543px 10.01724px 0px rgba(70, 23, 11, 0.14), 0px 26.35684px 17.86905px 0px rgba(70, 23, 11, 0.16), 0px 49.29758px 33.42209px 0px rgba(70, 23, 11, 0.19), 0px 118px 80px 0px rgba(70, 23, 11, 0.27)",
+                    }}
+                  >
+                    <div className="flex flex-col">
+                      <p className="text-sm uppercase text-white font-bold opacity-80 tracking-wider mb-2">
+                        breaking
+                      </p>
+                      <h3 className="text-3xl md:text-5xl text-white my-0 tracking-tighter mb-6 leading-[87%] flex-grow">
+                        First Word Discovered
+                      </h3>
+                      <div className="flex">
+                        <div className="hidden sm:block uppercase font-bold tracking-wider mr-1 group-hover:mr-3 transition-all">
+                          Read the Announcement
+                        </div>
+                        <div className="block sm:hidden uppercase font-bold tracking-wider mr-1">
+                          Announcement
+                        </div>
+                        <img src="/img/landing/arrow-right.svg" />
+                      </div>
+                    </div>
+                    <img
+                      src="/img/landing/progress-snippet.png"
+                      className="-mr-7 -mb-5 scale-75 md:scale-100 origin-bottom-right"
+                    />
+                    <div
+                      className="absolute inset-0 opacity-20 mix-blend-overlay"
+                      style={{
+                        background: "url(/img/landing/grid.png)",
+                      }}
+                    />
+                  </div>
+                </a>
               </div>
             </div>
             <div
@@ -962,7 +1024,10 @@ export function Landing() {
                     ))}
                   </div>
                   <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
-                    <h3 className="text-3xl font-black tracking-tighter text=[--ifm-color-primary]" id="sponsors">
+                    <h3
+                      className="text-3xl font-black tracking-tighter text=[--ifm-color-primary]"
+                      id="sponsors"
+                    >
                       Sponsors
                     </h3>
                     {team.more_sponsors.map((t, i) => (
@@ -992,7 +1057,7 @@ export function Landing() {
                 </div>
                 <div className="flex flex-wrap">
                   <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
-                    <h3 className="text-3xl font-black tracking-tighter">
+                    <h3 className="text-3xl font-black tracking-tighter" id="educelab-funders">
                       EduceLab funders
                     </h3>
                     {educelabFunders.map((t, i) => (

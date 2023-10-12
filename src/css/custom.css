@@ -123,6 +123,15 @@ figcaption {
   margin-top: 8px;
 }
 
+.docs-doc-id-firstletters {
+  background: black;
+  /* --ifm-color-primary: rgb(188, 134, 249); */
+}
+
+.docs-doc-id-firstletters a {
+  font-weight: bold;
+}
+
 .theme-back-to-top-button {
   display: none;
 }
