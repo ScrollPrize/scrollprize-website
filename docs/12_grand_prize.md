@@ -46,7 +46,7 @@ Here are the scrolls in question:
     <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 2</figcaption></div>
 </div>
 
-We have provided you with 8µm 3D X-ray scans of each of these scrolls, which you can find [here](/data). Your job is to extract the text from these scans.
+We have provided you with 8 µm 3D X-ray scans of each of these scrolls, which you can find [here](/data). Your job is to extract the text from these scans.
 
 You can approach this challenge through any means necessary: machine learning, computer vision, or machine-assisted tools operated by humans.
 
@@ -88,12 +88,18 @@ We will work with the Grand Prize winners to verify their results, put them in a
 
 <div>If you have a qualifying result, submit it for consideration by sending an email to <a href="mailto:grandprize@scrollprize.org">grandprize@scrollprize.org</a> and provide the following:</div>
 
-* **Images.** Submissions must be in the form of images of the virtually unrolled papyrus, showing visible and legible text. Specify which scroll each image came from and where in the scroll they were found.
+* **Images.** Submissions must be in the form of images of the virtually unrolled papyrus, showing visible and legible text.
+    * Submit a single static image for each text region. Images must be generated programmatically, as direct outputs of CT data inputs, and should not contain manual annotations of characters or text.
+    * Specify which scroll each image came from.
+    * Specify where in the scroll they were found: include information about the position of the text vertically as well as radially within the scroll. One easy way to do this is to provide images showing the 3D position of the text surface inside the scroll.
+    * Include scale bars showing the size of 1cm on each submission image.
 * **Methodology.** A detailed technical description of how your solution works. We need to be able to reproduce your work, so please make this as easy as possible:
     * For fully automated software, please create a Docker image that we can easily run to reproduce your work, and please include system requirements.
     * For software with a human in the loop, please provide written instructions and a video explaining how to use your tool. We’ll work with you to learn how to use it, but we’d like to have a strong starting point.
     * Either attach your code/video directly to the email, or include an easily accessible link from which we can download it.
-* **Hallucination mitigation.** If there is any risk of your model hallucinating results, please let us know how you mitigated that risk. Tell us why you are confident that the results you are getting are real.
+* **Hallucination mitigation.**
+    * If there is any risk of your model hallucinating results, please let us know how you mitigated that risk. Tell us why you are confident that the results you are getting are real.
+    * We strongly discourage submissions that use window sizes larger than 0.5x0.5 mm to generate images from machine learning models. This corresponds to 64x64 pixels for 8 µm scans. If your submission uses larger window sizes, we may reject it and ask you to modify and resubmit.
 * **Other information.** Feel free to include any other things we should know.
 
 If you’re competing as a team, please have your team leader submit your results. We will communicate with the team leader exclusively, and any prize money will be distributed according to the instructions of the team leader. You’d have to sort out within your team how to split any prizes.
