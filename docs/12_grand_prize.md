@@ -77,8 +77,11 @@ The Grand Prize deadline is 11:59pm Pacific, December 31st, 2023.
 A [Review Team](#review-process) made up of technical experts and [papyrologists](https://en.wikipedia.org/wiki/Papyrology) will assess all Grand Prize submissions to ensure that they can:
 - Read at least 4 separate passages from the two scrolls, each containing at least 140 characters of continuous text
 - Verify that each passage contains no more than 15% of characters which are missing or illegible
-- Confirm that submissions contain legitimate and linguistically plausible text
-- Independently reproduce and verify your results using your code and documented techniques
+- The 140 characters per passage include the 15% of characters which may be missing or illegible, so 119 characters must be legible. Legible characters only count as legible when viewed on a letter-by-letter basis without papyrological interpolation.
+- Confirm that submissions contain legitimate and linguistically plausible text.
+- Independently reproduce and verify your results using your code and documented techniques.
+
+If no team meets the criteria by the deadline, we reserve the right to award the prize to the team(s) that came closest. **This is not a guarantee** — we will only award a prize if we believe the spirit of the prize been met. **We do encourage everyone to submit their work by the deadline, even if you don’t believe you fully met the criteria.**
 
 To qualify for the grand prize, you must have registered at the time you downloaded the data. The registration form can be found on the [data page](/data).
 
@@ -95,7 +98,7 @@ We will work with the Grand Prize winners to verify their results, put them in a
     * Include scale bars showing the size of 1cm on each submission image.
 * **Methodology.** A detailed technical description of how your solution works. We need to be able to reproduce your work, so please make this as easy as possible:
     * For fully automated software, please create a Docker image that we can easily run to reproduce your work, and please include system requirements.
-    * For software with a human in the loop, please provide written instructions and a video explaining how to use your tool. We’ll work with you to learn how to use it, but we’d like to have a strong starting point.
+    * For software with a human in the loop, please provide written instructions and a video explaining how to use your tool. We’ll work with you to learn how to use it, but we’d like to have a strong starting point. It should take us no more than an hour to perform the human tasks to get your software working.
     * Either attach your code/video directly to the email, or include an easily accessible link from which we can download it.
 * **Hallucination mitigation.**
     * If there is any risk of your model hallucinating results, please let us know how you mitigated that risk. Tell us why you are confident that the results you are getting are real.
