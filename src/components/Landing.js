@@ -418,6 +418,11 @@ const team = {
       href: "https://ma.tt/",
     },
     {
+      name: "Bastian Lehmann",
+      title: "$75,000",
+      href: "https://twitter.com/Basti",
+    },
+    {
       name: "Tobi Lutke",
       title: "$50,000",
       href: "https://twitter.com/tobi",
@@ -448,11 +453,6 @@ const team = {
       href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
     },
     {
-      name: "Bastian Lehmann",
-      title: "$25,000",
-      href: "https://twitter.com/Basti",
-    },
-    {
       name: "Aaron Levie",
       title: "$25,000",
       href: "https://twitter.com/levie",
@@ -481,6 +481,11 @@ const team = {
       name: "Vignan Velivela",
       title: "$10,000",
       href: "https://vignanv.com/",
+    },
+    {
+      name: "Brandon Silverman",
+      title: "$10,000",
+      href: "https://twitter.com/brandonsilverm",
     },
     {
       name: "Amjad Masad",
