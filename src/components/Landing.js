@@ -275,7 +275,7 @@ const team = {
     {
       name: "Ben Kyles",
       title: "Segmentation team lead",
-      href: "",
+      href: "https://twitter.com/ben_kyles",
     },
     {
       name: "David Josey",
