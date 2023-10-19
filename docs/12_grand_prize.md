@@ -81,7 +81,7 @@ A [Review Team](#review-process) made up of technical experts and [papyrologists
 - Confirm that submissions contain legitimate and linguistically plausible text.
 - Independently reproduce and verify your results using your code and documented techniques.
 
-If no team meets the criteria by the deadline, we reserve the right to award the prize to the team(s) that came closest. **This is not a guarantee** — we will only award a prize if we believe the spirit of the prize been met. **We do encourage everyone to submit their work by the deadline, even if you don’t believe you fully met the criteria.**
+If no team meets the criteria by the deadline, we reserve the right to award the prize to the team(s) that came closest. **This is not a guarantee** — we will only award a prize if we believe the spirit of the prize has been met. **We do encourage everyone to submit their work by the deadline, even if you don’t believe you fully met the criteria.**
 
 To qualify for the grand prize, you must have registered at the time you downloaded the data. The registration form can be found on the [data page](/data).
 

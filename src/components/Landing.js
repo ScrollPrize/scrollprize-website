@@ -249,67 +249,67 @@ const team = {
   challenge: [
     {
       name: "Nat Friedman",
-      title: "Instigator and Sponsor",
+      title: "Instigator & Founding Sponsor",
       href: "https://nat.org/",
     },
     {
       name: "Daniel Gross",
-      title: "Sponsor",
+      title: "Founding Sponsor",
       href: "https://dcgross.com/",
     },
     {
       name: "JP Posma",
-      title: "Project lead",
+      title: "Project Lead",
       href: "https://janpaulposma.nl/",
     },
     {
       name: "Dr. Stephen Parsons",
-      title: "Research advisor",
+      title: "Research Advisor",
       href: "https://www2.cs.uky.edu/dri/stephen-parsons/",
     },
     {
       name: "Daniel Havíř",
-      title: "Machine learning advisor",
+      title: "Machine Learning Advisor",
       href: "https://danielhavir.com",
     },
     {
       name: "Ben Kyles",
-      title: "Segmentation team lead",
+      title: "Segmentation Team Lead",
       href: "https://twitter.com/ben_kyles",
     },
     {
       name: "David Josey",
-      title: "Segmentation team member",
+      title: "Segmentation Team Member",
       href: "https://ca.linkedin.com/in/davidsjosey",
     },
     {
       name: "Konrad Rosenberg",
-      title: "Segmentation team member",
+      title: "Segmentation Team Member",
       href: "https://www.linkedin.com/in/konradrosenberg/",
     },
     {
       name: "Chris Frangione",
-      title: "Prize advisor",
+      title: "Prize Advisor",
       href: "https://www.linkedin.com/in/chrisfrangione/",
     },
     {
       name: "Ian Janicki",
-      title: "Design advisor",
+      title: "Design Advisor",
       href: "https://ianjanicki.com/",
     },
     {
       name: "Dr. Garrett Ryan",
-      title: "Classics advisor",
+      title: "Classics Advisor",
       href: "https://toldinstone.com/",
     },
     {
       name: "Dejan Gotić",
-      title: "3d animator",
+      title: "3d Animator",
       href: "https://www.instagram.com/dejangotic_constructology/",
     },
     {
       name: "Jonny Hyman",
-      title: "2d animator",
+      title: "2d Animator",
       href: "https://jonnyhyman.com/",
     },
   ],
@@ -399,12 +399,12 @@ const team = {
     },
     {
       name: "Nat Friedman",
-      title: "$125,000",
+      title: "$225,000",
       href: "https://nat.org/",
     },
     {
       name: "Daniel Gross",
-      title: "$125,000",
+      title: "$225,000",
       href: "https://dcgross.com/",
     },
     {
@@ -458,6 +458,26 @@ const team = {
       href: "https://twitter.com/levie",
     },
     {
+      name: "Akshay Kothari",
+      title: "$25,000",
+      href: "https://twitter.com/akothari",
+    },
+    {
+      name: "Anjney Midha",
+      title: "$25,000",
+      href: "https://twitter.com/AnjneyMidha",
+    },
+    {
+      name: "Mark Cummins",
+      title: "$25,000",
+      href: "https://twitter.com/mark_cummins",
+    },
+    {
+      name: "Jamie Cox & Gary Wu",
+      title: "$15,000",
+      href: "https://www.fluidstack.io/",
+    },
+    {
       name: "Ivan Zhao",
       title: "$10,000",
       href: "https://twitter.com/ivanhzhao",
@@ -486,6 +506,31 @@ const team = {
       name: "Brandon Silverman",
       title: "$10,000",
       href: "https://twitter.com/brandonsilverm",
+    },
+    {
+      name: "Katsuya Noguchi",
+      title: "$10,000",
+      href: "https://twitter.com/kn",
+    },
+    {
+      name: "Aravind Srinivas",
+      title: "$10,000",
+      href: "https://twitter.com/AravSrinivas",
+    },
+    {
+      name: "Shariq Hashme",
+      title: "$10,000",
+      href: "https://shar.iq/",
+    },
+    {
+      name: "Sahil Chaudhary",
+      title: "$10,000",
+      href: "https://twitter.com/csahil28",
+    },
+    {
+      name: "Matias Nisenson",
+      title: "$10,000",
+      href: "https://twitter.com/MatiasNisenson",
     },
     {
       name: "Amjad Masad",
@@ -566,7 +611,7 @@ const Story = ({ story, index }) => (
       }),
     }}
   >
-    <div className="container mx-auto">
+    <div className="container mx-auto z-30 relative">
       <div className="py-10 md:py-20 max-w-4xl">
         <h1 className="text-3xl md:text-6xl font-black mb-2 leading-none tracking-tighter">
           <span
@@ -965,7 +1010,7 @@ export function Landing() {
           ))}
           {/* Prize */}
           <section className="mb-24 md:mb-36">
-            <div className="container mx-auto">
+            <div className="container mx-auto z-30 relative">
               <div className="py-10 md:py-20 max-w-3xl">
                 <h1 className="text-4xl md:text-7xl font-black mb-2 leading-none tracking-tighter mix-blend-exclusion">
                   The Vesuvius Challenge
@@ -1003,7 +1048,7 @@ export function Landing() {
           </section>
           {/* Team */}
           <section>
-            <div className="container mx-auto">
+            <div className="container mx-auto z-30 relative">
               <div className="mb-6 md:mb-10">
                 <h1 className="mb-16 text-4xl md:text-7xl font-black leading-none tracking-tighter  mix-blend-exclusion">
                   Created By
