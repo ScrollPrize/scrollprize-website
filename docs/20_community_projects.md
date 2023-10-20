@@ -184,7 +184,7 @@ There are two major avenues people have been pursuing for detecting ink in the s
 
 ### What are people working on?
 
-**Next milestone:** [First Letters Prize](first_letters).
+**Next milestone:** Scaling up the results of the [First Letters Prize](firstletters) to go for the [Grand Prize](grand_prize). Intermediate goals for the [$20k Open Source Prizes](open_source_prizes).
 
 ### Fragment-based ink detection
 
