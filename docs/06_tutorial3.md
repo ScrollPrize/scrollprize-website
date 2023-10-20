@@ -55,7 +55,7 @@ Two key steps to virtually unwrapping a scroll or manuscript are _segmenting_ a 
   <figcaption className="mt-0">The basic principle of “virtual unwrapping” <a href="https://youtu.be/VG8oOMHCg74?t=38">(source)</a></figcaption>
 </figure>
 
-To perform segmentation and flattening, we'll use [Volume Cartographer](https://github.com/educelab/volume-cartographer), a virtual unwrapping toolkit built by [EduceLab](https://www2.cs.uky.edu/dri). Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer installs many tools and utilities. In this tutorial we’ll be looking at the main `VC` GUI as well as the `vc_render` tool.
+To perform segmentation and flattening, we'll use [Volume Cartographer](https://github.com/educelab/volume-cartographer), a virtual unwrapping toolkit built by [EduceLab](https://www2.cs.uky.edu/dri)’s Seth Parker. Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer installs many tools and utilities. In this tutorial we’ll be looking at the main `VC` GUI as well as the `vc_render` tool.
 
 :::tip
 

@@ -1,5 +1,5 @@
 ---
-title: "$700,000 grand prize (December 31st)"
+title: "$700k/$100k/$50k Grand Prize (Dec 31)"
 hide_table_of_contents: true
 ---
 
@@ -37,7 +37,7 @@ hide_table_of_contents: true
 </head>
 
 
-The Grand Prize will go to the first team to read four passages of text from the inside of the two intact scrolls. More details on the qualifying criteria are available [here](#qualifying-criteria).
+The $700,000 Grand Prize will go to the first team to read four passages of text from the inside of the two intact scrolls. We also have prizes for second place ($100,000) and third place ($50,000). More details on the qualifying criteria are available [here](#qualifying-criteria).
 
 Here are the scrolls in question:
 
@@ -74,16 +74,23 @@ The Grand Prize deadline is 11:59pm Pacific, December 31st, 2023.
 
 ### Qualifying criteria
 
-A [Review Team](#review-process) made up of technical experts and [papyrologists](https://en.wikipedia.org/wiki/Papyrology) will assess all Grand Prize submissions to ensure that they can:
-- Read at least 4 separate passages from the two scrolls, each containing at least 140 characters of continuous text
+<div>A <a href="#review-process">Review Team</a> made up of technical experts and <a href="https://en.wikipedia.org/wiki/Papyrology">papyrologists</a> will assess all Grand Prize submissions to ensure that they can:</div>
+
+- Read at least 4 passages from the available full-scroll data, each containing at least 140 characters of contiguous text (e.g. within the same column)
 - Verify that each passage contains no more than 15% of characters which are missing or illegible
-- The 140 characters per passage include the 15% of characters which may be missing or illegible, so 119 characters must be legible. Legible characters only count as legible when viewed on a letter-by-letter basis without papyrological interpolation.
+- The 140 characters per passage include the 15% of characters which may be missing or illegible, so 119 characters must be legible. Legible characters only count as legible when identified on a letter-by-letter basis without papyrological interpolation.
 - Confirm that submissions contain legitimate and linguistically plausible text.
 - Independently reproduce and verify your results using your code and documented techniques.
 
-If no team meets the criteria by the deadline, we reserve the right to award the prize to the team(s) that came closest. **This is not a guarantee** — we will only award a prize if we believe the spirit of the prize has been met. **We do encourage everyone to submit their work by the deadline, even if you don’t believe you fully met the criteria.**
+If no team meets the criteria by the deadline, we reserve the right to award the prizes to the teams that came closest. **This is not a guarantee** — we will only award prizes if we believe the spirit of the prize has substantially been met and if a submission comes very close to the objective threshold. This is entirely at our discretion. If you are very very close to meeting the bar, we encourage you to submit your work before the deadline.
 
-To qualify for the grand prize, you must have registered at the time you downloaded the data. The registration form can be found on the [data page](/data).
+<div>Prizes are awarded in the order that qualifying submisisons are made:</div>
+
+- 1st place: $700,000
+- 2nd place: $100,000
+- 3rd place: $50,000
+
+To qualify for the Grand Prize, you must have registered at the time you downloaded the data. The registration form can be found on the [data page](/data).
 
 We will work with the Grand Prize winners to verify their results, put them in a historical context, and co-publish them in academic venues. The winning code will be made public under a permissive open source license, so that others can reproduce and build on your work.
 

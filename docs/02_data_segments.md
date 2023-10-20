@@ -38,14 +38,16 @@ hide_table_of_contents: true
 
 Segmentation is the mapping of sheets of papyrus in a 3D X-ray volume. The resulting surface volumes can be used directly to look for ink. The community has made this a significantly more automated process, but it still involves human input.
 
-We have a small group of contractors and volunteers who have been mapping the scrolls, mostly Scroll 1.
+We have a small group of contractors and volunteers (the “Segmentation Team”) who have been mapping the scrolls, mostly Scroll 1.
 
 <figure>
 <iframe width="484" height="293" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRQxQefw-7rl3Hnt1Q7MFpI27FtzsvFo2x9q6egW8vN5am8QlQLE20BAjOSPZ2teztjdgMUOGc6FV7Y/pubchart?oid=1982586813&amp;format=interactive"></iframe>
 <figcaption className="mt-0">Progress of mapping the scrolls, in area (cm²), from the <a href="https://docs.google.com/spreadsheets/d/1zC_5vkqWgb_5z4Q9BYsETF7_3r1BYPccdAnS_GRYOaQ/edit#gid=2051117465">Segment Directory spreadsheet</a> (dates are when a segment was started, not finished, so it lags behind a bit)</figcaption>
 </figure>
 
-The main tool which our segmenting team currently uses is Volume Cartographer, which you can learn more about in [Tutorial 3](tutorial3). The basic idea is to manually annotate a piece of papyrus in a single slice, after which an algorithm can extrapolate it into 3D, essentially by doing really fancy line-following. This algorithm still needs a lot of correction and supervision, but that’s the rough idea.
+The main tool which our segmenting team currently uses is Volume Cartographer, which you can learn more about in [Tutorial 3](tutorial3). Volume Cartographer was created by Seth Parker and others at [EduceLab](https://www2.cs.uky.edu/dri), though the segmentation team currently uses a [fork](https://github.com/schillij95/volume-cartographer-papyrus) by Julian Schilliger (@RICHI on Discord).
+
+The idea is to manually annotate a piece of papyrus in a single slice, after which an algorithm can extrapolate it into 3D, essentially by doing really fancy line-following. This algorithm still needs a lot of correction and supervision, but that’s the rough idea.
 
 <figure className="max-w-[500px]">
   <video playsInline muted controls className="w-[100%] rounded-xl" poster="/img/tutorials/vc-extrapolation2.jpg">
@@ -55,7 +57,7 @@ The main tool which our segmenting team currently uses is Volume Cartographer, w
   <figcaption className="mt-0">Illustration of Volume Cartographer with an algorithm extrapolating in 3D.</figcaption>
 </figure>
 
-The resulting 3D shape is called a “mesh”. You can view the meshes of all our segments in a tool called [Volume Viewer](http://37.19.207.113:5173/) (select “segments” in the top right):
+The resulting 3D shape is called a “mesh”. You can view the meshes of all our segments in [Volume Viewer](http://37.19.207.113:5173/) and [Segment Viewer](http://37.19.207.113:5174/) (see [here](community_projects#volume-viewer-and-segment-viewer)):
 
 <figure className="max-w-[500px]">
   <div className="w-[100%]"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div>
@@ -71,11 +73,18 @@ The `.volpkg` format used by Volume Cartographer (learn more in [Tutorial 3](tut
 * `Scroll1.volpkg/paths/<id>/meta.json`: Metadata of a segment.
 * `Scroll1.volpkg/paths/<id>/pointset.vcps`: Pointset of a segment. This is a custom data format specific to Volume Cartographer.
 
-There are two main places in which you can find segments on our [data server](http://dl.ash2txt.org/full-scrolls/):
-* [`/full-scrolls/Scroll{1,2}.volpkg/paths`](http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/): This is where we put finished paths long term.
-* [`/hari-seldon-uploads/team-finished-paths/scroll{1,2}/`](http://dl.ash2txt.org/hari-seldon-uploads/team-finished-paths/scroll1/): This is the staging area for segments made by the segmentation team (led by @Hari_Seldon on Discord).
-  * Every few weeks we move files from here to the main `/paths` folder.
-  * We also update [Volume Viewer](http://37.19.207.113:5173/) when we do this.
+You can find segments from the made by the segmentation team (led by @Hari_Seldon on Discord) on the [data server](https://forms.gle/HV1J6dJbmCB2z5QL8): [`/full-scrolls/Scroll{1,2}.volpkg/paths`](http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/).
+
+## Weekly releases
+
+Every **Friday at noon PT** we release new segments from the segmentation team:
+
+* See the [Segment Directory](https://docs.google.com/spreadsheets/d/1zC_5vkqWgb_5z4Q9BYsETF7_3r1BYPccdAnS_GRYOaQ/edit#gid=0) to learn which new segments will be released.
+* New segments will be released on the [data server](https://forms.gle/HV1J6dJbmCB2z5QL8): [`/full-scrolls/Scroll{1,2}.volpkg/paths`](http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/).
+* Sometimes the segmentation team will keep working on extending segments that have already been released. When those updated segments are released the following week, the superseded segments will be suffixed with `_superseded` on the data server.
+  * The [Segmentation Directory](https://docs.google.com/spreadsheets/d/1zC_5vkqWgb_5z4Q9BYsETF7_3r1BYPccdAnS_GRYOaQ/edit#gid=2051117465) will contain notes on which segments are superseded by which other segments.
+  * We typically use similar segment IDs for superseding segments with the final digit incremented. For example, a segment might have ID `123450` and get superseded by segment with ID `123451`.
+* We also update [Volume Viewer](http://37.19.207.113:5173/) and [Segment Viewer](http://37.19.207.113:5174/) when we release new segments (see [here](community_projects#volume-viewer-and-segment-viewer)).
 
 ## Surface volumes
 
@@ -85,7 +94,7 @@ In addition to the `meta.json` and `pointset.vcps` required by Volume Cartograph
   * This is most useful for detecting ink on.
 * `/<id>_points.obj`: Pointcloud.
 * `/<id>.obj`: Mesh of the segment.
-* `/<id>.tif`: Texture of the surrounding voxels.
+* `/<id>.tif`: Texture of the surrounding voxels (the maximum of a few of the surrounding layers, based on Volume Cartographer’s estimated papyrus thickness).
 * `/<id>.ppm`: Custom data format mapping points between the surface volume and the original 3D volume of the scroll.
 * `/author.txt`: Name of the author of the segment.
 * `/area_cm2.txt`: Total surface area, in cm<sup>2</sup>.
@@ -97,7 +106,7 @@ The surface volume is the most useful dataset for ink detection. The middle laye
   <figcaption className="mt-0">Scrubbing through layers of the surface volume of <a href="http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/20230827161846/layers/">segment 20230827161846</a></figcaption>
 </figure>
 
-All these extra files were generated using the following script: `export SLICE=20230827161846 && cd /Scroll1.volpkg/paths/${SLICE} && nice vc_convert_pointset -i pointset.vcps -o "${SLICE}_points.obj" && nice vc_render -v ../../ -s "${SLICE}" -o "${SLICE}.obj" --output-ppm "${SLICE}.ppm" && mkdir -p layers && nice vc_layers_from_ppm -v ../../ -p "${SLICE}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G && vc_area ../.. ${SLICE} | grep cm | awk '{print $2}' > area_cm2.txt`
+All these extra files were generated using the following script: `export SEGMENT=20230827161846 && cd /Scroll1.volpkg/paths/${SEGMENT} && nice vc_convert_pointset -i pointset.vcps -o "${SEGMENT}_points.obj" && nice vc_render -v ../../ -s "${SEGMENT}" -o "${SEGMENT}.obj" --output-ppm "${SEGMENT}.ppm" && mkdir -p layers && nice vc_layers_from_ppm -v ../../ -p "${SEGMENT}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G && vc_area ../.. ${SEGMENT} | grep cm | awk '{print $2}' > area_cm2.txt`
 
 ## Monster segment
 

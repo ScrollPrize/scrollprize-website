@@ -108,14 +108,14 @@ Here are some other excellent books we recommend:
 * [Leighton D. Reynolds & Nigel Guy Wilson, Scribes and Scholars: A Guide to the Transmission of Greek and Latin Literature](https://en.wikipedia.org/wiki/Special:BookSources/9780198721468)
 * [Philip Matyszak, 24 Hours in Ancient Rome](https://en.wikipedia.org/wiki/Special:BookSources/9781789291278)
 * A new book about the papyri in German — [Die Papyri Herkulaneums im Digitalen Zeitalter](https://en.wikipedia.org/wiki/Special:BookSources?isbn=9783110766233) by Kilian Fleischer — contains an estimate of how many pages of text we can expect to find if we can make the scrolls readable, which we [translated into English](/img/faq/page72to79.pdf).
-* [Opera incerta sugli Dèi by Marzia D’Angelo](https://cispe.org/philodemus-opus-incertum-pherc-89-1301-1383/) has a cool insert (see below).
+* [Opera incerta sugli Dèi by Marzia D’Angelo](https://cispe.org/philodemus-opus-incertum-pherc-89-1301-1383/) has a cool insert (see below); more explanation [here](https://discord.com/channels/1079907749569237093/1085972686158712892/1115918553602855002).
 
 <figure className="">
   <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/faq/maquette2.jpg">
     <source src="/img/faq/maquette2.webm" type="video/webm"/>
     <source src="/img/faq/maquette2.mp4" type="video/mp4"/>
   </video>
-  <figcaption className="mt-0">Herculaneum scroll reconstruction from a <a href="https://bibliopolis.it/shop/opera-incerta-sugli-dei/">book</a> by Marzia D’Angelo <a href="https://cispe.org/philodemus-opus-incertum-pherc-89-1301-1383/">(source)</a></figcaption>
+  <figcaption className="mt-0">Herculaneum scroll reconstruction from a <a href="https://bibliopolis.it/shop/opera-incerta-sugli-dei/">book</a> by Marzia D’Angelo <a href="https://cispe.org/philodemus-opus-incertum-pherc-89-1301-1383/">(source)</a>; more explanation <a href="https://discord.com/channels/1079907749569237093/1085972686158712892/1115918553602855002">here</a></figcaption>
 </figure>
 
 ### What are some good YouTube videos I should watch?

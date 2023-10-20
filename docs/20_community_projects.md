@@ -63,7 +63,7 @@ We have also set up a small team of contractors producing segments. These are av
 - Autosegmentation (minimal human input)
 - Merging of segments
 - Visualizing segments both in 3D and in flattened form
-  - Current state of the art: [Segment-Viewer](#volume-viewer-and-segment-viewer)
+  - Current state of the art: [Segment Viewer](#volume-viewer-and-segment-viewer)
 
 ### Volume Cartographer
 
@@ -78,12 +78,13 @@ We have also set up a small team of contractors producing segments. These are av
 
 The main tool that the segmentation team (contractors and volunteers) currently uses is Volume Cartographer.
 
-This tool was originally created by EduceLab, and is now being improved both by EduceLab and the Vesuvius Challenge community. The tool has been improved greatly, with more accurate and faster segmentation algorithms and UI improvements.
+This tool was originally created by EduceLab (in particular Seth Parker), and is now being improved both by EduceLab and the Vesuvius Challenge community. The tool has been improved greatly, with more accurate and faster segmentation algorithms and UI improvements.
 
 <div>Resources:</div>
 
 * [Tutorial 3.](tutorial3) We have an in-depth tutorial on how to use Volume Cartographer.
-* [Optical Flow Segmentation v2.](https://github.com/educelab/volume-cartographer/pull/34) The team primarily uses this version by Julian Schilliger (@RICHI on Discord).
+* [Original Volume Cartographer repo.](https://github.com/educelab/volume-cartographer/) The original version by Seth Parker and others.
+* [Julian’s Volume Cartographer fork.](https://github.com/schillij95/volume-cartographer-papyrus/) The segmentation team currently uses this version by Julian Schilliger (@RICHI on Discord).
 * [The Segmenter’s Guide to Volume Cartographer (for contractors).](https://docs.google.com/document/d/11B9Gy1gJRye_NQHphwbIxINvactUchJJsJOJi1FKrgI/edit?usp=sharing) For more technical details about how the segmentation team operates, check out this doc.
 * [Volume Cartographer’s Apps and Utilities page](https://github.com/educelab/volume-cartographer/blob/develop/docs/pages/apps-list.md). Also be sure to check out the various other docs in this directory.
 * [Data Processing Workflow doc](https://github.com/educelab/ink-id/blob/develop/docs/data-processing-workflow.md) which is in the ink-id repo, but is mostly about Volume Cartographer and segmentation. Also goes into how to do alignment (”registration”) of infrared photos of the fragments, and how to create binary ink labels.
@@ -103,9 +104,9 @@ This tool was originally created by EduceLab, and is now being improved both by 
 
 A new tool created by Chuck (@khartes_chuck on Discord) which allows for very precise segmentation, using real-time texturing UIs that show the segment from different angles. It is used on occasion by the segmentation team.
 
-### Volume-Viewer and Segment-Viewer
+### Volume Viewer and Segment Viewer
 
-[Volume-Viewer Github repo](https://github.com/tomhsiao1260/volume-viewer) / [Segment-Viewer Github repo](https://github.com/tomhsiao1260/segment-viewer)
+[Volume Viewer Github repo](https://github.com/tomhsiao1260/volume-viewer) / [Segment Viewer Github repo](https://github.com/tomhsiao1260/segment-viewer)
 
 <figure className="max-w-[500px] ">
   <div className="w-[100%]"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div></div>

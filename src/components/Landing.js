@@ -478,6 +478,11 @@ const team = {
       href: "https://www.fluidstack.io/",
     },
     {
+      name: "Mike Mignano",
+      title: "$15,000",
+      href: "https://mignano.co/",
+    },
+    {
       name: "Ivan Zhao",
       title: "$10,000",
       href: "https://twitter.com/ivanhzhao",

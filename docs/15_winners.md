@@ -42,7 +42,7 @@ We have awarded **$260,000** in prizes so far!
 
 ### $60,000 First Letters & Ink (12 October 2023)
 
-**Goal:** Finding the first letters within the scrolls.<br/>
+**Goal:** Find the first letters within the scrolls.<br/>
 **Announcement:** <a href="firstletters">Announcement page</a>
 
 <div class="flex flex-row flex-wrap">
@@ -93,7 +93,7 @@ We have awarded **$260,000** in prizes so far!
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0c96a39-e383-4012-86ce-f2e828d5fbba_679x434.png"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/segment-viewer">
-    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold">Segment-viewer</span> by Yao Hsiao / @Yao_Hsiao and Dalufishe / @Dalufish</div>
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold">Segment Viewer</span> by Yao Hsiao / @Yao_Hsiao and Dalufishe / @Dalufish</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F56e58854-ba5d-4eb9-92c7-3edf1c93cb6f_600x338.gif"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/spelufo/vesuvius-build/blob/main/docs/ilastik_top_pipeline_segmentation.md">
@@ -140,7 +140,7 @@ We have awarded **$260,000** in prizes so far!
 **Announcement:** <a href="https://scrollprize.substack.com/p/ink-detection-followup-prize-winners">Blog post</a>
 
 <div class="flex flex-row flex-wrap">
-  <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/educelab/volume-cartographer/pull/34">
+  <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/schillij95/volume-cartographer-papyrus/">
     <div class="mb-4"><div class="text-sm font-bold text-gray-300">$10,000</div><span class="font-bold"> Optical Flow Segmentation</span> by Julian / @RICHI</div>
     <video playsInline muted autoPlay loop className="max-w-[100%]" poster="/img/tutorials/vc-extrapolation2.jpg">
       <source src="/img/tutorials/vc-extrapolation2.webm" type="video/webm"/>
@@ -159,7 +159,7 @@ We have awarded **$260,000** in prizes so far!
     <img src="/img/progress/masked.png"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/volume-viewer">
-    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold"> Volume-viewer</span> by Yao / @Yao_Hsiao</div>
+    <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold"> Volume Viewer</span> by Yao / @Yao_Hsiao</div>
     <img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%]"/>
   </a>
   <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/MosheLevy20/VolumeAnnotate">

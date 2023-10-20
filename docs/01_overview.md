@@ -57,12 +57,13 @@ This has been going on recently:
 
 *We have awarded [$260,000](winners) in prizes already.*
 
-#### Segmentation Tooling
+#### Segmentation
 
 - Recent developments: [Segmentation Tooling 2 Prize](winners#segmentation-tooling-2-3-october-2023) completed (3 October 2023).
 - Next milestone: segmenting all papyrus sheets of both scrolls.
+- Segmentation team makes [weekly releases](data_segments#weekly-releases).
 
-#### Ink Detection Tooling
+#### Ink Detection
 
 - Recent developments: [FIRST LETTERS PRIZE WON!!!](firstletters) (12 October 2023).
 - Next milestone: [Grand Prize?!](grand_prize)

@@ -46,6 +46,16 @@ The next livestream is **Thursday October 12th at 4pm EDT**, hosted by EduceLab 
 
 ## Previous livestreams
 
+### X Spaces AMA
+
+On [X](https://twitter.com/i/spaces/1eaJbgEkEnrxX?s=20) and [our recording](http://dl.ash2txt.org/other/vesuvius-challenge-spaces-2023-10-15.m4a).
+
+### First Letters Prize announcement
+
+<iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/w0EsoAbRk1M"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+More videos from the symposium can be found [here](https://www.herculaneum.ox.ac.uk/node/262).
+
 ### Papyrology team Q&A
 
 <iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/gielO5WHdu4"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
