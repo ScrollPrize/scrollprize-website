@@ -67,5 +67,5 @@ In our tradition of progress prizes, we’re awarding four $5,000 prizes for qua
 
 <figure className="max-w-[600px]">
   <img src="/img/faq/marzia.webp" className="w-[100%]"/>
-  <figcaption className="mt-0"></figcaption>
+  <figcaption className="mt-0">Marzia D’Angelo showing her fragment map — can we make something like this for our segments?</figcaption>
 </figure>

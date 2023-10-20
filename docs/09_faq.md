@@ -75,7 +75,7 @@ We very much encourage researchers and students to work on this! Be sure to reac
 
 If you want to share your work privately with the contest organizers, please email us at team@scrollprize.org. We will keep it completely confidential. We really appreciate you keeping us in the loop!
 
-If you're open to sharing your improvements publicly (and be eligible for the [Segmentation Tooling Prize](segmentation)), you can post in Discord.
+If you're open to sharing your improvements publicly (and be eligible for progress prizes), you can post in Discord.
 
 ### What are the key academic papers I should read to understand the work done so far to read the Herculaneum Papyri?
 
