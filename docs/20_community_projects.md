@@ -89,7 +89,8 @@ This tool was originally created by EduceLab (in particular Seth Parker), and is
 * [Volume Cartographer’s Apps and Utilities page](https://github.com/educelab/volume-cartographer/blob/develop/docs/pages/apps-list.md). Also be sure to check out the various other docs in this directory.
 * [Data Processing Workflow doc](https://github.com/educelab/ink-id/blob/develop/docs/data-processing-workflow.md) which is in the ink-id repo, but is mostly about Volume Cartographer and segmentation. Also goes into how to do alignment (”registration”) of infrared photos of the fragments, and how to create binary ink labels.
 * [Ben’s Segmentation Tutorial.](https://www.youtube.com/watch?v=gcSQKiHdISw) Ben (@Hari_Seldon on Discord) goes into great detail on how to do segmenting.
-* [JP’s Segmentation Party.](https://www.youtube.com/watch?v=zKMVNaA2GdU) JP does a bunch of segmentation.\
+* [JP’s Segmentation Party.](https://www.youtube.com/watch?v=zKMVNaA2GdU) JP does a bunch of segmentation.
+* [.vcps parser.](https://www.kaggle.com/code/kglspl/simple-vcps-parser) Useful code if you’re working with the custom .vcps data format.
 
 ### Khartes
 
