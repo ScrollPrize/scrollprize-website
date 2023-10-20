@@ -43,9 +43,10 @@ In our tradition of progress prizes, we’re awarding four $5,000 prizes for qua
 * Your submission must substantially increase the probability of reading the scrolls this year, as judged by the Review Team. We may award more or fewer prizes at our discretion, depending on the number of qualifying submissions.
 * Your submission must be open source.
 * We are heavily favoring submissions that:
-* Are released early. Tools released tomorrow have a higher chance of being used for reading the scrolls than those released a day before the deadline.
-* Actually get used. We’ll look for signals from the community: questions, comments, bug reports, feature requests. Our Segmentation Team will publicly provide comments on tools they use.
+  * Are released <span className="underline">early</span>. Tools released tomorrow have a higher chance of being used for reading the scrolls than those released a day before the deadline.
+  * Actually <span className="underline">get used</span>. We’ll look for signals from the community: questions, comments, bug reports, feature requests. Our Segmentation Team will publicly provide comments on tools they use.
 * Submissions are closed on Thursday November 30th 11:59pm PT, after which the Review Team will select winners.
+* Make your submission using [this form](https://forms.gle/LFBzKqJ6K6DFRkvN9).
 
 [Segmentation](data_segments) is still a big focus, since for the Grand Prize we need multiple large segments. Large enough to contain continuous passages of at least 140 characters.
 
