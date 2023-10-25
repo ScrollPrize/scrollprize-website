@@ -59,7 +59,7 @@ To perform segmentation and flattening, we'll use [Volume Cartographer](https://
 
 :::tip
 
-We now also have a community contribution that is worth trying out: [VolumeAnnotate](https://github.com/MosheLevy20/VolumeAnnotate). And EduceLab has a new tool, [Quick Segment](https://github.com/educelab/quick-segment) that can be used on thumbnail volumes (e.g. `/volumes_small/` renamed to `/volumes/`) and then scaled up using `vc_transform_mesh`. Ask around in [Discord](https://discord.gg/6FgWYNjb4N) to learn more.
+We now also have a community contribution that is worth trying out: [VolumeAnnotate](https://github.com/MosheLevy20/VolumeAnnotate). And EduceLab has a new tool, [Quick Segment](https://github.com/educelab/quick-segment) that can be used on thumbnail volumes (e.g. `/volumes_small/` renamed to `/volumes/`) and then scaled up using `vc_transform_mesh`. Ask around in [Discord](https://forms.gle/HV1J6dJbmCB2z5QL8) to learn more.
 
 :::
 

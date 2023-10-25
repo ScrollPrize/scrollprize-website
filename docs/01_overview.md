@@ -40,7 +40,7 @@ The objective of the Vesuvius Challenge is to make history by reading an unopene
 
 ## Join the community
 
-- Join our [Discord server](https://discord.gg/6FgWYNjb4N) to ask questions, learn about what is going on, hang out with fellow contestants and interested onlookers, and perhaps find teammates.
+- Join our Discord server (by filling out our [data agreement](https://forms.gle/HV1J6dJbmCB2z5QL8)) to ask questions, learn about what is going on, hang out with fellow contestants and interested onlookers, and perhaps find teammates.
 - Receive updates every 1-2 weeks from our [mailing list on Substack](https://scrollprize.substack.com).
 - Follow [@scrollprize](https://twitter.com/scrollprize) on Twitter.
 
