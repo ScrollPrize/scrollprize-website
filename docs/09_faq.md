@@ -44,7 +44,7 @@ hide_table_of_contents: true
 
 ### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
 
-* Join our [Discord](https://forms.gle/HV1J6dJbmCB2z5QL8) to learn about current efforts and how you can pitch in.
+* Join our [Discord](https://discord.gg/6FgWYNjb4N) to learn about current efforts and how you can pitch in.
 * You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win a prize - see those [already awarded](winners)!
 
 ### Can I share my progress on social media?

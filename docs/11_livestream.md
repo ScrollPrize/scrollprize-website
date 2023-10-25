@@ -38,7 +38,7 @@ hide_table_of_contents: true
 
 The next livestream is **Thursday October 12th at 4pm EDT**, hosted by EduceLab at the University of Kentucky, to talk more about the <a href="firstletters">First Letters Prize announcement</a>. Tune in at: <a href="https://engr.uky.edu/live">https://engr.uky.edu/live</a>
 
-<!-- We will have more live streams. Be sure to check [Twitter](https://twitter.com/scrollprize), [Discord](https://forms.gle/HV1J6dJbmCB2z5QL8), and [Substack](https://scrollprize.substack.com/) for updates. -->
+<!-- We will have more live streams. Be sure to check [Twitter](https://twitter.com/scrollprize), [Discord](https://discord.gg/6FgWYNjb4N), and [Substack](https://scrollprize.substack.com/) for updates. -->
 
 <!-- The next livestream is **Thursday May 25th at 8am PST**. We’ll have several members of our [Papyrology Team](grand_prize#review-process) present to answer your questions. We’re collecting questions in the [#papyrology-qa](https://discord.com/channels/1079907749569237093/1108134343295127592) channel on Discord. -->
 
