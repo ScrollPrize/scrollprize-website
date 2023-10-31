@@ -115,6 +115,14 @@ A new tool created by Chuck (@khartes_chuck on Discord) which allows for very pr
 
 These are used by the segmentation team primarily to see which segments they have worked on already. We host them respectively [here](http://37.19.207.113:5173/) and [here](http://37.19.207.113:5174/). The datasets that these live versions pull from are updated about once per month.
 
+### Segment Browser
+
+[Vesuvius Segment Browser](https://vesuvius.virtual-void.net/) / [Github repo](https://github.com/jrudolph/vesuvius-browser)
+
+![demo1](https://github.com/ScrollPrize/scrollprize-website/assets/9868/5c441b97-6a7b-4f26-8dd6-8535f0a3e4d6)
+
+A web-based tool to browse layers and open source ink detection results of all released segments.
+
 ### VolumeAnnotate
 
 [Github repo](https://github.com/MosheLevy20/VolumeAnnotate)
