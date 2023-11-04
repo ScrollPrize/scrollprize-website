@@ -199,7 +199,7 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
       </>
     ),
     background: "/img/landing/story5.png",
-  }
+  },
 ];
 
 const prizes = [
@@ -211,8 +211,8 @@ const prizes = [
     won: false,
     qualifications: [
       "Read at least 4 separate passages of continuous and plausible text from the scrolls, each at least 140 characters long",
-      "Qualifying submissions reviewed by team of developers and papyrologists for legitimacy and plausibility"
-    ]
+      "Qualifying submissions reviewed by team of developers and papyrologists for legitimacy and plausibility",
+    ],
   },
   {
     title: "First Letters Prize",
@@ -222,27 +222,27 @@ const prizes = [
     won: true,
     qualifications: [
       "First team to find 10 legible letters in a 4 cm² area wins $40,000, second prize $10,000",
-      "Also reviewed by developers and papyrologists"
-    ]
-  }
+      "Also reviewed by developers and papyrologists",
+    ],
+  },
 ];
 
 const creators = [
   {
     name: "Nat Friedman",
     image: "/img/landing/nat.jpg",
-    href: "https://nat.org/"
+    href: "https://nat.org/",
   },
   {
     name: "Daniel Gross",
     image: "/img/landing/daniel.jpg",
-    href: "https://dcgross.com/"
+    href: "https://dcgross.com/",
   },
   {
     name: "Dr. Brent Seales",
     image: "/img/landing/brent.jpg",
-    href: "https://educelab.engr.uky.edu/w-brent-seales"
-  }
+    href: "https://educelab.engr.uky.edu/w-brent-seales",
+  },
 ];
 
 const team = {
@@ -250,366 +250,366 @@ const team = {
     {
       name: "Nat Friedman",
       title: "Instigator & Founding Sponsor",
-      href: "https://nat.org/"
+      href: "https://nat.org/",
     },
     {
       name: "Daniel Gross",
       title: "Founding Sponsor",
-      href: "https://dcgross.com/"
+      href: "https://dcgross.com/",
     },
     {
       name: "JP Posma",
       title: "Project Lead",
-      href: "https://janpaulposma.nl/"
+      href: "https://janpaulposma.nl/",
     },
     {
       name: "Dr. Stephen Parsons",
       title: "Research Advisor",
-      href: "https://www2.cs.uky.edu/dri/stephen-parsons/"
+      href: "https://www2.cs.uky.edu/dri/stephen-parsons/",
     },
     {
       name: "Daniel Havíř",
       title: "Machine Learning Advisor",
-      href: "https://danielhavir.com/"
+      href: "https://danielhavir.com/",
     },
     {
       name: "Ben Kyles",
       title: "Segmentation Team Lead",
-      href: "https://twitter.com/ben_kyles"
+      href: "https://twitter.com/ben_kyles",
     },
     {
       name: "David Josey",
       title: "Segmentation Team Member",
-      href: "https://www.linkedin.com/in/davidsjosey/"
+      href: "https://www.linkedin.com/in/davidsjosey/",
     },
     {
       name: "Konrad Rosenberg",
       title: "Segmentation Team Member",
-      href: "https://www.linkedin.com/in/konradrosenberg/"
+      href: "https://www.linkedin.com/in/konradrosenberg/",
     },
     {
       name: "Chris Frangione",
       title: "Prize Advisor",
-      href: "https://www.linkedin.com/in/chrisfrangione/"
+      href: "https://www.linkedin.com/in/chrisfrangione/",
     },
     {
       name: "Ian Janicki",
       title: "Design Advisor",
-      href: "https://ianjanicki.com/"
+      href: "https://ianjanicki.com/",
     },
     {
       name: "Dr. Garrett Ryan",
       title: "Classics Advisor",
-      href: "https://toldinstone.com/"
+      href: "https://toldinstone.com/",
     },
     {
       name: "Dejan Gotić",
       title: "3d Animator",
-      href: "https://www.instagram.com/dejangotic_constructology/"
+      href: "https://www.instagram.com/dejangotic_constructology/",
     },
     {
       name: "Jonny Hyman",
       title: "2d Animator",
-      href: "https://jonnyhyman.com/"
-    }
+      href: "https://jonnyhyman.com/",
+    },
   ],
   educe: [
     {
       name: "Dr. Brent Seales",
       title: "Principal Investigator",
-      href: "https://educelab.engr.uky.edu/w-brent-seales"
+      href: "https://educelab.engr.uky.edu/w-brent-seales",
     },
     {
       name: "Seth Parker",
       title: "PhD candidate",
-      href: "https://www2.cs.uky.edu/dri/seth-parker/"
+      href: "https://www2.cs.uky.edu/dri/seth-parker/",
     },
     {
       name: "Christy Chapman",
       title: "Research & Partnership Manager",
-      href: "https://educelab.engr.uky.edu/christy-chapman"
+      href: "https://educelab.engr.uky.edu/christy-chapman",
     },
     {
       name: "Mami Hayashida",
       title: "Research Staff",
-      href: "https://www.ccs.uky.edu/about-ccs/staff-directory/mami-hayashida/"
+      href: "https://www.ccs.uky.edu/about-ccs/staff-directory/mami-hayashida/",
     },
     {
       name: "Dr. James Brusuelas",
       title: "Associate Professor of Classics",
-      href: "https://mcl.as.uky.edu/users/jbr454"
+      href: "https://mcl.as.uky.edu/users/jbr454",
     },
     {
       name: "Beth Lutin",
       title: "College Business Analyst",
-      href: "https://www.engr.uky.edu/directory/lutin-elizabeth"
+      href: "https://www.engr.uky.edu/directory/lutin-elizabeth",
     },
     {
       name: "Dr. Roger Macfarlane",
       title: "Professor of Classical Studies",
-      href: "https://hum.byu.edu/directory/roger-macfarlane"
-    }
+      href: "https://hum.byu.edu/directory/roger-macfarlane",
+    },
   ],
   papyrology: [
     {
       name: "Robert Fowler",
       title:
         "Fellow of the British Academy;  Professor Emeritus of Classics, Bristol University",
-      href: "https://www.thebritishacademy.ac.uk/fellows/robert-fowler-FBA/"
+      href: "https://www.thebritishacademy.ac.uk/fellows/robert-fowler-FBA/",
     },
     {
       name: "Tobias Reinhardt",
       title:
         "Corpus Christi Professor of the Latin Language and Literature, Oxford",
-      href: "https://www.classics.ox.ac.uk/people/professor-tobias-reinhardt"
+      href: "https://www.classics.ox.ac.uk/people/professor-tobias-reinhardt",
     },
     {
       name: "Federica Nicolardi",
       title: "Professor of Classics, University of Naples Federico II",
-      href: "https://www.docenti.unina.it/federica.nicolardi"
+      href: "https://www.docenti.unina.it/federica.nicolardi",
     },
     {
       name: "Gianluca Del Mastro",
       title:
         "Professor of Papyrology, l’Università della Campania «L. Vanvitelli»",
-      href: "https://www.facebook.com/GianlucaDelMastroSindaco"
+      href: "https://www.facebook.com/GianlucaDelMastroSindaco",
     },
     {
       name: "Daniel Delattre",
       title: "Emeritus Research Director and Papyrologist, CNRS and IRHT",
-      href: "https://www.irht.cnrs.fr/fr/annuaire/delattre-daniel"
+      href: "https://www.irht.cnrs.fr/fr/annuaire/delattre-daniel",
     },
     {
       name: "Richard Janko",
       title:
         "Fellow of the American Academy of Arts and Sciences; Professor of Classics, University of Michigan",
-      href: "https://lsa.umich.edu/classics/people/departmental-faculty/rjanko.html"
-    }
+      href: "https://lsa.umich.edu/classics/people/departmental-faculty/rjanko.html",
+    },
   ],
   more_sponsors: [
     {
       name: "Joseph Jacks",
       title: "$250,000",
-      href: "https://twitter.com/JosephJacks_"
+      href: "https://twitter.com/JosephJacks_",
     },
     {
       name: "Alex Gerko",
       title: "$250,000",
-      href: "https://twitter.com/AlexanderGerko"
+      href: "https://twitter.com/AlexanderGerko",
     },
     {
       name: "Nat Friedman",
       title: "$225,000",
-      href: "https://nat.org/"
+      href: "https://nat.org/",
     },
     {
       name: "Daniel Gross",
       title: "$225,000",
-      href: "https://dcgross.com/"
+      href: "https://dcgross.com/",
     },
     {
       name: "John & Patrick Collison",
       title: "$125,000",
-      href: "https://stripe.com/"
+      href: "https://stripe.com/",
     },
     {
       name: "Matt Mullenweg",
       title: "$125,000",
-      href: "https://ma.tt/"
+      href: "https://ma.tt/",
     },
     {
       name: "Bastian Lehmann",
       title: "$75,000",
-      href: "https://twitter.com/Basti"
+      href: "https://twitter.com/Basti",
     },
     {
       name: "Tobi Lutke",
       title: "$50,000",
-      href: "https://twitter.com/tobi"
+      href: "https://twitter.com/tobi",
     },
     {
       name: "Guillermo Rauch",
       title: "$50,000",
-      href: "https://rauchg.com/"
+      href: "https://rauchg.com/",
     },
     {
       name: "Arthur Breitman",
       title: "$50,000",
-      href: "https://ex.rs/"
+      href: "https://ex.rs/",
     },
     {
       name: "Matt Huang",
       title: "$50,000",
-      href: "https://twitter.com/matthuang"
+      href: "https://twitter.com/matthuang",
     },
     {
       name: "Julia DeWahl & Dan Romero",
       title: "$50,000",
-      href: "https://twitter.com/natfriedman/status/1637959778558439425"
+      href: "https://twitter.com/natfriedman/status/1637959778558439425",
     },
     {
       name: "Anonymous",
       title: "$50,000",
-      href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y"
+      href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
     },
     {
       name: "Aaron Levie",
       title: "$25,000",
-      href: "https://twitter.com/levie"
+      href: "https://twitter.com/levie",
     },
     {
       name: "Akshay Kothari",
       title: "$25,000",
-      href: "https://twitter.com/akothari"
+      href: "https://twitter.com/akothari",
     },
     {
       name: "Anjney Midha",
       title: "$25,000",
-      href: "https://twitter.com/AnjneyMidha"
+      href: "https://twitter.com/AnjneyMidha",
     },
     {
       name: "Mark Cummins",
       title: "$25,000",
-      href: "https://twitter.com/mark_cummins"
+      href: "https://twitter.com/mark_cummins",
     },
     {
       name: "Jamie Cox & Gary Wu",
       title: "$15,000",
-      href: "https://www.fluidstack.io/"
+      href: "https://www.fluidstack.io/",
     },
     {
       name: "Mike Mignano",
       title: "$15,000",
-      href: "https://mignano.co/"
+      href: "https://mignano.co/",
     },
     {
       name: "Ivan Zhao",
       title: "$10,000",
-      href: "https://twitter.com/ivanhzhao"
+      href: "https://twitter.com/ivanhzhao",
     },
     {
       name: "Stephanie Sher",
       title: "$10,000",
-      href: "https://twitter.com/stephxsher"
+      href: "https://twitter.com/stephxsher",
     },
     {
       name: "Brandon Reeves",
       title: "$10,000",
-      href: "https://www.luxcapital.com/people/brandon-reeves"
+      href: "https://www.luxcapital.com/people/brandon-reeves",
     },
     {
       name: "Raymond Russell",
       title: "$10,000",
-      href: "https://twitter.com/raymondopolis"
+      href: "https://twitter.com/raymondopolis",
     },
     {
       name: "Vignan Velivela",
       title: "$10,000",
-      href: "https://vignanv.com/"
+      href: "https://vignanv.com/",
     },
     {
       name: "Brandon Silverman",
       title: "$10,000",
-      href: "https://twitter.com/brandonsilverm"
+      href: "https://twitter.com/brandonsilverm",
     },
     {
       name: "Katsuya Noguchi",
       title: "$10,000",
-      href: "https://twitter.com/kn"
+      href: "https://twitter.com/kn",
     },
     {
       name: "Aravind Srinivas",
       title: "$10,000",
-      href: "https://twitter.com/AravSrinivas"
+      href: "https://twitter.com/AravSrinivas",
     },
     {
       name: "Shariq Hashme",
       title: "$10,000",
-      href: "https://shar.iq/"
+      href: "https://shar.iq/",
     },
     {
       name: "Sahil Chaudhary",
       title: "$10,000",
-      href: "https://twitter.com/csahil28"
+      href: "https://twitter.com/csahil28",
     },
     {
       name: "Matias Nisenson",
       title: "$10,000",
-      href: "https://twitter.com/MatiasNisenson"
+      href: "https://twitter.com/MatiasNisenson",
     },
     {
       name: "Amjad Masad",
       title: "$5,000",
-      href: "https://twitter.com/amasad"
+      href: "https://twitter.com/amasad",
     },
     {
       name: "Conor White-Sullivan",
       title: "$5,000",
-      href: "https://twitter.com/Conaw"
-    }
-  ]
+      href: "https://twitter.com/Conaw",
+    },
+  ],
 };
 
 const partners = [
   {
     icon: "/img/landing/educe.svg",
-    href: "https://educelab.engr.uky.edu/"
+    href: "https://educelab.engr.uky.edu/",
   },
   {
     icon: "/img/landing/institute.svg",
-    href: "https://www.institutdefrance.fr/en/home/"
+    href: "https://www.institutdefrance.fr/en/home/",
   },
   {
     icon: "/img/landing/diamond.svg",
-    href: "https://www.diamond.ac.uk/"
+    href: "https://www.diamond.ac.uk/",
   },
   {
     icon: "/img/landing/biblioteca.svg",
-    href: "https://www.bnnonline.it/"
+    href: "https://www.bnnonline.it/",
   },
   {
     icon: "/img/landing/getty.svg",
-    href: "https://www.getty.edu/"
+    href: "https://www.getty.edu/",
   },
   {
     icon: "/img/landing/kaggle.svg",
-    href: "https://www.kaggle.com/"
-  }
+    href: "https://www.kaggle.com/",
+  },
 ];
 
 const educelabFunders = [
   {
     name: "The National Science Foundation",
-    href: "https://www.nsf.gov/"
+    href: "https://www.nsf.gov/",
   },
   {
     name: "The National Endowment for the Humanities",
-    href: "https://www.neh.gov/"
+    href: "https://www.neh.gov/",
   },
   {
     name: "The Andrew W. Mellon Foundation",
-    href: "https://www.mellon.org/"
+    href: "https://www.mellon.org/",
   },
   {
     name: "The Digital Restoration Initiative",
-    href: "https://www2.cs.uky.edu/dri/"
+    href: "https://www2.cs.uky.edu/dri/",
   },
   {
     name: "The Arts & Humanities Research Council",
-    href: "https://www.ukri.org/councils/ahrc/"
+    href: "https://www.ukri.org/councils/ahrc/",
   },
   {
     name: "The Lighthouse Beacon Foundation — Stanley and Karen Pigman",
-    href: undefined
+    href: undefined,
   },
   {
     name: "John & Karen Maxwell",
-    href: undefined
+    href: undefined,
   },
   { 
     name: "Lee & Stacie Marksbury",
-    href: undefined
-  }
+    href: undefined,
+  },
 ];
 
 const Story = ({ story, index }) => (
