@@ -270,7 +270,7 @@ const team = {
     {
       name: "Daniel Havíř",
       title: "Machine Learning Advisor",
-      href: "https://danielhavir.com",
+      href: "https://danielhavir.com/",
     },
     {
       name: "Ben Kyles",
@@ -280,7 +280,7 @@ const team = {
     {
       name: "David Josey",
       title: "Segmentation Team Member",
-      href: "https://ca.linkedin.com/in/davidsjosey",
+      href: "https://www.linkedin.com/in/davidsjosey/",
     },
     {
       name: "Konrad Rosenberg",
@@ -372,7 +372,7 @@ const team = {
       name: "Gianluca Del Mastro",
       title:
         "Professor of Papyrology, l’Università della Campania «L. Vanvitelli»",
-      href: "https://www.facebook.com/GianlucaDelMastroSindaco/",
+      href: "https://www.facebook.com/GianlucaDelMastroSindaco",
     },
     {
       name: "Daniel Delattre",
@@ -578,26 +578,38 @@ const partners = [
 ];
 
 const educelabFunders = [
-  { name: "The National Science Foundation", href: "https://www.nsf.gov" },
+  {
+    name: "The National Science Foundation",
+    href: "https://www.nsf.gov/",
+  },
   {
     name: "The National Endowment for the Humanities",
-    href: "https://www.neh.gov",
+    href: "https://www.neh.gov/",
   },
-  { name: "The Andrew W. Mellon Foundation", href: "https://www.mellon.org" },
+  {
+    name: "The Andrew W. Mellon Foundation",
+    href: "https://www.mellon.org/",
+  },
   {
     name: "The Digital Restoration Initiative",
     href: "https://www2.cs.uky.edu/dri/",
   },
   {
-    name: "The Arts & Humanities Research Council of Great Britain",
-    href: undefined,
+    name: "The Arts & Humanities Research Council",
+    href: "https://www.ukri.org/councils/ahrc/",
   },
   {
     name: "The Lighthouse Beacon Foundation — Stanley and Karen Pigman",
     href: undefined,
   },
-  { name: "John & Karen Maxwell", href: undefined },
-  { name: "Lee & Stacie Marksbury", href: undefined },
+  {
+    name: "John & Karen Maxwell",
+    href: undefined,
+  },
+  { 
+    name: "Lee & Stacie Marksbury",
+    href: undefined,
+  },
 ];
 
 const Story = ({ story, index }) => (
