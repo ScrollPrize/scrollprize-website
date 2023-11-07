@@ -39,6 +39,7 @@ hide_table_of_contents: true
 ### What are the important dates?
 
 * March 15th 2023: Launch!
+* November 30th 2023: Deadline of the current round of [Open Source Prizes](/open_source_prizes).
 * December 31st 2023: Deadline of the [Grand Prize](/overview#grand-prize-700000).
 * We have also [awarded](winners) a number of progress prizes with shorter deadlines, and more may follow.
 
@@ -262,6 +263,46 @@ From the X-ray photos from different angles we can reconstruct a 3D volume, usin
 </div>
 
 The resulting 3D volume is like a 3D image. Each unit is called a “voxel” (instead of “pixel”), and has a particular brightness (it’s greyscale). This 3D volume is typically represented as a “.tif image stack”. This is just a bunch of .tif images where each image (called a “slice”) represents a different layer the z-direction, typically starting at the bottom and moving upwards.
+
+### How should the intensity values in the CT scans be interpreted?
+
+The intensity values should be considered relative: within a CT scan, a higher value indicates higher [radiodensity](https://en.wikipedia.org/wiki/Radiodensity) compared to a lower value from the same scan.
+There are not units attached to these values that have an absolute physical interpretation, or that allow direct density comparisons between scans.
+These forms of data are sometimes called qualitative (for relative values) and quantitative (for absolute values with units), even though they're both "quantitative" in the sense we often think of, in that they are numerical.
+
+Relative values like this are typical in CT due to the nature of the imaging technique.
+The medical CT community has a convention called the [Hounsfield unit](https://www.ncbi.nlm.nih.gov/books/NBK547721/) (HU) that approaches quantitative data, but has caveats.
+The HU is calculated based on a linear ramp using baseline attenuation measured from distilled water (defined as zero HU) and air (-1000 HU).
+Certain tissues then tend to occupy particular ranges, for instance bone can commonly reach 1000 HU.
+This can be helpful in the right application, but the HU is still [considered unreliable](https://pubmed.ncbi.nlm.nih.gov/6981306/) as an absolute value, particularly between different scans.
+
+Seth Parker described this with respect to our data using an analogy to photography:
+
+> Filtered back projection doesn't set a mean explicitly- every voxel is calculated as the weighted sum of projections of that voxel, with the weights derived analytically. So in general the intensity scale is all relative. A loose analogy here is determining the element of an object by taking its color photograph: color in the image is a function of the object's chemistry, but also the color of the incident light, ambient light bouncing around the scene, the exposure properties of the camera, the light response of the sensor/film, etc. Not only that, but multiple materials may have the same color under a specific lighting condition. If you don't have some way of disentangling those effects (for example, controlling lighting, capturing under multiple exposure conditions, having known samples in the FOV to use for calibration), then it's hard to say much beyond what the color is.
+
+The ensuing discussion is also informative and can be found [on our Discord](https://discord.com/channels/1079907749569237093/1079907750265499772/threads/1087098128110469141).
+
+Based on this, the raw reconstruction values for a scan do not have units or physical interpretations attached to them.
+These 32-bit float values are typically in the range [-0.1, 0.1] or smaller.
+For more recent scans, we are releasing .hdf files that contain these original reconstruction output float values, so you can experiment with your own intensity windowing.
+For the 16-bit integer .tif slices that we release, we map the float range to [0, 2^16-1] by choosing a minimum and maximum in the raw float range and scaling accordingly.
+The fragments and all more recent scans use the 0.01 percentile and 99.99 percentile as the window min and max.
+Scroll 1 and Scroll 2 use 0.1 and 99.9, to achieve visually comparable output since they have so much more papyrus in the field of view.
+
+Reconstruction outputs should be nonnegative by the principles of backprojection (there can't be negative X-ray attenuation).
+But noise and other processes lead to some negative values in the reconstructions.
+This is typical with CT.
+To remove these negative values, the window min could just be clamped at zero.
+This would result in an image where air would be black, and there would be more visual contrast.
+
+We did not clamp the minimum at zero, instead using percentiles.
+Air therefore does not appear black in the .tif slices, but is gray and has some noise.
+For ink detection, we are looking for something subtle, and are training models to detect it.
+Removing all negative values from the reconstructed image makes the output visually resemble expectations, but is inherently destructive.
+We don't yet know if there might be any subtle ink signal in the "noise" of the negative values, and so leave the data as unaltered as possible so the models can decide for themselves what to look for.
+
+If you want to experiment with comparing scans across energies, there are some materials of known composition in the field of view that are consistent between scans, and you may wish to use them as a sort of baseline.
+For example, air is present in all scans, and the scroll cases are made of Nylon 12.
 
 ### What signals might be present in the 3D X-ray scans for ink detection?
 
