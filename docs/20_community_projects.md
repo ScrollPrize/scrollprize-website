@@ -54,10 +54,11 @@ We have also set up a small team of contractors producing segments. These are av
 
 ### What are people working on?
 
-<div><strong>Next milestone:</strong> segmenting all papyrus sheets of both scrolls. For this we will need tools like:</div>
+<div><strong>Next milestone:</strong> segmenting all papyrus sheets of all scrolls. For this we will need tools like:</div>
 
-- Much faster computer-assisted segmentation tools
-  - Current state of the art: [Julian’s Volume Cartographer fork](#volume-cartographer)
+- Segmenting the [new scans](https://scrollprize.substack.com/p/new-scans-of-herculaneum-papyri-at)
+  - Better tooling for dealing with the higher resolutions and multiple volumes
+  - Current state of the art: [Philip’s Volume Cartographer fork](#volume-cartographer)
 - Better tools for high-accuracy segmentation or correcting
   - Current state of the art: [Khartes](#khartes)
 - Autosegmentation (minimal human input)
@@ -67,7 +68,7 @@ We have also set up a small team of contractors producing segments. These are av
 
 ### Volume Cartographer
 
-[Original Github repo](https://github.com/educelab/volume-cartographer) / [Faster version by Julian (@RICHI)](https://github.com/schillij95/volume-cartographer-papyrus)
+[Original Github repo](https://github.com/educelab/volume-cartographer) / [Faster version by Julian (@RICHI)](https://github.com/schillij95/volume-cartographer-papyrus) / [Even more features by Philip (@spacegaier)](https://github.com/spacegaier/volume-cartographer/)
 
 <figure class="">
   <video autoPlay playsInline muted loop className="w-[100%] max-w-[600px] rounded" poster="/img/tutorials/vc-segmentation3.jpg">
@@ -84,7 +85,8 @@ This tool was originally created by EduceLab (in particular Seth Parker), and is
 
 * [Tutorial 3.](tutorial3) We have an in-depth tutorial on how to use Volume Cartographer.
 * [Original Volume Cartographer repo.](https://github.com/educelab/volume-cartographer/) The original version by Seth Parker and others.
-* [Julian’s Volume Cartographer fork.](https://github.com/schillij95/volume-cartographer-papyrus/) The segmentation team currently uses this version by Julian Schilliger (@RICHI on Discord).
+* [Julian’s Volume Cartographer fork.](https://github.com/schillij95/volume-cartographer-papyrus/) The segmentation team previously used this version by Julian Schilliger (@RICHI on Discord).
+* [Philip’s Volume Cartographer fork.](https://github.com/spacegaier/volume-cartographer/) The segmentation team currenlty used this version by Philip Allgaier (@spacegaier on Discord).
 * [The Segmenter’s Guide to Volume Cartographer (for contractors).](https://docs.google.com/document/d/11B9Gy1gJRye_NQHphwbIxINvactUchJJsJOJi1FKrgI/edit?usp=sharing) For more technical details about how the segmentation team operates, check out this doc.
 * [Volume Cartographer’s Apps and Utilities page](https://github.com/educelab/volume-cartographer/blob/develop/docs/pages/apps-list.md). Also be sure to check out the various other docs in this directory.
 * [Data Processing Workflow doc](https://github.com/educelab/ink-id/blob/develop/docs/data-processing-workflow.md) which is in the ink-id repo, but is mostly about Volume Cartographer and segmentation. Also goes into how to do alignment (”registration”) of infrared photos of the fragments, and how to create binary ink labels.
@@ -187,8 +189,8 @@ https://twitter.com/CJHandmer/status/1644940811837276161?s=20
 
 There are two major avenues people have been pursuing for detecting ink in the scrolls.
 
-1. **Fragment-based.** Training ML models on fragments, then running them on scroll segments. This is the method we originally envisioned, and created some prizes around, like the [Ink Detection prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/).
-2. **Crackle-based.** Searching the scrolls for the [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) discovered by Casey Handmer.
+1. **Fragment-based.** Training ML models on fragments, then running them on scroll segments. This is the method we originally envisioned, and created some prizes around, like the [Ink Detection prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/). Resulted in Youssef’s [First Letters Prize](firstletters) results.
+2. **Crackle-based.** Searching the scrolls for the [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) discovered by Casey Handmer. Resulted in Luke’s [First Letters Prize](firstletters) results.
 
 ### What are people working on?
 
@@ -196,12 +198,20 @@ There are two major avenues people have been pursuing for detecting ink in the s
 
 ### Fragment-based ink detection
 
-<figure className="max-w-[600px]">
-  <img src="/img/progress/inkdetection.jpg" className="w-[100%]"/>
-  <figcaption className="mt-0">Figure from the Kaggle 6th place winners writeup</figcaption>
+<figure className="max-w-[100%]">
+  <img src="/img/firstletters/composite_thumb.png" className="w-[100%]"/>
+  <figcaption className="mt-0">Youssef’s model from the <a href="firstletters">First Letters Prize</a>.</figcaption>
 </figure>
 
-The state of the art of Fragment-based ink detection are the top 10 models from the Ink Detection prize on Kaggle.
+<div>Some different things people have pursued:</div>
+
+* [**Youssef’s First Letters Prize model.**](https://github.com/younader/Vesuvius-First-Letters) By Youssef Nader (@YoussefNader on Discord).
+* [**Scroll pretraining.**](https://github.com/younader/VesuviusPretraining) Youssef’s original idea for pretraining on the scrolls and finetuning on the fragments, which led him to winning the [First Letters Prize](firstletters).
+* [**Ryan Chesler’s analysis.**](https://github.com/ainatersol/Vesuvius-InkDetection/blob/main/additional_findings.md) From the #1 Kaggle team, Ryan Chesler did an analysis of retraining their model on 8µm, and applying that to the Monster Segment.
+* [**OverthINKingSegmenter’s analysis.**](https://github.com/MIC-DKFZ/OverthINKingSegmenter/blob/master/vesuvius_followup_writeup.pdf) Another analysis from the #7 Kaggle team, on the importance of resolution.
+* [**Stephen Parsons’ PhD dissertation.**](https://uknowledge.uky.edu/cs_etds/138/) Lots and lots of gems in here. And of course we’d be remiss not to mention his original [ink-id](https://github.com/educelab/ink-id) software.
+
+Before the First Letters Prize result, we ran an Ink Detection prize on Kaggle. These are the top 10 results:
 
 * 1st place: **ryches.** <a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/417496">Writeup</a> / <a href="https://github.com/ainatersol/Vesuvius-InkDetection">Github</a> / <a href="https://www.kaggle.com/code/ryches/1st-place-solution">Inference notebook</a> / <a href="https://www.youtube.com/watch?v=IWySc8s00P0">Presentation</a>
 * 2nd place: **RTX23090.** <a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/417255">Writeup</a> / <a href="https://github.com/mipypf/Vesuvius-Challenge">Github</a> / <a href="https://www.kaggle.com/code/mipypf/ink-segmentation-2-5d-3dcnn-resnet3dcsn-fp16fold01?scriptVersionId=132226669">Inference notebook</a> / <a href="https://www.youtube.com/watch?v=lmuyUMA-g1Y">Presentation</a>
@@ -219,25 +229,19 @@ The state of the art of Fragment-based ink detection are the top 10 models from 
   <figcaption className="mt-0">Ryan Chesler’s 4µm vs 8µm experiment</figcaption>
 </figure>
 
-<div>So far, none of these models have successfully shown letters on the scroll segments. One barrier is the difference in resolution (4µm vs 8µm). There have been some interesting analyses performed though:</div>
-
-* [**Ryan Chesler’s analysis.**](https://github.com/ainatersol/Vesuvius-InkDetection/blob/main/additional_findings.md) From the #1 Kaggle team, Ryan Chesler did an analysis of retraining their model on 8µm, and applying that to the Monster Segment.
-* [**OverthINKingSegmenter’s analysis.**](https://github.com/MIC-DKFZ/OverthINKingSegmenter/blob/master/vesuvius_followup_writeup.pdf) Another analysis from the #7 Kaggle team, on the importance of resolution.
-* [**Scroll pretraining.**](https://github.com/younader/VesuviusPretraining) An idea for pretraining on the scrolls and finetuning on the fragments.
-* [**Stephen Parsons’ PhD dissertation.**](https://uknowledge.uky.edu/cs_etds/138/) Lots and lots of gems in here. And of course we’d be remiss not to mention his original [ink-id](https://github.com/educelab/ink-id) software.
-
 ### Crackle-based ink detection
 
-Casey Handmer discovered a [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) in Scroll 1, which appears to be ink. We haven’t found too many occurrences of it in the scroll yet, but it is a promising idea to explore further.
+Casey Handmer discovered a [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) in Scroll 1, which appears to be ink.
 
 <div>Several projects have been started to look into this crackle pattern more:</div>
 
-* [Luke’s 4th place Kaggle finetuning.](https://github.com/lukeboi/scroll-fourth-second) This didn’t seem to work.
+* [Luke’s First Letters Prize model.](https://github.com/lukeboi/scroll-first-letters) By Luke Farritor (@lukeboi on Discord).
 * [Crackle Viewer.](https://github.com/schillij95/Crackle-Viewer) Tool by Julian Schilliger (@RICHI on Discord) to annotate crackles in segments.
-* [Luke’s (unreleased) crackle model.](https://discord.com/channels/1079907749569237093/1079907750265499772/1145416674833600592) A very promising method that appears to uncover multiple letters. By Luke Farritor (@lukeboi on Discord). See also [Nat’s tweet](https://twitter.com/natfriedman/status/1695870954734490003).
 * [Julian’s (unreleased) crackle model.](https://discord.com/channels/1079907749569237093/1079907750265499772/1145465050509869226) Seems similar to Luke’s model.
+* [Luke’s 4th place Kaggle finetuning.](https://github.com/lukeboi/scroll-fourth-second) This didn’t seem to work.
 
-<figure className="max-w-[600px]">
-  <img src="/img/progress/crackle.jpeg" className="w-[100%]"/>
-  <figcaption className="mt-0">Luke’s unreleased <a href="https://twitter.com/natfriedman/status/1695870954734490003">crackle model</a>.</figcaption>
+<figure className="max-w-[100%]">
+  <img src="/img/firstletters/luke-submission.png" className="w-[100%]"/>
+  <figcaption className="mt-0">Luke’s <a href="firstletters">First Letters Prize</a> submission.</figcaption>
 </figure>
+

@@ -59,7 +59,7 @@ To perform segmentation and flattening, we'll use [Volume Cartographer](https://
 
 :::tip
 
-We now also have a community contribution that is worth trying out: [VolumeAnnotate](https://github.com/MosheLevy20/VolumeAnnotate). And EduceLab has a new tool, [Quick Segment](https://github.com/educelab/quick-segment) that can be used on thumbnail volumes (e.g. `/volumes_small/` renamed to `/volumes/`) and then scaled up using `vc_transform_mesh`. Ask around in [Discord](https://discord.gg/V4fJhvtaQn) to learn more.
+We’re using the original version of Volume Cartographer in this tutorial. For the latest version, see the [Community Projects](community_projects#volume-cartographer) page or ask in Discord.
 
 :::
 
@@ -428,6 +428,8 @@ Flattening & UV Options:
 There lots of other options, too, which you can see by using `vc_render --help`. For example, you can select different texturing methods, instead of just picking the maximum pixel value. You can also run your own texturing methods on the “surface volume” image stack directly. In a sense, the separate [“Ink Detection”](tutorial4) machine learning step can be seen as a particularly fancy texturing method!
 
 Try experimenting with the different options and see what happens.
+
+We’re using the original version of Volume Cartographer in this tutorial. For the latest version, see the [Community Projects](community_projects#volume-cartographer) page or ask in Discord.
 
 <!--
 ### Optional: En-Gedi

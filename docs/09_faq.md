@@ -39,6 +39,7 @@ hide_table_of_contents: true
 ### What are the important dates?
 
 * March 15th 2023: Launch!
+* October 12th 2023: [First Letters Prize](firstletters) was awarded for first discovery of text within the scrolls.
 * November 30th 2023: Deadline of the current round of [Open Source Prizes](/open_source_prizes).
 * December 31st 2023: Deadline of the [Grand Prize](/overview#grand-prize-700000).
 * We have also [awarded](winners) a number of progress prizes with shorter deadlines, and more may follow.
@@ -52,7 +53,7 @@ hide_table_of_contents: true
 
 Yes, in fact we encourage you to share your progress. Be sure to also post in our Discord, to get feedback from the community.
 
-The only exception is that per the data agreement, you’re not allowed to share material revelation of text (e.g. entire words) without our permission (including the associated code), or share the raw data.
+The only exception is that per the data agreement, you’re not allowed to publicly share material revelation of text (e.g. entire words) without our permission (including the associated code), or share the raw data. You _are_ allowed to share these things on Discord, since everything uploaded on Discord falls under the same data agreement as our data server.
 
 ### I’m outside the United States, can I participate and win prizes?
 
@@ -80,18 +81,22 @@ If you're open to sharing your improvements publicly (and be eligible for progre
 
 ### What are the key academic papers I should read to understand the work done so far to read the Herculaneum Papyri?
 
-* [EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT](https://arxiv.org/abs/2304.02084) (data paper)
+* Data papers:
+  * 2019: [“EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT”](https://arxiv.org/abs/2304.02084)
+  * 2023: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1GTjn2jkVN3OEw-vswJirHkgD6sBOFldC/view)
+* [Hard-Hearted Scrolls: A Noninvasive Method for Reading the Herculaneum Papyri](https://uknowledge.uky.edu/cs_etds/138/) (Stephen Parsons’ PhD dissertation)
 * [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable)
 * [From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi](https://www.science.org/doi/10.1126/sciadv.1601247)
 * [Reading the Invisible Library: A Retrospective](/img/faq/retro.pdf) (history preprint)
 
-For a comprehensive overview of the field, see [this list by Dr. Seales' lab](https://educelab.gitlab.io/publications/bibtex-refs/).
+For a comprehensive overview of the field, see [this list by EduceLab](https://educelab.gitlab.io/publications/bibtex-refs/).
 
 ### What are the best talks that have been given on this work?
 
 * [Reading the Herculaneum Papyri: Yesterday, Today, and Tomorrow](https://www.youtube.com/watch?v=g-7-Xg75CCI&t=4928s)
 * [Digital Restoration Initiative: Reading the Invisible Library](https://www.youtube.com/watch?v=NPy0potyh4c)
 * [Reading the Invisible Library: Virtual Unwrapping and the Scroll from En-Gedi](https://www.youtube.com/watch?v=mwe9sHZ58A0)
+* [2023 symposium](https://www.herculaneum.ox.ac.uk/node/262)
 
 <figure className="">
 <img src="/img/faq/getty-own-photo-small.jpg"/>
@@ -127,13 +132,13 @@ Here are some other excellent books we recommend:
 * [Out of the Ashes: Recovering the Lost Library of Herculaneum](https://www.youtube.com/watch?v=98W-j545-0Y)
 * For more videos see [this page](https://www2.cs.uky.edu/dri/videos/)
 
-### Do we really need 8µm resolution? These data files are huge!
+### Do we really need 7.91µm or 3.24µm resolution? These data files are huge!
 
-We are releasing about 5.5TB worth of 3D volumetric data of the scrolls (8µm), and 1.8TB worth of data of the fragments (4µm). We don't know what the minimum resolution necessary to detect ink is, but this paper suggests that it may be 8µm: [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable).
+We don't know what the minimum resolution necessary to detect ink is, but this paper suggests that it may be 7.91µm: [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable).
 
 ### If an algorithm can read ink from a fragment X-ray, is it likely to work on a scroll?
 
-There is a known domain shift between the existing CT scans of fragments and scrolls, but the exciting results of the First Letters prize confirm the ink presence is captured in the scroll scans and can be detected!
+There is a known domain shift between the existing CT scans of fragments and scrolls, but the exciting results of the [First Letters](firstletters) prize confirm the ink presence is captured in the scroll scans and can be detected!
 
 ### Can machine learning models hallucinate letters that aren't there?
 
@@ -156,12 +161,13 @@ There are two ways you can write on papyrus: horizontally (“volumen”) or [ve
 
 <div>For some good videos about how papyrus is made see:</div>
 
+* [Nat’s tweet](https://twitter.com/i/status/1703422593670541437)
 * [Meet Some Of The Last Papyrus Makers In Egypt Keeping A 5,000-Year-Old Craft Alive](https://www.youtube.com/watch?v=SBdVhvo2UUM)
 * [Myriam Krutzsch papyrus workshop](https://www.youtube.com/watch?v=3AaZ5C-U-jE)
 
 ### How big are the letters, and where can we expect to find text?
 
-Letter sizes vary, and of course we don’t know what’s inside the unopened scrolls, but we expect the opened fragments to be fairly representative. You can measure how big the letters are by looking at the aligned surface images, which have a voxel resolution of approximately 4µm, like the original CT data (though there can be some local variation due to the registration / flattening process). So you could open, for example, <code>fragments/Frag1.volpkg/working/54keV_exposed_surface/ir.png</code>, measure a letter size in pixels, and multiply by 4µm.
+Letter sizes vary, and of course we don’t know what’s inside the unopened scrolls, but we expect the opened fragments to be fairly representative. You can measure how big the letters are by looking at the aligned surface images, which have a voxel resolution of approximately 3.24µm, like the original CT data (though there can be some local variation due to the registration / flattening process). So you could open, for example, <code>fragments/Frag1.volpkg/working/54keV_exposed_surface/ir.png</code>, measure a letter size in pixels, and multiply by 3.24µm.
 
 There are also some measurements in [this paper by Richard Janko](http://www-personal.umich.edu/~rjanko/how-to-read-and-reconstruct-a-herculaneum-papyrus.pdf), though it’s a little hard to infer actual letter sizing from it. If someone wants to do a more thorough review of the range of letter sizes found in all the Herculaneum papyri, we’d happily include your results here!
 
@@ -221,7 +227,7 @@ We take X-ray photographs of the object from different angles. Typically this is
 
 <div>Just like with any digital camera, there are a lot of settings and parameters. The most important for you to know are:</div>
 
-* **Resolution:** the dimensions of each pixel in an X-ray photo, typically denoted in µm (micrometers or “microns”). Lower is better. We scanned the scrolls at 8µm, which we think should be enough to detect ink patterns, but we scanned the fragments at 4µm just in case. Renting beam time on a particle accelerator is expensive, but if we need to we can go back and scan objects at even lower resolutions.
+* **Resolution:** the dimensions of each pixel in an X-ray photo, typically denoted in µm (micrometers or “microns”). Lower is better. We scanned the scrolls at 7.91µm, which we think should be enough to detect ink patterns, but we scanned the fragments at 3.24µm just in case. Renting beam time on a particle accelerator is expensive, but if we need to we can go back and scan objects at even lower resolutions.
 * **Energy level:** the energy of the X-ray electrons, typically expressed in keV (kiloelectronvolts). For particle accelerators this is one precise number, whereas for bench top scanners this is more of a range. We think lower is better, since carbon responds better to lower energy levels. We scanned everything twice, at 54keV and 88keV (though for the scrolls we only had time for a smaller slice at 88keV).
 
 At high resolutions the field of view of the camera is too small to capture the object in its entirety, so multiple passes have to be made. Typically these are stitched together as part of the scanning process.

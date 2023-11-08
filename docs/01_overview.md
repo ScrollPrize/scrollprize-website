@@ -52,19 +52,19 @@ This has been going on recently:
 
 #### Current prizes
 
-- [Grand Prize](grand_prize): $700,000 prize, by December 31st 2023.
+- [Grand Prize](grand_prize): $700,000 1st prize, $100,000 2nd prize, $50,000 3rd prize, by December 31st 2023.
+- [Open Source Prizes](open_source_prizes): four $5,000 prizes, by November 30th 2023.
 - More prizes coming soon!
 
-*We have awarded [$260,000](winners) in prizes already.*
+*We have awarded [$272,000](winners) in prizes already.*
 
 #### Segmentation
 
 - Recent developments: [Segmentation Tooling 2 Prize](winners#segmentation-tooling-2-3-october-2023) completed (3 October 2023).
-- Next milestone: segmenting all papyrus sheets of both scrolls.
+- Next milestone: segmenting all papyrus sheets of all scrolls. Better tooling is high on our wish list for [Open Source Prizes](open_source_prizes).
 - Segmentation team makes [weekly releases](data_segments#weekly-releases).
 
 #### Ink Detection
 
 - Recent developments: [FIRST LETTERS PRIZE WON!!!](firstletters) (12 October 2023).
-- Next milestone: [Grand Prize?!](grand_prize)
-- New intermediate prizes to be announced.
+- Next milestone: [Grand Prize](grand_prize) and [Open Source Prizes](open_source_prizes).

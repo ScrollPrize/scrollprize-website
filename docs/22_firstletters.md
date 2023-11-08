@@ -237,7 +237,7 @@ The segmentation team and contestants continue to make progress, and a few days 
 
 <figure>
   <img src="/img/firstletters/youssef-new.png" />
-  <figcaption className="mt-0">Youssef’s <a target="_blank" href="/img/firstletters/youssef-new.png">latest image</a> (<a target="_blank" href="/img/firstletters/composite_fullsize.png">variant</a>), from segments <a href="http://dl.ash2txt.org/hari-seldon-uploads/team-finished-paths/scroll1/20230929220924/">20230929220924</a> and <a href="http://dl.ash2txt.org/hari-seldon-uploads/team-finished-paths/scroll1/20231005123333/">20231005123333</a>.</figcaption>
+  <figcaption className="mt-0">Youssef’s <a target="_blank" href="/img/firstletters/youssef-new.png">latest image</a> (<a target="_blank" href="/img/firstletters/composite_fullsize.png">variant</a>), from segments <a href="http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/20230929220924/">20230929220924</a> and <a href="http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/20231005123333/">20231005123333</a>.</figcaption>
 </figure>
 
 In this image you can clearly see four and a half columns of text, separated by margins. Many more letters are now visible, though not all are immediately legible. Our papyrological team is working hard to further investigate this result, and we’ll have updates on this soon.

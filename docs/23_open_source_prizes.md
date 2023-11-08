@@ -52,6 +52,7 @@ In our tradition of progress prizes, we’re awarding four $5,000 prizes for qua
 
 <div>Some ideas to get you started:</div>
 
+* If anyone discovers writing in one of the new scrolls, we will very likely award a prize for that (to whomever finds the most). Think of this as a mini [First Letters](firstletters) prize.
 * The Segmentation Team has put together a list of [feature requests](https://docs.google.com/document/d/1YFILhWVHyijU_Yky3lKPvGAjmYm2QnRTYzMM7VqcogA/edit) — be sure to tag @Hari_Seldon on Discord if you’re going to work on this. These include:
   * Many feature requests for Volume Cartographer (we’ve been using [@RICHI’s fork](https://github.com/schillij95/volume-cartographer-papyrus))
   * Adding metadata of which areas were auto-segmented vs manually adjusted

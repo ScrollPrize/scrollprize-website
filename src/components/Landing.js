@@ -117,7 +117,7 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
         <div className="max-w-3xl mb-8">
           To get X-rays at the highest possible resolution, the team uses a
           particle accelerator to scan two full scrolls and several fragments.
-          At 4-8µm resolution, with 16 bits of density data per voxel, they
+          At 3-8µm resolution, with 16 bits of density data per voxel, they
           believe machine learning models can pick up subtle surface patterns in
           the papyrus that indicate the presence of carbon-based ink.
         </div>
@@ -606,7 +606,7 @@ const educelabFunders = [
     name: "John & Karen Maxwell",
     href: undefined,
   },
-  { 
+  {
     name: "Lee & Stacie Marksbury",
     href: undefined,
   },

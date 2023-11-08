@@ -42,11 +42,15 @@ The $700,000 Grand Prize will go to the first team to read four passages of text
 Here are the scrolls in question:
 
 <div className="flex w-[100%]">
-    <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1</figcaption></div>
-    <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 2</figcaption></div>
+  <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/></div>
+  <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/></div>
+</div>
+<div className="flex w-[100%]">
+  <div className="w-[39.2%] mb-2 mr-2"><img src="/img/overview/PHerc0332.jpg" className="w-[100%]"/></div>
+  <div className="w-[60.8%] mb-2"><img src="/img/overview/PHerc1667.jpg" className="w-[100%]"/></div>
 </div>
 
-We have provided you with 8 µm 3D X-ray scans of each of these scrolls, which you can find [here](/data). Your job is to extract the text from these scans.
+We have provided you with 3D X-ray scans of each of these scrolls, which you can find [here](/data). Your job is to extract the text from these scans.
 
 You can approach this challenge through any means necessary: machine learning, computer vision, or machine-assisted tools operated by humans.
 
