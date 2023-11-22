@@ -70,7 +70,7 @@ We’ll use [Stephen Parsons’s](https://www2.cs.uky.edu/dri/stephen-parsons/) 
 <figcaption>Last page of the campfire scroll, with nonsense words</figcaption>
 </figure>
 
-Stephen then _carbonized_ the scroll in process that is similar to that of making charcoal: he rolled up the scroll, sealed it in a coffee can, and heated the can on a campfire. In a hot, oxygen-poor environment like the coffee can, the papyrus turns to carbon rather than catching on fire. He then put the resulting carbonized scroll in a benchtop CT scanner (Bruker SkyScan 1173).
+Stephen then _carbonized_ the scroll through a process that is similar to that of making charcoal: he rolled up the scroll, sealed it in a coffee can, and heated the can on a campfire. In a hot, oxygen-poor environment like the coffee can, the papyrus turns to carbon rather than catching on fire. He then put the resulting carbonized scroll in a benchtop CT scanner (Bruker SkyScan 1173).
 
 <figure className="">
   <div className="flex flex-wrap">
@@ -89,7 +89,7 @@ Stephen then _carbonized_ the scroll in process that is similar to that of makin
 
 :::tip
 
-We now also have a community contribution that is worth trying out: [Scroll Viewer](https://github.com/lukeboi/scroll-viewer).
+We now also have a community-contributed program that is worth trying out: [Scroll Viewer](https://github.com/lukeboi/scroll-viewer).
 
 :::
 
@@ -107,7 +107,7 @@ We’ll use the [“Fiji”](https://imagej.net/software/fiji/downloads) open so
   <TabItem value="mac" label="macOS">
 
 * Even if you’re using an M1/M2 processor, please use the x86_64 version.
-* If you get a popup saying that the app can’t be opened, be sure *right click > Open* to circumvent the blocking.
+* If you get a popup saying that the app can’t be opened, be sure to *right click > Open* to circumvent the blocking.
 
 <figure className="max-w-[400px]">
 
@@ -248,7 +248,7 @@ Here is a video showing the whole process:
   </video>
 </figure>
 
-That is a what we call a “word soup” — letters floating in the air. Our real datasets aren’t nearly as pretty as this, but this should you give some idea of what volumetric data of papyrus scrolls look like in the best case scenario.
+That is a what we call a “word soup” — letters floating in the air. Our real datasets aren’t nearly as pretty as this, but this should give you some idea of what volumetric data of papyrus scrolls looks like in the best case scenario.
 
 However, it’s still hard to read anything. [“Tutorial 3: Segmentation and Flattening”](tutorial3) should help with this.
 
@@ -272,17 +272,17 @@ Now, download and install [MeshLab](https://www.meshlab.net/#download).
 * Use *“File > Import”*, or drag the file into MeshLab.
   * It can take a while to import; there is a progress bar at the bottom.
 * In the right panel, click on the cylinder icon (see screenshot below), then click on *“Back-Face > Double”*.
-* Drag around to rotate the mesh.
+* Drag around using the left mouse button to rotate the mesh.
 
 <figure>
   <img src="/img/tutorials/meshlab.png" className="rounded-xl" />
 </figure>
 
-You can quite clearly see the different pieces of papyrus, and even the container holding the scroll in place inside the scanner. However, all information of letters is lost.
+You can quite clearly see the different pieces of papyrus, and even the container holding the scroll in place inside the scanner. However, all information of letters contained in the data is lost.
 
 We’ll use Meshlab in later tutorials, so it’s useful to have seen it.
 
-Here is a video of playing with Meshlab:
+Here is a video where we navigate around the model in Meshlab:
 
 <figure>
   <video controls playsInline muted className="w-[100%] rounded-xl" poster="/img/tutorials/meshlab2.jpg">
