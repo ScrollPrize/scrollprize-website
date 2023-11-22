@@ -188,7 +188,7 @@ To detect ink from the 3D X-ray scan, it is not sufficient to only examine the v
 
 We might also not have traced the surface of the papyrus completely accurately during segmentation, so sampling voxels around the mesh also gives us some leeway.
 
-Fortunately, this sampling approach can be a helpful optimization: the full 3D volume can be a huge amount of data (up to a terabyte), which is often not very practical to work with, but we only _need_ the voxels which are close to our segment. We therefore do one additional step of data processing to create a new "subvolume" containing only the voxels in which we're interested.
+Fortunately, this sampling approach can be a helpful optimization: the full 3D volume can be a huge amount of data (up to a terabyte), which is often not very practical to work with, but we only need the voxels which are _close_ to our segment. We therefore do one additional step of data processing to create a new "subvolume" containing only the voxels in which we're interested.
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/surface-volume-extrusion3.jpg">
