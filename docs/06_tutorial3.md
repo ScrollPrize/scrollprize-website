@@ -55,7 +55,7 @@ Two key steps to virtually unwrapping a scroll or manuscript are _segmenting_ a 
   <figcaption className="mt-0">The basic principle of “virtual unwrapping” <a href="https://youtu.be/VG8oOMHCg74?t=38">(source)</a></figcaption>
 </figure>
 
-To perform segmentation and flattening, we'll use [Volume Cartographer](https://github.com/educelab/volume-cartographer), a virtual unwrapping toolkit built by [EduceLab](https://www2.cs.uky.edu/dri)’s Seth Parker. Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer installs many tools and utilities. In this tutorial we’ll be looking at the main `VC` GUI as well as the `vc_render` tool.
+To perform segmentation and flattening, we'll use [Volume Cartographer](https://github.com/educelab/volume-cartographer), a virtual unwrapping toolkit built by [EduceLab](https://www2.cs.uky.edu/dri)’s Seth Parker. Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer includes many tools and utilities. In this tutorial we’ll be looking at the main `VC` GUI as well as the `vc_render` tool.
 
 :::tip
 
@@ -428,8 +428,6 @@ Flattening & UV Options:
 There lots of other options, too, which you can see by using `vc_render --help`. For example, you can select different texturing methods, instead of just picking the maximum pixel value. You can also run your own texturing methods on the “surface volume” image stack directly. In a sense, the separate [“Ink Detection”](tutorial4) machine learning step can be seen as a particularly fancy texturing method!
 
 Try experimenting with the different options and see what happens.
-
-We’re using the original version of Volume Cartographer in this tutorial. For the latest version, see the [Community Projects](community_projects#volume-cartographer) page or ask in Discord.
 
 <!--
 ### Optional: En-Gedi

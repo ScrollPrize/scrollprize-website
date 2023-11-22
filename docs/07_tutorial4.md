@@ -120,7 +120,7 @@ When running ink-id on all the public fragments, the results look like this (pre
   <figcaption className="mt-0">Predicted label images from ink-id (left); infrared photos (right)</figcaption>
 </figure>
 
-As you can see, some letters can be clearly seen, others not at all, and a lot of letters are somewhere in between.All fragments also have “hidden layers”: pieces of papyrus that are fused to the backs of the fragments. Running the machine model on those reveals some previously unseen letters:
+As you can see, some letters can be clearly seen, others not at all, and a lot of letters are somewhere in between. All fragments also have “hidden layers”: pieces of papyrus that are fused to the backs of the fragments. Running the machine model on those reveals some previously unseen letters:
 
 <div className="flex flex-wrap items-end max-w-[500px] mb-4">
   <figure className="w-[33%]">
@@ -146,7 +146,7 @@ So how can a machine learning model detect ink? In the electron microscope image
 
 <div>The main challenges for ink detection are:</div>
 
-* Model performance. Getting more letters to be legible!
+* Model performance, getting more letters to be legible.
 * Applying these models to the full scrolls.
 * Reverse engineering the models to better understand the kind of patterns they are using to detect ink.
 * Creating more ground truth data (e.g. “campfire scrolls”).

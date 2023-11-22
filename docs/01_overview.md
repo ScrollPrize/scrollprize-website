@@ -66,5 +66,5 @@ This has been going on recently:
 
 #### Ink Detection
 
-- Recent developments: [FIRST LETTERS PRIZE WON!!!](firstletters) (12 October 2023).
+- Recent developments: [**First Letters Prize Won!**](firstletters) (12 October 2023).
 - Next milestone: [Grand Prize](grand_prize) and [Open Source Prizes](open_source_prizes).
