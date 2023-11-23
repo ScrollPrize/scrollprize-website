@@ -107,9 +107,9 @@ This tool was originally created by EduceLab (in particular Seth Parker), and is
 
 A new tool created by Chuck (@khartes_chuck on Discord) which allows for very precise segmentation, using real-time texturing UIs that show the segment from different angles. It is used on occasion by the segmentation team.
 
-### Volume Viewer and Segment Viewer
+### VC Whiteboard and Segment Viewer
 
-[Volume Viewer Github repo](https://github.com/tomhsiao1260/volume-viewer) / [Segment Viewer Github repo](https://github.com/tomhsiao1260/segment-viewer)
+[VC Whiteboard Github repo](https://github.com/tomhsiao1260/vc-whiteboard) / [Segment Viewer Github repo](https://github.com/tomhsiao1260/segment-viewer)
 
 <figure className="max-w-[500px] ">
   <div className="w-[100%]"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div></div>

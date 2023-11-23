@@ -128,7 +128,7 @@ We have awarded **$272,000** in prizes so far!
     <div class="mb-4"><div class="text-sm font-bold text-gray-300">$1,500</div><span class="font-bold">Scroll Pretraining</span> by Youssef Nader / @YoussefNader</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2dbdbce1-aa51-4f05-9ba6-51639096ec67_836x491.png"/>
   </a>
-  <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/volume-viewer/tree/dev">
+  <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/vc-whiteboard/tree/dev">
     <div class="mb-4"><div class="text-sm font-bold text-gray-300">$1,500</div><span class="font-bold">Vesuvius Challenge Whiteboard</span> by Yao / @Yao_Hsiao and Dalufishe / @Dalufish</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3a23f461-cfa9-485c-8c0f-a50f7caf6d7d_600x338.gif"/>
   </a>
@@ -158,7 +158,7 @@ We have awarded **$272,000** in prizes so far!
     <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold"> Masked data</span> by James / @thatGuy</div>
     <img src="/img/progress/masked.png"/>
   </a>
-  <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/volume-viewer">
+  <a class="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/vc-whiteboard/tree/demo-3">
     <div class="mb-4"><div class="text-sm font-bold text-gray-300">$5,000</div><span class="font-bold"> Volume Viewer</span> by Yao / @Yao_Hsiao</div>
     <img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%]"/>
   </a>
