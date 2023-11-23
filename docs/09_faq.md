@@ -83,7 +83,7 @@ If you're open to sharing your improvements publicly (and be eligible for progre
 
 * Data papers:
   * 2019: [“EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT”](https://arxiv.org/abs/2304.02084)
-  * 2023: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1dIAMDT-McduVamJOxvPg-PwQm5qQUDX5/view?usp=sharing)
+  * 2023: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1fHl2pzkE8RUnX9Kr1pN4-QAcw-LhLSmg/view?usp=sharing)
 * [Hard-Hearted Scrolls: A Noninvasive Method for Reading the Herculaneum Papyri](https://uknowledge.uky.edu/cs_etds/138/) (Stephen Parsons’ PhD dissertation)
 * [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable)
 * [From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi](https://www.science.org/doi/10.1126/sciadv.1601247)
