@@ -86,7 +86,7 @@ This tool was originally created by EduceLab (in particular Seth Parker), and is
 * [Tutorial 3.](tutorial3) We have an in-depth tutorial on how to use Volume Cartographer.
 * [Original Volume Cartographer repo.](https://github.com/educelab/volume-cartographer/) The original version by Seth Parker and others.
 * [Julian’s Volume Cartographer fork.](https://github.com/schillij95/volume-cartographer-papyrus/) The segmentation team previously used this version by Julian Schilliger (@RICHI on Discord).
-* [Philip’s Volume Cartographer fork.](https://github.com/spacegaier/volume-cartographer/) The segmentation team currenlty used this version by Philip Allgaier (@spacegaier on Discord).
+* [Philip’s Volume Cartographer fork.](https://github.com/spacegaier/volume-cartographer/) The segmentation team currently uses this version by Philip Allgaier (@spacegaier on Discord).
 * [The Segmenter’s Guide to Volume Cartographer (for contractors).](https://docs.google.com/document/d/11B9Gy1gJRye_NQHphwbIxINvactUchJJsJOJi1FKrgI/edit?usp=sharing) For more technical details about how the segmentation team operates, check out this doc.
 * [Volume Cartographer’s Apps and Utilities page](https://github.com/educelab/volume-cartographer/blob/develop/docs/pages/apps-list.md). Also be sure to check out the various other docs in this directory.
 * [Data Processing Workflow doc](https://github.com/educelab/ink-id/blob/develop/docs/data-processing-workflow.md) which is in the ink-id repo, but is mostly about Volume Cartographer and segmentation. Also goes into how to do alignment (”registration”) of infrared photos of the fragments, and how to create binary ink labels.
