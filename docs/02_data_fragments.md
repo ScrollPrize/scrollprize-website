@@ -41,10 +41,10 @@ Scanning sessions and data format is very similar to that of the [full scrolls](
 ## 2019 Scans
 
 <div className="flex flex-wrap mb-4">
-  <div className="w-[45%] mb-2 mr-2 max-w-[200px]"><img src="/img/data/fr1.jpg" className="w-[100%]"/><figcaption class="mt-[-6px]">Fragment 1 (PHerc Paris 2 Fr 47)</figcaption></div>
-  <div className="w-[45%] mb-2 mr-2 max-w-[200px]"><img src="/img/data/fr2.jpg" className="w-[100%]"/><figcaption class="mt-[-6px]">Fragment 2 (PHerc Paris 2 Fr 143)</figcaption></div>
-  <div className="w-[45%] mb-2 mr-2 max-w-[220px]"><img src="/img/data/fr3.png" className="w-[100%]"/><figcaption class="mt-[-6px]">Fragment 3 (PHerc Paris 1 Fr 34)</figcaption></div>
-  <div className="w-[45%] mb-2 mr-2 max-w-[170px]"><img src="/img/data/fr4.png" className="w-[100%]"/><figcaption class="mt-[-6px]">Fragment 4 (PHerc Paris 1 Fr 39)</figcaption></div>
+  <div className="w-[45%] mb-2 mr-2 max-w-[200px]"><img src="/img/data/fr1.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 1 (PHerc Paris 2 Fr 47)</figcaption></div>
+  <div className="w-[45%] mb-2 mr-2 max-w-[200px]"><img src="/img/data/fr2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 2 (PHerc Paris 2 Fr 143)</figcaption></div>
+  <div className="w-[45%] mb-2 mr-2 max-w-[220px]"><img src="/img/data/fr3.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 3 (PHerc Paris 1 Fr 34)</figcaption></div>
+  <div className="w-[45%] mb-2 mr-2 max-w-[170px]"><img src="/img/data/fr4.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 4 (PHerc Paris 1 Fr 39)</figcaption></div>
 </div>
 
 3.24µm 3D X-ray scans, infrared images, and hand-labeled ink masks for three broken-off fragments of papyrus. Each fragment scan is 7,000-14,000 .tif files. The 3D scans are in vertical slices from side to side. Both 54keV and 88keV volumes are released for every fragment, though they are NOT aligned with each other. Fragment 4 was originally held back for automated scoring in the [Kaggle](https://kaggle.com/competitions/vesuvius-challenge-ink-detection/) competition but has since been released.
@@ -61,8 +61,8 @@ The fragments are really tiny! Here you can see them in context:
 ## 2023 Scans
 
 <div className="flex flex-wrap mb-4">
-  <div className="w-[45%] mb-2 mr-2 max-w-[300px]"><img src="/img/data/fr5-2.jpg" className="w-[100%]"/><figcaption class="mt-[-6px]">Fragment 5 (PHerc 1667 Cr 1 Fr 3)</figcaption></div>
-  <div className="w-[45%] mb-2 mr-2 max-w-[325px]"><img src="/img/data/fr6-2.jpg" className="w-[100%]"/><figcaption class="mt-[-6px]">Fragment 6 (PHerc 51 Cr 4 Fr 48)</figcaption></div>
+  <div className="w-[45%] mb-2 mr-2 max-w-[300px]"><img src="/img/data/fr5-2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 5 (PHerc 1667 Cr 1 Fr 3)</figcaption></div>
+  <div className="w-[45%] mb-2 mr-2 max-w-[325px]"><img src="/img/data/fr6-2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 6 (PHerc 51 Cr 4 Fr 48)</figcaption></div>
 </div>
 
 Very similar to the 2023 scans of the [scrolls](data_scrolls): same voxel sizes and resolutions. As opposed to the 2019 scan volumes, the different volumes of the 2023 scans ARE aligned. More technical details: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1fHl2pzkE8RUnX9Kr1pN4-QAcw-LhLSmg/view?usp=sharing).
@@ -87,7 +87,7 @@ The 3D volumes of the fragments are sliced from the side:
 
 Infrared light makes the ink more clearly visible:
 
-<figure class="max-w-[600px]">
+<figure className="max-w-[600px]">
   <img src="/img/data/unaligned-ir.png"/>
   <figcaption className="mt-0">Infrared photo of Fragment 1</figcaption>
 </figure>
@@ -107,9 +107,9 @@ We have also aligned (“registered”) the surface volumes with the infrared ph
   * `/alignment.psd`: Photoshop file for the manual alignment of the infrared photo to the surface volume.
 
 <div className="flex flex-wrap">
-  <div className="sm:w-[30%] mb-2 mr-2" style={{ maxWidth: "calc(33% - 8px)" }}><img src="/img/data/surface32-fr1.png" className="w-[100%]"/><figcaption class="mt-[-6px]">Middle layer (32.tif) of Fragment 1’s surface volume</figcaption></div>
-  <div className="sm:w-[30%] mb-2 mr-2" style={{ maxWidth: "calc(33% - 8px)" }}><img src="/img/data/ir-fr1.png" className="w-[100%]"/><figcaption class="mt-[-6px]">Aligned infrared</figcaption></div>
-  <div className="sm:w-[30%] mb-2 mr-2" style={{ maxWidth: "calc(33% - 8px)" }}><img src="/img/data/inklabels-fr1.png" className="w-[100%]"/><figcaption class="mt-[-6px]">Aligned binary ink labels</figcaption></div>
+  <div className="sm:w-[30%] mb-2 mr-2" style={{ maxWidth: "calc(33% - 8px)" }}><img src="/img/data/surface32-fr1.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Middle layer (32.tif) of Fragment 1’s surface volume</figcaption></div>
+  <div className="sm:w-[30%] mb-2 mr-2" style={{ maxWidth: "calc(33% - 8px)" }}><img src="/img/data/ir-fr1.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Aligned infrared</figcaption></div>
+  <div className="sm:w-[30%] mb-2 mr-2" style={{ maxWidth: "calc(33% - 8px)" }}><img src="/img/data/inklabels-fr1.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Aligned binary ink labels</figcaption></div>
 </div>
 
 ## ML training

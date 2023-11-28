@@ -55,8 +55,8 @@ The two scrolls are from the [Institut de France](https://en.wikipedia.org/wiki/
 ## 2023 Scans
 
 <div className="flex w-[100%]">
-  <div className="sm:w-[35.5%] mb-2 mr-2"><img src="/img/overview/PHerc0332.jpg" className="w-[100%]"/><figcaption class="mt-[0]">Scroll 3 (PHerc 0332)</figcaption></div>
-  <div className="sm:w-[55%] mb-2"><img src="/img/overview/PHerc1667.jpg" className="w-[100%]"/><figcaption class="mt-[0]">Scroll 4 (PHerc 1667)</figcaption></div>
+  <div className="sm:w-[35.5%] mb-2 mr-2"><img src="/img/overview/PHerc0332.jpg" className="w-[100%]"/><figcaption className="mt-[0]">Scroll 3 (PHerc 0332)</figcaption></div>
+  <div className="sm:w-[55%] mb-2"><img src="/img/overview/PHerc1667.jpg" className="w-[100%]"/><figcaption className="mt-[0]">Scroll 4 (PHerc 1667)</figcaption></div>
 </div>
 
 New scans from 2023 (<a href="https://scrollprize.substack.com/p/new-scans-of-herculaneum-papyri-at">announcement</a>). 3.24µm and 7.91µm 3D X-ray scans of two partially unrolled scrolls, scanned in horizontal slices from bottom to top. PHerc 1667 has an accompanying [fragment](data_fragments). More technical details: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1fHl2pzkE8RUnX9Kr1pN4-QAcw-LhLSmg/view?usp=sharing).

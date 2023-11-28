@@ -67,7 +67,7 @@ Let's go through each of the key steps one by one.
 
 ### 1. Scanning
 
-<div class="bg-gray-800 p-4 rounded mb-4">
+<div className="bg-gray-800 p-4 rounded mb-4">
 <strong>Input:</strong> physical scroll or fragment.<br/>
 <strong>Output:</strong> 3D volume (.tif “image stack”).
 </div>
@@ -133,7 +133,7 @@ Image stacks can be visualized using 3D volume rendering software. We will learn
 
 ### 2. Segmentation
 
-<div class="bg-gray-800 p-4 rounded mb-4">
+<div className="bg-gray-800 p-4 rounded mb-4">
 <strong>Input:</strong> 3D volume (.tif “image stack”).<br/>
 <strong>Output:</strong> 3D mesh (.obj).
 </div>
@@ -176,7 +176,7 @@ The result is a 3D mesh (.obj file) called a “segment” which intersects the 
 
 ### 3. Surface volumes
 
-<div class="bg-gray-800 p-4 rounded mb-4">
+<div className="bg-gray-800 p-4 rounded mb-4">
 <strong>Input:</strong> 3D volume (.tif “image stack”) and 3D mesh (.obj).<br/>
 <strong>Output:</strong> 3D “surface volume” around the mesh (.tif “image stack”).
 </div>
@@ -222,7 +222,7 @@ In [“Tutorial 3: Segmentation and Flattening”](tutorial3) we’ll dive deepe
 
 ### 4. Ground truth data alignment
 
-<div class="bg-gray-800 p-4 rounded mb-4">
+<div className="bg-gray-800 p-4 rounded mb-4">
 <strong>Input:</strong> Raw infrared photo and 3D “surface volume” (.tif “image stack”).<br/>
 <strong>Output:</strong> Aligned infrared photo and hand-labeled binary mask.
 </div>
@@ -256,7 +256,7 @@ It may not be strictly necessary to label the ink; you could instead learn to in
 
 ### 5. Ink detection
 
-<div class="bg-gray-800 p-4 rounded mb-4">
+<div className="bg-gray-800 p-4 rounded mb-4">
 <strong>Input:</strong> 3D “surface volume” around the mesh (.tif “image stack”) and hand-labeled binary mask.<br/>
 <strong>Output:</strong> Predicted ink mask.
 </div>
@@ -276,7 +276,7 @@ We go into great detail in [“Tutorial 4: Ink Detection”](tutorial4).
 
 ### 6. Interpretation
 
-<div class="bg-gray-800 p-4 rounded mb-4">
+<div className="bg-gray-800 p-4 rounded mb-4">
 <strong>Input:</strong> One or more predicted ink masks.<br/>
 <strong>Output:</strong> Words, sentences, whole books, translations, journal papers, worldwide news coverage, eternal fame.
 </div>

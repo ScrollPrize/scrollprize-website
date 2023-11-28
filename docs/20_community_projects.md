@@ -70,7 +70,7 @@ We have also set up a small team of contractors producing segments. These are av
 
 [Original Github repo](https://github.com/educelab/volume-cartographer) / [Faster version by Julian (@RICHI)](https://github.com/schillij95/volume-cartographer-papyrus) / [Even more features by Philip (@spacegaier)](https://github.com/spacegaier/volume-cartographer/)
 
-<figure class="">
+<figure className="">
   <video autoPlay playsInline muted loop className="w-[100%] max-w-[600px] rounded" poster="/img/tutorials/vc-segmentation3.jpg">
     <source src="/img/tutorials/vc-segmentation3.webm" type="video/webm"/>
     <source src="/img/tutorials/vc-segmentation3.mp4" type="video/mp4"/>
@@ -98,7 +98,7 @@ This tool was originally created by EduceLab (in particular Seth Parker), and is
 
 [Github repo](https://github.com/KhartesViewer/khartes)
 
-<figure class="">
+<figure className="">
   <video autoPlay playsInline muted loop className="w-[100%] max-w-[600px] rounded">
     <source src="/img/progress/khartes.webm" type="video/webm"/>
     <source src="/img/progress/khartes.mp4" type="video/mp4"/>
@@ -139,7 +139,7 @@ A reimplementation of Volume Cartographer in Python by Moshe Levy (@moshelevy on
 
 [Github repo](https://github.com/educelab/quick-segment)
 
-<figure class="">
+<figure className="">
   <video autoPlay playsInline muted loop className="w-[100%] max-w-[600px] rounded">
     <source src="/img/progress/quicksegment.mp4" type="video/mp4"/>
   </video>
@@ -162,7 +162,7 @@ A couple of folks have written data transformations that allow tools to more eff
 
 ### Viewing tools
 
-<figure class="max-w-[500px] ">
+<figure className="max-w-[500px] ">
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/mesh-rotate2.jpg">
     <source src="/img/tutorials/mesh-rotate2.webm" type="video/webm"/>
     <source src="/img/tutorials/mesh-rotate2.mp4" type="video/mp4"/>
@@ -212,6 +212,8 @@ There are two major avenues people have been pursuing for detecting ink in the s
 * [**Stephen Parsons’ PhD dissertation.**](https://uknowledge.uky.edu/cs_etds/138/) Lots and lots of gems in here. And of course we’d be remiss not to mention his original [ink-id](https://github.com/educelab/ink-id) software.
 
 Before the First Letters Prize result, we ran an Ink Detection prize on Kaggle. These are the top 10 results:
+
+<a id="kaggle-ink-detection"/>
 
 * 1st place: **ryches.** <a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/417496">Writeup</a> / <a href="https://github.com/ainatersol/Vesuvius-InkDetection">Github</a> / <a href="https://www.kaggle.com/code/ryches/1st-place-solution">Inference notebook</a> / <a href="https://www.youtube.com/watch?v=IWySc8s00P0">Presentation</a>
 * 2nd place: **RTX23090.** <a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/417255">Writeup</a> / <a href="https://github.com/mipypf/Vesuvius-Challenge">Github</a> / <a href="https://www.kaggle.com/code/mipypf/ink-segmentation-2-5d-3dcnn-resnet3dcsn-fp16fold01?scriptVersionId=132226669">Inference notebook</a> / <a href="https://www.youtube.com/watch?v=lmuyUMA-g1Y">Presentation</a>

@@ -25,7 +25,7 @@ hide_title: true
 
 <img src="/img/firstletters/composite_thumb.png" />
 
-<h1 class="color-white text-4xl md:text-7xl font-black !mb-2 leading-none tracking-tighter">First word discovered in <span style={{
+<h1 className="color-white text-4xl md:text-7xl font-black !mb-2 leading-none tracking-tighter">First word discovered in <span style={{
   background:
     "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #F5653F 0%, #D53A17 100%)",
   WebkitBackgroundClip: "text",
@@ -39,7 +39,7 @@ hide_title: true
 
 <div className="opacity-60 mb-8 italic">October 12th, 2023</div>
 
-<!-- <div class="color-white text-2xl md:text-5xl font-black !mb-2 leading-none tracking-tighter" style={{
+<!-- <div className="color-white text-2xl md:text-5xl font-black !mb-2 leading-none tracking-tighter" style={{
   background:
     "radial-gradient(53.44% 245.78% at 13.64% 46.56%, #F5653F 0%, #D53A17 100%)",
   WebkitBackgroundClip: "text",
@@ -162,14 +162,14 @@ After thorough technical review, we sent a newer version of his picture to the p
 
 <figure>
   <img className="w-[500px]" src="/img/firstletters/luke-boxes.png" />
-  <figcaption className="mt-0">Each square represents one review. <span class="text-green-500">Green</span>: over 80% confidence. <span class="text-yellow-500">Yellow</span>: 50-80% confidence. <span class="text-red-500">Red</span>: under 50% confidence.</figcaption>
+  <figcaption className="mt-0">Each square represents one review. <span className="text-green-500">Green</span>: over 80% confidence. <span className="text-yellow-500">Yellow</span>: 50-80% confidence. <span className="text-red-500">Red</span>: under 50% confidence.</figcaption>
 </figure>
 
 Indeed, the word held up to scrutiny. “Porphyras” is an exciting word: it means “purple” and is quite rare in ancient texts.
 
-<div class="mb-1">One papyrologist noted:</div>
+<div className="mb-1">One papyrologist noted:</div>
 
-<div class="border-l-4 border-solid border-0 pl-4 mb-4 italic border-l-[var(--ifm-color-primary)]">“The sequence πορφυ̣ρ̣ας̣ may be πορφύ̣ρ̣ας̣ (noun, purple dye or cloths of purple) or πορφυ̣ρ̣ᾶς̣(adjective, purple). Due to the lack of context it is not possible to exclude πορφύ̣ρ̣α ς̣κ[ or πορφυ̣ρ̣ᾶ ς̣κ[.”</div>
+<div className="border-l-4 border-solid border-0 pl-4 mb-4 italic border-l-[var(--ifm-color-primary)]">“The sequence πορφυ̣ρ̣ας̣ may be πορφύ̣ρ̣ας̣ (noun, purple dye or cloths of purple) or πορφυ̣ρ̣ᾶς̣(adjective, purple). Due to the lack of context it is not possible to exclude πορφύ̣ρ̣α ς̣κ[ or πορφυ̣ρ̣ᾶ ς̣κ[.”</div>
 
 If you’re trying to find these letters in the image, keep in mind that our modern characters look a little bit different. The letters in this ancient script look more like this: ΠΟΡΦΥΡΑϹ. Note that texts from this time didn’t use spaces, making it harder to determine word boundaries.
 
