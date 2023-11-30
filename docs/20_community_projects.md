@@ -94,6 +94,15 @@ This tool was originally created by EduceLab (in particular Seth Parker), and is
 * [JP’s Segmentation Party.](https://www.youtube.com/watch?v=zKMVNaA2GdU) JP does a bunch of segmentation.
 * [.vcps parser.](https://www.kaggle.com/code/kglspl/simple-vcps-parser) Useful code if you’re working with the custom .vcps data format.
 
+### Omit
+Visualizing ink on segments in 3D
+Omit software download: https://tinyurl.com/Omit-1
+<figure className="">
+  <video autoPlay playsInline muted loop className="w-[100%] max-w-[600px] rounded">
+    <source src="/img/progress/omit.mp4" type="video/mp4"/>
+  </video>
+</figure>
+
 ### Khartes
 
 [Github repo](https://github.com/KhartesViewer/khartes)
