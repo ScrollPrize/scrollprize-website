@@ -94,15 +94,6 @@ This tool was originally created by EduceLab (in particular Seth Parker), and is
 * [JP’s Segmentation Party.](https://www.youtube.com/watch?v=zKMVNaA2GdU) JP does a bunch of segmentation.
 * [.vcps parser.](https://www.kaggle.com/code/kglspl/simple-vcps-parser) Useful code if you’re working with the custom .vcps data format.
 
-### Omit
-Visualizing ink on segments in 3D
-Omit software download: https://tinyurl.com/Omit-1
-<figure className="">
-  <video autoPlay playsInline muted loop className="w-[100%] max-w-[600px] rounded">
-    <source src="/img/progress/omit.mp4" type="video/mp4"/>
-  </video>
-</figure>
-
 ### Khartes
 
 [Github repo](https://github.com/KhartesViewer/khartes)
@@ -133,6 +124,18 @@ These are used by the segmentation team primarily to see which segments they hav
 ![demo1](https://github.com/ScrollPrize/scrollprize-website/assets/9868/5c441b97-6a7b-4f26-8dd6-8535f0a3e4d6)
 
 A web-based tool to browse layers and open source ink detection results of all released segments.
+
+### Omit
+
+[Code download](https://tinyurl.com/Omit-1)
+
+<figure className="">
+  <video autoPlay playsInline muted loop className="w-[100%] max-w-[600px] rounded">
+    <source src="/img/progress/omit.mp4" type="video/mp4"/>
+  </video>
+</figure>
+
+Visualizing ink on segments in 3D.
 
 ### VolumeAnnotate
 
