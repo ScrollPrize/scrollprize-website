@@ -96,7 +96,7 @@ This tool was originally created by EduceLab (in particular Seth Parker), and is
 
 ### Khartes
 
-[Github repo](https://github.com/KhartesViewer/khartes)
+[Github repo](https://github.com/KhartesViewer/khartes) / [Brett Olsen’s fork](https://github.com/caethan/khartes/)
 
 <figure className="">
   <video autoPlay playsInline muted loop className="w-[100%] max-w-[600px] rounded">
@@ -222,6 +222,7 @@ There are two major avenues people have been pursuing for detecting ink in the s
 * [**Ryan Chesler’s analysis.**](https://github.com/ainatersol/Vesuvius-InkDetection/blob/main/additional_findings.md) From the #1 Kaggle team, Ryan Chesler did an analysis of retraining their model on 8µm, and applying that to the Monster Segment.
 * [**OverthINKingSegmenter’s analysis.**](https://github.com/MIC-DKFZ/OverthINKingSegmenter/blob/master/vesuvius_followup_writeup.pdf) Another analysis from the #7 Kaggle team, on the importance of resolution.
 * [**Stephen Parsons’ PhD dissertation.**](https://uknowledge.uky.edu/cs_etds/138/) Lots and lots of gems in here. And of course we’d be remiss not to mention his original [ink-id](https://github.com/educelab/ink-id) software.
+* [**Anton Repushko’s ink labels.**](https://discord.com/channels/1079907749569237093/1177039383375912990/1177039383375912990) Many more ink labels in addition to the First Letters Prize winner’s labels.
 
 Before the First Letters Prize result, we ran an Ink Detection prize on Kaggle. These are the top 10 results:
 
@@ -251,6 +252,8 @@ Casey Handmer discovered a [“crackle pattern”](https://caseyhandmer.wordpres
 
 * [Luke’s First Letters Prize model.](https://github.com/lukeboi/scroll-first-letters) By Luke Farritor (@lukeboi on Discord).
 * [Crackle Viewer.](https://github.com/schillij95/Crackle-Viewer) Tool by Julian Schilliger (@RICHI on Discord) to annotate crackles in segments.
+* [Vesuvius Kintsugi.](https://github.com/giorgioangel/vesuvius-kintsugi) Another crackle labeling tool by Giorgio Angelotti (@jordi45698 on Discord).
+* [Crackle labels.](http://dl.ash2txt.org/bruniss-uploads/) Made by Sean Johnson (@bruniss on Discord) using Vesuvius Kintsugi.
 * [Julian’s (unreleased) crackle model.](https://discord.com/channels/1079907749569237093/1079907750265499772/1145465050509869226) Seems similar to Luke’s model.
 * [Luke’s 4th place Kaggle finetuning.](https://github.com/lukeboi/scroll-fourth-second) This didn’t seem to work.
 
