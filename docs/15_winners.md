@@ -43,6 +43,7 @@ We have awarded **~$300,000** in prizes so far!
 ### $25,000 Open Source (November 30 2023)
 
 **Goal:** Increase the probability the Grand Prize gets awarded.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/many-open-source-prize-winners-25">Blog post</a>
 
 <div className="flex flex-row flex-wrap">
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/spacegaier/volume-cartographer">
@@ -81,7 +82,7 @@ We have awarded **~$300,000** in prizes so far!
     <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Single-sheet Segmentation</span>: Brett Olsen / @brett_olsen</div>
     <img src="/img/progress/os-nov23/9.png"/>
   </a>
-  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://scrollprize.substack.com/p/many-open-source-prize-winners-25">
     <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Multiple Contributions</span>: Santiago Pelufo / @spelufo</div>
     <img src="/img/progress/os-nov23/10.png"/>
   </a>
