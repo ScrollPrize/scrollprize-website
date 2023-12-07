@@ -38,9 +38,56 @@ hide_table_of_contents: true
 
 Since the Vesuvius Challenge was launched in March 2023, a lot has happened. On this page we document all the prizes that have been won.
 
-We have awarded **$272,000** in prizes so far!
+We have awarded **~$300,000** in prizes so far!
 
-### $60,000 First Letters & Ink (12 October 2023)
+### $25,000 Open Source (November 30 2023)
+
+**Goal:** Increase the probability the Grand Prize gets awarded.<br/>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/spacegaier/volume-cartographer">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$8,000 </div><span className="font-bold">Next-gen Volume Cartographer</span>: Philip Allgaier / @spacegaier</div>
+    <img src="/img/progress/os-nov23/1.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/jrudolph/vesuvius-browser">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$5,000</div><span className="font-bold">Segment Browser</span>: Johannes Rudolph / @jrudolph</div>
+    <img src="/img/progress/os-nov23/2.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1177039383375912990/1177039383375912990">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$5,000</div><span className="font-bold">Ink Detection Masks</span>: Anton Repushko / @repushko</div>
+    <img src="/img/progress/os-nov23/3.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/educelab/volume-cartographer/issues/43">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Sharkbite fix</span>: Chuck / @khartes_chuck</div>
+    <img src="/img/progress/os-nov23/4.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/giorgioangel/vesuvius-kintsugi">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Vesuvius Kintsugi</span>: Giorgio Angelotti / @jordi45698</div>
+    <img src="/img/progress/os-nov23/5.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="http://dl.ash2txt.org/bruniss-uploads/">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Crackle Labels</span>: Sean Johnson / @bruniss</div>
+    <img src="/img/progress/os-nov23/6.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://tinyurl.com/Omit-1">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Omit</span>: Timo Meireman / @timo_71099</div>
+    <img src="/img/progress/os-nov23/7.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/segment-viewer">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$5,000</div><span className="font-bold">Segment Viewer</span> by Yao Hsiao / @Yao_Hsiao and Dalufishe / @Dalufish</div>
+    <img src="/img/progress/os-nov23/8.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1179216516697296906/1179216516697296906">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Single-sheet Segmentation</span>: Brett Olsen / @brett_olsen</div>
+    <img src="/img/progress/os-nov23/9.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Multiple Contributions</span>: Santiago Pelufo / @spelufo</div>
+    <img src="/img/progress/os-nov23/10.png"/>
+  </a>
+</div>
+
+### $60,000 First Letters & Ink (October 12 2023)
 
 **Goal:** Find the first letters within the scrolls.<br/>
 **Announcement:** <a href="firstletters">Announcement page</a>
@@ -67,7 +114,7 @@ We have awarded **$272,000** in prizes so far!
   </a>
 </div>
 
-### $45,000 Segmentation Tooling 2 (3 October 2023)
+### $45,000 Segmentation Tooling 2 (October 3 2023)
 
 **Goal:** Help the [segmentation team](data_segments) do larger and harder areas.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/segmentation-tooling-2-winners">Blog post</a>
@@ -102,7 +149,7 @@ We have awarded **$272,000** in prizes so far!
   </a>
 </div>
 
-### $12,000 Ink Detection Followup (8 September 2023)
+### $12,000 Ink Detection Followup (September 8 2023)
 
 **Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/ink-detection-followup-prize-winners">Blog post</a>
@@ -134,7 +181,7 @@ We have awarded **$272,000** in prizes so far!
   </a>
 </div>
 
-### $45,000 Segmentation Tooling (27 June 2023)
+### $45,000 Segmentation Tooling (June 27 2023)
 
 **Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/ink-detection-followup-prize-winners">Blog post</a>

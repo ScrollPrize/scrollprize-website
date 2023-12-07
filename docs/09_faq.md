@@ -40,8 +40,7 @@ hide_table_of_contents: true
 
 * March 15th 2023: Launch!
 * October 12th 2023: [First Letters Prize](firstletters) was awarded for first discovery of text within the scrolls.
-* November 30th 2023: Deadline of the current round of [Open Source Prizes](/open_source_prizes).
-* December 31st 2023: Deadline of the [Grand Prize](/overview#grand-prize-700000).
+* December 31st 2023: Deadline of the [Grand Prize](/overview#grand-prize-700000) and the final round of [Open Source Prizes](/open_source_prizes).
 * We have also [awarded](winners) a number of progress prizes with shorter deadlines, and more may follow.
 
 ### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
