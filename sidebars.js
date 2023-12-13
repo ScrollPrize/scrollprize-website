@@ -26,6 +26,7 @@ const sidebars = {
       items: [
         { type: 'doc', id: 'grand_prize' },
         { type: 'doc', id: 'open_source_prizes' },
+        { type: 'doc', id: 'private_prizes' },
         // { type: 'doc', id: 'first_letters' },
         // { type: 'doc', id: 'ink_detection' },
         // { type: 'doc', id: 'ink_detection_followup' },
