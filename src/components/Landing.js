@@ -1151,7 +1151,7 @@ export function Landing() {
             </div>
           </section>
           {/* Timer */}
-          <section className="md:py-24 py-8">
+          {/*<section className="md:py-24 py-8">
             <div
               className="container mx-auto pt-24 pb-36"
               onMouseEnter={() => setHover(true)}
@@ -1175,7 +1175,7 @@ export function Landing() {
                 Days Remaining
               </p>
             </div>
-          </section>
+          </section>*/}
         </div>
       </div>
     </>
