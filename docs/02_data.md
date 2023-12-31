@@ -41,7 +41,7 @@ hide_table_of_contents: true
 <div>To learn more about the data, see the linked pages below. Also be sure to check out:</div>
 
 * For the 2019 data: [“EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT”](https://arxiv.org/abs/2304.02084).
-* For the 2023 data: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1BYkYC-4c_RveGrJHpscJimkoguizii6-/view?usp=drive_link).
+* For the 2023 data: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1I6JNrR6A9pMdANbn6uAuXbcDNwjk8qZ2/view?usp=sharing).
 
 <div>
   <table>

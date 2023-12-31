@@ -65,7 +65,7 @@ The fragments are really tiny! Here you can see them in context:
   <div className="w-[45%] mb-2 mr-2 max-w-[325px]"><img src="/img/data/fr6-2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 6 (PHerc 51 Cr 4 Fr 48)</figcaption></div>
 </div>
 
-Very similar to the 2023 scans of the [scrolls](data_scrolls): same voxel sizes and resolutions. As opposed to the 2019 scan volumes, the different volumes of the 2023 scans ARE aligned. More technical details: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1BYkYC-4c_RveGrJHpscJimkoguizii6-/view?usp=drive_link).
+Very similar to the 2023 scans of the [scrolls](data_scrolls): same voxel sizes and resolutions. As opposed to the 2019 scan volumes, the different volumes of the 2023 scans ARE aligned. More technical details: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1I6JNrR6A9pMdANbn6uAuXbcDNwjk8qZ2/view?usp=sharing).
 
 Fragment 5 (PHerc 1667 Cr 1 Fr 3) is from the same original scroll as Scroll 4 (PHerc 1667), which was partially unrolled in 1987 using the Oslo method. Find this fragment on [Chartes.it](https://www.chartes.it/index.php?r=document/view&id=1691).
 
