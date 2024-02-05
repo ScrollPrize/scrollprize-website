@@ -8,18 +8,18 @@ hide_title: true
 <head>
   <html data-theme="dark" />
 
-  <meta name="description" content="Vesuvius Challenge $700,000 Grand Prize “now definitely achievable”" />
+  <meta name="description" content="The 2000-year-old scroll discusses music, food, and how to enjoy life’s pleasures." />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://scrollprize.org/firstletters" />
-  <meta property="og:title" content="First word discovered in unopened Herculaneum scroll by 21yo computer science student" />
-  <meta property="og:description" content="Vesuvius Challenge $700,000 Grand Prize “now definitely achievable”" />
+  <meta property="og:title" content="Vesuvius Challenge 2023 Grand Prize awarded: we can read the scrolls!" />
+  <meta property="og:description" content="The 2000-year-old scroll discusses music, food, and how to enjoy life’s pleasures." />
   <meta property="og:image" content="https://scrollprize.org/img/firstletters/purple_card-new.png" />
 
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://scrollprize.org/firstletters" />
-  <meta property="twitter:title" content="First word discovered in unopened Herculaneum scroll by 21yo computer science student" />
-  <meta property="twitter:description" content="Vesuvius Challenge $700,000 Grand Prize “now definitely achievable”" />
+  <meta property="twitter:title" content="Vesuvius Challenge 2023 Grand Prize awarded: we can read the scrolls!" />
+  <meta property="twitter:description" content="The 2000-year-old scroll discusses music, food, and how to enjoy life’s pleasures." />
   <meta property="twitter:image" content="https://scrollprize.org/img/firstletters/purple_card-new.png" />
 </head>
 
