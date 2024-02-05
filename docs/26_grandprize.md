@@ -272,7 +272,7 @@ Finally the scroll concludes:
 
 <div className="italic ml-8 mb-4">Is the Xenophantus who is mentioned the celebrated flute-player, or the man famous in antiquity for being unable to control his laughter, or someone else entirely? So many questions! But improvements to the identification of the ink, which can be expected, will soon answer most of them. I can hardly wait.”</div>
 
-[Federica Nicolari](https://www.docenti.unina.it/federica.nicolardi) told us:
+[Federica Nicolardi](https://www.docenti.unina.it/federica.nicolardi) told us:
 
 <div className="italic ml-8 mb-4">“Epicureanism says hi, with a text full of music, food, senses, and pleasure!”</div>
 
