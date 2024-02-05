@@ -144,12 +144,12 @@ Of the remaining submissions, the scores from our team of papyrologists identify
 
 <div className="mb-4">
   <a target="_blank" href="/img/grandprize/elian_text_wbb.png"><img src="/img/grandprize/elian_text_wbb-smaller.png" className="w-[100%]"/></a>
-  <figcaption className="mt-[-6px]">Elian Rafael Dal Prá, Sean Johnson, Leonardo Scabini, Raí Fernando Dal Prá, João Vitor Brentigani Torezan, Daniel Baldin Franceschini, Bruno Pereira Kellm, Marcelo Soccol Gris, and Odemir Martinez Bruno. <a href="https://github.com/lschlessinger1/vesuvius-grand-prize-submission">GitHub</a></figcaption>
+  <figcaption className="mt-[-6px]">Elian Rafael Dal Prá, Sean Johnson, Leonardo Scabini, Raí Fernando Dal Prá, João Vitor Brentigani Torezan, Daniel Baldin Franceschini, Bruno Pereira Kellm, Marcelo Soccol Gris, and Odemir Martinez Bruno. <a href="https://github.com/erdpx/vesuvius-grand-prize">GitHub</a></figcaption>
 </div>
 
 <div className="mb-4">
   <a target="_blank" href="/img/grandprize/lou_text_wbb.png"><img src="/img/grandprize/lou_text_wbb-smaller.png" className="w-[100%]"/></a>
-  <figcaption className="mt-[-6px]">Louis Schlessinger and Arefeh Sherafati. <a href="https://github.com/erdpx/vesuvius-grand-prize">GitHub</a></figcaption>
+  <figcaption className="mt-[-6px]">Louis Schlessinger and Arefeh Sherafati. <a href="https://github.com/lschlessinger1/vesuvius-grand-prize-submission">GitHub</a></figcaption>
 </div>
 
 These teams each brought to the table new approaches to the subtleties of ink labeling and sampling. Be sure to check out their methods at the links above. Other teams may also now choose to share their approaches, so be sure to follow our [Discord community](https://discord.gg/UtCXDCe4) for updates. Joining our community also provides access to the CT data and more images under our data agreement, as well as a front-row seat to daily discovery and collaboration!
