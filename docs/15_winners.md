@@ -60,7 +60,7 @@ We have awarded **$1,159,000** in prizes so far!
   </a>
   <a className="max-w-[632px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/erdpx/vesuvius-grand-prize">
     <div className="mb-4"><div className="text-sm font-bold text-gray-300">$50,000</div><span className="font-bold">Runner up</span>: Elian Rafael Dal Prá, Sean Johnson, Leonardo Scabini, Raí Fernando Dal Prá, João Vitor Brentigani Torezan, Daniel Baldin Franceschini, Bruno Pereira Kellm, Marcelo Soccol Gris, and Odemir Martinez Bruno</div>
-    <img className="max-w-[200px]" src="/img/grandprize/thumbs/elian.jpg"/>
+    <img className="max-w-[100%]" src="/img/grandprize/elian_text_wbb-smaller.png"/>
   </a>
 </div>
 
