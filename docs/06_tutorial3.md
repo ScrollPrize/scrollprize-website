@@ -48,7 +48,7 @@ As we saw in the ["Scanning" tutorial](/tutorial2), it’s quite hard to extract
 Two key steps to virtually unwrapping a scroll or manuscript are _segmenting_ a surface from inside the 3D volume and _flattening_ that surface to 2D. The video below shows the idea quite well; or check out the <a href="https://youtu.be/VG8oOMHCg74?t=37">full version</a> (It was made by Dr. Seales’s son and daughter!). The red line during the reconstruction phase represents the surface that we want to virtually unwrap.
 
 <figure>
-  <video playsInline muted controls className="w-[100%]" poster="/img/tutorials/pi-symbol3.jpg">
+  <video autoPlay playsInline loop muted controls className="w-[100%]" poster="/img/tutorials/pi-symbol3.jpg">
     <source src="/img/tutorials/pi-symbol3.webm" type="video/webm"/>
     <source src="/img/tutorials/pi-symbol3.mp4" type="video/mp4"/>
   </video>
@@ -351,7 +351,7 @@ Depending on what surface you chose to segment, you might notice that some of th
 
 The answer to this question is that not all inks have the same radiodensity. Some inks, like iron gall, show up quite clearly in CT scans because they absorb more x-rays than the papyrus on which they sit. This creates _high contrast_ between the bright iron gall ink voxels and the less bright papyrus voxels. Carbon-based inks, on the other hand, have a very similar radiodensity to papyrus and thus have _low contrast_ when compared against the papyrus voxels. More often than not, the contrast is so low for cabon ink that it is impossible to differentiate the ink from the papyrus when looking at the volume data with the naked eye.
 
-As we will discuss in ["Tutorial 4"](tutorial4), this does not mean that the ink is invisible or undetectable. In fact, we are quite confident that these inks _can_ be detected with machine learning, and that's what we're all here to do! Before we do that, though, let's look a little closer at how `vc_render` works and simplify our dataset down to only what's needed.
+As we will discuss in ["Tutorial 4"](tutorial4), this does not mean that the ink is invisible or undetectable. In fact, we know these inks often _can_ be detected with machine learning, and that's what we're all here to do! Before we do that, though, let's look a little closer at how `vc_render` works and simplify our dataset down to only what's needed.
 
 ### Surface volumes
 
@@ -428,6 +428,9 @@ Flattening & UV Options:
 There lots of other options, too, which you can see by using `vc_render --help`. For example, you can select different texturing methods, instead of just picking the maximum pixel value. You can also run your own texturing methods on the “surface volume” image stack directly. In a sense, the separate [“Ink Detection”](tutorial4) machine learning step can be seen as a particularly fancy texturing method!
 
 Try experimenting with the different options and see what happens.
+
+The tools used in this tutorial have been updated throughout Vesuvius Challenge by EduceLab and our community, and the changes are sure to continue.
+Check out [The Segmenter’s Guide to Volume Cartographer (for contractors)](https://docs.google.com/document/d/11B9Gy1gJRye_NQHphwbIxINvactUchJJsJOJi1FKrgI/edit?usp=sharing) and check in on Discord to catch up on the state of the art.
 
 <!--
 ### Optional: En-Gedi

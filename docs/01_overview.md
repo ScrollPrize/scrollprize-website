@@ -36,28 +36,31 @@ hide_table_of_contents: true
   />
 </head>
 
-The objective of the Vesuvius Challenge is to make history by reading an unopened Herculaneum scroll for the very first time. We believe that an open competition will accelerate progress and enable us to achieve this goal in 2023.
+In 2023, the Vesuvius Challenge made history by reading the inside of a Herculaneum scroll without opening it.
+A combination of competition and community collaboration helped us get there.
+In 2024, our goal is to go from reading 5% of a scroll to 90%.
+There is much to be done - please join us!
 
 ## Join the community
 
 - Join our [Discord server](https://discord.gg/V4fJhvtaQn) to ask questions, learn about what is going on, hang out with fellow contestants and interested onlookers, and perhaps find teammates.
-- Receive updates every 1-2 weeks from our [mailing list on Substack](https://scrollprize.substack.com).
-- Follow [@scrollprize](https://twitter.com/scrollprize) on Twitter.
+- Receive updates from our [mailing list on Substack](https://scrollprize.substack.com).
+- Follow [@scrollprize](https://twitter.com/scrollprize) on X.
 
 Our team is available for any questions and feedback on Discord. You can also email us at team@scrollprize.org.
 
 ## Current state
 
-This has been going on recently:
+In 2023 we awarded more than [$1,000,000](winners) across 53 prizes, resulting in the historic breakthrough of reading the inside of a Herculaneum scroll.
+As a part of Stage 2, we have now announced a 2024 Grand Prize, as well as another series of progress prizes, to help us get from 5% to 90% of the scroll.
+Read more about the [2024 prizes here](2024_prizes)!
 
-#### Current prizes
+## Master Plan
 
-- [Grand Prize](grand_prize): $700,000 1st prize, $100,000 2nd prize, $50,000 3rd prize, by December 31st 2023.
-- [Open Source Prizes](open_source_prizes): four $3,000 prizes, by December 31st 2023.
+Vesuvius Challenge is committed to the mission of reading the Herculaneum scrolls.
+Read more in our [Master Plan](master_plan).
 
-*We have awarded [~$300,000](winners) in prizes already.*
-
-#### Segmentation
+<!-- #### Segmentation
 
 - Recent developments:
   - [Segmentation Tooling 2 Prize (Oct 3)](winners#segmentation-tooling-2-3-october-2023) completed.
@@ -70,4 +73,4 @@ This has been going on recently:
 - Recent developments:
   - [**First Letters Prize Won!**](firstletters) (12 October 2023).
   - [Open Source Prize (Nov 30)](winners#25000-open-source-november-30-2023) completed.
-- Next milestone: [Grand Prize](grand_prize) and [Open Source Prizes](open_source_prizes).
+- Next milestone: [Grand Prize](grand_prize) and [Open Source Prizes](open_source_prizes). -->

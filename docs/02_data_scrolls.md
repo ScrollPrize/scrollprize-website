@@ -44,13 +44,13 @@ The scroll data is from two scanning sessions:
 ## 2019 Scans
 
 <div className="flex w-[100%]">
-    <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1 (PHerc Paris 3)</figcaption></div>
-    <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 2 (PHerc Paris 4)</figcaption></div>
+    <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1 (PHerc Paris 4)</figcaption></div>
+    <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 2 (PHerc Paris 3)</figcaption></div>
 </div>
 
 7.91µm 3D X-ray scans of two intact scrolls (top halves only), scanned in horizontal slices from bottom to top. Each half scroll scan is 14,000 .tif files, 120MB each. Each slice is 7.91µm tall, so this scroll half is 11.2cm tall. Both were scanned at 54keV, though we also released a smaller slice of Scroll 2 at 88keV. These are the scans you need to read to win the Grand Prize. More technical details: [“EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT”](https://arxiv.org/abs/2304.02084).
 
-The two scrolls are from the [Institut de France](https://en.wikipedia.org/wiki/Institut_de_France) and were scanned at about 7.91µm resolution at the [Diamond Light Source](https://en.wikipedia.org/wiki/Diamond_Light_Source) particle accelerator. We are only releasing data from the top halves of these scrolls (they were standing on end when they were scanned). We will work with you to apply your techniques to the bottom halves in order to validate your submission.
+The two scrolls are from the [Institut de France](https://en.wikipedia.org/wiki/Institut_de_France) and were scanned at about 7.91µm resolution at the [Diamond Light Source](https://en.wikipedia.org/wiki/Diamond_Light_Source) particle accelerator. Currently the top half of each scroll is released (they were standing on end when they were scanned).
 
 ## 2023 Scans
 
@@ -78,7 +78,7 @@ A `.volpkg` needs to have the following files and directories, otherwise Volume 
     * `/paths/`: This is where segments are stored (see next chapter: [Segments](data_segments)). May be empty.
     * `/working/` (optional): We typically put miscellaneous related data in this directory.
 
-A typical .tif file from the scrolls look like this, giving a top-down view:
+A typical .tif file from the scrolls look like this, giving a cross-section view:
 
 <figure>
   <img src="/img/data/07000.jpg" className="max-w-[500px]"/>
@@ -89,8 +89,8 @@ A typical .tif file from the scrolls look like this, giving a top-down view:
 
 You can find the full scroll data on the [data server](http://dl.ash2txt.org/full-scrolls/) in the [`/full-scrolls/`](http://dl.ash2txt.org/full-scrolls/) folder.
 
-* **Scroll 1 (PHerc Paris 3):** The scroll for which we have by far the most [segments](data_segments), and in which the [first letters](firstletters) have been discovered. Half of the scroll has been released in single 54keV volume.
-* **Scroll 2 (PHerc Paris 4):** Has proven to be harder to segment. We do have a 88keV “slab” (small sub-volume) in addition to the 54keV main volume. Also, the main volume has a scanning artifact in the middle of the volume.
+* **Scroll 1 (PHerc Paris 4):** The scroll for which we have by far the most [segments](data_segments), and in which the [first letters](firstletters) have been discovered and the [2023 Grand Prize](grandprize) was claimed. Half of the scroll has been released in single 54keV volume.
+* **Scroll 2 (PHerc Paris 3):** Has proven harder to segment. We do have a 88keV “slab” (partial volume) in addition to the 54keV main volume. Also, the main volume has a scanning artifact in the middle of the volume.
 * **Scroll 3 (PHerc 332):** Canonical volume is 3.24µm, 53keV. Other volumes will become available as processing finishes. All volumes will be aligned to the canonical volume. Also has raw HDF files available, from before “windowing” the raw values to .tif integer values (see [this FAQ item](faq#how-should-the-intensity-values-in-the-ct-scans-be-interpreted)).
 * **Scroll 4 (PHerc 1667):** Canonical volume is 3.24µm, 88keV. Otherwise similar to Scroll 3. The volume with 3.24µm, 53keV had slight data loss during scanning, and so is not as good.
 

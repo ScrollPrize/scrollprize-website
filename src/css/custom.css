@@ -24,6 +24,9 @@
   --doc-sidebar-width: 230px !important;
   /* --ifm-navbar-background-color: white;
   --ifm-navbar-link-color: white; */
+
+  --ifm-navbar-padding-vertical: 0px;
+  --ifm-navbar-height: 45px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -78,6 +81,10 @@ figcaption {
   display: none !important;
 }
 
+.docs-doc-id-landing main {
+  overflow: hidden;
+}
+
 @media (min-width: 997px) {
   :root {
     --ifm-navbar-height: 0;
@@ -97,6 +104,10 @@ figcaption {
 } */
 .navbar-sidebar__back {
   display: none;
+}
+
+.navbar-sidebar__brand {
+  margin-top: 12px;
 }
 
 .docs-doc-id-landing main>.container {
@@ -205,4 +216,49 @@ main {
 *::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none;
+}
+
+@keyframes pan {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+    /* Adjust this value based on your image's width */
+  }
+}
+
+.pan-horizontal {
+  animation: pan 40s linear infinite;
+}
+
+.docs-doc-id-grandprize article {
+  font: normal 18px/1.65 "PT Sans", "Helvetica", "Arial", sans-serif;
+}
+
+.docs-doc-id-grandprize article figcaption {
+  font-size: 88%;
+}
+
+.docs-doc-id-grandprize article h2 {
+  font-size: 250%;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.docs-doc-id-grandprize article a {
+  font-weight: bold;
+}
+
+.docs-doc-id-grandprize article strong,
+.docs-doc-id-grandprize article b,
+.docs-doc-id-grandprize article h2,
+.docs-doc-id-grandprize article h3 {
+  color: white;
+}
+
+.docs-doc-id-grandprize article h2,
+.docs-doc-id-grandprize article h3 {
+  line-height: 1.1;
 }

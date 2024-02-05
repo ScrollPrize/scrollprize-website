@@ -36,9 +36,11 @@ hide_table_of_contents: true
   />
 </head>
 
-Efforts can be grouped into two categories:
+Since launching the Vesuvius Challenge, our community has generated an incredible set of tools to help with various parts of the pipeline.
 
-* [**Segmentation:**](#segmentation) the mapping of sheets of papyrus (“segments”) in a 3D X-ray volume. See [Tutorial 3](tutorial3) and [Data > Segments](data_segments).
+Efforts can generally be grouped into two categories:
+
+* [**Segmentation:**](#segmentation) the mapping of sheets of papyrus (“segments”) in a 3D X-ray volume. See [Tutorial 3](tutorial3) and [Data -> Segments](data_segments).
 * [**Ink Detection:**](#ink-detection) detecting ink in segments. See [Tutorial 4](tutorial4).
 
 ## Segmentation
@@ -50,13 +52,13 @@ Efforts can be grouped into two categories:
 
 Segmentation is the mapping of sheets of papyrus (“segments”) in a 3D X-ray volume. See [Tutorial 3](tutorial3). The community has built various tools to do this.
 
-We have also set up a small team of contractors producing segments. These are available for anyone to download. See [Data > Segments](data_segments) for more information.
+We also have a hired segmentation team using these tools to generate segments. These are available for anyone to download. See [Data -> Segments](data_segments) for more information.
 
 ### What are people working on?
 
 <div><strong>Next milestone:</strong> segmenting all papyrus sheets of all scrolls. For this we will need tools like:</div>
 
-- Segmenting the [new scans](https://scrollprize.substack.com/p/new-scans-of-herculaneum-papyri-at)
+- Segmenting the [latest scans](https://scrollprize.substack.com/p/new-scans-of-herculaneum-papyri-at)
   - Better tooling for dealing with the higher resolutions and multiple volumes
   - Current state of the art: [Philip’s Volume Cartographer fork](#volume-cartographer)
 - Better tools for high-accuracy segmentation or correcting
@@ -77,7 +79,7 @@ We have also set up a small team of contractors producing segments. These are av
   </video>
 </figure>
 
-The main tool that the segmentation team (contractors and volunteers) currently uses is Volume Cartographer.
+The main tool that the segmentation team currently uses is Volume Cartographer.
 
 This tool was originally created by EduceLab (in particular Seth Parker), and is now being improved both by EduceLab and the Vesuvius Challenge community. The tool has been improved greatly, with more accurate and faster segmentation algorithms and UI improvements.
 
@@ -199,14 +201,17 @@ https://twitter.com/CJHandmer/status/1644940811837276161?s=20
 
 ## Ink Detection
 
-There are two major avenues people have been pursuing for detecting ink in the scrolls.
+There are two major avenues people have been pursuing for detecting ink in the scrolls, and for building training datasets.
 
-1. **Fragment-based.** Training ML models on fragments, then running them on scroll segments. This is the method we originally envisioned, and created some prizes around, like the [Ink Detection prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/). Resulted in Youssef’s [First Letters Prize](firstletters) results.
-2. **Crackle-based.** Searching the scrolls for the [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) discovered by Casey Handmer. Resulted in Luke’s [First Letters Prize](firstletters) results.
+1. **Fragment-based.** Training ML models on detached scroll fragments with photographic ground truth, then running them on scroll segments. This was the method used to prove the concept of recovering Herculaneum ink from CT scans. Some prizes were created around this, like the [Ink Detection prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/). Resulted in Youssef’s [First Letters Prize](firstletters) results.
+2. **Scroll-based.** Searching the intact scrolls for the [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) discovered by Casey Handmer. Resulted in Luke’s [First Letters Prize](firstletters) results.
+
+It may turn out that both fragment data and scroll data can be combined for effective training sets.
+For now, training directly on scroll data removes the domain shift between fragments and scrolls, and yields stronger results.
 
 ### What are people working on?
 
-**Next milestone:** Scaling up the results of the [First Letters Prize](firstletters) to go for the [Grand Prize](grand_prize). Intermediate goals for the [$20k Open Source Prizes](open_source_prizes).
+**Next milestone:** Improving the precision seen in the Grand Prize results, so that we can recover more high quality passages.
 
 ### Fragment-based ink detection
 
@@ -224,7 +229,7 @@ There are two major avenues people have been pursuing for detecting ink in the s
 * [**Stephen Parsons’ PhD dissertation.**](https://uknowledge.uky.edu/cs_etds/138/) Lots and lots of gems in here. And of course we’d be remiss not to mention his original [ink-id](https://github.com/educelab/ink-id) software.
 * [**Anton Repushko’s ink labels.**](https://discord.com/channels/1079907749569237093/1177039383375912990/1177039383375912990) Many more ink labels in addition to the First Letters Prize winner’s labels.
 
-Before the First Letters Prize result, we ran an Ink Detection prize on Kaggle. These are the top 10 results:
+We also ran a fragment-based Ink Detection prize on Kaggle. These were the top 10 results:
 
 <a id="kaggle-ink-detection"/>
 
@@ -244,12 +249,13 @@ Before the First Letters Prize result, we ran an Ink Detection prize on Kaggle. 
   <figcaption className="mt-0">Ryan Chesler’s 4µm vs 8µm experiment</figcaption>
 </figure>
 
-### Crackle-based ink detection
+### Scroll-based ink detection
 
-Casey Handmer discovered a [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) in Scroll 1, which appears to be ink.
+Casey Handmer discovered a [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) in Scroll 1 that often visually indicates the presence of ink.
 
-<div>Several projects have been started to look into this crackle pattern more:</div>
+<div>Following this discovery, several projects have built on labeling ink directly in the scroll data:</div>
 
+* [2023 Grand Prize winners.](grandprize) Generally, this approach was used by winning entries for the 2023 Grand Prize.
 * [Luke’s First Letters Prize model.](https://github.com/lukeboi/scroll-first-letters) By Luke Farritor (@lukeboi on Discord).
 * [Crackle Viewer.](https://github.com/schillij95/Crackle-Viewer) Tool by Julian Schilliger (@RICHI on Discord) to annotate crackles in segments.
 * [Vesuvius Kintsugi.](https://github.com/giorgioangel/vesuvius-kintsugi) Another crackle labeling tool by Giorgio Angelotti (@jordi45698 on Discord).

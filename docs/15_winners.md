@@ -38,9 +38,57 @@ hide_table_of_contents: true
 
 Since the Vesuvius Challenge was launched in March 2023, a lot has happened. On this page we document all the prizes that have been won.
 
-We have awarded **~$300,000** in prizes so far!
+We have awarded **$1,159,000** in prizes so far!
 
-### $25,000 Open Source (November 30 2023)
+### $850,000 Grand Prize 2023 (December 31, 2023)
+
+**Goal:** Reveal four passages within the scrolls.<br/>
+**Announcement:** <a href="grandprize">Announcement page</a>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/younader/Vesuvius-Grandprize-Winner">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$700,000</div><span className="font-bold">Winner</span>: Youssef Nader, Luke Farritor, and Julian Schilliger</div>
+    <img src="/img/grandprize/thumbs/youssef_color.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/SQMah/Vesuvius-Grand-Prize-Submission/">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$50,000</div><span className="font-bold">Runner up</span>: SQ Mah</div>
+    <img src="/img/grandprize/thumbs/sq.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/lschlessinger1/vesuvius-grand-prize-submission">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$50,000</div><span className="font-bold">Runner up</span>: Lou Schlessinger and Arefeh Sherafati</div>
+    <img src="/img/grandprize/thumbs/louis.jpg"/>
+  </a>
+  <a className="max-w-[632px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/erdpx/vesuvius-grand-prize">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$50,000</div><span className="font-bold">Runner up</span>: Elian Rafael Dal Prá, Sean Johnson, Leonardo Scabini, Raí Fernando Dal Prá, João Vitor Brentigani Torezan, Daniel Baldin Franceschini, Bruno Pereira Kellm, Marcelo Soccol Gris, and Odemir Martinez Bruno</div>
+    <img className="max-w-[200px]" src="/img/grandprize/thumbs/elian.jpg"/>
+  </a>
+</div>
+
+### $12,000 Open Source (December 31, 2023)
+
+**Goal:** Increase the probability the Grand Prize gets awarded.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/open-source-prizes-awarded">Blog post</a>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/segment-viewer">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$3,000</div><span className="font-bold">Segment maps</span> by Yao Hsiao / @Yao_Hsiao</div>
+    <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F90f0e424-bcd9-481a-91b5-e5dd172ccc83_480x270.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://scrollprize.substack.com/p/open-source-prizes-awarded">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$3,000</div><span className="font-bold">Large segments and colab notebook</span> by Sean Johnson / @bruniss</div>
+    <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F16ee9f52-33c1-4087-acfa-f05e615be386_2680x2402.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/schillij95/Crackle-Viewer">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$3,000</div><span className="font-bold">Crackle Viewer</span> by Julian Schilliger / @RICHI</div>
+    <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7c460795-c40a-41df-9c51-1e6275791c2a_2490x1415.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="http://dl.ash2txt.org/luke-farritor-uploads/youssef_uploads/scroll_4/">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$3,000</div><span className="font-bold">Segment maps</span> by Youssef Nader / @YoussefNader</div>
+    <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F407f3430-b3fd-4343-ab3b-1b5d5d74e23f_7000x7000.jpeg"/>
+  </a>
+</div>
+
+### $25,000 Open Source (November 30, 2023)
 
 **Goal:** Increase the probability the Grand Prize gets awarded.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/many-open-source-prize-winners-25">Blog post</a>
@@ -88,7 +136,7 @@ We have awarded **~$300,000** in prizes so far!
   </a>
 </div>
 
-### $60,000 First Letters & Ink (October 12 2023)
+### $60,000 First Letters & Ink (October 12, 2023)
 
 **Goal:** Find the first letters within the scrolls.<br/>
 **Announcement:** <a href="firstletters">Announcement page</a>
@@ -115,7 +163,7 @@ We have awarded **~$300,000** in prizes so far!
   </a>
 </div>
 
-### $45,000 Segmentation Tooling 2 (October 3 2023)
+### $45,000 Segmentation Tooling 2 (October 3, 2023)
 
 **Goal:** Help the [segmentation team](data_segments) do larger and harder areas.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/segmentation-tooling-2-winners">Blog post</a>
@@ -150,7 +198,7 @@ We have awarded **~$300,000** in prizes so far!
   </a>
 </div>
 
-### $12,000 Ink Detection Followup (September 8 2023)
+### $12,000 Ink Detection Followup (September 8, 2023)
 
 **Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/ink-detection-followup-prize-winners">Blog post</a>
@@ -182,7 +230,7 @@ We have awarded **~$300,000** in prizes so far!
   </a>
 </div>
 
-### $45,000 Segmentation Tooling (June 27 2023)
+### $45,000 Segmentation Tooling (June 27, 2023)
 
 **Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/ink-detection-followup-prize-winners">Blog post</a>
@@ -224,7 +272,7 @@ We have awarded **~$300,000** in prizes so far!
   </a>
 </div>
 
-### $100,000 Ink Detection (July 14 2023)
+### $100,000 Ink Detection (July 14, 2023)
 
 **Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/12000-ink-detection-followup-prize">Blog post</a><br/>
@@ -273,7 +321,7 @@ More links and resources [here](community_projects#kaggle-ink-detection).
   </a>
 </div>
 
-### $10,000 Open Source (April 14 2023)
+### $10,000 Open Source (April 14, 2023)
 
 **Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/first-prizes-awarded-open-source">Blog post</a> / <a href="https://www.youtube.com/watch?v=_LBI0DtTl80">Live stream</a>

@@ -41,20 +41,22 @@ import { TutorialsTop } from '@site/src/components/TutorialsTop';
 
 <TutorialsTop highlightId={4} />
 
-This tutorial gives a high-level overview of our current best methods on how to do ink detection, followed by a more hands-on tutorial [on Kaggle as a notebook](https://www.kaggle.com/code/jpposma/vesuvius-challenge-ink-detection-tutorial).
+This tutorial gives a high-level overview on ink detection methods, followed by a more hands-on tutorial [on Kaggle as a notebook](https://www.kaggle.com/code/jpposma/vesuvius-challenge-ink-detection-tutorial).
+Since this tutorial was written, ink detection has successfully recovered text from inside the rolled scrolls.
+The technical principles remain the same as what is described here.
 
 Ink detection is the task of taking data from a 3D X-ray scan around a papyrus surface, and identifying the locations of the inked parts of the papyrus.
 
-This is where one of the difficulties of the Herculaneum Papyri comes in: the ink seems to be [radiolucent](https://en.wikipedia.org/wiki/Radiodensity), making it hard to detect on 3D X-ray scans.
+This is where one of the difficulties of the Herculaneum Papyri comes in: the ink and the papyrus have very similar densities, making it hard to detect ink in 3D X-ray scans.
 
-* **Campfire & En-Gedi scrolls:** Ink shows up as brighter voxels in 3D X-ray scans, so ink detection can be done by taking the brightest pixel in some voxel region.
-* **Herculaneum scrolls & fragments:** Ink does not seem directly visible in 3D X-ray scans, but there does seem to be data there, since machine learning models can detect it.
+* **Campfire & En-Gedi scrolls:** Dense ink shows up as brighter voxels in 3D X-ray scans, so ink detection can be done by taking the brightest pixel in some voxel region.
+* **Herculaneum scrolls & fragments:** Ink is less directly visible in 3D X-ray scans, but there does seem to be data there. Machine learning models can detect it, and humans can sometimes see subtle textural patterns in the data.
 
-In the video below Dr. Seales talks about how ink detection works in the Herculaneum scrolls, and how it came about:
+In the video below Dr. Seales talks about how ink detection got started for the Herculaneum scrolls:
 
 <iframe className="w-[100%] aspect-video mb-4" src="https://www.youtube.com/embed/g-7-Xg75CCI?start=5930" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>
 
-There is hope: not only can machine learning models detect the ink, on occasion we can see the ink directly in the 3D X-ray volumes. Here are some examples, with slices from the 3D surface volumes on the left, and infrared photos showing ink on the right (from the recent [data paper](https://arxiv.org/abs/2304.02084)):
+Not only can machine learning models detect the ink, on occasion we can see the ink directly in the 3D X-ray volumes. Here are some examples, with slices from the 3D surface volumes on the left, and infrared photos showing ink on the right (from the [data paper](https://arxiv.org/abs/2304.02084)):
 
 <figure className="">
   <img src="/img/tutorials/ink2-alpha.png" />
@@ -68,9 +70,9 @@ There is hope: not only can machine learning models detect the ink, on occasion 
 
 You have to look closely, but the shapes are visible!
 
-Recent work from the community have shown more examples. In particular the [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) discovered by Casey Handmer has proven useful, and resulted in Luke’s [First Letters Prize](firstletters) model.
+Discoveries from the community have found widespread examples of visible ink like this inside the intact scrolls. In particular the [“crackle pattern”](https://caseyhandmer.wordpress.com/2023/08/05/reading-ancient-scrolls/) discovered by Casey Handmer has proven useful, and inspired a number of labeling approaches that successfully produce models capable of detecting ink in the scrolls.
 
-It seems reasonable that the machine learning models can see patterns like this in more places. We train our models on detached fragments, since we have ground truth data in the form of actual visible ink. The idea is to then apply those models to the inside layers of the intact scrolls.
+For the purposes of the tutorial, we will use the fragment datasets, which contain ground truth ink labels made using infrared photography of the exposed writing on the surface.
 
 At a high level, training on a fragment works like this:
 
@@ -99,7 +101,6 @@ We can then use the model to predict what a label image would have looked like, 
 </figure>
 
 Of course, in reality the label image on the right doesn’t come out perfectly. Stephen Parsons’ [ink-id](https://github.com/educelab/ink-id/) program is one example of an ML-based approach. It produces outputs like this (showing different training epochs in k-fold training/prediction):
-
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] max-w-[238px]" poster="/img/landing/fragment-training2.jpg">
@@ -135,7 +136,7 @@ As you can see, some letters can be clearly seen, others not at all, and a lot o
   <figcaption className="mt-0">“Hidden layers” of papyrus, partially revealed by machine learning.</figcaption>
 </div>
 
-The [Ink Detection Progress Prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/) was all about creating the best possible machine learning model for detecting ink within the fragments. Since then newer models have successfully uncovered ink in full scrolls (the [First Letters Prize](firstletters)).
+The [Ink Detection Progress Prize on Kaggle](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/) was all about creating the best possible machine learning model for detecting ink within the fragments. Since then newer models have successfully uncovered ink in full scrolls (the [First Letters Prize](firstletters), and then the [2023 Grand Prize](grandprize)).
 
 So how can a machine learning model detect ink? In the electron microscope images below (from the paper [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable)), you can clearly see the difference between the inked and non-inked regions. We suspect that machine learning models are able to learn some of these features from the 3D X-ray scans.
 
@@ -149,8 +150,8 @@ So how can a machine learning model detect ink? In the electron microscope image
 * Model performance, getting more letters to be legible.
 * Applying these models to the full scrolls.
 * Reverse engineering the models to better understand the kind of patterns they are using to detect ink.
-* Creating more ground truth data (e.g. “campfire scrolls”).
+* Creating more ground truth data (e.g. “campfire scrolls” or synthetic data).
 
 Now let’s create a model! This part of the tutorial is over [on Kaggle as a notebook](https://www.kaggle.com/code/jpposma/vesuvius-challenge-ink-detection-tutorial).
 
-To run more advanced models on the [scroll segments](data_segments), check out the winning code for the [First Letters Prize](firstletters).
+To run more advanced models on the [scroll segments](data_segments), check out the winning code from the [First Letters Prize](firstletters) and the [2023 Grand Prize](grandprize).

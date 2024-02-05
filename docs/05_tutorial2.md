@@ -45,7 +45,7 @@ import TabItem from '@theme/TabItem';
 
 ### Campfire scroll
 
-To get a basic understanding of the kind of data we’re working with, it’s useful to look at it directly. Our goal will be to look at a scroll in two ways: 1. a “word soup” of floating letters 2. a mesh representation:
+To get a basic understanding of the kind of data we’re working with, it’s useful to look at it directly. Our goal will be to look at a scroll in two ways: 1) a “word soup” of floating letters, and 2) a mesh representation:
 
 <div className="flex flex-wrap items-start">
   <figure className="sm:w-[48.4%]">
@@ -70,7 +70,7 @@ We’ll use [Stephen Parsons’s](https://www2.cs.uky.edu/dri/stephen-parsons/) 
 <figcaption>Last page of the campfire scroll, with nonsense words</figcaption>
 </figure>
 
-Stephen then _carbonized_ the scroll through a process that is similar to that of making charcoal: he rolled up the scroll, sealed it in a coffee can, and heated the can on a campfire. In a hot, oxygen-poor environment like the coffee can, the papyrus turns to carbon rather than catching on fire. He then put the resulting carbonized scroll in a benchtop CT scanner (Bruker SkyScan 1173).
+Stephen then _carbonized_ the scroll through a process that is similar to that of making charcoal: he rolled up the scroll, sealed it in a cookie tin with a tiny hole poked in the top, and heated the tin in a campfire. In a hot, oxygen-poor environment like the cookie tin, the papyrus turns to carbon rather than catching on fire. He then put the resulting carbonized scroll in a benchtop CT scanner (Bruker SkyScan 1173).
 
 <figure className="">
   <div className="flex flex-wrap">

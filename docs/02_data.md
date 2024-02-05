@@ -49,7 +49,7 @@ hide_table_of_contents: true
       <tr>
         <td><a href="/data_scrolls">2019 Scrolls</a><br/>5.5TB</td>
         <td>
-          <div className="mb-4">7.91µm 3D X-ray scans of two intact scrolls (top halves only), scanned in horizontal slices from bottom to top. Each half scroll scan is 14,000 .tif files, 120MB each. Each slice is 7.91µm tall, so this scroll half is 11.2cm tall. Both were scanned at 54keV, though we also released a smaller “slab” of Scroll 2 at 88keV. These are the scans you need to read to win the Grand Prize.</div>
+          <div className="mb-4">7.91µm 3D X-ray scans of two intact scrolls (top halves only), scanned in horizontal slices from bottom to top. Each half scroll scan is 14,000 .tif files, 120MB each. Each slice is 7.91µm tall, so this scroll half is 11.2cm tall. Both were scanned at 54keV, though we also released a smaller “slab” of Scroll 2 at 88keV. These are the scans used to win the 2023 Grand Prize.</div>
           <div className="flex flex-wrap max-w-[500px]">
             <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 1 (PHerc Paris 3)</figcaption></div>
             <div className="sm:w-[45%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 2 (PHerc Paris 4)</figcaption></div>
@@ -60,7 +60,7 @@ hide_table_of_contents: true
       <tr>
         <td><a href="/data_scrolls">2023 Scrolls</a><br/>?TB <span className="text-sm">(still processing)</span></td>
         <td>
-          <div className="mb-4">New scans from 2023 (<a href="https://scrollprize.substack.com/p/new-scans-of-herculaneum-papyri-at">announcement</a>). 3.24µm and 7.91µm 3D X-ray scans of two partially unrolled scrolls, scanned in horizontal slices from bottom to top. Each scroll scan is ~25,000 .tif files, 170MB each. Each slice is 4µm tall, so each scroll is ~8cm long. Both were scanned at 53/70/88/105keV, for a total of 2*4=8 volumes each. Being released on an ongoing basis, as the data is being processed. You can also read these to win the Grand Prize.</div>
+          <div className="mb-4">New scans from 2023 (<a href="https://scrollprize.substack.com/p/new-scans-of-herculaneum-papyri-at">announcement</a>). 3.24µm and 7.91µm 3D X-ray scans of two partially unrolled scrolls, scanned in horizontal slices from bottom to top. Each scroll scan is ~25,000 .tif files, 170MB each. Each slice is 4µm tall, so each scroll is ~8cm long. Both were scanned at 53/70/88/105keV, for a total of 2*4=8 volumes each. Being released on an ongoing basis, as the data is being processed. Can also be used to win prizes.</div>
           <div className="flex flex-wrap max-w-[500px]">
             <div className="sm:w-[35.5%] mb-2 mr-2"><img src="/img/overview/PHerc0332.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 3 (PHerc 0332)</figcaption></div>
             <div className="sm:w-[55%] mb-2"><img src="/img/overview/PHerc1667.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 4 (PHerc 1667)</figcaption></div>
@@ -75,7 +75,7 @@ hide_table_of_contents: true
             <div className="w-[100%] max-w-[400px] mb-4"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div><figcaption className="mt-[-6px]">Some segments from Scroll 1</figcaption></div>
             <div className="w-[100%] max-w-[484px]">
               <iframe width="484" height="293" className="w-[100%]" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRQxQefw-7rl3Hnt1Q7MFpI27FtzsvFo2x9q6egW8vN5am8QlQLE20BAjOSPZ2teztjdgMUOGc6FV7Y/pubchart?oid=1982586813&amp;format=interactive"></iframe>
-              <figcaption classNameName="mt-0">Progress of mapping the scrolls, in area (cm²), from the <a href="https://docs.google.com/spreadsheets/d/1zC_5vkqWgb_5z4Q9BYsETF7_3r1BYPccdAnS_GRYOaQ/edit#gid=2051117465">Segment Directory spreadsheet</a></figcaption>
+              <figcaption className="mt-0">Progress of mapping the scrolls, in area (cm²), from the <a href="https://docs.google.com/spreadsheets/d/1zC_5vkqWgb_5z4Q9BYsETF7_3r1BYPccdAnS_GRYOaQ/edit#gid=2051117465">Segment Directory spreadsheet</a></figcaption>
             </div>
           </div>
         </td>
@@ -83,7 +83,7 @@ hide_table_of_contents: true
       <tr>
         <td><a href="/data_fragments">Fragments</a><br/>2.4TB</td>
         <td>
-          <div className="mb-4">3D X-ray scans, infrared images, and hand-labeled ink masks for three broken-off fragments of papyrus. Each fragment scan is 7,000-14,000 .tif files. The 3D scans are in vertical slices from side to side. The 2019 scans (fragments 1-4) are 3.24µm and 54/88keV. 2023 scans (fragments 5-6) are 3.24/7.91µm and 53/70/88/105keV. These data are for use in training ink detection models.</div>
+          <div className="mb-4">3D X-ray scans, infrared images, and hand-labeled ground truth ink masks for detached scroll fragments. Each fragment scan is 7,000-14,000 .tif files. The 2019 scans (fragments 1-4) are 3.24µm and 54/88keV. 2023 scans (fragments 5-6) are 3.24/7.91µm and 53/70/88/105keV. These data can be used for training ink detection models, or for investigating the differences between scans at different resolutions and energies.</div>
           <div className="flex flex-wrap">
             <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr1.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 1 (PHerc Paris 2 Fr 47)</figcaption></div>
             <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 2 (PHerc Paris 2 Fr 143)</figcaption></div>

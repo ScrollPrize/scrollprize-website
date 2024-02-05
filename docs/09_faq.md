@@ -38,10 +38,10 @@ hide_table_of_contents: true
 
 ### What are the important dates?
 
-* March 15th 2023: Launch!
-* October 12th 2023: [First Letters Prize](firstletters) was awarded for first discovery of text within the scrolls.
-* December 31st 2023: Deadline of the [Grand Prize](/overview#grand-prize-700000) and the final round of [Open Source Prizes](/open_source_prizes).
-* We have also [awarded](winners) a number of progress prizes with shorter deadlines, and more may follow.
+* March 15th, 2023: The Vesuvius Challenge is launched.
+* October 12th, 2023: $60,000 [First Letters Prize](firstletters) awarded for the first discovery of text within the scrolls. $200,000+ in [other  prizes](winners) meanwhile awarded throughout the year.
+* February 5, 2024: $850,000 [2023 Grand Prize](grandprize) awarded for reading four complete passages from inside a Herculaneum scroll. Stage 2 is underway, with [2024 Prizes](2024_prizes) now announced.
+* March 16th, 2024, 4pm PT: Grand Prize celebration at the Getty Villa Museum in Los Angeles, California.
 
 ### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
 
@@ -68,7 +68,6 @@ This depends on the jurisdiction you live in, but generally yes, you do have to 
 
 * Any publications and presentations must cite the EduceLab-Scrolls Dataset.
 * You won’t publish any revelation of hidden text (or associated code) without the written approval of Vesuvius Challenge.
-* If you find enough hidden text, you’ll win the Grand Prize ($700,000), and we'll work with you to put the texts in historical context, and co-publish them in academic venues. The winning code will be made public under a permissive open source license, so that others can reproduce and build on your work.
 
 We very much encourage researchers and students to work on this! Be sure to reach out to us [on Discord or by email](/overview#join-the-community).
 
@@ -133,11 +132,11 @@ Here are some other excellent books we recommend:
 
 ### Do we really need 7.91µm or 3.24µm resolution? These data files are huge!
 
-We don't know what the minimum resolution necessary to detect ink is, but this paper suggests that it may be 7.91µm: [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable).
+We don't know yet what the minimum resolution necessary to detect ink is, but this paper suggests that it may be 7.91µm: [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable).
 
 ### If an algorithm can read ink from a fragment X-ray, is it likely to work on a scroll?
 
-There is a known domain shift between the existing CT scans of fragments and scrolls, but the exciting results of the [First Letters](firstletters) prize confirm the ink presence is captured in the scroll scans and can be detected!
+Yes - there is a known domain shift between the existing CT scans of fragments and scrolls, but the exciting results of the [First Letters](firstletters) and [2023 Grand Prize](grandprize) awards confirm the ink presence is captured in the scroll scans and can be detected!
 
 ### Can machine learning models hallucinate letters that aren't there?
 
@@ -170,7 +169,7 @@ Letter sizes vary, and of course we don’t know what’s inside the unopened sc
 
 There are also some measurements in [this paper by Richard Janko](http://www-personal.umich.edu/~rjanko/how-to-read-and-reconstruct-a-herculaneum-papyrus.pdf), though it’s a little hard to infer actual letter sizing from it. If someone wants to do a more thorough review of the range of letter sizes found in all the Herculaneum papyri, we’d happily include your results here!
 
-From our first [Q&A with the Papyrology Team](https://www.youtube.com/watch?v=gielO5WHdu4), we learned (summary courtesey of [Santiago Pelufo on Discord](https://discord.com/channels/1079907749569237093/1108134343295127592/1111352271809302558)):
+From our first [Q&A with the Papyrology Team](https://www.youtube.com/watch?v=gielO5WHdu4), we learned (summary courtesy of [Santiago Pelufo on Discord](https://discord.com/channels/1079907749569237093/1108134343295127592/1111352271809302558)):
 * 2 orthogonal layers of fibers in a sheet.
 * ~100um sheet thickness
 * Scroll outer layer of a sheet = back of a sheet = vertical fibers.
@@ -200,12 +199,11 @@ The two main pieces of software developed by Dr. Seales’ lab are [Volume Carto
 
 In the tutorials we also show you how to use generic software to work with 3D volumes ([Fiji](https://imagej.net/software/fiji/downloads)) and meshes ([MeshLab](https://www.meshlab.net/#download)).
 
-There is a growing body of open source software now available as a result of Vesuvius Challenge. To learn more, check out the [previous prizes](winners) that have been awarded to many of these efforts.
+There is a growing body of open source software now available as a result of Vesuvius Challenge. To learn more, check out the [previous prizes](winners) that have been awarded to many of these efforts and our list of [community projects](community_projects).
 
 ### Where can I find collaborators?
 
-* [Discord thread](https://discord.com/channels/1079907749569237093/1085988126486437959)
-* [Kaggle forum thread](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/395040)
+In this [Discord thread](https://discord.com/channels/1079907749569237093/1085988126486437959).
 
 ### What would the papyrus scrolls look like when unrolled?
 
@@ -311,7 +309,9 @@ For example, air is present in all scans, and the scroll cases are made of Nylon
 
 ### What signals might be present in the 3D X-ray scans for ink detection?
 
-There remain open questions, but we suspect that ink might be filling in between the grid pattern of papyrus, kind of like syrup filling in gaps in a waffle.
+There remain open questions, but we do know the ink is sometimes directly visible as a "crackle" pattern, a texture resembling cracked mud that appears where the ink sits proud of the surface and appears to have dried.
+
+There may be other patterns present that are detectible by machine learning. We suspect that ink might be filling in between the grid pattern of papyrus, kind of like syrup filling in gaps in a waffle.
 
 <figure className="max-w-[400px]">
   <img src="/img/faq/waffle.png"/>
@@ -323,8 +323,6 @@ Ink might also be sitting on top of the papyrus, causing a slight bump on the su
 There might be some effect of indentation of the writing instrument, but it’s probably not very significant. The thought has generally been that any indentation effect would be even smaller than ink w.r.t. the scan resolution and maybe not significant when compared against the natural relief of the papyrus fibers. However, this has not been explored in detail on this type of material (look at the paper "Revisiting the Jerash Silver Scroll" for work on an etched metal scroll), so we don’t know for sure.
 
 It could be worthwhile to try to reverse engineer what machine learning models are seeing, so that perhaps we can see it more directly. Perhaps this could influence other ink detection methods or future scanning efforts.
-
-In some cases, the ink is thick enough to show up clearly in the CT images. In these instances, the ink has a cracked surface, like mud that has cracked after drying.
 
 ### Does segmenting and flattening need to happen before ink detection?
 
@@ -339,14 +337,6 @@ The downside of such an approach is that a lot more data needs to be accessible 
 Fiji/ImageJ doesn’t work well with extremely large datasets such as our scrolls or fragment volumes, though downsampling might help. If you’re experiencing problems even with the <a href="https://gist.github.com/janpaul123/280262ebce904f7366fe4cc155593e90">campfire.zip</a> dataset, then try to increase the memory limit: *“Edit > Options > Memory and Threads”*. It might also help to run the software in a different operating system, such as in a Linux VM. For example, on Windows the following setup [seems to work well](https://discord.com/channels/1079907749569237093/1088311252595507242/1088314069519441950): WSL2, Ubuntu 20, Windows 11, using the default WSL X server setup.
 
 A great contribution to the community would be to build an open source 3D volume viewer that is tailored to this problem. If you are interested in building something like that, do let us know in Discord!
-
-### What are the triangle artifacts in the surface volumes?
-
-There are [triangle artifacts](https://discord.com/channels/1079907749569237093/1079907750265499772/1087027890895470602) in the surface volumes, from the way the original volume is sampled using the mesh to create the surface volume. The triangles likely do correspond to mesh triangles. They don’t typically show up so distinctly, so we guess the mess geometry is “interesting” in this area.
-
-<figure>
-<img src="/img/faq/triangles.webp"/>
-</figure>
 
 ### How are the scroll slices oriented?
 
@@ -428,6 +418,8 @@ Nat read [24 Hours in Ancient Rome](https://www.amazon.com/24-Hours-Ancient-Rome
 
 We think so! Based on the results that Dr. Seales and his team have been able to produce so far, as well as the progress that has already resulted from this challenge, we believe that it is possible to read the Herculaneum scrolls using the scans that we already have. We don’t think it’s easy, but we believe it’s possible.
 
+[*edit 2024-02-05: It worked! But there is more to be done.*]
+
 ### I have a lot of money! Can I help sponsor this?
 
 Vesuvius Challenge Inc. is a 501c3 non-profit organization that was formed solely to solve the puzzle of the Herculaneum Papyri. It is currently funded by [the sponsors listed on the homepage](/#sponsors), and by many hours of volunteer contributions.
@@ -436,14 +428,14 @@ If you want to contribute money to support our operational costs or to increase 
 
 ### Has the mainstream media covered this work in the past?
 
-* Watch [this interview](https://drive.google.com/file/d/1nAAItmdAJ5PcnBE3TmOjCoxIX3uhlLDc/view) with Dr. Brent Seales on 60 Minutes!
+* Watch [this interview](https://drive.google.com/file/d/1QPYT0wJOBQEna7-Qo4EZQ-AXvm1UKs-V/view) with Dr. Brent Seales on 60 Minutes!
 * [The UnXplained](https://www.imdb.com/title/tt20234948/)
 * Great article by [Smithsonian Magazine](https://www.smithsonianmag.com/history/buried-ash-vesuvius-scrolls-are-being-read-new-xray-technique-180969358/)
 * More articles and videos on [this page](https://www2.cs.uky.edu/dri/news/)
 
 ### I’m a journalist and I would like to interview someone from the Vesuvius Challenge!
 
-Ok! Please email press@scrollprize.org.
+Please email press@scrollprize.org.
 
 ### Do you have a scroll that looks like the Nintendo logo from GoldenEye N64?
 

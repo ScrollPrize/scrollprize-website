@@ -101,3 +101,16 @@ The scrolls we have now may be just the beginning. When part of the Villa of the
 </figure>
 
 We have not yet found the villa’s main library, which would have contained a much wider range of Greek and Latin literature. That library, with its thousands or even tens of thousands of scrolls, must still be buried. If those texts are discovered, and if even a small fraction can still be read, they will transform our knowledge of classical life and literature on a scale not seen since the Renaissance.
+
+## A New Chapter
+
+In 2023, the Vesuvius Challenge added to this story by recovering text from one of the still-rolled Herculaneum scrolls.
+In 2024, we want to get from reading 5% of the scroll to reading 90% of the scroll.
+We hope you will join us!
+
+<figure>
+
+![](/img/landing/scroll-full-min.jpg)
+
+<figcaption>15 columns of text from PHerc.Paris. 4 (Institut de France), a.k.a. Scroll 1. Read more in the <a href="grandprize">2023 Grand Prize announcement</a>.</figcaption>
+</figure>

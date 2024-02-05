@@ -36,7 +36,7 @@ hide_table_of_contents: true
   />
 </head>
 
-Scanning sessions and data format is very similar to that of the [full scrolls](data_scrolls).
+Scanning sessions and data format are very similar to those of the [full scrolls](data_scrolls).
 
 ## 2019 Scans
 
@@ -47,7 +47,7 @@ Scanning sessions and data format is very similar to that of the [full scrolls](
   <div className="w-[45%] mb-2 mr-2 max-w-[170px]"><img src="/img/data/fr4.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 4 (PHerc Paris 1 Fr 39)</figcaption></div>
 </div>
 
-3.24µm 3D X-ray scans, infrared images, and hand-labeled ink masks for three broken-off fragments of papyrus. Each fragment scan is 7,000-14,000 .tif files. The 3D scans are in vertical slices from side to side. Both 54keV and 88keV volumes are released for every fragment, though they are NOT aligned with each other. Fragment 4 was originally held back for automated scoring in the [Kaggle](https://kaggle.com/competitions/vesuvius-challenge-ink-detection/) competition but has since been released.
+3.24µm 3D X-ray scans, infrared images, and hand-labeled ink masks for four detached scroll fragments. Each fragment scan is 7,000-14,000 .tif files. Both 54keV and 88keV volumes are released for every fragment, though they are NOT aligned with each other. Fragment 4 was originally held back for automated scoring in the [Kaggle](https://kaggle.com/competitions/vesuvius-challenge-ink-detection/) competition but has since been released.
 
 Just like the scrolls, the four fragments are from the [Institut de France](https://en.wikipedia.org/wiki/Institut_de_France) and were scanned at the [Diamond Light Source](https://en.wikipedia.org/wiki/Diamond_Light_Source) particle accelerator. More technical details: [“EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT”](https://arxiv.org/abs/2304.02084).
 

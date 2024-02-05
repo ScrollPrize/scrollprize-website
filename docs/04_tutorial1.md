@@ -51,7 +51,7 @@ The three steps in our process for reading a carbonized scroll are:
 2. <b>Segmentation and Flattening:</b> finding the layers of the rolled papyrus in the 3D scan and then unrolling them into a flattened "surface volume"
 3. <b>Ink Detection:</b> identifying the inked regions in the flattened surface volume using a machine learning model
 
-Each of these steps has been shown to work, but to date no one has successfully put them all together and applied them to an unopened Herculaneum scroll to reveal whole passages of hidden text. That is your goal!
+In 2023, these steps were each improved enough for us to recover text from inside an intact Herculaneum scroll. But there is much room for improvement in each step of the pipeline: currently, we can only read 5% of the complete scroll. We would like to read 90% in 2024. That is your goal!
 
 ### Virtually Unwrapping the En-Gedi Scroll
 
@@ -61,7 +61,7 @@ Here is an excellent 2 minute overview of how this was achieved:
 
 <iframe className="w-[100%] aspect-video mb-4" src="https://www.youtube.com/embed/GduCExxB0vw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>
 
-For the Herculaneum papyri, many of the same steps apply, with one key change: the ink is not immediately visible to the naked eye. We will need to use a machine learning model to detect the ink.
+For the Herculaneum papyri, many of the same steps apply, with one key change: the ink is much less readily visible. We will need to use a machine learning model or other tricks to detect the ink.
 
 Let's go through each of the key steps one by one.
 
@@ -183,8 +183,8 @@ The result is a 3D mesh (.obj file) called a “segment” which intersects the 
 
 To detect ink from the 3D X-ray scan, it is not sufficient to only examine the voxels which intersect our segment mesh; we also want to sample the voxels _around_ the mesh:
 
-* **downwards, “into the papyrus.”** Ink might have seeped into the papyrus, so the voxels inside the papyrus might contain information about the presence of ink.
-* **upwards, “above the papyrus.”** Ink might be sitting on top of the surface, creating a small “hump” that might be detectable.
+* **Downwards, “into the papyrus.”** Ink might have seeped into the papyrus, so the voxels inside the papyrus might contain information about the presence of ink.
+* **Upwards, “above the papyrus.”** Ink sometimes sits on top of the surface, creating textural patterns like the "crackle" pattern.
 
 We might also not have traced the surface of the papyrus completely accurately during segmentation, so sampling voxels around the mesh also gives us some leeway.
 
@@ -227,7 +227,7 @@ In [“Tutorial 3: Segmentation and Flattening”](tutorial3) we’ll dive deepe
 <strong>Output:</strong> Aligned infrared photo and hand-labeled binary mask.
 </div>
 
-This step is only applicable for fragments, since we don’t have ground truth data for scrolls.
+This step is only applicable for fragments, since we don’t have photographic ground truth data for intact scrolls.
 
 Once we have a surface volume containing a sheet of papyrus, we align the infrared photo to it, so it matches the surface as closely as possible. We have mostly done this manually. We use infrared photos because the ink has better contrast against the papyrus in the infrared spectrum.
 
@@ -286,7 +286,7 @@ We go into great detail in [“Tutorial 4: Ink Detection”](tutorial4).
     <source src="/img/tutorials/engedi-reconstruction3.webm" type="video/webm"/>
     <source src="/img/tutorials/engedi-reconstruction3.mp4" type="video/mp4"/>
   </video>
-  <figcaption className="mt-0">En-Gedi reconstruction of multiple fragments. Can you read it? <a href="https://www.youtube.com/watch?v=tL7rhIFNtQg">(source)</a></figcaption>
+  <figcaption className="mt-0">En-Gedi reconstruction of multiple segments, showing Hebrew text. Can you read it? <a href="https://www.youtube.com/watch?v=tL7rhIFNtQg">(source)</a></figcaption>
 </figure>
 
 Your work ends at ink detection. But for the world's papyrologists and classicists, this is where the excitement begins! Papyrologists can often extract more information than you might think. They are used to working with damaged, incomplete information, interpreting it, putting it into a historical context, and making history.
