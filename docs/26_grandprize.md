@@ -11,16 +11,16 @@ hide_title: true
   <meta name="description" content="The 2000-year-old scroll discusses music, food, and how to enjoy life’s pleasures." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://scrollprize.org/firstletters" />
+  <meta property="og:url" content="https://scrollprize.org/grandprize" />
   <meta property="og:title" content="Vesuvius Challenge 2023 Grand Prize awarded: we can read the scrolls!" />
   <meta property="og:description" content="The 2000-year-old scroll discusses music, food, and how to enjoy life’s pleasures." />
-  <meta property="og:image" content="https://scrollprize.org/img/firstletters/purple_card-new.png" />
+  <meta property="og:image" content="https://scrollprize.org/img/social/opengraph.jpg" />
 
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://scrollprize.org/firstletters" />
+  <meta property="twitter:url" content="https://scrollprize.org/grandprize" />
   <meta property="twitter:title" content="Vesuvius Challenge 2023 Grand Prize awarded: we can read the scrolls!" />
   <meta property="twitter:description" content="The 2000-year-old scroll discusses music, food, and how to enjoy life’s pleasures." />
-  <meta property="twitter:image" content="https://scrollprize.org/img/firstletters/purple_card-new.png" />
+  <meta property="twitter:image" content="https://scrollprize.org/img/social/opengraph.jpg" />
 </head>
 
 <h1 className="color-white text-4xl md:text-7xl font-black !mb-2 leading-none tracking-tighter">Vesuvius Challenge 2023 Grand Prize awarded: <span style={{
