@@ -39,7 +39,7 @@ hide_title: true
 
 We’re announcing the winners of the Vesuvius Challenge 2023 Grand Prize. We’ll look at how they did it, what the scrolls say, and what comes next.
 
-*Join the winners for a celebration at the Getty Villa Museum in Los Angeles on March 16th, 4pm. More to come.*
+*Join us for a celebration at the Getty Villa Museum in Los Angeles on March 16th, 4pm. <a href="https://www.getty.edu/visit/cal/events/ev_4074.html">More information here</a>.*
 
 
 
@@ -468,4 +468,4 @@ Thank you all so much!!
 
 Now let’s get on with it and read the rest of the scrolls. The best is yet to come.
 
-*Join the winners for a celebration at the Getty Villa Museum in Los Angeles on March 16th, 4pm. More to come.*
+*Join us for a celebration at the Getty Villa Museum in Los Angeles on March 16th, 4pm. <a href="https://www.getty.edu/visit/cal/events/ev_4074.html">More information here</a>.*
