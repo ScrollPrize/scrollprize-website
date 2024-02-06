@@ -1288,11 +1288,11 @@ export function Landing() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-4 items-stretch max-w-7xl">
                 <a
-                  className="cursor-pointer group hover:no-underline hover:-translate-y-2 transition-transform ease-in-out duration-300"
+                  className="cursor-pointer group hover:no-underline"
                   href="/grandprize"
                 >
                   <div
-                    className="relative rounded-2xl border-solid text-white border border-[#FFFFFF20] bg-[#131114bf] flex flex-col overflow-hidden"
+                    className="relative rounded-2xl border-solid text-white border border-[#FFFFFF20] bg-[#131114bf] group-hover:-translate-y-2 transition-transform ease-in-out duration-300 flex flex-col overflow-hidden"
                     style={{
                       boxShadow:
                         "0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.09), 0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.13), 0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.16), 0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.19), 0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.23), 0px 100px 80px 0px rgba(0, 0, 0, 0.32)",
@@ -1318,11 +1318,11 @@ export function Landing() {
                   </div>
                 </a>
                 <a
-                  className="cursor-pointer group hover:no-underline hover:-translate-y-2 transition-transform ease-in-out duration-300"
+                  className="cursor-pointer group hover:no-underline"
                   href="/master_plan"
                 >
                   <div
-                    className="relative rounded-2xl border-solid text-white border border-[#FFFFFF20] bg-[#131114bf] flex flex-col overflow-hidden"
+                    className="relative rounded-2xl border-solid text-white border border-[#FFFFFF20] bg-[#131114bf] group-hover:-translate-y-2 transition-transform ease-in-out duration-300 flex flex-col overflow-hidden"
                     style={{
                       height: "100%",
                       boxShadow:
