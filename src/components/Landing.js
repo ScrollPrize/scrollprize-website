@@ -39,8 +39,8 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
           While digging a well, an Italian farmworker encounters a marble
           pavement. Excavations unearth beautiful statues and frescoes – and
           hundreds of scrolls. Carbonized and ashen, they are extremely fragile.
-          But the temptation to open them is great; if read, they would more
-          than double the corpus of literature we have from antiquity.
+          But the temptation to open them is great; if read, they would significantly
+          increase the corpus of literature we have from antiquity.
         </div>
         <div className="max-w-3xl mb-8">
           Early attempts to open the scrolls unfortunately destroy many of them.
