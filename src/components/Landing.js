@@ -1253,7 +1253,9 @@ export function Landing() {
             <div className="container mx-auto z-20 relative mb-12">
               <div className="md:pt-20 pt-8 mb-4">
                 <h1 className="text-4xl md:text-7xl font-black !mb-4 tracking-tighter mix-blend-exclusion !leading-[90%] transition-opacity">
-                  <div className="max-w-3xl">Resurrect an ancient library from the ashes of a volcano.</div>
+                  <div className="max-w-3xl">
+                    Resurrect an ancient library from the ashes of a volcano.
+                  </div>
                   <span
                     className="text-3xl md:text-6xl drop-shadow-lg"
                     style={{
@@ -1268,7 +1270,9 @@ export function Landing() {
                     <span className="whitespace-nowrap">
                       Win $100,000.&nbsp;
                     </span>&nbsp;
-                    <span className="whitespace-nowrap">Make History.&nbsp;</span>
+                    <span className="whitespace-nowrap">
+                      Make History.&nbsp;
+                    </span>
                   </span>
                 </h1>
                 <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
@@ -1454,7 +1458,9 @@ export function Landing() {
                 <h1 className="mb-16 text-4xl md:text-7xl font-black leading-none tracking-tighter " name="sponsors" id="sponsors">
                   Sponsors
                 </h1>
-                <h2 className="text-3xl md:text-5xl text-[#E8A42F]">Caesars</h2>
+                <h2 className="text-3xl md:text-5xl text-[#E8A42F]">
+                  Caesars
+                </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 auto-rows-fr  gap-2 pb-8">
                   {sponsors
                     .filter((s) => s.amount >= 200000)
