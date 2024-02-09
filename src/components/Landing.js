@@ -1312,8 +1312,8 @@ export function Landing() {
                       autoFill
                       className="py-1 md:py-2 text-xs md:text-sm font-bold text-[#E34E29] bg-[#68140160]"
                     >
-                      BREAKING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;THE SCROLLS
-                      HAVE BEEN READ&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+                      BREAKING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;FIRST SCROLL
+                      BEING READ&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
                     </Marquee>
                   </div>
                 </a>
