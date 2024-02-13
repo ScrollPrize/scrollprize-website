@@ -439,6 +439,18 @@ const sponsors = [
     image: ["/img/landing/collison1.jpg", "/img/landing/collison2.jpg"],
   },
   {
+    name: "Matt Huang",
+    amount: 100000,
+    href: "https://twitter.com/matthuang",
+    image: "/img/landing/Matt Huang.jpg",
+  },
+  {
+    name: "Anonymous",
+    amount: 100000,
+    href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
+    image: "/img/landing/mystery.jpg",
+  },
+  {
     name: "Bastian Lehmann",
     amount: 75000,
     href: "https://twitter.com/Basti",
@@ -461,12 +473,6 @@ const sponsors = [
     amount: 50000,
     href: "https://ex.rs/",
     image: "/img/landing/Arthur Breitman.jpg",
-  },
-  {
-    name: "Matt Huang",
-    amount: 50000,
-    href: "https://twitter.com/matthuang",
-    image: "/img/landing/Matt Huang.jpg",
   },
   {
     name: "Julia DeWahl & Dan Romero",
@@ -496,10 +502,22 @@ const sponsors = [
     image: "/img/landing/Akshay Kothari.jpg",
   },
   {
+    name: "Alexa McLain",
+    amount: 25000,
+    href: "https://www.nandcapital.com/",
+    image: "/img/landing/Alexa McLain.jpg",
+  },
+  {
     name: "Anjney Midha",
     amount: 25000,
     href: "https://twitter.com/AnjneyMidha",
     image: "/img/landing/Anjney Midha.jpg",
+  },
+  {
+    name: "franciscosan.org",
+    amount: 25000,
+    href: "https://franciscosan.org/",
+    image: "/img/landing/franciscosan.jpg",
   },
   {
     name: "Mark Cummins",
@@ -520,6 +538,24 @@ const sponsors = [
     image: "/img/landing/Mike Mignano.jpg",
   },
   {
+    name: "Aravind Srinivas",
+    amount: 10000,
+    href: "https://twitter.com/AravSrinivas",
+    image: "/img/landing/Aravind Srinivas.jpg",
+  },
+  {
+    name: "Brandon Reeves",
+    amount: 10000,
+    href: "https://www.luxcapital.com/people/brandon-reeves",
+    image: "/img/landing/Brandon Reeves.jpg",
+  },
+  {
+    name: "Brandon Silverman",
+    amount: 10000,
+    href: "https://twitter.com/brandonsilverm",
+    image: "/img/landing/Brandon Silverman.jpg",
+  },
+  {
     name: "Ivan Zhao",
     amount: 10000,
     href: "https://twitter.com/ivanhzhao",
@@ -530,12 +566,6 @@ const sponsors = [
     amount: 10000,
     href: "https://twitter.com/stephxsher",
     image: "/img/landing/Stephanie Sher.jpg",
-  },
-  {
-    name: "Brandon Reeves",
-    amount: 10000,
-    href: "https://www.luxcapital.com/people/brandon-reeves",
-    image: "/img/landing/Brandon Reeves.jpg",
   },
   {
     name: "Raymond Russell",
@@ -550,22 +580,10 @@ const sponsors = [
     image: "/img/landing/Vignan Velivela.jpg",
   },
   {
-    name: "Brandon Silverman",
-    amount: 10000,
-    href: "https://twitter.com/brandonsilverm",
-    image: "/img/landing/Brandon Silverman.jpg",
-  },
-  {
     name: "Katsuya Noguchi",
     amount: 10000,
     href: "https://twitter.com/kn",
     image: "/img/landing/Katsuya Noguchi.jpg",
-  },
-  {
-    name: "Aravind Srinivas",
-    amount: 10000,
-    href: "https://twitter.com/AravSrinivas",
-    image: "/img/landing/Aravind Srinivas.jpg",
   },
   {
     name: "Shariq Hashme",
@@ -580,10 +598,22 @@ const sponsors = [
     image: "/img/landing/Sahil Chaudhary.jpg",
   },
   {
+    name: "Taylor Blau",
+    amount: 10000,
+    href: "https://ttaylorr.com/",
+    image: "/img/landing/Taylor Blau.jpg",
+  },
+  {
     name: "Matias Nisenson",
     amount: 10000,
     href: "https://twitter.com/MatiasNisenson",
     image: "/img/landing/Matias Nisenson.jpg",
+  },
+  {
+    name: "Mikhail Parakhin",
+    amount: 10000,
+    href: "https://twitter.com/mparakhin",
+    image: "/img/landing/Mikhail Parakhin.jpg",
   },
   {
     name: "Amjad Masad",
