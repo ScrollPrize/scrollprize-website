@@ -403,6 +403,12 @@ const creators = [
 
 const sponsors = [
   {
+    name: "Musk Foundation",
+    amount: 2084000,
+    href: "https://www.muskfoundation.org/",
+    image: "/img/landing/musk.jpg",
+  },
+  {
     name: "Alex Gerko",
     amount: 450000,
     href: "https://www.xtxmarkets.com/",
@@ -1120,7 +1126,7 @@ const Sponsor = ({ sponsor }) => {
             {new Intl.NumberFormat("en-US", {
               style: "currency",
               currency: "USD",
-              maximumSignificantDigits: 3,
+              maximumSignificantDigits: 10,
             }).format(sponsor.amount)}
           </h3>
         </div>
