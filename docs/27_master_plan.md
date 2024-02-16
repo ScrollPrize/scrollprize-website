@@ -65,7 +65,7 @@ hide_table_of_contents: true
 
 ## Costs
 
-* We believe Stage 2 will cost $1-2M. Right now we have about 10% of this money in our bank account. Hopefully people donate!
+* We believe Stage 2 will cost $1-2M. Thanks to a generous donation of $2,084,000 from the Musk Foundation, this stage is now fully funded, and we have a little extra money from other donations to more aggressively explore scanning at scale, and even scan some more scrolls. Our eternal gratitude to all donors!
 * If the benchtop source works, or an efficient particle accelerator protocol can be devised, we believe Stage 3 will cost $4-8M. If it doesn’t, Stage 3 will cost $15M+, depending on the cost of beam time we are able to negotiate.
 
 ## The Payoff
