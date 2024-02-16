@@ -439,16 +439,16 @@ const sponsors = [
     image: "/img/landing/Matt_Mullenweg.jpg",
   },
   {
+    name: "Matt Huang",
+    amount: 150000,
+    href: "https://twitter.com/matthuang",
+    image: "/img/landing/Matt Huang.jpg",
+  },
+  {
     name: "John & Patrick Collison",
     amount: 125000,
     href: "https://stripe.com/",
     image: ["/img/landing/collison1.jpg", "/img/landing/collison2.jpg"],
-  },
-  {
-    name: "Matt Huang",
-    amount: 100000,
-    href: "https://twitter.com/matthuang",
-    image: "/img/landing/Matt Huang.jpg",
   },
   {
     name: "Anonymous",
