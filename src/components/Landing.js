@@ -604,10 +604,10 @@ const sponsors = [
     image: "/img/landing/Sahil Chaudhary.jpg",
   },
   {
-    name: "Taylor Blau",
+    name: "Maya & Taylor Blau",
     amount: 10000,
     href: "https://ttaylorr.com/",
-    image: "/img/landing/Taylor Blau.jpg",
+    image: ["/img/landing/Maya Blau.jpg", "/img/landing/Taylor Blau.jpg"],
   },
   {
     name: "Matias Nisenson",
