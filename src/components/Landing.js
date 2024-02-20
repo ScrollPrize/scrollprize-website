@@ -451,6 +451,12 @@ const sponsors = [
     image: ["/img/landing/collison1.jpg", "/img/landing/collison2.jpg"],
   },
   {
+    name: "Eugene Jhong",
+    amount: 100000,
+    href: "https://twitter.com/ejhong",
+    image: "/img/landing/Eugene Jhong.jpg",
+  },
+  {
     name: "Anonymous",
     amount: 100000,
     href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
@@ -524,6 +530,12 @@ const sponsors = [
     amount: 25000,
     href: "https://franciscosan.org/",
     image: "/img/landing/franciscosan.jpg",
+  },
+  {
+    name: "John O'Brien",
+    amount: 25000,
+    href: "https://twitter.com/jobriensf",
+    image: "/img/landing/John O'Brien.jpg",
   },
   {
     name: "Mark Cummins",
