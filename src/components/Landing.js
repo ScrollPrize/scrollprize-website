@@ -440,7 +440,7 @@ const sponsors = [
   },
   {
     name: "Matt Huang",
-    amount: 150000,
+    amount: 50000,
     href: "https://twitter.com/matthuang",
     image: "/img/landing/Matt Huang.jpg",
   },
@@ -524,12 +524,6 @@ const sponsors = [
     amount: 25000,
     href: "https://twitter.com/AnjneyMidha",
     image: "/img/landing/Anjney Midha.jpg",
-  },
-  {
-    name: "franciscosan.org",
-    amount: 25000,
-    href: "https://franciscosan.org/",
-    image: "/img/landing/franciscosan.jpg",
   },
   {
     name: "John O'Brien",
@@ -644,12 +638,6 @@ const sponsors = [
     amount: 5000,
     href: "https://twitter.com/Conaw",
     image: "/img/landing/Conor White-Sullivan.jpg",
-  },
-  {
-    name: "Will Fitzgerald",
-    amount: 5000,
-    href: "https://github.com/willf",
-    image: "/img/landing/Will Fitzgerald.jpg",
   },
 ];
 
