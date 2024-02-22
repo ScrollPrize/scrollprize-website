@@ -568,6 +568,12 @@ const sponsors = [
     image: "/img/landing/Brandon Silverman.jpg",
   },
   {
+    name: "Chet Corcos",
+    amount: 10000,
+    href: "https://chetcorcos.com",
+    image: "/img/landing/Chet Corcos.jpg",
+  },
+  {
     name: "Ivan Zhao",
     amount: 10000,
     href: "https://twitter.com/ivanhzhao",
