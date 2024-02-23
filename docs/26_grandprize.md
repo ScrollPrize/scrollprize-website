@@ -59,7 +59,7 @@ Two thousand years ago, a volcanic eruption buried an ancient library of papyrus
   <figcaption className="mt-0">The scrolls were <a href="https://twitter.com/natfriedman/status/1703422593670541437">carbonized</a> by the eruption of Mount Vesuvius in 79 AD.</figcaption>
 </figure>
 
-In the 18th century the scrolls were discovered. More than 800 of them are now stored in a library in Naples, Italy; these lumps of carbonized ash cannot be opened without severely damaging them. But how can we read them if they remain rolled up?
+In the 18th century the scrolls were discovered. Hundreds of them are now stored in a library in Naples, Italy; these lumps of carbonized ash cannot be opened without severely damaging them. But how can we read them if they remain rolled up?
 
 <div className="flex flex-wrap mb-4">
   <div className="w-[50.5%] mr-4 mb-2"><img src="/img/grandprize/scroll-1-scale.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">The scroll read by the winners.</figcaption></div>
@@ -416,7 +416,7 @@ In Stage 1 of the Vesuvius Challenge, we answered all of these questions, extrac
 
 ### Vesuvius Challenge Stage 2
 
-In 2023 we got from 0% to 5% of a scroll. In 2024 our goal is to go from 5% of one scroll, to 90% of all four scrolls we have scanned, and to lay the foundation to read all 800 scrolls.
+In 2023 we got from 0% to 5% of a scroll. In 2024 our goal is to go from 5% of one scroll, to 90% of all four scrolls we have scanned, and to lay the foundation to read all 300  scrolls.
 
 The primary goal for 2024 is to read 90% of the scrolls, and **we will issue the 2024 Grand Prize to the first team that is able to do this**. More details on the exact grand prize judging criteria will be available in March.
 
