@@ -59,7 +59,9 @@ To perform segmentation and flattening, we'll use [Volume Cartographer](https://
 
 :::tip
 
-We’re using the original version of Volume Cartographer in this tutorial. For the latest version, see the [Community Projects](community_projects#volume-cartographer) page or ask in Discord.
+These instructions are created using a fork of the original Volume Cartographer software created by @spacegaier. This is the current version that the segmentation team is using. The repository is located here: https://github.com/spacegaier/volume-cartographer
+
+the -v switch used below is mapping a local path (or volume) to the docker container, for example: in the below commands it is mapping c:\campfire to /campfire at the root of the container. You can modify this however you'd like. To check if your paths have been created properly you can run the docker container and initiate a list command by typing `docker run -v c:\campfire:/campfire ghcr.io/spacegaier/volume-cartographer:edge ls` where ls at the end is your list command (you could insert most anything here).
 
 :::
 
@@ -75,11 +77,12 @@ First, let's install it:
 3. Use the default settings, except: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-1.webp"/>
 4. Check that the X Server is running in the tray: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-2.webp"/>
 5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/).
-6. Put the extracted `campfire` directory in `C:\` (or update the path in the Docker command below).
-7. Then run:
+6. Pull the latest docker image by running `docker pull ghcr.io/spacegaier/volume-cartographer:edge`
+7. Put the extracted `campfire` directory in `C:\campfire` (or update the path in the Docker command below).
+8. Then run:
 
 ```bash
-docker run -it -v C:\campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/educelab/volume-cartographer
+docker run -it -v C:\campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/spacegaier/volume-cartographer:edge VC
 ```
 
   </TabItem>
@@ -104,17 +107,18 @@ Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab
 5. Quit XQuartz and restart it.
 6. Install [Docker Desktop](https://docs.docker.com/desktop/install/mac-install/).
 7. Put the extracted `campfire` directory in your home dir (or update the path in the Docker command below).
-8. Then run:
+8. Pull the latest docker image by running `docker pull ghcr.io/spacegaier/volume-cartographer:edge`
+9. Then run:
 
 ```bash
 # Allow network connections to XQuartz:
 xhost +localhost
 
 # M1 chips:
-docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" --platform linux/arm64 ghcr.io/educelab/volume-cartographer
+docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" --platform linux/arm64 ghcr.io/spacegaier/volume-cartographer:edge VC
 
 # Intel chips:
-docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/educelab/volume-cartographer
+docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/spacegaier/volume-cartographer:edge VC
 ```
 
 
@@ -123,13 +127,14 @@ docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" gh
 
 * We assume that you’re running the X Window System (if you’re unsure, you probably do).
 * First, install [Docker](https://docs.docker.com/engine/install/). Do *not* use Snap to install it.
+* Pull the latest 
 * Put the extracted `campfire` directory in your home dir (or update the path in the Docker command below).
 * Then run:
 
 ```bash
 xhost +local:docker
 
-docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/campfire:/campfire ghcr.io/educelab/volume-cartographer
+docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/campfire:/campfire ghcr.io/spacegaier/volume-cartographer:edge VC
 ```
 
 
@@ -170,7 +175,7 @@ make install
 Volume Cartographer works on `.volpkg` directories, which is a custom format just for Volume Cartographer. Let’s create one using the `vc_packager` tool, by feeding it the tomographically reconstructed volume (represented as a .tif stack) of the [campfire scroll](/data):
 
 ```bash
-vc_packager -v campfire.volpkg -m 1000 -s ~/campfire/rec/ # Or /campfire/rec when using Docker
+docker run -v c:\campfire:/campfire vc_packager ghcr.io/educelab/volume-cartographer:edge -v campfire/campfire.volpkg -m 1000 -s ~/campfire/rec/ # Or /campfire/rec when using Docker
 ```
 
 The material-thickness flag `-m` is an estimate of the papyrus thickness in microns and is used to help Volume Cartographer's tools automatically decide on good default parameters. The defaults can always be overridden later, so even though it's required, don't worry too much about this value.
@@ -283,12 +288,14 @@ If you notice a discrepancy where the points of your segment are no longer align
 You created your first segment! Be sure to save it using *“File > Save volpkg”*. The point cloud for this segment is stored in `campfire.volpkg/paths/<your-segment-id>/pointset.vcps`. If you want to view the point cloud in MeshLab, you can convert it to an OBJ file using `vc_convert_pointset`:
 
 ```bash
-vc_convert_pointset -i campfire.volpkg/paths/<your-segment-id>/pointset.vcps -o points.obj
+docker run -v c:\campfire:/campfire ghcr.io/educelab/volume-cartographer:edge vc_convert_pointset -i campfire/campfire.volpkg/paths/<your-segment-id>/pointset.vcps -o points.obj
 ```
 
 ### Rendering the segment
 
-In order to see the content on the surface of our segment, we need to flatten and texture the segment using the `vc_render` tool. While the output from `vc_render` is considered a "final result" that can be placed anywhere, our convention is to place all results in a `working` directory within the `.volpkg` so that all data is kept together:
+In order to see the content on the surface of our segment, we need to flatten and texture the segment using the `vc_render` tool. While the output from `vc_render` is considered a "final result" that can be placed anywhere, our convention is to place all results in a `working` directory within the `.volpkg` so that all data is kept together. You can also create this folder in your normal file explorer window
+
+Ensure you are in the correct working directory before running these:
 
 ```bash
 mkdir campfire.volpkg/working
@@ -299,7 +306,8 @@ Now run `vc_render` with the following arguments, substituting `<your-segment-id
 
 ```bash
 # From within campfire.volpkg/working
-vc_render -v ../ -s <your-segment-id> -o out.obj --output-ppm out.ppm
+docker run -v c:\campfire:/campfire ghcr.io/educelab/volume-cartographer:edge vc_render -v campfire/campfire.volpkg -s <your-segment-id> 
+
 ```
 
 If you don't remember your segment's ID, you can use `vc_volpkg_explorer` to list all segment IDs, or type `../paths/2023`, hit Tab to autocomplete, and then remove the `../paths/` prefix (e.g. `-s $(basename ../path/20230315130225)`).
@@ -382,7 +390,9 @@ To generate the surface volume, we need to run one more program:
 ```bash
 # From within campfire.volpkg/working
 mkdir layers
-vc_layers_from_ppm -v ../ -p out.ppm --output-dir layers/
+
+docker run -v c:\campfire:/campfire ghcr.io/educelab/volume-cartographer:edge vc_layers_from_ppm -v campfire/campfire.volpkg -p campfire/campfire.volpkg/working/PerPixelMap.ppm --output-dir campfire/campfire.volpkg/working/layers -f tif -r 32
+
 ```
 
 Now in the `layers` directory you’ll find another image stack! You can open this in Fiji again, which should then look something like this:
