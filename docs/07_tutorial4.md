@@ -155,3 +155,96 @@ So how can a machine learning model detect ink? In the electron microscope image
 Now let’s create a model! This part of the tutorial is over [on Kaggle as a notebook](https://www.kaggle.com/code/jpposma/vesuvius-challenge-ink-detection-tutorial).
 
 To run more advanced models on the [scroll segments](data_segments), check out the winning code from the [First Letters Prize](firstletters) and the [2023 Grand Prize](grandprize).
+
+To run the Grand Prize winning model: 
+
+1. Create a folder somewhere on your machine you'd like to store both the model and also the segment data and open a terminal from within it
+2. Clone the Grand Prize repo:
+
+```bash
+git clone https://github.com/younader/Vesuvius-Grandprize-Winner.git
+cd Vesuvius-Grandprize-Winner
+```
+3. Download and install anaconda or miniconda from: https://www.anaconda.com/download
+
+4. Create a new Conda env and activate it
+
+```bash
+conda create -n vesuviusgp
+conda activate vesuviusgp
+```
+5. Install the requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+At this point you have the model and all the requirements on your pc. The current inference and training scripts use relative paths, all starting from the directory from which you cloned the repository.
+
+What this means is that when you run the inference or training scripts, they are starting from that directory, and looking for the folders from there. 
+
+The following directory structure is required, unless you want to modify the paths in the script. Note that the segment name and the _mask.png and _inklabels.png must match.  
+.
+└── Vesuvius-Grandprize-Winner-main/
+    ├── eval_scrolls/
+    │   └── segment1/
+    │       ├── layers/
+    │       │   └── 00.tif
+    │       └── segment1_mask.png
+    └── train_scrolls/
+        └── segment1/
+            ├── layers/
+            │   └── 00.tif
+            ├── segment1_mask.png
+            └── segment1_inklabels.png
+
+For inference; 
+There are some defaults in the InferenceArgumentParser class, but it also accepts them as inputs
+
+```bash
+    segment_id: list[str] =['20230925002745'] #this accepts multiple segments, just keep in mind all these must exist in eval_scrolls, unless you change the segment_path
+    segment_path:str='./eval_scrolls' #the path to the segments
+    model_path:str= 'outputs/vesuvius/pretraining_all/vesuvius-models/valid_20230827161847_0_fr_i3depoch=7.ckpt' #the path to the checkpoint you downloaded or created and want to use for inference
+    out_path:str="" #path to output predictions
+    stride: int = 2 #the amount of pixels to skip when sliding the window, default is 2, you can run this up to 32 with no real difference in quality but a substantial increase to speed
+    start_idx:int=15 
+    workers: int = 4 #number of threads to use, increase or decrease depending on your specs, not to exceed number of threads avail
+    batch_size: int = 512 #increase or decrease depending on hardware, would have some difficulty above 512 on regular consumer hardware. if you get CUDA: out of memoery errors, lower this or increase stride, or both
+    size:int=64 #window size
+    reverse:int=0 #use to reverse the order of the layers during inference
+    device:str='cuda' #change to cpu or mps if on device with no gpu or apple device, respectively
+```
+these all can be passed as arguments. ex: `python inference_timesformer.py --segment_id 20231210121321 20231221180251 --segment_path $(pwd)/train_scrolls --model_path timesformer_wild15_20230702185753_0_fr_i3depoch=12.ckpt`
+
+advanced: to change the number of layers the model runs inference on, you must change the following:
+
+```bash
+
+    in the read_image_mask function, where it is defined
+
+    read_image_mask(fragment_id,start_idx=18,end_idx=38,rotation=0) #modify the start_idx and the end_idx
+
+    in the RegressionPLModel class, in the self.backbone=TimeSformer attributes,
+
+    num_frames = 30 #change this to the number of images you want to use. TimeSformer is just treating each image as a frame in a video
+
+```
+For training: 
+
+```bash
+
+    in the CFG class,
+
+    valid_id = '20230820203112' #change this to the segment you want to use as a validation segment
+
+    in the get_train_valid_dataset function
+
+    under for fragment_id_ink [] #insert the segments you want to use for training that you have located in train_scrolls, including your valid segment
+
+    towards the bottom under fragments=['20231005123336'] #change this to include each valid segment you want to use in a fold, so for if you have 1 you will have 1 valid segment and it will run the number of defined epochs with that valid. if you have 2 here it will do 2 full training runs with two different valid sets
+
+```
+
+
+
+train_timesformer_og.py and train_timesformer_deduped.py do not accept any arguments, but most of the parameters are the same as described above.
