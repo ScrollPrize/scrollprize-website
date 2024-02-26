@@ -63,6 +63,8 @@ These instructions are created using a fork of the original Volume Cartographer 
 
 the -v switch used below is mapping a local path (or volume) to the docker container, for example: in the below commands it is mapping c:\campfire to /campfire at the root of the container. You can modify this however you'd like. To check if your paths have been created properly you can run the docker container and initiate a list command by typing `docker run -v c:\campfire:/campfire ghcr.io/spacegaier/volume-cartographer:edge ls` where ls at the end is your list command (you could insert most anything here).
 
+If you are running linux you will most likely have to add 'sudo' to the beginning of any of the docker commands.
+
 :::
 
 First, let's install it:
@@ -213,7 +215,7 @@ We will use the main `VC` GUI app to perform segmentation of the campfire scroll
   <figcaption className="mt-0">Segmentation: finding a surface of papyrus.</figcaption>
 </figure>
 
-Run `VC` on the command line to open the GUI app (or `open /Applications/VC.app` on macOS with Homebrew).
+Run ` docker run -v c:\campfire:/campfire -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix ghcr.io/spacegaier/volume-cartographer:edge VC` on the command line to open the GUI app (or `open /Applications/VC.app` on macOS with Homebrew).
 
 Now open the `campfire.volpkg` directory using *“File > Open volpkg”*. You should see something like this:
 
@@ -305,6 +307,8 @@ cd campfire.volpkg/working
 Now run `vc_render` with the following arguments, substituting `<your-segment-id>`:
 
 ```bash
+#to run this command on the regular scroll data, just change the -v mapping after docker run and the -v mapping after vc_layers_from_ppm to the correct path
+
 # From within campfire.volpkg/working
 docker run -v c:\campfire:/campfire ghcr.io/educelab/volume-cartographer:edge vc_render -v campfire/campfire.volpkg -s <your-segment-id> 
 
@@ -388,6 +392,9 @@ The `out.ppm` file that we generated with `vc_render` contains a mapping between
 To generate the surface volume, we need to run one more program:
 
 ```bash
+
+#to run this command on the regular scroll data, just change the -v mapping after docker run and the -v mapping after vc_layers_from_ppm to the correct path
+
 # From within campfire.volpkg/working
 mkdir layers
 
