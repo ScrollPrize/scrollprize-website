@@ -84,7 +84,7 @@ First, let's install it:
 8. Then run:
 
 ```bash
-docker run -it -v C:\campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/spacegaier/volume-cartographer:edge VC
+docker run -it -v C:\campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/spacegaier/volume-cartographer:edge
 ```
 
   </TabItem>
@@ -117,10 +117,10 @@ Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab
 xhost +localhost
 
 # M1 chips:
-docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" --platform linux/arm64 ghcr.io/spacegaier/volume-cartographer:edge VC
+docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" --platform linux/arm64 ghcr.io/spacegaier/volume-cartographer:edge
 
 # Intel chips:
-docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/spacegaier/volume-cartographer:edge VC
+docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/spacegaier/volume-cartographer:edge
 ```
 
 
@@ -136,7 +136,7 @@ docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" gh
 ```bash
 xhost +local:docker
 
-docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/campfire:/campfire ghcr.io/spacegaier/volume-cartographer:edge VC
+docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/campfire:/campfire ghcr.io/spacegaier/volume-cartographer:edge
 ```
 
 
