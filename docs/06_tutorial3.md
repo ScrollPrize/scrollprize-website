@@ -63,7 +63,7 @@ These instructions are created using a fork of the original Volume Cartographer 
 
 The -v switch used below is mapping a local path (or volume) to the Docker container. For example, in the below commands it is mapping c:\campfire to /campfire at the root of the container. You can modify this however you'd like. To check if your paths have been created properly you can run the Docker container and initiate a list command by typing `docker run -v c:\campfire:/campfire ghcr.io/spacegaier/volume-cartographer:edge ls` where 'ls' at the end is your list command (you could insert most anything here).
 
-If you are running linux you will most likely have to add 'sudo' to the beginning of any of the docker commands.
+If you are running Linux you will most likely have to add 'sudo' to the beginning of any of the Docker commands.
 
 :::
 
