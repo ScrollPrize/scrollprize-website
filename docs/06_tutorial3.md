@@ -129,7 +129,7 @@ docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" gh
 
 * We assume that you’re running the X Window System (if you’re unsure, you probably do).
 * First, install [Docker](https://docs.docker.com/engine/install/). Do *not* use Snap to install it.
-* Pull the latest 
+* Pull the latest Docker image by running `docker pull ghcr.io/spacegaier/volume-cartographer:edge`
 * Put the extracted `campfire` directory in your home dir (or update the path in the Docker command below).
 * Then run:
 
