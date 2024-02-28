@@ -362,25 +362,32 @@ const prizes = [
   {
     title: "2024 Grand Prize",
     prizeMoney: "$100,000",
-    description: "Detect 10 letters in a 4 cm² area in a scroll",
+    description: "Read 90% of each of Scrolls 1-4",
     requirement: "",
-    href: "2024_prizes",
+    href: "2024_prizes#2024-grand-prize",
   },
   {
-    title: "Progress Prize 1",
-    prizeMoney: "$25,000",
-    description: "Detect 10 letters in a 4 cm² area in a scroll",
+    title: "First Automated Segmentation Prize",
+    prizeMoney: "$50,000",
+    description: "Reproduce the 2023 Grand Prize result but faster",
     requirement: "",
-    href: "2024_prizes",
+    href: "2024_prizes#first-automated-segmentation-prize",
   },
   {
-    title: "Progress Prize 2",
-    prizeMoney: "$25,000",
-    description: "Detect 10 letters in a 4 cm² area in a scroll",
+    title: "2024 First Letters Prizes",
+    prizeMoney: "3 x $30,000",
+    description: "Find the first letters in Scrolls 2, 3, and 4",
     requirement: "",
-    href: "",
-    tba: true,
+    href: "2024_prizes#3-first-letters-prizes-scrolls-2-4",
+    // tba: true,
   },
+  {
+    title: "Monthly Progress Prizes",
+    prizeMoney: "$350,000",
+    description: "Open ended prizes from $1,000-20,000",
+    requirement: "",
+    href: "2024_prizes#monthly-progress-prizes",
+  }
 ];
 
 const creators = [
@@ -998,18 +1005,11 @@ const Prize = ({ prize }) => (
           </h3>
         </div>
       )}
-      {/* {!prize.winners && (
-        <>
-          <div className="flex flex-col gap-2">
-            <p className="md:text-md text-sm uppercase font-bold opacity-40 mb-1">
-              {prize.requirement}
-            </p>
-          </div>
-           <p className="flex-1 md:text-xl text-lg font-medium opacity-60 leading-none tracking-tight mb-16">
+      {!prize.winners && (
+        <p className="flex-1 md:text-xl text-lg font-medium opacity-60 leading-none tracking-tight">
           {prize.description}
         </p>
-        </>
-      )} */}
+      )}
       {prize.bannerImage && (
         <div className="bg-[#232222] h-full flex flex-col justify-between">
           <div className="flex gap-2 items-center md:px-6 px-4 py-3">
@@ -1316,7 +1316,7 @@ export function Landing() {
                     }}
                   >
                     <span className="whitespace-nowrap">
-                      Win $100,000.&nbsp;
+                      Win Prizes.&nbsp;
                     </span>&nbsp;
                     <span className="whitespace-nowrap">
                       Make History.&nbsp;
@@ -1341,7 +1341,7 @@ export function Landing() {
               <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-4 items-stretch max-w-7xl">
                 <a
                   className="cursor-pointer group hover:no-underline"
-                  href="/grandprize"
+                  href="/2024_prizes"
                 >
                   <div
                     className="relative rounded-2xl border-solid text-white border border-[#FFFFFF20] bg-[#131114bf] group-hover:-translate-y-2 transition-transform ease-in-out duration-300 flex flex-col overflow-hidden"
@@ -1352,9 +1352,9 @@ export function Landing() {
                   >
                     <div className="flex flex-col py-4 md:py-5 px-5 md:px-7 ">
                       <h3 className="text-xl md:text-3xl text-white mt-0 mb-1 tracking-tighter !leading-[90%] flex-grow">
-                        2023 Grand Prize Won
+                        $500,000+ in New Prizes
                       </h3>
-                      <AnimatedArrow text="Read the announcement" />
+                      <AnimatedArrow text="More information" />
                     </div>
                     <img
                       className=""
@@ -1364,8 +1364,8 @@ export function Landing() {
                       autoFill
                       className="py-1 md:py-2 text-xs md:text-sm font-bold text-[#E34E29] bg-[#68140160]"
                     >
-                      BREAKING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;FIRST SCROLL
-                      BEING READ&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+                      BREAKING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;NEW PRIZES
+                      ANNOUNCED&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
                     </Marquee>
                   </div>
                 </a>
@@ -1478,7 +1478,7 @@ export function Landing() {
                   they contribute towards the <a href="master_plan">The Master Plan</a>.
                 </p>
                 <div className="flex flex-col gap-3 max-w-7xl">
-                  <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 max-w-6xl">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-6xl">
                     {prizes
                       .filter((p) => !p.winners)
                       .map((p, i) => (
