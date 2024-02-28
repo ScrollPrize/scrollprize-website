@@ -109,7 +109,7 @@ Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab
 5. Quit XQuartz and restart it.
 6. Install [Docker Desktop](https://docs.docker.com/desktop/install/mac-install/).
 7. Put the extracted `campfire` directory in your home dir (or update the path in the Docker command below).
-8. Pull the latest docker image by running `docker pull ghcr.io/spacegaier/volume-cartographer:edge`
+8. Pull the latest Docker image by running `docker pull ghcr.io/spacegaier/volume-cartographer:edge`
 9. Then run:
 
 ```bash
