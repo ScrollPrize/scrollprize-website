@@ -61,7 +61,7 @@ To perform segmentation and flattening, we'll use [Volume Cartographer](https://
 
 These instructions are created using a fork of the original Volume Cartographer software created by @spacegaier. This is the current version that the segmentation team is using. The repository is located here: https://github.com/spacegaier/volume-cartographer
 
-the -v switch used below is mapping a local path (or volume) to the docker container, for example: in the below commands it is mapping c:\campfire to /campfire at the root of the container. You can modify this however you'd like. To check if your paths have been created properly you can run the docker container and initiate a list command by typing `docker run -v c:\campfire:/campfire ghcr.io/spacegaier/volume-cartographer:edge ls` where ls at the end is your list command (you could insert most anything here).
+The -v switch used below is mapping a local path (or volume) to the Docker container. For example, in the below commands it is mapping c:\campfire to /campfire at the root of the container. You can modify this however you'd like. To check if your paths have been created properly you can run the Docker container and initiate a list command by typing `docker run -v c:\campfire:/campfire ghcr.io/spacegaier/volume-cartographer:edge ls` where 'ls' at the end is your list command (you could insert most anything here).
 
 If you are running linux you will most likely have to add 'sudo' to the beginning of any of the docker commands.
 
