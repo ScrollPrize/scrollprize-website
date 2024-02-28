@@ -295,7 +295,7 @@ docker run -v c:\campfire:/campfire ghcr.io/educelab/volume-cartographer:edge vc
 
 ### Rendering the segment
 
-In order to see the content on the surface of our segment, we need to flatten and texture the segment using the `vc_render` tool. While the output from `vc_render` is considered a "final result" that can be placed anywhere, our convention is to place all results in a `working` directory within the `.volpkg` so that all data is kept together. You can also create this folder in your normal file explorer window
+In order to see the content on the surface of our segment, we need to flatten and texture the segment using the `vc_render` tool. While the output from `vc_render` is considered a "final result" that can be placed anywhere, our convention is to place all results in a `working` directory within the `.volpkg` so that all data is kept together. You can also create this folder in your normal file explorer window.
 
 Ensure you are in the correct working directory before running these:
 
