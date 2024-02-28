@@ -156,6 +156,8 @@ Now let’s create a model! This part of the tutorial is over [on Kaggle as a no
 
 To run more advanced models on the [scroll segments](data_segments), check out the winning code from the [First Letters Prize](firstletters) and the [2023 Grand Prize](grandprize).
 
+### Running the 2023 Grand Prize model
+
 To run the Grand Prize winning model: 
 
 1. Create a folder somewhere on your machine you'd like to store both the model and also the segment data and open a terminal from within it
