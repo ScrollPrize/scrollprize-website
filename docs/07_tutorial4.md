@@ -218,7 +218,7 @@ There are some defaults in the InferenceArgumentParser class, but it also accept
 ```
 these all can be passed as arguments. ex: `python inference_timesformer.py --segment_id 20231210121321 20231221180251 --segment_path $(pwd)/train_scrolls --model_path timesformer_wild15_20230702185753_0_fr_i3depoch=12.ckpt`
 
-advanced: to change the number of layers the model runs inference on, you must change the following:
+Advanced: to change the number of layers the model runs inference on, you must change the following:
 
 ```bash
 
