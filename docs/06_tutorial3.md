@@ -79,7 +79,7 @@ First, let's install it:
 3. Use the default settings, except: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-1.webp"/>
 4. Check that the X Server is running in the tray: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-2.webp"/>
 5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/).
-6. Pull the latest docker image by running `docker pull ghcr.io/spacegaier/volume-cartographer:edge`
+6. Pull the latest Docker image by running `docker pull ghcr.io/spacegaier/volume-cartographer:edge`
 7. Put the extracted `campfire` directory in `C:\campfire` (or update the path in the Docker command below).
 8. Then run:
 
