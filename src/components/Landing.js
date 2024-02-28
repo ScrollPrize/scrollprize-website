@@ -320,7 +320,7 @@ const prizes = [
     winnersLabel: "18 Winners",
     winners: [
       // {
-      //   name: "Philip Algaier",
+      //   name: "Philip Allgaier",
       //   image: "https://pbs.twimg.com/profile_images/460039964365836288/n6b-1m3K_400x400.jpeg",
       // },
       // {
@@ -328,7 +328,7 @@ const prizes = [
       //   image: "https://avatars.githubusercontent.com/u/133787404?v=4",
       // },
       // {
-      //   name: "Sean Johnsson",
+      //   name: "Sean Johnson",
       //   image: "https://avatars.githubusercontent.com/u/120566210?v=4",
       // },
       {
@@ -639,6 +639,12 @@ const sponsors = [
     amount: 10000,
     href: "https://twitter.com/mparakhin",
     image: "/img/landing/Mikhail Parakhin.jpg",
+  },
+  {
+    name: "Alex Petkas",
+    amount: 5000,
+    href: "https://twitter.com/costofglory",
+    image: "/img/landing/Alex Petkas.jpg",
   },
   {
     name: "Amjad Masad",
@@ -1329,7 +1335,7 @@ export function Landing() {
                     vision competition that in{" "}
                   </span>
                   <span className="opacity-100">
-                    2023 cracked the riddle of the Herculanum Papyri & awarded
+                    2023 cracked the riddle of the Herculaneum Papyri & awarded
                     over $1,000,000 in prizes.
                   </span>
                   <br /> <br />
