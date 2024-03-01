@@ -523,7 +523,7 @@ const sponsors = [
   {
     name: "Alexa McLain",
     amount: 25000,
-    href: "https://www.nandcapital.com/",
+    href: "https://twitter.com/alexamclain",
     image: "/img/landing/Alexa McLain.jpg",
   },
   {
