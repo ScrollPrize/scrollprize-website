@@ -32,6 +32,11 @@ export function TutorialsTop({ highlightId } = {}) {
                 </video>
                 <div className="text-sm">Ink Detection</div>
             </a>
+            <a href="/segmentation_tutorial" className={`mb-2 flex flex-col items-center w-[100px] sm:w-[150px] relative box-content p-2 sm:p-4 sm:pb-2 hover:bg-[#fefefe26] rounded-xl ${ highlightId == 5 ? "bg-[#fffefc30] hover:bg-[#fefefe45]" : "" }`}>
+            <img className="max-h-[300px] m-2" src="/img/tutorials/fisherman.webp"/>
+            Segmentation Intuitive Tutorial
+            </a>
         </div>
+        
     );
 }
