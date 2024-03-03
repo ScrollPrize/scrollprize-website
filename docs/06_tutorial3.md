@@ -71,7 +71,7 @@ First, let's install it:
   <TabItem value="win" label="Windows">
 
 1. Install the [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) or a similar X Server (if you use the Chocolatey package manager: `choco install vcxsrv`).
-2. Run *“XLaunch” from the Start Menu, or from *“C:\Program Files\VcXsrv\xlaunch.exe”*.
+2. Run *“XLaunch”* from the Start Menu, or from *“C:\Program Files\VcXsrv\xlaunch.exe”*.
 3. Use the default settings, except: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-1.webp"/>
 4. Check that the X Server is running in the tray: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-2.webp"/>
 5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/).
