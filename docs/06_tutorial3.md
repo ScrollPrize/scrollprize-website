@@ -205,7 +205,9 @@ make install
 
 
 
-### Now let's setup our folders...
+### Now let's gather our scroll data and setup our folders...
+
+We're going to start with scroll 1 as this is the scroll that the Grand Prize segments were from, and is also the easiest of the current scrolls to segment. If you have downloaded the full scroll data by following the Data tutorial on this site, you should have the required files, but just ensure the directory structure is proper.
 
 If you wish to use a smaller portion of scroll 1 to begin, rather than the entire scroll, you can download any continuous section of .tif files in the volume (for example: 10000.tif to 10750.tif) and place them in the `/volumes/<volumename>` directory. As long as you have the config.json file at the root of the volpkg and the meta.json file in the volume VC can work with it.
 
