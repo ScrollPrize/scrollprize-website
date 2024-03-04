@@ -451,7 +451,9 @@ In the new_segments directory you set when you launched VC, you will now have a 
 
 * `Area_cm2.txt` is simply the size of the segment in cm^2
 
-### So, what did we just do?
+### Outputs
+
+So, what did we just do?
 
 When looking for ink in the volume, we need to look at more than just the voxels that directly intersect the segment mesh we just created. We also need to look a little bit “above“ and “below“ the mesh, at the neighborhood of voxels that surround our segment. Conceptually, this neighborhood looks something like this (though this video is exaggerated):
 
