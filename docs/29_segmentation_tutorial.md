@@ -109,7 +109,7 @@ Exploiting the created empty space, our fisherman net can now _enter_ the scroll
 ### Connectivity establishment
 We now have a cloud of points, and it's a mess! In order to _fish_ a single, continguous patch of a sheet, we first have to identify adjacent parts of the sheets, dispatching every point in its proper neighborhood.
 
-### Segmentation
+#### Segmentation
 We don't want to select points that lie on parallel surfaces, since this would mean to identify as contiguous points that are not really contiguous in the scroll! We diplay the nature of this problem in the left part of Figure 4, where correctly grouped points are circled in red, and incorrectly grouped points are circled in purple.
 
 <figure className="text-center mx-auto">
