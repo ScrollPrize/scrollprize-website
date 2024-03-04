@@ -51,7 +51,7 @@ We will tackle the task of segmentation from another perspective: that of a Neap
   <figcaption className="mt-1">Neapolitan fisherman.</figcaption>
 </figure>
 
-As we saw in the ["Segmentation and Flattening" tutorial](/tutorial2), the ultimate purpose of segmentation is that of identifying a triangular mesh on the wrapped papyrus sheet.
+As we saw in the ["Segmentation and Flattening" tutorial](/tutorial3), the ultimate purpose of segmentation is that of identifying a triangular mesh on the wrapped papyrus sheet.
 
 Imagine being Neapolitan fishermen, casting our nets not into schools of fish... but onto sheets!
 We want the net to adhere perfectly on the inner part of the sheet, that is next to where ink is supposed to be located. Indeed, the ink lies on the face of the papyrus that looks towards the pole of rotation of the scroll.
