@@ -365,7 +365,9 @@ The process completed during this step looks like this in 3D. We've identified t
   <figcaption className="mt-0">Segmentation: finding a surface of papyrus.</figcaption>
 </figure>
 
-### Ok, we've got a line...Now what?
+### Flattening and texturing
+
+Ok, we've got a line...Now what?
 
 In order to see the content on the surface of our segment, we need to flatten and texture the segment. These steps can be run individually, but it’s highly suggested to use the following process so that you end up with the same format and files as the official segmentations.
 
