@@ -203,7 +203,7 @@ This step is called obtaining a *per-pixel-map* and it's performed in `Thaumato 
 Why do we need the 3D positions of the new points? Remember that during the first step, *Node Placement*, we totally forgot about the density of the material obtained via the CT scan (its original color) and started working on a black and white mask, that later became a point cloud, and so on. All the colors displayed in Figures 3-7 were only for representation purposes.
 
 Now we need to recover that information, and to do so we need to know the 3D position of every new point that is going to become a pixel of our rendered image.
-Unfortunately, the map from integer 2D positions to 3D points will result into points with non integer positions. What does it mean? After all, the original voxels (Figure 1) _only_ have integer positions. What "color" will these new points/pixel then have?
+Unfortunately, the map from integer 2D positions to 3D points will result in points with non-integer positions. What does it mean? After all, the original voxels (Figure 1) _only_ have integer positions. What "color" will these new points/pixels then have?
 
 We are going to compute the color of the new points by `trilinear interpolation` with their closest ones in the volume.
 This will allow us to obtain images with a smooth varying color.
