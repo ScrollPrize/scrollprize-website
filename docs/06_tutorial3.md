@@ -280,7 +280,9 @@ Let's take a moment to get oriented before continuing:
 <img src="/img/tutorials/vc-open.png" className="rounded-xl"/>
 </figure>
 
-### Now that we’ve oriented ourselves with the UI, let's open our volpkg...
+### Navigating a volpkg
+
+Now that we’ve oriented ourselves with the UI, let's open our volpkg...
 
 1. Open a volpkg by clicking file, then open volpkg, and select the volpkg for the volume you wish to segment on, ensuring you select the .volpkg folder, and not one of the subfolders. Click choose, and the volume will open at slice 0.
 2. Practice scrolling through the volume, using shift+scroll wheel to move up and down through slice layers, and ctrl+scroll wheel to zoom in and out. You can right click and drag to pan around the slice.   Move through the layers until you find an area of the sheet that looks “easy” to segment. An ideal area has spacing on the inside face towards the center of the scroll, and maintains this spacing as you scroll through the layers for a time. You can increase the amount of slices you move through with the scroll wheel by pressing Q and E. The small number that shows up next to your cursor is the number of slices skipped each “click” of the scroll wheel.
