@@ -311,7 +311,7 @@ You’ll notice now that the purple line becomes a series of points. This is you
   <figcaption className="mt-0">Placing our first segmentation line with the pen tool.</figcaption>
 </figure>
 
-Now, click Segmentation Tool (You can also enter the segmentation tool by pressing 'T'). Let’s configure our Segmentation settings in the right box to match the ones in this image. The primary parameter you could modify here and see if you have any improvement is 'smoothen curve at bright points'.
+Now, click “Segmentation Tool” (You can also enter the segmentation tool by pressing 'T'). Let’s configure our Segmentation settings in the right box to match the ones in this image. The primary parameter you could modify here and see if you have any improvement is 'smoothen curve at bright points'.
 
 <figure>
   <img src="/img/tutorials/ofs_settings.png" className="rounded-xl"/>
