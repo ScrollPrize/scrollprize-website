@@ -106,7 +106,7 @@ Exploiting the created empty space, our fisherman net can now _enter_ the scroll
 <figcaption className="mt-1">Figure 3. Point cloud, colors added for visualization's sake.</figcaption>
 </figure>
 
-# Connectivity establishment
+### Connectivity establishment
 We now have a cloud of points, and it's a mess! In order to _fish_ a single, continguous patch of a sheet, we first have to identify adjacent parts of the sheets, dispatching every point in its proper neighborhood.
 
 ### Segmentation
