@@ -207,7 +207,7 @@ make install
 
 ### Now let's setup our folders...
 
-If you wish to use a smaller portion of scroll 1 to begin, there is a 60gb volpkg called scroll1_small located [here](http://dl.ash2txt.org/bruniss-uploads/scroll1/scroll1_small) that contains 750 slices from the upper third of scroll 1. Download this volpkg and place it in the full_scrolls directory.
+If you wish to use a smaller portion of scroll 1 to begin, rather than the entire scroll, you can download any continuous section of .tif files in the volume (for example: 10000.tif to 10750.tif) and place them in the `/volumes/<volumename>` directory. As long as you have the config.json file at the root of the volpkg and the meta.json file in the volume VC can work with it.
 
 This is the recommended structure for the full_scrolls folder (with a full example given for scroll1):
 
