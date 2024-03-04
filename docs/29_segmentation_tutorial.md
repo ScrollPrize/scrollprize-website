@@ -209,7 +209,7 @@ We are going to compute the color of the new points by `trilinear interpolation`
 This will allow us to obtain images with a smooth varying color.
 
 We forget to mention that since ink prediction is performed not on a single layer, but in what is called a surface volume, that is a stack of surfaces parallel to the surface we obtained along this pipeline, we need to store and transform as well the values of the normals to the surface at each point.
-We already had them for the vertices of the mesh, we need to compute as well the ones for the new points using barycentric coordinates.
+We already computed them for the vertices of the mesh, so we only need to compute the ones for the new points using barycentric coordinates.
 
 In Figure 9 we show the ink prediction from the `Phase 1 Grand Prize winning model` [^8] on the obtained rendered segmented from Figure 7.
 
