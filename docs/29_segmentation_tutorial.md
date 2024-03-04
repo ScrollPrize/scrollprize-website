@@ -75,7 +75,7 @@ The right image in Figure 1 displays the view of a section of the volumetric ima
 To perform *node placement* we have to detect all the blocks composing the inner surface of the sheet, and forget about the rest.
 This accounts to creating a mask where non-edge blocks are flagged with 0s and edge blocks are flagged with 1s. In layman's terms, color in black all the non-edge voxels, and in white the edge voxels.
 
-### Surface detection
+#### Surface detection
 What `Thaumato Anakalyptor` does is exactly this: it performs surface detection in 3D by convolving the volumetric image with a 3D `Sobel Kernel`.
 In simpler terms, it computes a discrete approximation of the 3D gradient in color changes. Then, driven by the intuition that the greatest variation in color will be on an edge, it filters out all the voxels for which the magnitude of a gradient is _small_ (below a given threshold).
 
