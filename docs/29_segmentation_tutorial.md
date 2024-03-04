@@ -220,7 +220,7 @@ In Figure 9 we show the ink prediction from the `Phase 1 Grand Prize winning mod
   <figcaption className="mt-1">Figure 8. Ink Prediction on the rendered segment from Figure 7.</figcaption>
 </figure>
 
-# Additional notes
+### Additional notes
 Please notice that every single one of the previously mentioned step can be improved, both in terms of mesh generation quality and computational efficiency.
 For further information on `Thaumato Anakalyptor` and its roadmap, please read its official [Technical Report](https://github.com/schillij95/ThaumatoAnakalyptor/blob/main/documentation/ThaumatoAnakalyptor___Technical_Report_and_Roadmap.pdf).
 
