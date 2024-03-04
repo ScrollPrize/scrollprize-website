@@ -88,7 +88,7 @@ At the same time, considering for every voxel a vector that points towards the _
 <figcaption className="mt-1">Figure 2. Sheet inner surface mask for a subvolume (sagittal view).</figcaption>
 </figure>
 
-### Point Cloud Extraction
+#### Point Cloud Extraction
 Unfortunately, our net still cannot get in. Instead of having grayscale LEGO blocks, we now have black/white LEGO blocks.
 The colors of the blocks changed, but we are still talking about a dense volume. In order for the net to get in we need to create some _empty space_.
 This means performing a change of representation.
