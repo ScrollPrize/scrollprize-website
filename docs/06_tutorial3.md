@@ -343,7 +343,7 @@ You can press T at any time within the segmentation tool to return to the slice 
   <figcaption className="mt-0">"Snapping" our segmentation line back onto the surface of the sheet.</figcaption>
 </figure>
 
-After you’ve guided the line along the sheet, hit start again, and repeat the process. This is the general workflow for segments of any size, from the GP winners at over 100cm^2 to the smallest segments. Conceptually, it works something like this:
+After you’ve guided the line along the sheet, hit “Start” again, and repeat the process. This is the general workflow for segments of any size, from the GP winners at over 100cm^2 to the smallest segments. Conceptually, it works something like this:
 
 <figure>
   <video playsInline muted controls className="max-w-[100%] rounded-xl" poster="/img/tutorials/vc-extrapolation2.jpg">
