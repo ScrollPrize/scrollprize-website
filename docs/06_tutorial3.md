@@ -207,7 +207,7 @@ make install
 
 ### Now let's gather our scroll data and setup our folders...
 
-We're going to start with scroll 1 as this is the scroll that the Grand Prize segments were from, and is also the easiest of the current scrolls to segment. If you have downloaded the full scroll data by following the Data tutorial on this site, you should have the required files, but just ensure the directory structure is proper.
+We're going to start with scroll 1 as this is the scroll that the Grand Prize segments were from, and is also the easiest of the current scrolls to segment. VC requires all of the folders listed under the scroll1.volpkg, in addition to the config.json and meta.json files.
 
 If you wish to use a smaller portion of scroll 1 to begin, rather than the entire scroll, you can download any continuous section of .tif files in the volume (for example: 10000.tif to 10750.tif) and place them in the `/volumes/<volumename>` directory. As long as you have the config.json file at the root of the volpkg and the meta.json file in the volume VC can work with it.
 
@@ -260,14 +260,11 @@ docker run -v \path\to\full_scrolls\:/full_scrolls ghcr.io/spacegaier/volume-car
 If you see your scroll folders, you’ve probably mapped this correctly.
 :::
 
-Open a terminal and run 
+Open a terminal and run (replacing the paths with your folder paths to the same folders): 
 
 ```bash
-sudo docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /path/to/new_segments/:/new_segments -v /home/sean/myzpool/ves/full-scrolls/:/full_scrolls ghcr.io/educelab/volume-cartographer:edge
+sudo docker run -v /path/to/new_segments/:/new_segments -v /path/to/full_scrolls/:/full_scrolls -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix ghcr.io/spacegaier/volume-cartographer:edge VC
 ```
-
-Once the command line is open type VC and hit Enter. The gui should open up and you should see something similar to the image below.
-
 Let's take a moment to get oriented before continuing: 
 
 1. In the top left are the current segmentations, or paths, in the current volume package (from here referred to as a volpkg) along with the file, edit, help and view buttons.
@@ -293,7 +290,11 @@ Let's take a moment to get oriented before continuing:
 
 Click "New" in the Volume Package segmentation window on the top left to create a new segmenent path. Ensure "Display" and "Compute" are both checked. 
 
-Click “Pen Tool”, and place points along the sheet by left clicking, placing as many points as necessary to keep the line on the surface of the sheet. Note that you cannot undo or delete points here. This part does not need to be particularly accurate, as you’ll be able to fix it in the next step much easier. 
+Click “Pen Tool”, and place points along the sheet by left clicking, placing as many points as necessary to keep the line on the surface of the sheet. Note that you cannot undo or delete points here. This part does not need to be particularly accurate, as you’ll be able to fix it in the next step much easier. When you are happy with the length of the line, click pen tool once again to exit the pen tool.
+
+You’ll notice now that the purple line becomes a series of points. This is your “segmentation line”. It is from this line that VC will create your end-result flattened surface volume. Ideally, you want this to be on the inside face of the sheet, as this is where we expect to find ink.
+
+
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/new-pen.png">
@@ -302,9 +303,17 @@ Click “Pen Tool”, and place points along the sheet by left clicking, placing
   <figcaption className="mt-0">Placing our first segmentation line with the pen tool.</figcaption>
 </figure>
 
+Now, click Segmentation Tool (You can also enter the segmentation tool by pressing 'T'). Let’s configure our Segmentation settings in the right box to match the ones in this image. The primary parameter you could modify here and see if you have any improvement is 'smoothen curve at bright points'.
 
+<figure>
+  <img src="/img/tutorials/ofs_settings.png" className="rounded-xl"/>
+</figure>
 
-Uncheck pen tool, and then check Segmentation Tool (You can also enter the segmentation tool by pressing 'T'). You’ll notice now that the purple line becomes a series of points. This is your “segmentation line”. It is from this line that VC will create your end-result flattened surface volume. Ideally, you want this to be on the inside face of the sheet, as this is where we expect to find ink. Let’s configure our Segmentation settings in the right box to match the ones in this image. The primary parameter you could modify here and see if you have any improvement is 'smoothen curve at bright points'.
+If at this point your segmentation line is off the sheet, you can manipulate it in a few ways. The primary method for manipulating this line is to “snap” it to a point, by clicking. VC will take X nearest points to the cursor (where X is the input range setting located in the bottom right, also changed by hitting A and D) and snap them to the cursor. You can also click and drag the line itself. Play around with this for a bit before continuing. In addition to just panning along the line with right click, you can press R+Scroll Wheel to follow the segmentation line automatically. This is also mapped to the front and back side mouse buttons, if you have them.
+
+Once you are happy with the location of the line, ensure your slice and anchor setting are correct. If you’re going “up” in the volume, you want forward slice and backward anchor, and conversely if you're going “down” in the volume, you want a forward anchor and “backward slice”. The number in the forward or backward slice is the number the segmentation run will finish at. It is recommended to start low here, between 30 and 50, and depending on how far the line diverges from the sheet, you can increase from there. In areas of particularly damaged papyrus values as low as 10 can be required.
+
+Click “Start” to begin the segmentation run.
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/new-pen.png">
@@ -313,9 +322,11 @@ Uncheck pen tool, and then check Segmentation Tool (You can also enter the segme
   <figcaption className="mt-0">"Snapping" our segmentation line back onto the surface of the sheet.</figcaption>
 </figure>
 
-If at this point your segmentation line is off the sheet, you can manipulate it in a few ways. The primary method for manipulating this line is to “snap” it to a point, by clicking. VC will take X nearest points to the cursor (where X is the input range setting located in the bottom right, also changed by hitting A and D) and snap them to the cursor. You can also click and drag the line itself. Play around with this for a bit before continuing. In addition to just panning along the line with right click, you can press R+Scroll Wheel to follow the segmentation line automatically. This is also mapped to the front and back side mouse buttons, if you have them.
+After a short period of time VC will drop you off at the slice indicated by your previous forward or backward slice setting. Your line of points will now be colored red, and may have wandered slightly from the sheet. VC has attempted to “follow” the sheet from your annotation (or anchor) line to the slice indicated in your forward slice setting. From here, click “segmentation tool” again, and then manipulate the line back onto the sheet. You’ll notice lines you have modified turn yellow, where ones you have not remain red. Pan through the layers a bit if you are having a hard time following the sheet, as it's easier to follow “in motion”. Press space to hide the line if it helps you see. 
 
-Once you are happy with the location of the line, ensure your slice and anchor setting are correct. If you’re going “up” in the volume, you want forward slice and backward anchor, and conversely if you're going “down” in the volume, you want a forward anchor and “backward slice”.  Click “Start” to begin the segmentation run. The number in the forward or backward slice is the number the segmentation run will finish at. It is recommended to start low here, between 30 and 50, and depending on how far the line diverges from the sheet, you can increase from there. In areas of particularly damaged papyrus values as low as 10 can be required.
+:::tip
+You can press T at any time within the segmentation tool to return to the slice you began the segmentation on
+:::
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/new-pen.png">
@@ -323,8 +334,6 @@ Once you are happy with the location of the line, ensure your slice and anchor s
   </video>
   <figcaption className="mt-0">"Snapping" our segmentation line back onto the surface of the sheet.</figcaption>
 </figure>
-
-After a short period of time VC will drop you off at the slice indicated by your previous forward or backward slice setting. Your line of points will now be colored red, and may have wandered slightly from the sheet. VC has attempted to “follow” the sheet from your annotation (or anchor) line to the slice indicated in your forward slice setting. From here, click “segmentation tool” again, and then manipulate the line back onto the sheet. You’ll notice lines you have modified turn yellow, where ones you have not remain red. Pan through the layers a bit if you are having a hard time following the sheet, as it's easier to follow “in motion”. Press space to hide the line if it helps you see. 
 
 After you’ve guided the line along the sheet, hit start again, and repeat the process. This is the general workflow for segments of any size, from the GP winners at over 100cm^2 to the smallest segments. Conceptually, it works something like this:
 
@@ -338,7 +347,7 @@ After you’ve guided the line along the sheet, hit start again, and repeat the 
 
 Be sure to save it using *“File > Save volpkg”*. You can keep segmenting for a bit here to get the hang of VC, but keep the size managable for your first few segments until you get more familiar. 
 
-The process completed during this step looks like this in 3D. We've identified the sheet surface, but still would have a hard time finding ink on a single voxel sheet that is still wrapped in the scroll. In the video below, the sheet is on the visible outside, but most of our segments are actually completely surrounded by additional sheets.
+The process completed during this step looks like this in 3D. We've identified the sheet surface, but still would have a hard time finding ink on a single voxel sheet that is still wrapped in the scroll. In the video below, the sheet is on the visible outside, but most of our segments are completely surrounded by additional sheets.
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/segmentation2.jpg">
@@ -392,7 +401,12 @@ echo '<yournamehere>' > author.txt
 
 4. Name the script `run_vc.sh` and save it to the 'new_segments' directory
 
-Once we have our script created and have the right values for the environment variables, we can now execute the flattening pipeline by entering the following into your terminal:
+Once we have our script created and have the right values for the environment variables, we can now execute the flattening pipeline. Open a new terminal (not the one you have the GUI running in), and enter 
+
+```bash
+sudo docker run -it -v /path/to/new_segments/:/new_segments -v /path/to/full_scrolls/:/full_scrolls -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix ghcr.io/spacegaier/volume-cartographer:edge VC
+```
+The terminal for the container should open. Enter the following lines:
 
 ```bash
 cd /new_segments/
