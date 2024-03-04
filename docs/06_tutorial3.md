@@ -207,7 +207,9 @@ make install
 
 
 
-### Now let's gather our scroll data and setup our folders...
+### Gathering data
+
+Now let's gather our scroll data and setup our folders...
 
 We're going to start with scroll 1 as this is the scroll that the Grand Prize segments were from, and is also the easiest of the current scrolls to segment. VC requires all of the folders listed under the scroll1.volpkg, in addition to the config.json and meta.json files.
 
