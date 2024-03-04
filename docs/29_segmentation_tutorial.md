@@ -165,7 +165,7 @@ In Figure 6, the vertices of the mesh are shown in yellow and the edges connecti
 Congratulations! You automatically fished the scroll, or a subpart of it!
 
 
-# Further steps
+### Further steps
 In this extra section we describe how from a triangular mesh we can obtain the 2D image of a sheet. This process involves two main steps: _flattening_ and _rendering_.
 
 ### Flattening
