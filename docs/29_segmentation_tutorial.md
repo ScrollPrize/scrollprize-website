@@ -59,7 +59,7 @@ We want the net to adhere perfectly on the inner part of the sheet, that is next
 Here, adherence means every node of the net should be placed on the inner surface of the sheet, with adjacent nodes also being adjacent on the sheet. Therefore the problem is twofold: *node placement* and *connectivity establishment*.
 
 But how can we cast the net in? After all, the data we have is a 3D volumetric image composed of colored blocks.
-You can think of it as a big volume made of single units of grayscale LEGO blocks (Figure 1, left). The color of a block represents the density of the material in that region of space: clearer means more dense, hence could be papyrus, while darker means less dense, and could be air. The ink is somewhere in there.
+You can think of it as a big volume made of single units of grayscale LEGO blocks (Figure 1, left). The color of a block represents the density of the material in that region of space: lighter means more dense, hence could be papyrus, while darker means less dense, and could be air. The ink is somewhere in there.
 
 <figure className="text-center mx-auto">
   <div className="flex flex-wrap justify-center mx-auto">
