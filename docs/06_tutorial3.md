@@ -146,7 +146,7 @@ Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab
 4. Go to the *“Security”* tab and ensure *“Allow connections from network clients”* is checked.
 5. Quit XQuartz and restart it.
 6. Install [Docker Desktop](https://docs.docker.com/desktop/install/mac-install/).
-8. Pull the latest Docker image by running:
+7. Pull the latest Docker image by running:
 ```bash 
 docker pull ghcr.io/spacegaier/volume-cartographer:edge 
 ```
