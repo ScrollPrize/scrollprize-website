@@ -487,7 +487,9 @@ The result of this process are the 65 tifs in the /layers/ directory. Each of th
   <figcaption className="mt-0">The resulting “surface volume” is your .tif image stack in the /layers/ directory.</figcaption>
 </figure>
 
-### Where's the ink?
+### Ink detection
+
+So, where's the ink?
 
 By now you'll notice that, contrary to the ink in some scrolls, the ink in our scrolls is not readily detectable in your images. 
 
