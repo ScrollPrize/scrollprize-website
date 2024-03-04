@@ -172,7 +172,7 @@ In this extra section we describe how from a triangular mesh we can obtain the 2
 Now that we have a mesh, we must compute a 3D->2D map to obtain a UV (two-dimensional) parametrization for its vertices. This is a fancy way to say that you have to flatten the mesh. After all, our purpose is to eventually read the ink on a _flat_ image.
 
 A community fork [^5], recently merged to `Thaumato Anakalyptor`, implements an algorithm called `SLIM` [^6] that aims to find a map that minimizes an *isometric distortion energy*. This means that all the points that are equidistant in 3D will be mapped as equidistant as possible in 2D.
-The vertices of the mesh showed in Figure 6 are displayed using the obtained UV parametrization in Figure 7.
+The vertices of the mesh shown in Figure 6 are displayed using the obtained UV parametrization in Figure 7.
 
 <figure className="text-center mx-auto">
   <div className="flex flex-wrap justify-center mx-auto">
