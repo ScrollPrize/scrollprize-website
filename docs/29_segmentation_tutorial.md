@@ -69,7 +69,7 @@ You can think of it as a big volume made of single units of grayscale LEGO block
   <figcaption className="mt-1">Figure 1. Scroll data as LEGO blocks and sagittal view of a subvolume slice.</figcaption>
 </figure>
 
-The right image in Figure 1 displays the view of a section of the volumetric image. Imagine to cut the volume in subvolumes. Take one and look at it from above. Every block composing the subvolume (called voxels) will look like a colored square. That is the color of the pixel in the image.
+The right image in Figure 1 displays the view of a section of the volumetric image. Imagine cutting the volume in subvolumes. Take one and look at it from above. Every block composing the subvolume (called *voxels*) will look like a colored square. That is the color of the pixel in the image.
 
 # Node placement
 To perform *node placement* we have to detect all the blocks composing the inner surface of the sheet, and forget about the rest.
