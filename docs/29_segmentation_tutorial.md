@@ -41,7 +41,7 @@ import { TutorialsTop } from '@site/src/components/TutorialsTop';
 
 <TutorialsTop highlightId={5} />
 
-This high-level, code-free tutorial explains the main steps of the `Thaumato Anakalyptor` [^1] pipeline.
+This high-level, code-free tutorial explains the main steps of the [`Thaumato Anakalyptor`](https://github.com/schillij95/ThaumatoAnakalyptor) [^1] pipeline.
 We will tackle the task of segmentation from another perspective: that of a Neapolitan fisherman.
 
 <figure className="text-center mx-auto">
