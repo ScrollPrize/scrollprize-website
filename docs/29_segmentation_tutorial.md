@@ -121,7 +121,7 @@ We don't want to select points that lie on parallel surfaces, since this would m
 </figure>
 
 `Thaumato Anakalyptor` performs this operation with `Mask3D` [^2], a Deep Neural Network specifically trained for the purpose.
-The results should look somewhat like the right part of Figure 4 (that represents a different subvolume, less densely packed). The algorithm segments points cloud in contiguous patches of sheet.
+The results should look somewhat like the right part of Figure 4 (that represents a different subvolume, less densely packed). The algorithm segments point clouds in contiguous patches of sheet.
 
 Unfortunately, we have to face two unexpected problems:
 1. the algorithm creates patches with _holes_ and in the holes there are other smaller patches;
