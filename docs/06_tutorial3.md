@@ -101,7 +101,7 @@ Khartes is written by @khartes_chuck and has extensive documentation on github l
 
 This guide will focus on Volume Cartographer, a virtual unwrapping toolkit built by EduceLab’s Seth Parker. Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer includes many tools and utilities. In this tutorial we’ll be looking at the main VC GUI as well as the vc_render tool.
 
-The segmentation team uses a custom version of Volume Cartographer, initially forked by @RICHI and further enhanced by @spacegaier. This version includes significant improvements, such as Optical Flow Segmentation (OFS), substantial performance increases, ui improvements, and many other changes. The latest fork, maintained by @spacegaier, is available here: https://github.com/spacegaier/volume-cartographer
+The segmentation team uses a custom version of Volume Cartographer, initially forked by @RICHI and further enhanced by @spacegaier. These versions include significant improvements, such as Optical Flow Segmentation (OFS), substantial performance increases, ui improvements, and many other changes. The latest fork, maintained by @spacegaier, is available here: https://github.com/spacegaier/volume-cartographer
 
 This guide uses this same version of VC. If you use a different version this guide will vary significantly from your experience, so it is highly recommended to use this version.
 
@@ -226,6 +226,7 @@ This is the recommended structure for the full_scrolls folder (with a full examp
     │   │       └── meta.json
     │   ├── paths
     │   ├── renders
+    │   ├── working
     │   └── config.json
     ├── scroll2.volpkg
     ├── pherc0332.volpkg
@@ -240,9 +241,9 @@ And this is the recommended structure for your new_segments folder:
     ├── scroll2
     ├── pherc0332
     ├── pherc1667
-    └── vc_runs.sh
+    └── run_vc.sh
 ```
-### Creating a new segment
+### Install the segmentation software
 
 
 We will use the main `VC` GUI app to perform segmentation: finding a surface of papyrus and exporting it as a 3D mesh.
@@ -257,6 +258,14 @@ We will use the main `VC` GUI app to perform segmentation: finding a surface of 
 
 :::tip
 This guide was written using linux. Most of the commands are similar, but you may need to remove 'sudo' from the front of the commands depending on your operating system.
+
+The -v switch used below is mapping a local path (or volume) to the Docker container. To check if your paths have been created properly you can run the Docker container and initiate a list command by typing:
+
+```bash
+docker run -v \path\to\full_scrolls\:/full_scrolls ghcr.io/spacegaier/volume-cartographer:edge ls
+```
+
+If you see your scroll folders, you’ve probably mapped this correctly.
 :::
 
 Open a terminal and run 
@@ -264,13 +273,6 @@ Open a terminal and run
 ```bash
 sudo docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /path/to/new_segments/:/new_segments -v /home/sean/myzpool/ves/full-scrolls/:/full_scrolls ghcr.io/educelab/volume-cartographer:edge
 ```
-:::tip
-The -v switch is mapping a local path (or volume) to the Docker container. You can modify this however you'd like, but the above structure will be easiest. To check if your paths have been created properly you can run the Docker container and initiate a list command by typing:
-
-docker run -v \path\to\full_scrolls\:/full_scrolls ghcr.io/spacegaier/volume-cartographer:edge ls 
-
-If you see your scroll folders, you’ve probably mapped this correctly.
-:::
 
 Once the command line is open type VC and hit Enter. The gui should open up and you should see something similar to the image below.
 
@@ -285,11 +287,11 @@ Let's take a moment to get oriented before continuing:
 <img src="/img/tutorials/vc-open.png" className="rounded-xl"/>
 </figure>
 
-### Now that we’ve oriented ourselves with the UI, open our volpkg...
+### Now that we’ve oriented ourselves with the UI, let's open our volpkg...
 
 1. Open a volpkg by clicking file, then open volpkg, and select the volpkg for the volume you wish to segment on, ensuring you select the .volpkg folder, and not one of the subfolders. Click choose, and the volume will open at slice 0.
 2. Practice scrolling through the volume, using shift+scroll wheel to move up and down through slice layers, and ctrl+scroll wheel to zoom in and out. You can right click and drag to pan around the slice.   Move through the layers until you find an area of the sheet that looks “easy” to segment. An ideal area has spacing on the inside face towards the center of the scroll, and maintains this spacing as you scroll through the layers for a time. You can increase the amount of slices you move through with the scroll wheel by pressing Q and E. The small number that shows up next to your cursor is the number of slices skipped each “click” of the scroll wheel.
-3. Look now to the top left in the segments window; my VC shows some segmentations in the segmentation window, but yours at this point will be blank. Click “new”. You should see the new segment number and both “Display” and “Compute” should be checked. VC can show as many segments as you’d like at a time, but unless you are doing multiple unique segments at once (not recommended) you should ensure only one is set to “Compute”.
+3. Look now to the top left in the segments window; my VC shows some segmentations in the segmentation window, but yours at this point will be blank.
 
 <figure>
   <img src="/img/tutorials/open-volpkg.png" className="rounded-xl"/>
@@ -299,27 +301,27 @@ Let's take a moment to get oriented before continuing:
 
 Click "New" in the Volume Package segmentation window on the top left to create a new segmenent path. Ensure "Display" and "Compute" are both checked. 
 
-Click “Pen Tool”, and place points along the sheet by left clicking. Note that you cannot undo or delete points here. This part does not need to be particularly accurate, as you’ll be able to fix it in the next step much easier. 
+Click “Pen Tool”, and place points along the sheet by left clicking, placing as many points as necessary to keep the line on the surface of the sheet. Note that you cannot undo or delete points here. This part does not need to be particularly accurate, as you’ll be able to fix it in the next step much easier. 
 
 <figure>
   <img src="/img/tutorials/new-pen.png" className="rounded-xl"/>
 </figure>
 
-Uncheck pen tool, and then check Segmentation Tool (You can also enter the segmentation tool by pressing 'T'). You’ll notice now that the purple line becomes a series of points. This is your “segmentation line”. It is from this line that VC will create your end-result flattened surface volume. Ideally, you want this to be on the inside face of the sheet, as this is where we expect to find ink. Let’s configure our Segmentation settings in the right box to match the ones in this image.
+Uncheck pen tool, and then check Segmentation Tool (You can also enter the segmentation tool by pressing 'T'). You’ll notice now that the purple line becomes a series of points. This is your “segmentation line”. It is from this line that VC will create your end-result flattened surface volume. Ideally, you want this to be on the inside face of the sheet, as this is where we expect to find ink. Let’s configure our Segmentation settings in the right box to match the ones in this image. The primary parameter you could modify here and see if you have any improvement is 'smoothen curve at bright points'.
 
 <figure>
   <img src="/img/tutorials/new-seg-tool.png" className="rounded-xl"/>
 </figure>
 
-If at this point your segmentation line is off the sheet, you can manipulate it in a few ways. The primary method for manipulating this line is to “snap” it to a point, by clicking. VC will take X nearest points to the cursor (where X is the input range setting located in the bottom right, also changed by hitting A and D) and snap them to the cursor. You can also click and drag the line itself. Play around with this for a bit before continuing. In addition to just panning along the line with right click, you can press R+Scroll Wheel to follow the segmentation line automatically.
+If at this point your segmentation line is off the sheet, you can manipulate it in a few ways. The primary method for manipulating this line is to “snap” it to a point, by clicking. VC will take X nearest points to the cursor (where X is the input range setting located in the bottom right, also changed by hitting A and D) and snap them to the cursor. You can also click and drag the line itself. Play around with this for a bit before continuing. In addition to just panning along the line with right click, you can press R+Scroll Wheel to follow the segmentation line automatically. This is also mapped to the front and back side mouse buttons, if you have them.
 
-Once you are happy with the location of the line, ensure your slice and anchor setting are correct. If you’re going “up” in the volume, you want forward slice and backward anchor, and conversely if you're going “down” in the volume, you want a forward anchor and “backward slice”.  Click “Start” to begin the segmentation run. The number in the forward or backward slice is the number the segmentation run will finish at. It is recommended to start low here, around 15 to 25, and then if OFS is managing well, you can increase from there.
+Once you are happy with the location of the line, ensure your slice and anchor setting are correct. If you’re going “up” in the volume, you want forward slice and backward anchor, and conversely if you're going “down” in the volume, you want a forward anchor and “backward slice”.  Click “Start” to begin the segmentation run. The number in the forward or backward slice is the number the segmentation run will finish at. It is recommended to start low here, between 30 and 50, and depending on how far the line diverges from the sheet, you can increase from there. In areas of particularly damaged papyrus values as low as 10 can be required.
 
 <figure>
   <img src="/img/tutorials/anchors-window.png" className="rounded-xl"/>
 </figure>
 
-After a short period of time VC will drop you off at the slice indicated by your previous forward or backward slice setting. Your line of points will now all be colored red, and may have wandered slightly from the sheet. VC has attempted to use OFS to “follow” the sheet from your annotation (or anchor) line to the slice indicated in your forward slice setting. From here, click “segmentation tool” again, and then manipulate the line back onto the sheet. You’ll notice lines you have modified turn yellow, where ones you have not remain red. Pan through the layers a bit if you are having a hard time following the sheet, as it's easier to follow “in motion”. Press space to hide the line if it helps you see. 
+After a short period of time VC will drop you off at the slice indicated by your previous forward or backward slice setting. Your line of points will now be colored red, and may have wandered slightly from the sheet. VC has attempted to “follow” the sheet from your annotation (or anchor) line to the slice indicated in your forward slice setting. From here, click “segmentation tool” again, and then manipulate the line back onto the sheet. You’ll notice lines you have modified turn yellow, where ones you have not remain red. Pan through the layers a bit if you are having a hard time following the sheet, as it's easier to follow “in motion”. Press space to hide the line if it helps you see. 
 
 <figure>
   <img src="/img/tutorials/new-modified.png" className="rounded-xl"/>
@@ -335,13 +337,16 @@ After you’ve guided the line along the sheet, hit start again, and repeat the 
 </figure>
 
 
-You created your first segment! Be sure to save it using *“File > Save volpkg”*. You can keep segmenting for a bit here to get the hang of VC, but keep the size managable for your first few segments until you get more familiar.
+Be sure to save it using *“File > Save volpkg”*. You can keep segmenting for a bit here to get the hang of VC, but keep the size managable for your first few segments until you get more familiar.
 
-### Rendering the segment
+### We've got a line, but now what?
 
-In order to see the content on the surface of our segment, we need to flatten and texture the segment. These steps can be ran individually, but it’s highly suggested to use the following process so that you end up with the same format and files as the official segmentations.
+In order to see the content on the surface of our segment, we need to flatten and texture the segment. These steps can be run individually, but it’s highly suggested to use the following process so that you end up with the same format and files as the official segmentations.
 
-Create a bash script with the following and save it to the top level of the new_segments folder (see the tree diagram above for an example). Modify the variables to account for your segment id of the segment you just created(located in vc, or in paths), the scroll that you’re using, and the name at the bottom. 
+Let's create a bash script to combine a number of difference VC apps into one single command:
+
+1. Open a basic text editor (ex: Notepad)
+2. Copy this code block into the editor
 
 ```BASH
 #!/bin/bash
@@ -374,10 +379,15 @@ vc_area "/full_scrolls/${SCROLL}.volpkg" ${SEGMENT} | grep cm | awk '{print $2}'
 echo '<yournamehere>' > author.txt
 ```
 
-Once you have saved this to the proper directory, on the command line that VC is currently running in, run the following:
+3. Modify the environment variables at the top of the script, the ones that begin with `export`, and the author at the bottom. You'll want these values to reflect the scroll you're working in, the name of your segment, and who you'd like to list as the author. 
+
+4. Name the script `run_vc.sh` and save it to the 'new_segments' directory
+
+Once we have our script created and have the right values for the environment variables, we can now execute the flattening pipeline by entering the following into your terminal:
+
 ```bash
 cd /new_segments/
-/bin/bash/vc_runs.sh
+/bin/bash/run_vc.sh
 ```
 This command will render your points into a mesh, and then create the surface volume layers from it. This can take a long time depending on the size of your segment, but thankfully you will get some progress information on the console 
 
@@ -385,7 +395,9 @@ This command will render your points into a mesh, and then create the surface vo
   <img src="/img/tutorials/console-output.png"/>
 </figure>
 
-When this is complete, in the new_segments directory you set when you launched VC, you will now have a folder with the name of your new segment, and within that folder a folder called /layers/, and a number of different files, the most important of which are detailed below. Much of this information was gathered from @Seth P. and @khartes_chuck on the discord:
+### Congratulations! You've completed your first segment! 
+
+In the new_segments directory you set when you launched VC, you will now have a folder with the name of your new segment, and within that folder a folder called /layers/, and a number of different files, the most important of which are detailed below. Much of this information was gathered from @Seth P. and @khartes_chuck on the discord:
 
 
 * /layers/ contains files numbered 00.tif to 64.tif (or 000.tif to 156.tif for 3.24um scans). These are slices of the surface volume, each of a thickness equal to the voxel size of the scroll you are currently segmenting, typically what we call “low res” are the 7.91um voxel spacing, and “high res” would be 3.24um voxel spacing. For a 7.91um volume, this means that each surface volume is 64 tifs * 7.91um, for about 506um thickness, or .506mm
@@ -408,7 +420,7 @@ When this is complete, in the new_segments directory you set when you launched V
 
 * `Area_cm2.txt` is simply the size of the segment in cm^2
 
-### What did we just run?
+### So, what did we just do?
 
 When looking for ink in the volume, we needed to look at more than just the voxels that directly intersected the segment mesh we just created. We also look a little bit “above“ and “below“ the mesh, at the neighborhood of voxels that surround our segment. Conceptually, this neighborhood looks something like this (though this video is exaggerated):
 
@@ -422,7 +434,7 @@ When looking for ink in the volume, we needed to look at more than just the voxe
 
 To generate the composite .tif file, called `<segmentnumber>.tif`, `vc_render` searched through this neighborhood, gathering the voxel intensities, and placed the results of that search in the flattened output image. 
 
-The ppm file that we generated with `vc_render` contains a mapping between our flattened output image and the original 3D surface. With this file, we transformed the 3D neighborhood into a simplified surface volume. That process looks something like this:
+The ppm file that we generated contains a mapping between our flattened output image and the original 3D surface. With this file, we transformed the 3D neighborhood into a simplified surface volume. That process looks something like this:
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/surface-volume-flattening4.jpg">
@@ -436,7 +448,7 @@ The result of this process are the 65 tifs in the /layers/ directory. Each of th
 
 ### Where's the ink?
 
-By now you'll notice that, contrary to the ink in some scrolls, the ink in our scrolls is not readily detectable in your tif images. 
+By now you'll notice that, contrary to the ink in some scrolls, the ink in our scrolls is not readily detectable in your images. 
 
 The reason for this is that not all inks have the same radiodensity. Some inks, like iron gall, show up quite clearly in CT scans because they absorb more x-rays than the papyrus on which they sit. This creates _high contrast_ between the bright iron gall ink voxels and the less bright papyrus voxels. Carbon-based inks, on the other hand, have a very similar radiodensity to papyrus and thus have _low contrast_ when compared against the papyrus voxels. More often than not, the contrast is so low for carbon ink that it is very difficult to differentiate the ink from the papyrus when looking at the volume data with the naked eye.
 
