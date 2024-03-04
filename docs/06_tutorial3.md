@@ -448,6 +448,14 @@ The ppm file that we generated contains a mapping between our flattened output i
 
 The result of this process are the 65 tifs in the /layers/ directory. Each of these .tif images is a "slice" of the surface volume, with 32.tif ideally representing the middle, or the area directly on your segmentation line.
 
+<figure>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/surface-volume-image-stack2.jpg">
+    <source src="/img/tutorials/surface-volume-image-stack2.webm" type="video/webm"/>
+    <source src="/img/tutorials/surface-volume-image-stack2.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">The resulting “surface volume” is your .tif image stack in the /layers/ directory.</figcaption>
+</figure>
+
 ### Where's the ink?
 
 By now you'll notice that, contrary to the ink in some scrolls, the ink in our scrolls is not readily detectable in your images. 
