@@ -76,7 +76,7 @@ To perform *node placement* we have to detect all the blocks composing the inner
 This accounts to creating a mask where non-edge blocks are flagged with 0s and edge blocks are flagged with 1s. In layman's terms, color in black all the non-edge voxels, and in white the edge voxels.
 
 #### Surface detection
-What `Thaumato Anakalyptor` does is exactly this: it performs surface detection in 3D by convolving the volumetric image with a 3D `Sobel Kernel`.
+What `Thaumato Anakalyptor` does is exactly this: it performs surface detection in 3D by convolving the volumetric image with a 3D [`Sobel Kernel`](https://en.wikipedia.org/wiki/Sobel_operator).
 In simpler terms, it computes a discrete approximation of the 3D gradient in color changes. Then, driven by the intuition that the greatest variation in color will be on an edge, it filters out all the voxels for which the magnitude of a gradient is _small_ (below a given threshold).
 
 At the same time, considering for every voxel a vector that points towards the _umbilicus_ of the scroll (the pole of rotation), and taking the dot product between this vector and the gradient computed just before, one can filter out as well all the voxels that are on the face of the sheet that don't look towards the center. In Figure 2 we display a sagittal view of the mask for the subvolume showed in Figure 1. The image was obtained with a modified version of `Thaumato Anakalyptor`.
