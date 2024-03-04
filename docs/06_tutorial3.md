@@ -105,7 +105,9 @@ The segmentation team uses a custom version of Volume Cartographer, initially fo
 
 This guide uses this same version of VC. If you use a different version this guide will vary significantly from your experience, so it is highly recommended to use this version.
 
-### To begin, let's install Volume Cartographer:
+### Installing Volume Cartographer
+
+To begin, let's install Volume Cartographer:
 
 :::info OS-specific instructions
 
