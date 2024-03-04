@@ -65,7 +65,7 @@ To perform segmentation, you have two choices of software: Khartes, and Volume C
     Strengths:
 
       - Faster at creating larger segments
-      - OFS assisted annotation, requiring less clicking
+      - tool-assisted annotation, requiring less clicking
       - Entire pipeline in one application
       - No shape limitation (lines can turn in on themselves, can be fully circular)
 
