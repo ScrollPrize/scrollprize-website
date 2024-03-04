@@ -55,7 +55,7 @@ Two key steps to virtually unwrapping a scroll or manuscript are _segmenting_ a 
   <figcaption className="mt-0">The basic principle of “virtual unwrapping” <a href="https://youtu.be/VG8oOMHCg74?t=38">(source)</a></figcaption>
 </figure>
 
-To perform segmentation, you have two choices of software: Khartes, and Volume Cartographer. Both of these choices have different strengths and weaknesses, but either can accomplish the task of accurate segmentation. Khartes relies on Volume Cartographer to perform the flattening portion of this guide. 
+To perform segmentation, you have two choices of software: Khartes, and Volume Cartographer. Both of these choices have different strengths and weaknesses, but either can accomplish the task of accurate segmentation. Khartes relies on Volume Cartographer to perform the flattening portion of this guide. Thanks to @hari_seldon and @djosey of the segmentation team for their feedback and help with making this guide!
 
 <Tabs>
   <TabItem value="Volume Cartogropher" label="Volume Cartogropher" default>
