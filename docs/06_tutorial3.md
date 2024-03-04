@@ -428,7 +428,7 @@ This command will render your points into a mesh, and then create the surface vo
   <img src="/img/tutorials/console-output.png"/>
 </figure>
 
-### Congratulations! You've completed your first segment! 
+**Congratulations! You've completed your first segment!**
 
 In the new_segments directory you set when you launched VC, you will now have a folder with the name of your new segment, and within that folder a folder called /layers/, and a number of different files, the most important of which are detailed below. Much of this information was gathered from @Seth P. and @khartes_chuck on the discord:
 
