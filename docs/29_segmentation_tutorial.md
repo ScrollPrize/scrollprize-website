@@ -140,7 +140,7 @@ Stitching is an extension of the point cloud segmentation problem addressed in t
 </figure>
 
 In Figure 5 different patches have different colors and patches that are stitched together are linked with red arcs. In the end, all the patches that are stitched together will form a segment, hopefully big enough to read on it some columns of text with ink detection models. It is worth saying that the segmentation performed by `Thaumato Anakalyptor` generates _overlapping_ patches. The patch overlap is exploited during the stitching process.
-`Thaumato Anakalyptor` performs stitching in a sort of Monte Carlo fashion. It first builds _an uncertainty graph_ where nodes of this graph are patches and edges are weighted by the amount of the overlap between patches. Many random walks are launched of the graph to build a subgraph (to select a cover of nodes/patches). The covers that selected the edges with the maximal overlap are chosen as final segments.
+`Thaumato Anakalyptor` performs stitching in a sort of Monte Carlo fashion. It first builds _an uncertainty graph_ where nodes of this graph are patches and edges are weighted by the amount of overlap between patches. Many random walks are launched of the graph to build a subgraph (to select a cover of nodes/patches). The covers that selected the edges with the maximal overlap are chosen as final segments.
 
 ### Mesh reconstruction
 Now that we have a few big patches, represented as groups of point clouds made of contiguous points on the surface of the sheet, we can select one, and perform _mesh reconstruction_.
