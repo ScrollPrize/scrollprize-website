@@ -440,5 +440,5 @@ By now you'll notice that, contrary to the ink in some scrolls, the ink in our s
 
 The reason for this is that not all inks have the same radiodensity. Some inks, like iron gall, show up quite clearly in CT scans because they absorb more x-rays than the papyrus on which they sit. This creates _high contrast_ between the bright iron gall ink voxels and the less bright papyrus voxels. Carbon-based inks, on the other hand, have a very similar radiodensity to papyrus and thus have _low contrast_ when compared against the papyrus voxels. More often than not, the contrast is so low for carbon ink that it is very difficult to differentiate the ink from the papyrus when looking at the volume data with the naked eye.
 
-Thankfully, as you'll learn in our next section on Ink Detection, very difficult does not mean impossible...
+Thankfully, as you'll learn in our next section on Ink Detection, even very difficult to detect ink can still be found...
 
