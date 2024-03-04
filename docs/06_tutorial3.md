@@ -150,7 +150,7 @@ Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab
 ```bash 
 docker pull ghcr.io/spacegaier/volume-cartographer:edge 
 ```
-9. Then run:
+8. Then run:
 
 ```bash
 xhost +localhost
