@@ -125,7 +125,7 @@ The results should look somewhat like the right part of Figure 4 (that represent
 
 Unfortunately, we have to face two unexpected problems:
 1. the algorithm creates patches with _holes_ and in the holes there are other smaller patches;
-2. the areas of the patches is too small.
+2. the area of these patches is too small.
 
 `Thaumato Anakalyptor` tackles this issue with _stitching_.
 
