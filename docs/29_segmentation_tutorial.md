@@ -187,7 +187,7 @@ The mesh, along with its UV parametrization, are finally saved in a `.obj` file.
 It is extremely important that the obtained UV coordinates are still real numbers. This means that between points there is a lot of empty space!
 In order to go back to a "pixel-style" representation, we have to convert the plot in Figure 7 to a pixelized image. Notice that in Figure 7 we displayed axes with ticks, this was not a mistake.
 
-#### Per-pixel-map and layers
+##### Per-pixel-map and layers
 For every integer couple (x,y) in the figure we insert a new point. These coordinates (x,y) will be the integers positions (i,j) of pixels in the rendered image. Eventually, we will end up with a number of points way higher than that of the vertices of the mesh. We will identify in which triangle of the triangular mesh (in 2D) this points falls and compute its `barycentric coordinates`: three coefficients that allow to define the position of every point in a triangle as a linear combination of the positions of the vertices. In Figure 8 we show a red point whose position will be `0.2 * vertex1 + 0.3 vertex2 + 0.5 vertex3`.
 
 <figure className="text-center mx-auto">
