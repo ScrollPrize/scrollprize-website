@@ -224,7 +224,7 @@ In Figure 9 we show the ink prediction from the `Phase 1 Grand Prize winning mod
 Please notice that every single one of the previously mentioned steps can be improved, both in terms of mesh generation quality and computational efficiency.
 For further information on `Thaumato Anakalyptor` and its roadmap, please read its official [Technical Report](https://github.com/schillij95/ThaumatoAnakalyptor/blob/main/documentation/ThaumatoAnakalyptor___Technical_Report_and_Roadmap.pdf).
 
-# References
+### References
 [^1]: Schilliger et al. (2023). _Thaumato Anakalyptor_. Retrieved from https://github.com/schillij95/ThaumatoAnakalyptor
 
 [^2]: Schult et al. (2023). _Mask3D: Mask Transformer for 3D Semantic Instance Segmentation_. Paper presented at the International Conference on Robotics and Automation (ICRA).
