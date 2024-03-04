@@ -533,6 +533,12 @@ const sponsors = [
     image: "/img/landing/Anjney Midha.jpg",
   },
   {
+    name: "franciscosan.org",
+    amount: 25000,
+    href: "https://franciscosan.org/",
+    image: "/img/landing/franciscosan.jpg",
+  },
+  {
     name: "John O'Brien",
     amount: 25000,
     href: "https://twitter.com/jobriensf",
