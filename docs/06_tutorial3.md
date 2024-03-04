@@ -90,7 +90,7 @@ To perform segmentation, you have two choices of software: Khartes, and Volume C
 
     Weaknesses:
 
-      - Is limited to creating segments that do not contain lines that turn back towards their origin, in essence limiting you half circles at most.. This can be severely limiting in some regions that have severe warping, and its hard to tell when you begin if a sheet will do this eventually.
+      - Is limited to creating segments that do not contain lines that turn back towards their origin, in essence limiting you to half circles at most. This can be severely limiting in some regions that have severe warping, and its hard to tell when you begin if a sheet will do this eventually.
       - Requires much more manual clicking than VC
       - Requires VC in some parts of the rendering / flattening pipeline
   </TabItem>
