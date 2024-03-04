@@ -371,7 +371,7 @@ Ok, we've got a line...Now what?
 
 In order to see the content on the surface of our segment, we need to flatten and texture the segment. These steps can be run individually, but it’s highly suggested to use the following process so that you end up with the same format and files as the official segmentations.
 
-Let's create a bash script to combine a number of difference VC apps into one single command:
+Let's create a bash script to combine a number of different VC apps into one single command:
 
 1. Open a basic text editor (ex: Notepad)
 2. Copy this code block into the editor
