@@ -243,18 +243,10 @@ And this is the recommended structure for your new_segments folder:
     ├── pherc1667
     └── run_vc.sh
 ```
-### Install the segmentation software
+### Running the Volume Cartopgrapher GUI
 
 
 We will use the main `VC` GUI app to perform segmentation: finding a surface of papyrus and exporting it as a 3D mesh.
-
-<figure>
-  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/segmentation2.jpg">
-    <source src="/img/tutorials/segmentation2.webm" type="video/webm"/>
-    <source src="/img/tutorials/segmentation2.mp4" type="video/mp4"/>
-  </video>
-  <figcaption className="mt-0">Segmentation: finding a surface of papyrus.</figcaption>
-</figure>
 
 :::tip
 This guide was written using linux. Most of the commands are similar, but you may need to remove 'sudo' from the front of the commands depending on your operating system.
@@ -337,9 +329,19 @@ After you’ve guided the line along the sheet, hit start again, and repeat the 
 </figure>
 
 
-Be sure to save it using *“File > Save volpkg”*. You can keep segmenting for a bit here to get the hang of VC, but keep the size managable for your first few segments until you get more familiar.
+Be sure to save it using *“File > Save volpkg”*. You can keep segmenting for a bit here to get the hang of VC, but keep the size managable for your first few segments until you get more familiar. 
 
-### We've got a line, but now what?
+The process completed during this step looks like this in 3D. We've identified the sheet surface, but still would have a hard time finding ink on a single voxel sheet that is still wrapped in the scroll. In the video below, the sheet is on the visible outside, but most of our segments are actually completely surrounded by additional sheets.
+
+<figure>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/segmentation2.jpg">
+    <source src="/img/tutorials/segmentation2.webm" type="video/webm"/>
+    <source src="/img/tutorials/segmentation2.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">Segmentation: finding a surface of papyrus.</figcaption>
+</figure>
+
+### Ok, we've got a line...Now what?
 
 In order to see the content on the surface of our segment, we need to flatten and texture the segment. These steps can be run individually, but it’s highly suggested to use the following process so that you end up with the same format and files as the official segmentations.
 
@@ -422,7 +424,7 @@ In the new_segments directory you set when you launched VC, you will now have a 
 
 ### So, what did we just do?
 
-When looking for ink in the volume, we needed to look at more than just the voxels that directly intersected the segment mesh we just created. We also look a little bit “above“ and “below“ the mesh, at the neighborhood of voxels that surround our segment. Conceptually, this neighborhood looks something like this (though this video is exaggerated):
+When looking for ink in the volume, we need to look at more than just the voxels that directly intersect the segment mesh we just created. We also need to look a little bit “above“ and “below“ the mesh, at the neighborhood of voxels that surround our segment. Conceptually, this neighborhood looks something like this (though this video is exaggerated):
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/surface-volume-extrusion3.jpg">
