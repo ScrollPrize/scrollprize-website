@@ -160,7 +160,7 @@ If instead of working on subvolumes we work on the full volume of the scroll, we
   <figcaption className="mt-1">Figure 6. Large mesh wrapped several times around the center. (Left) Side view; (center) from above; (right) zoomed-in view.</figcaption>
 </figure>
 
-In Figure 6, the vertices of the mesh are showed in yellow and the edges connecting them in black. It is worth noting from the zoomed-in view that nearby points are connected by edges and form a triangular mesh.
+In Figure 6, the vertices of the mesh are shown in yellow and the edges connecting them in black. It is worth noting from the zoomed-in view that nearby points are connected by edges and form a triangular mesh.
 
 Congratulations! You automatically fished the scroll, or a subpart of it!
 
