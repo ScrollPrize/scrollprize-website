@@ -71,7 +71,7 @@ You can think of it as a big volume made of single units of grayscale LEGO block
 
 The right image in Figure 1 displays the view of a section of the volumetric image. Imagine cutting the volume in subvolumes. Take one and look at it from above. Every block composing the subvolume (called *voxels*) will look like a colored square. That is the color of the pixel in the image.
 
-# Node placement
+### Node placement
 To perform *node placement* we have to detect all the blocks composing the inner surface of the sheet, and forget about the rest.
 This accounts to creating a mask where non-edge blocks are flagged with 0s and edge-blocks are flagged with 1s. In layman's terms, color in black all the non edge voxels, and in white the edge voxels.
 
