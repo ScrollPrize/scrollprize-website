@@ -296,7 +296,7 @@ Now that we’ve oriented ourselves with the UI, let's open our volpkg...
 
 We will now create our first segment.
 
-Click "New" in the Volume Package segmentation window on the top left to create a new segmenent path. Ensure "Display" and "Compute" are both checked. 
+Click "New" in the Volume Package segmentation window on the top left to create a new segment path. Ensure "Display" and "Compute" are both checked.
 
 Click “Pen Tool”, and place points along the sheet by left clicking, placing as many points as necessary to keep the line on the surface of the sheet. Note that you cannot undo or delete points here. This part does not need to be particularly accurate, as you’ll be able to fix it in the next step much easier. When you are happy with the length of the line, click pen tool once again to exit the pen tool.
 
