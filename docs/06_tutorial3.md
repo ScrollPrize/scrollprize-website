@@ -292,7 +292,9 @@ Now that we’ve oriented ourselves with the UI, let's open our volpkg...
   <img src="/img/tutorials/open-volpkg.png" className="rounded-xl"/>
 </figure>
 
-### ...And begin creating our first segment
+### Creating a segment
+
+We will now create our first segment.
 
 Click "New" in the Volume Package segmentation window on the top left to create a new segmenent path. Ensure "Display" and "Compute" are both checked. 
 
