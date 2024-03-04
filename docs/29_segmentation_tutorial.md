@@ -183,7 +183,7 @@ The vertices of the mesh shown in Figure 6 are displayed using the obtained UV p
 
 The mesh, along with its UV parametrization, are finally saved in a `.obj` file.
 
-### Rendering
+#### Rendering
 It is extremely important that the obtained UV coordinates are still real numbers. This means that between points there is a lot of empty space!
 In order to go back to a "pixel-style" representation, we have to convert the plot in Figure 7 to a pixelized image. Notice that in Figure 7 we displayed axes with ticks, this was not a mistake.
 
