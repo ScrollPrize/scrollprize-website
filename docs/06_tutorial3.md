@@ -296,13 +296,21 @@ Click "New" in the Volume Package segmentation window on the top left to create 
 Click “Pen Tool”, and place points along the sheet by left clicking, placing as many points as necessary to keep the line on the surface of the sheet. Note that you cannot undo or delete points here. This part does not need to be particularly accurate, as you’ll be able to fix it in the next step much easier. 
 
 <figure>
-  <img src="/img/tutorials/new-pen.png" className="rounded-xl"/>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/new-pen.png">
+    <source src="/img/tutorials/new_pen_tool.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">Placing our first segmentation line with the pen tool.</figcaption>
 </figure>
+
+
 
 Uncheck pen tool, and then check Segmentation Tool (You can also enter the segmentation tool by pressing 'T'). You’ll notice now that the purple line becomes a series of points. This is your “segmentation line”. It is from this line that VC will create your end-result flattened surface volume. Ideally, you want this to be on the inside face of the sheet, as this is where we expect to find ink. Let’s configure our Segmentation settings in the right box to match the ones in this image. The primary parameter you could modify here and see if you have any improvement is 'smoothen curve at bright points'.
 
 <figure>
-  <img src="/img/tutorials/new-seg-tool.png" className="rounded-xl"/>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/new-pen.png">
+    <source src="/img/tutorials/new_seg_run.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">"Snapping" our segmentation line back onto the surface of the sheet.</figcaption>
 </figure>
 
 If at this point your segmentation line is off the sheet, you can manipulate it in a few ways. The primary method for manipulating this line is to “snap” it to a point, by clicking. VC will take X nearest points to the cursor (where X is the input range setting located in the bottom right, also changed by hitting A and D) and snap them to the cursor. You can also click and drag the line itself. Play around with this for a bit before continuing. In addition to just panning along the line with right click, you can press R+Scroll Wheel to follow the segmentation line automatically. This is also mapped to the front and back side mouse buttons, if you have them.
@@ -310,14 +318,13 @@ If at this point your segmentation line is off the sheet, you can manipulate it 
 Once you are happy with the location of the line, ensure your slice and anchor setting are correct. If you’re going “up” in the volume, you want forward slice and backward anchor, and conversely if you're going “down” in the volume, you want a forward anchor and “backward slice”.  Click “Start” to begin the segmentation run. The number in the forward or backward slice is the number the segmentation run will finish at. It is recommended to start low here, between 30 and 50, and depending on how far the line diverges from the sheet, you can increase from there. In areas of particularly damaged papyrus values as low as 10 can be required.
 
 <figure>
-  <img src="/img/tutorials/anchors-window.png" className="rounded-xl"/>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/new-pen.png">
+    <source src="/img/tutorials/second_seg_run.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">"Snapping" our segmentation line back onto the surface of the sheet.</figcaption>
 </figure>
 
 After a short period of time VC will drop you off at the slice indicated by your previous forward or backward slice setting. Your line of points will now be colored red, and may have wandered slightly from the sheet. VC has attempted to “follow” the sheet from your annotation (or anchor) line to the slice indicated in your forward slice setting. From here, click “segmentation tool” again, and then manipulate the line back onto the sheet. You’ll notice lines you have modified turn yellow, where ones you have not remain red. Pan through the layers a bit if you are having a hard time following the sheet, as it's easier to follow “in motion”. Press space to hide the line if it helps you see. 
-
-<figure>
-  <img src="/img/tutorials/new-modified.png" className="rounded-xl"/>
-</figure>
 
 After you’ve guided the line along the sheet, hit start again, and repeat the process. This is the general workflow for segments of any size, from the GP winners at over 100cm^2 to the smallest segments. Conceptually, it works something like this:
 
