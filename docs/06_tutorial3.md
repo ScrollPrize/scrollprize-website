@@ -272,7 +272,7 @@ sudo docker run -v /path/to/new_segments/:/new_segments -v /path/to/full_scrolls
 Let's take a moment to get oriented before continuing: 
 
 1. In the top left are the current segmentations, or paths, in the current volume package (from here referred to as a volpkg) along with the file, edit, help and view buttons.
-2. In the bottom left, are the current segmentation runs and anchor information for the currently selected segment id.
+2. In the bottom left are the current segmentation runs and anchor information for the currently selected segment id.
 3. On the right are your OFS Segmentation settings. 
 4. Located at the bottom is some navigation information. The primary number useful to you here will be the current slice number.
 
