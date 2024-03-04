@@ -129,7 +129,7 @@ Unfortunately, we have to face two unexpected problems:
 
 `Thaumato Anakalyptor` tackles this issue with _stitching_.
 
-### Stitching
+#### Stitching
 Stitching is an extension of the point cloud segmentation problem addressed in the previous step, but on patches rather than points.
 
 <figure className="text-center mx-auto">
