@@ -120,7 +120,7 @@ We don't want to select points that lie on parallel surfaces, since this would m
   <figcaption className="mt-1">Figure 4. Identifying patches. (Left) Correct and incorrect grouping; (right) identified patches colored in the point cloud.</figcaption>
 </figure>
 
-Thaumato Anakalyptor performs this operation with `Mask3D` [^2], a Deep Neural Network specifically trained for the purpose.
+`Thaumato Anakalyptor` performs this operation with `Mask3D` [^2], a Deep Neural Network specifically trained for the purpose.
 The results should look somewhat like the right part of Figure 4 (that represents a different subvolume, less densely packed). The algorithm segments points cloud in contiguous patches of sheet.
 
 Unfortunately, we have to face two unexpected problems:
