@@ -1,6 +1,6 @@
 ---
 title: "Segmentation for Fishermen"
-sidebar_label: "5. Segmentation for Fishermen"
+sidebar_label: "4. Segmentation - a different approach"
 hide_table_of_contents: true
 ---
 
@@ -39,7 +39,7 @@ hide_table_of_contents: true
 
 import { TutorialsTop } from '@site/src/components/TutorialsTop';
 
-<TutorialsTop highlightId={5} />
+<TutorialsTop highlightId={4} />
 
 This high-level, code-free tutorial explains the main steps of the [`Thaumato Anakalyptor`](https://github.com/schillij95/ThaumatoAnakalyptor) [^1] pipeline.
 We will tackle the task of segmentation from another perspective: that of a Neapolitan fisherman.
@@ -206,18 +206,25 @@ Now we need to recover that information, and to do so we need to know the 3D pos
 Unfortunately, the map from integer 2D positions to 3D points will result in points with non-integer positions. What does it mean? After all, the original voxels (Figure 1) _only_ have integer positions. What "color" will these new points/pixels then have?
 
 We are going to compute the color of the new points by `trilinear interpolation` with their closest ones in the volume.
-This will allow us to obtain images with a smooth varying color.
+This will allow us to obtain images with a smooth varying color. The segment from Figure 7 rendered as a 2D image is displayed in Figure 9.
+
+<figure className="text-center mx-auto">
+  <div className="flex flex-wrap justify-center mx-auto">
+    <img className="max-h-[500px] m-2" src="/img/tutorials/thaumato_composite_down.jpg"/>
+  </div>
+  <figcaption className="mt-1">Figure 9. The segment from Figure 7 rendered as a 2D image.</figcaption>
+</figure>
 
 We forget to mention that since ink prediction is performed not on a single layer, but in what is called a surface volume, that is a stack of surfaces parallel to the surface we obtained along this pipeline, we need to store and transform as well the values of the normals to the surface at each point.
 We already computed them for the vertices of the mesh, so we only need to compute the ones for the new points using barycentric coordinates.
 
-In Figure 9 we show the ink prediction from the `Phase 1 Grand Prize winning model` [^8] on the obtained rendered segmented from Figure 7.
+In Figure 10 we show the ink prediction from the `Phase 1 Grand Prize winning model` [^8] on the stack of rendered layers obtained from the segment displayed in Figure 7 - the composite image is shown in Figure 9.
 
 <figure className="text-center mx-auto">
   <div className="flex flex-wrap justify-center mx-auto">
     <img className="max-h-[500px] m-2" src="/img/tutorials/thaumato_ink_detection.png"/>
   </div>
-  <figcaption className="mt-1">Figure 8. Ink Prediction on the rendered segment from Figure 7.</figcaption>
+  <figcaption className="mt-1">Figure 10. Ink prediction on the layers rendered from the UV in Figure 7.</figcaption>
 </figure>
 
 ### Additional notes
