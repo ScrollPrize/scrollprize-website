@@ -664,6 +664,12 @@ const sponsors = [
     href: "https://twitter.com/Conaw",
     image: "/img/landing/Conor White-Sullivan.jpg",
   },
+  {
+    name: "Will Fitzgerald",
+    amount: 5000,
+    href: "https://github.com/willf",
+    image: "/img/landing/Will Fitzgerald.jpg",
+  },
 ];
 
 const team = {
