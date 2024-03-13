@@ -446,6 +446,11 @@ const sponsors = [
     image: "/img/landing/Matt_Mullenweg.jpg",
   },
   {
+    name: "Emergent Ventures",
+    amount: 100000,
+    href: "https://www.mercatus.org/emergent-ventures",
+  },
+  {
     name: "Matt Huang",
     amount: 50000,
     href: "https://twitter.com/matthuang",
