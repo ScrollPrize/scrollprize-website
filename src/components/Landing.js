@@ -598,6 +598,12 @@ const sponsors = [
     image: "/img/landing/Ivan Zhao.jpg",
   },
   {
+    name: "Neil Parikh",
+    amount: 10000,
+    href: "http://www.neilparikh.com/",
+    image: "/img/landing/Neil Parikh.jpg",
+  },
+  {
     name: "Stephanie Sher",
     amount: 10000,
     href: "https://twitter.com/stephxsher",
