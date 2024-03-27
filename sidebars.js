@@ -83,7 +83,7 @@ const sidebars = {
         { type: 'doc', id: 'tutorial2' },
         { type: 'doc', id: 'tutorial3' },
         { type: 'doc', id: 'tutorial4' },
-        // { type: 'doc', id: 'tutorial5' },
+        { type: 'doc', id: 'tutorial5' },
       ],
     },
     { type: 'doc', id: 'faq' },

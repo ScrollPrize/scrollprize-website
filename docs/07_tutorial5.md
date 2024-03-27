@@ -1,6 +1,6 @@
 ---
-title: "Tutorial 4: Ink Detection"
-sidebar_label: "4. Ink Detection"
+title: "Tutorial 5: Ink Detection"
+sidebar_label: "5. Ink Detection"
 hide_table_of_contents: true
 ---
 
@@ -39,7 +39,7 @@ hide_table_of_contents: true
 
 import { TutorialsTop } from '@site/src/components/TutorialsTop';
 
-<TutorialsTop highlightId={4} />
+<TutorialsTop highlightId={5} />
 
 This tutorial gives a high-level overview on ink detection methods, followed by a more hands-on tutorial [on Kaggle as a notebook](https://www.kaggle.com/code/jpposma/vesuvius-challenge-ink-detection-tutorial).
 Since this tutorial was written, ink detection has successfully recovered text from inside the rolled scrolls.
