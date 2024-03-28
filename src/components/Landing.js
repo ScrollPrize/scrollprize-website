@@ -690,7 +690,7 @@ const team = {
     {
       name: "Konrad Rosenberg",
       title: "Segmentation Team Member",
-      href: "https://www.instagram.com/konradher/",
+      href: "https://twitter.com/germanicgems",
     },
     {
       name: "Julian Schilliger",
