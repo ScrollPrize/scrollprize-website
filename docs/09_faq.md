@@ -122,10 +122,10 @@ Here are some other excellent books we recommend:
   <figcaption className="mt-0">Herculaneum scroll reconstruction from a <a href="https://bibliopolis.it/shop/opera-incerta-sugli-dei/">book</a> by Marzia D’Angelo <a href="https://cispe.org/philodemus-opus-incertum-pherc-89-1301-1383/">(source)</a>; more explanation <a href="https://discord.com/channels/1079907749569237093/1085972686158712892/1115918553602855002">here</a></figcaption>
 </figure>
 
-### What are some good YouTube videos I should watch?
+### What are some good videos I should watch?
 
 * [Secrets of the Villa of the Papyri](https://www.youtube.com/watch?v=nm8Y8fDYKEc)
-* [The Ancient Library of Papyri](https://www.youtube.com/watch?v=r5k5ZeVmpfk)
+* [History of Pompeii: Villa of the Papyri](https://www.wondrium.com/pompeii-daily-life-in-an-ancient-roman-city)
 * [Reading the Papyrus Scrolls found at Herculaneum](https://www.youtube.com/watch?v=rcWpzqzefV4)
 * [Out of the Ashes: Recovering the Lost Library of Herculaneum](https://www.youtube.com/watch?v=98W-j545-0Y)
 * For more videos see [this page](https://www2.cs.uky.edu/dri/videos/)
