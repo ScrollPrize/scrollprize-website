@@ -74,7 +74,7 @@ First, let's install it:
 2. Run *“XLaunch”* from the Start Menu, or from *“C:\Program Files\VcXsrv\xlaunch.exe”*.
 3. Use the default settings, except: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-1.webp"/>
 4. Check that the X Server is running in the tray: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-2.webp"/>
-5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/).
+5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/), then restart your computer.
 6. Put the extracted `campfire` directory in `C:\` (or update the path in the Docker command below).
 7. Then run:
 
