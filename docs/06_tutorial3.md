@@ -170,12 +170,10 @@ make install
 Volume Cartographer works on `.volpkg` directories, which is a custom format just for Volume Cartographer. Let’s create one using the `vc_packager` tool, by feeding it the tomographically reconstructed volume (represented as a .tif stack) of the [campfire scroll](/data):
 
 ```bash
-vc_packager -v campfire.volpkg -m 1000 -s ~/campfire/rec/ # Or /campfire/rec when using Docker
+vc_packager -v campfire.volpkg -m 1000 -n campfire -u 26.3 -s ~/campfire/rec/ # Or /campfire/rec when using Docker
 ```
 
-The material-thickness flag `-m` is an estimate of the papyrus thickness in microns and is used to help Volume Cartographer's tools automatically decide on good default parameters. The defaults can always be overridden later, so even though it's required, don't worry too much about this value.
-
-When prompted, give the volume a descriptive name, set the voxel size to “104”, and skip the flip options.
+The material-thickness flag `-m` is an estimate of the papyrus thickness in microns and is used to help Volume Cartographer's tools automatically decide on good default parameters. Give a descriptive name with the flag `-n` and set the voxel size to 26.3 um with the flag `-u`. The defaults can always be overridden later, so even though they are required, don't worry too much about these values.
 
 The output will look like this:
 
