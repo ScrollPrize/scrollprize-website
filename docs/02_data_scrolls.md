@@ -110,7 +110,7 @@ This is a video montage of Scroll 1:
   * `/volumes_masked/`: Same as `/volumes/`, but with non-scroll data blacked out, and the files compressed. About 2x smaller than the original volumes, though may take longer to load in software due to the compression. See [this repo](https://github.com/JamesDarby345/segment-anything-vesuvius) for more details (and [this thread](https://discord.com/channels/1079907749569237093/1105181650415001741) for details about the compression vs performance tradeoff).
   * `/volume_grids/<volume_id>/cell_yxz_*.tif`: The volume split into “cells” of 500x500x500 voxels. Generated using [`build_grid_layer`](https://github.com/spelufo/vesuvius-build/).
 
-One community member, Ahron Wayne (@WayneWayneHello on Discord), has bought a benchtop CT scanner and has been making various scans with them, with the goal of making a simulated scroll (a “campfire scroll”) that can be used as ground truth data. His scans can be found in [`/waynewaynehello-uploads/`](http://dl.ash2txt.org/waynewaynehello-uploads/).
+One community member, Ahron Wayne (@WayneWayneHello on Discord), has bought a benchtop CT scanner and has been making various scans with them, with the goal of making a simulated scroll (a “campfire scroll”) that can be used as ground truth data. His scans can be found in [`/waynewaynehello-uploads/`](http://dl.ash2txt.org/community-uploads/waynewaynehello-uploads/).
 
 <figure className="max-w-[600px]">
   <img src="/img/data/desktop-scan.gif"/>
