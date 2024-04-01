@@ -40,8 +40,8 @@ Since launching the Vesuvius Challenge, our community has generated an incredibl
 
 Efforts can generally be grouped into two categories:
 
-* [**Segmentation:**](#segmentation) the mapping of sheets of papyrus (“segments”) in a 3D X-ray volume. See [Tutorial 3](tutorial3) and [Data -> Segments](data_segments).
-* [**Ink Detection:**](#ink-detection) detecting ink in segments. See [Tutorial 4](tutorial4).
+* [**Segmentation:**](#segmentation) the mapping of sheets of papyrus (“segments”) in a 3D X-ray volume. See [Tutorial 3](tutorial3), [Data -> Segments](data_segments) and [Tutorial 4](tutorial4).
+* [**Ink Detection:**](#ink-detection) detecting ink in segments. See [Tutorial 5](tutorial5).
 
 ## Segmentation
 

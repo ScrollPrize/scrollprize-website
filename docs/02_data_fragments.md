@@ -129,4 +129,4 @@ At a high level, training on a fragment works like this:
   <img src="/img/tutorials/ml-overview-alpha.png" />
 </figure>
 
-From a fragment (a) we obtain a 3D volume (b), from which we segment a mesh (c), around which we sample a surface volume (d). We also take an infrared photo (e) of the fragment, which we align (f) with the surface volume, and then manually turn into a binary label image (g). For more details, see [Tutorial 4](tutorial4).
+From a fragment (a) we obtain a 3D volume (b), from which we segment a mesh (c), around which we sample a surface volume (d). We also take an infrared photo (e) of the fragment, which we align (f) with the surface volume, and then manually turn into a binary label image (g). For more details, see [Tutorial 5](tutorial5).
