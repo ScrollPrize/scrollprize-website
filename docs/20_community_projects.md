@@ -66,7 +66,7 @@ We also have a hired segmentation team using these tools to generate segments. T
 - Autosegmentation (minimal human input)
 - Merging of segments
 - Visualizing segments both in 3D and in flattened form
-  - Current state of the art: [Segment Viewer](#volume-viewer-and-segment-viewer)
+  - Current state of the art: [Segment Viewer](#vc-whiteboard-and-segment-viewer)
 
 ### Volume Cartographer
 

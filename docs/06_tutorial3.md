@@ -71,10 +71,10 @@ First, let's install it:
   <TabItem value="win" label="Windows">
 
 1. Install the [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) or a similar X Server (if you use the Chocolatey package manager: `choco install vcxsrv`).
-2. Run *“XLaunch” from the Start Menu, or from *“C:\Program Files\VcXsrv\xlaunch.exe”*.
+2. Run *“XLaunch”* from the Start Menu, or from *“C:\Program Files\VcXsrv\xlaunch.exe”*.
 3. Use the default settings, except: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-1.webp"/>
 4. Check that the X Server is running in the tray: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-2.webp"/>
-5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/).
+5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/), then restart your computer.
 6. Put the extracted `campfire` directory in `C:\` (or update the path in the Docker command below).
 7. Then run:
 
@@ -170,12 +170,10 @@ make install
 Volume Cartographer works on `.volpkg` directories, which is a custom format just for Volume Cartographer. Let’s create one using the `vc_packager` tool, by feeding it the tomographically reconstructed volume (represented as a .tif stack) of the [campfire scroll](/data):
 
 ```bash
-vc_packager -v campfire.volpkg -m 1000 -s ~/campfire/rec/ # Or /campfire/rec when using Docker
+vc_packager -v campfire.volpkg -m 1000 -n campfire -u 26.3 -s ~/campfire/rec/ # Or /campfire/rec when using Docker
 ```
 
-The material-thickness flag `-m` is an estimate of the papyrus thickness in microns and is used to help Volume Cartographer's tools automatically decide on good default parameters. The defaults can always be overridden later, so even though it's required, don't worry too much about this value.
-
-When prompted, give the volume a descriptive name, set the voxel size to “104”, and skip the flip options.
+The material-thickness flag `-m` is an estimate of the papyrus thickness in microns and is used to help Volume Cartographer's tools automatically decide on good default parameters. Give a descriptive name with the flag `-n` and set the voxel size to 26.3 um with the flag `-u`. The defaults can always be overridden later, so even though they are required, don't worry too much about these values.
 
 The output will look like this:
 

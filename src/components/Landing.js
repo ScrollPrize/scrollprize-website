@@ -443,7 +443,12 @@ const sponsors = [
     name: "Matt Mullenweg",
     amount: 150000,
     href: "https://ma.tt/",
-    image: "/img/landing/Matt_Mullenweg.jpg",
+    image: "/img/landing/Matt Mullenweg.jpg",
+  },
+  {
+    name: "Emergent Ventures",
+    amount: 100000,
+    href: "https://www.mercatus.org/emergent-ventures",
   },
   {
     name: "Matt Huang",
@@ -533,6 +538,12 @@ const sponsors = [
     image: "/img/landing/Anjney Midha.jpg",
   },
   {
+    name: "franciscosan.org",
+    amount: 25000,
+    href: "https://franciscosan.org/",
+    image: "/img/landing/franciscosan.jpg",
+  },
+  {
     name: "John O'Brien",
     amount: 25000,
     href: "https://twitter.com/jobriensf",
@@ -585,6 +596,12 @@ const sponsors = [
     amount: 10000,
     href: "https://twitter.com/ivanhzhao",
     image: "/img/landing/Ivan Zhao.jpg",
+  },
+  {
+    name: "Neil Parikh",
+    amount: 10000,
+    href: "http://www.neilparikh.com/",
+    image: "/img/landing/Neil Parikh.jpg",
   },
   {
     name: "Stephanie Sher",
@@ -658,6 +675,12 @@ const sponsors = [
     href: "https://twitter.com/Conaw",
     image: "/img/landing/Conor White-Sullivan.jpg",
   },
+  {
+    name: "Will Fitzgerald",
+    amount: 5000,
+    href: "https://github.com/willf",
+    image: "/img/landing/Will Fitzgerald.jpg",
+  },
 ];
 
 const team = {
@@ -690,7 +713,7 @@ const team = {
     {
       name: "Konrad Rosenberg",
       title: "Segmentation Team Member",
-      href: "https://www.linkedin.com/in/konradrosenberg/",
+      href: "https://twitter.com/germanicgems",
     },
     {
       name: "Julian Schilliger",
