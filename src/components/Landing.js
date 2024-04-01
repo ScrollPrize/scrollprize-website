@@ -443,7 +443,7 @@ const sponsors = [
     name: "Matt Mullenweg",
     amount: 150000,
     href: "https://ma.tt/",
-    image: "/img/landing/Matt_Mullenweg.jpg",
+    image: "/img/landing/Matt Mullenweg.jpg",
   },
   {
     name: "Emergent Ventures",
