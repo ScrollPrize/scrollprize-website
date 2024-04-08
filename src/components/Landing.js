@@ -514,6 +514,12 @@ const sponsors = [
     image: "/img/landing/mystery.jpg",
   },
   {
+    name: "Anonymous",
+    amount: 50000,
+    href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
+    image: "/img/landing/mystery.jpg",
+  },
+  {
     name: "Aaron Levie",
     amount: 25000,
     href: "https://twitter.com/levie",
