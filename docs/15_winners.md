@@ -200,7 +200,7 @@ We have awarded **$1,159,000** in prizes so far!
 
 ### $12,000 Ink Detection Followup (September 8, 2023)
 
-**Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
+**Goal:** Take the models from the [Ink Detection Prize](#100000-kaggle-ink-detection-july-14-2023) (see below) and apply them to the scrolls, to find letters.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/ink-detection-followup-prize-winners">Blog post</a>
 
 <div className="flex flex-row flex-wrap">
@@ -232,7 +232,7 @@ We have awarded **$1,159,000** in prizes so far!
 
 ### $45,000 Segmentation Tooling (June 27, 2023)
 
-**Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
+**Goal:** Help the [segmentation team](data_segments) do larger and harder areas.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/ink-detection-followup-prize-winners">Blog post</a>
 
 <div className="flex flex-row flex-wrap">
@@ -272,11 +272,10 @@ We have awarded **$1,159,000** in prizes so far!
   </a>
 </div>
 
-### $100,000 Ink Detection (July 14, 2023)
+### $100,000 Kaggle Ink Detection (July 14, 2023)
 
-**Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
-**Announcement:** <a href="https://scrollprize.substack.com/p/12000-ink-detection-followup-prize">Blog post</a><br/>
-More links and resources [here](community_projects#kaggle-ink-detection).
+**Goal:** Optimize fragment-based ink detection methods.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/12000-ink-detection-followup-prize">Blog post</a> / <a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/overview">Kaggle competition</a> / [More info](community_projects#kaggle-ink-detection)<br/>
 
 <div className="flex flex-row flex-wrap">
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/417496">
@@ -323,7 +322,7 @@ More links and resources [here](community_projects#kaggle-ink-detection).
 
 ### $10,000 Open Source (April 14, 2023)
 
-**Goal:** Take the models from the Ink Detection Prize (see below) and apply them to the scrolls, to find letters.<br/>
+**Goal:** Increase the probability the Grand Prize gets awarded.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/first-prizes-awarded-open-source">Blog post</a> / <a href="https://www.youtube.com/watch?v=_LBI0DtTl80">Live stream</a>
 
 <div className="flex flex-row flex-wrap">
