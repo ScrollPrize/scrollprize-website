@@ -368,7 +368,7 @@ const prizes = [
   },
   {
     title: "First Automated Segmentation Prize",
-    prizeMoney: "$50,000",
+    prizeMoney: "$100,000",
     description: "Reproduce the 2023 Grand Prize result but faster",
     requirement: "",
     href: "2024_prizes#first-automated-segmentation-prize",
