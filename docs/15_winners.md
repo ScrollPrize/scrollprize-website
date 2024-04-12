@@ -38,7 +38,55 @@ hide_table_of_contents: true
 
 Since the Vesuvius Challenge was launched in March 2023, a lot has happened. On this page we document all the prizes that have been won.
 
-We have awarded **$1,159,000** in prizes so far!
+We have awarded **$1,201,500** in prizes so far!
+
+### $42,500 Open Source (March, 2024)
+
+**Goal:** Increase the probability the 2024 Grand Prize gets awarded.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/42500-in-progress-prizes-awarded">Blog post</a>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/schillij95/ThaumatoAnakalyptor/pull/6">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$20,000 </div><span className="font-bold">Rendering improvements</span>: Giorgio Angelotti / @Jordi</div>
+    <img src="/img/progress/os-mar24/timelapse.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1193446455504011316">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$10,000</div><span className="font-bold">Multiresolution chunked volumes</span>: Chuck / @khartes_chuck</div>
+    <img src="/img/progress/os-mar24/khartes.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1204133327083147264">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Volumetric ink detection</span>: Jorge Villaescusa / @mojonero</div>
+    <img src="/img/progress/os-mar24/volumetric.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="TODO">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Volumetric segmentation labels</span>: Tim Skinner / @Tim S</div>
+    <img src="/img/progress/os-mar24/tim.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/JamesDarby345/VesuviusDataDownload">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Data improvements</span>: James Darby / @james darby</div>
+    <img src="/img/progress/os-mar24/download.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/OliverDaubney/s2slabmap">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Segment-to-segment label mapping</span>: Oliver Daubney / @O_D</div>
+    <img src="/img/progress/os-mar24/s2s.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1162822294415097907/threads/1167722091781554290">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Cell viewer and segmentation comparison</span>: Yao Hsiao / @Yao Hsiao</div>
+    <img src="/img/progress/os-mar24/cell.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1221902373887279226">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Superpixels and cells</span>: Santiago Pelufo / @spelufo</div>
+    <img src="/img/progress/os-mar24/superpixels.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1079907750265499772/1223357870762889308">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Other segmentation axes, 3D ink labels</span>: Sean Johnson / @Bruniss</div>
+    <img src="/img/progress/os-mar24/axes.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1223849912467460116">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Colab notebook and ink labels</span>: Nicola Bodill / @polytrope</div>
+    <img src="/img/progress/os-mar24/colab.png"/>
+  </a>
+</div>
 
 ### $850,000 Grand Prize 2023 (December 31, 2023)
 
@@ -75,7 +123,7 @@ We have awarded **$1,159,000** in prizes so far!
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_lossy/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F90f0e424-bcd9-481a-91b5-e5dd172ccc83_480x270.gif"/>
   </a>
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://scrollprize.substack.com/p/open-source-prizes-awarded">
-    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$3,000</div><span className="font-bold">Large segments and colab notebook</span> by Sean Johnson / @bruniss</div>
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$3,000</div><span className="font-bold">Large segments and colab notebook</span> by Sean Johnson / @Bruniss</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F16ee9f52-33c1-4087-acfa-f05e615be386_2680x2402.png"/>
   </a>
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/schillij95/Crackle-Viewer">
