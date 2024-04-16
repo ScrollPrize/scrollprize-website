@@ -769,8 +769,8 @@ const team = {
       href: "https://educelab.engr.uky.edu/w-brent-seales",
     },
     {
-      name: "Seth Parker",
-      title: "PhD candidate",
+      name: "Dr. Seth Parker",
+      title: "Research Manager",
       href: "https://www2.cs.uky.edu/dri/seth-parker/",
     },
     {
