@@ -702,7 +702,7 @@ const team = {
       href: "https://dcgross.com/",
     },
     {
-      name: "Dr. Stephen Parsons",
+      name: "Stephen Parsons",
       title: "Project Lead",
       href: "https://www2.cs.uky.edu/dri/stephen-parsons/",
     },
@@ -712,7 +712,7 @@ const team = {
       href: "https://twitter.com/ben_kyles",
     },
     {
-      name: "Dr. David Josey",
+      name: "David Josey",
       title: "Segmentation Team Member",
       href: "https://www.linkedin.com/in/davidsjosey/",
     },
@@ -747,7 +747,7 @@ const team = {
       href: "https://www.linkedin.com/in/chrisfrangione/",
     },
     {
-      name: "Dr. Garrett Ryan",
+      name: "Garrett Ryan",
       title: "Classics Advisor",
       href: "https://toldinstone.com/",
     },
@@ -764,12 +764,12 @@ const team = {
   ],
   educe: [
     {
-      name: "Dr. Brent Seales",
-      title: "Principal Investigator",
+      name: "Brent Seales",
+      title: "Principal Investigator, Professor of Computer Science",
       href: "https://educelab.engr.uky.edu/w-brent-seales",
     },
     {
-      name: "Dr. Seth Parker",
+      name: "Seth Parker",
       title: "Research Manager",
       href: "https://www2.cs.uky.edu/dri/seth-parker/",
     },
@@ -784,7 +784,7 @@ const team = {
       href: "https://www.ccs.uky.edu/about-ccs/staff-directory/mami-hayashida/",
     },
     {
-      name: "Dr. James Brusuelas",
+      name: "James Brusuelas",
       title: "Associate Professor of Classics",
       href: "https://mcl.as.uky.edu/users/jbr454",
     },
@@ -794,12 +794,42 @@ const team = {
       href: "https://www.engr.uky.edu/directory/lutin-elizabeth",
     },
     {
-      name: "Dr. Roger Macfarlane",
+      name: "Roger Macfarlane",
       title: "Professor of Classical Studies",
       href: "https://hum.byu.edu/directory/roger-macfarlane",
     },
   ],
   papyrology: [
+    {
+      name: "Marzia D'Angelo",
+      title: "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
+      href: "https://unina.academia.edu/MDAngelo",
+    },
+    {
+      name: "Kilian Fleischer",
+      title: "Research Director and Papyrologist, University of Tübingen and CNR",
+      href: "https://www.klassphil.uni-wuerzburg.de/team/pd-dr-kilian-fleischer/",
+    },
+    {
+      name: "Alessia Lavorante",
+      title: "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
+      href: "https://unina.academia.edu/AlessiaLavorante",
+    },
+    {
+      name: "Michael McOsker",
+      title: "Researcher, University College London",
+      href: "https://www.ucl.ac.uk/classics/michael-mcosker",
+    },
+    {
+      name: "Claudio Vergara",
+      title: "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
+      href: "http://unina.academia.edu/ClaudioVergara",
+    },
+    {
+      name: "Rossella Villa",
+      title: "Research Assistant in Papyrology, University of Salerno",
+      href: "#0",
+    },
     {
       name: "Daniel Delattre",
       title: "Emeritus Research Director and Papyrologist, CNRS and IRHT",
@@ -825,7 +855,7 @@ const team = {
     },
     {
       name: "Federica Nicolardi",
-      title: "Professor of Classics, University of Naples Federico II",
+      title: "Assistant Professor of Papyrology, University of Naples Federico II",
       href: "https://www.docenti.unina.it/federica.nicolardi",
     },
     {
