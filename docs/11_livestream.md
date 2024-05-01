@@ -36,15 +36,17 @@ hide_table_of_contents: true
   />
 </head>
 
-<!-- The next livestream is **Thursday October 12th at 4pm EDT**, hosted by EduceLab at the University of Kentucky, to talk more about the <a href="firstletters">First Letters Prize announcement</a>. Tune in at: <a href="https://engr.uky.edu/live">https://engr.uky.edu/live</a> -->
-
-Be sure to check [Discord](https://discord.gg/V4fJhvtaQn), [Substack](https://scrollprize.substack.com/), and [X](https://twitter.com/scrollprize)  for updates.
-
-<!-- The next livestream is **Thursday May 25th at 8am PST**. We’ll have several members of our [Papyrology Team](grand_prize#review-process) present to answer your questions. We’re collecting questions in the [#papyrology-qa](https://discord.com/channels/1079907749569237093/1108134343295127592) channel on Discord. -->
-
-<!-- View the livestream [here on Youtube](https://youtube.com/live/gielO5WHdu4)! -->
+Be sure to check [Discord](https://discord.gg/V4fJhvtaQn), [Substack](https://scrollprize.substack.com/), and [X](https://twitter.com/scrollprize) for updates!
 
 ## Previous livestreams
+
+### 2023 Grand Prize 1st place presentation
+
+<iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/F5ak1pRaqVo?si=njl57GBT0wFUeTV2"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+### 2023 Grand Prize Celebration talks
+
+<iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/uPefxeXfssA?si=d6IB7KLvskAxFGMc"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 ### X Spaces AMA
 
