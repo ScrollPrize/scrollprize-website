@@ -51,8 +51,8 @@ hide_table_of_contents: true
         <td>
           <div className="mb-4">7.91µm 3D X-ray scans of two intact scrolls (top halves only), scanned in horizontal slices from bottom to top. Each half scroll scan is 14,000 .tif files, 120MB each. Each slice is 7.91µm tall, so this scroll half is 11.2cm tall. Both were scanned at 54keV, though we also released a smaller “slab” of Scroll 2 at 88keV. These are the scans used to win the 2023 Grand Prize.</div>
           <div className="flex flex-wrap max-w-[500px]">
-            <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 1 (PHerc Paris 3)</figcaption></div>
-            <div className="sm:w-[45%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 2 (PHerc Paris 4)</figcaption></div>
+            <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 1 (PHerc Paris 4)</figcaption></div>
+            <div className="sm:w-[45%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 2 (PHerc Paris 3)</figcaption></div>
             <div><img src="/img/data/07000.jpg" className="max-w-[300px]"/><br/><figcaption className="mt-[-6px]">Single slice from Scroll 1</figcaption></div>
           </div>
         </td>
