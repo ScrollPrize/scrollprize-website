@@ -51,8 +51,8 @@ hide_table_of_contents: true
         <td>
           <div className="mb-4">7.91µm 3D X-ray scans of two intact scrolls (top halves only), scanned in horizontal slices from bottom to top. Each half scroll scan is 14,000 .tif files, 120MB each. Each slice is 7.91µm tall, so this scroll half is 11.2cm tall. Both were scanned at 54keV, though we also released a smaller “slab” of Scroll 2 at 88keV. These are the scans used to win the 2023 Grand Prize.</div>
           <div className="flex flex-wrap max-w-[500px]">
-            <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 1 (PHerc Paris 4)</figcaption></div>
-            <div className="sm:w-[45%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 2 (PHerc Paris 3)</figcaption></div>
+            <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 1 (PHerc. Paris. 4)</figcaption></div>
+            <div className="sm:w-[45%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 2 (PHerc. Paris. 3)</figcaption></div>
             <div><img src="/img/data/07000.jpg" className="max-w-[300px]"/><br/><figcaption className="mt-[-6px]">Single slice from Scroll 1</figcaption></div>
           </div>
         </td>
@@ -62,8 +62,8 @@ hide_table_of_contents: true
         <td>
           <div className="mb-4">New scans from 2023 (<a href="https://scrollprize.substack.com/p/new-scans-of-herculaneum-papyri-at">announcement</a>). 3.24µm and 7.91µm 3D X-ray scans of two partially unrolled scrolls, scanned in horizontal slices from bottom to top. Each scroll scan is ~25,000 .tif files, 170MB each. Each slice is 4µm tall, so each scroll is ~8cm long. Both were scanned at 53/70/88/105keV, for a total of 2*4=8 volumes each. Being released on an ongoing basis, as the data is being processed. Can also be used to win prizes.</div>
           <div className="flex flex-wrap max-w-[500px]">
-            <div className="sm:w-[35.5%] mb-2 mr-2"><img src="/img/overview/PHerc0332.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 3 (PHerc 0332)</figcaption></div>
-            <div className="sm:w-[55%] mb-2"><img src="/img/overview/PHerc1667.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 4 (PHerc 1667)</figcaption></div>
+            <div className="sm:w-[35.5%] mb-2 mr-2"><img src="/img/overview/PHerc332.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 3 (PHerc. 332)</figcaption></div>
+            <div className="sm:w-[55%] mb-2"><img src="/img/overview/PHerc1667.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 4 (PHerc. 1667)</figcaption></div>
           </div>
         </td>
       </tr>
@@ -85,12 +85,12 @@ hide_table_of_contents: true
         <td>
           <div className="mb-4">3D X-ray scans, infrared images, and hand-labeled ground truth ink masks for detached scroll fragments. Each fragment scan is 7,000-14,000 .tif files. The 2019 scans (fragments 1-4) are 3.24µm and 54/88keV. 2023 scans (fragments 5-6) are 3.24/7.91µm and 53/70/88/105keV. These data can be used for training ink detection models, or for investigating the differences between scans at different resolutions and energies.</div>
           <div className="flex flex-wrap">
-            <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr1.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 1 (PHerc Paris 2 Fr 47)</figcaption></div>
-            <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 2 (PHerc Paris 2 Fr 143)</figcaption></div>
-            <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr3.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 3 (PHerc Paris 1 Fr 34)</figcaption></div>
-            <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr4.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 4 (PHerc Paris 1 Fr 39)</figcaption></div>
-            <div className="sm:w-[45%] max-w-[130px] mb-2 mr-2"><img src="/img/data/fr5.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 5 (PHerc 1667 Cr 1 Fr 3)</figcaption></div>
-            <div className="sm:w-[45%] max-w-[220px] mb-2 mr-2"><img src="/img/data/fr6.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 6 (PHerc 51 Cr 4 Fr 48)</figcaption></div>
+            <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr1.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 1 (PHerc. Paris. 2 Fr 47)</figcaption></div>
+            <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 2 (PHerc. Paris. 2 Fr 143)</figcaption></div>
+            <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr3.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 3 (PHerc. Paris. 1 Fr 34)</figcaption></div>
+            <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr4.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 4 (PHerc. Paris. 1 Fr 39)</figcaption></div>
+            <div className="sm:w-[45%] max-w-[130px] mb-2 mr-2"><img src="/img/data/fr5.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 5 (PHerc. 1667 Cr 1 Fr 3)</figcaption></div>
+            <div className="sm:w-[45%] max-w-[220px] mb-2 mr-2"><img src="/img/data/fr6.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 6 (PHerc. 51 Cr 4 Fr 48)</figcaption></div>
           </div>
         </td>
       </tr>
