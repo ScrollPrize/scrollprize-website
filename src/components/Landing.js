@@ -828,7 +828,7 @@ const team = {
     {
       name: "Rossella Villa",
       title: "Research Assistant in Papyrology, University of Salerno",
-      href: "https://rubrica.unisa.it/persone?matricola=067381",
+      href: "https://salerno.academia.edu/RossellaVilla",
     },
     {
       name: "Daniel Delattre",
