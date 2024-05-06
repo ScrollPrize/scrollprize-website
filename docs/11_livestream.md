@@ -50,7 +50,7 @@ Be sure to check [Discord](https://discord.gg/V4fJhvtaQn), [Substack](https://sc
 
 ### X Spaces AMA
 
-On [X](https://twitter.com/i/spaces/1eaJbgEkEnrxX?s=20) and [our recording](http://dl.ash2txt.org/other/vesuvius-challenge-spaces-2023-10-15.m4a).
+On [X](https://twitter.com/i/spaces/1eaJbgEkEnrxX?s=20) and [our recording](https://dl.ash2txt.org/other/vesuvius-challenge-spaces-2023-10-15.m4a).
 
 ### First Letters Prize announcement
 

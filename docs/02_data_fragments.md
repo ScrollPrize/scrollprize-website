@@ -73,7 +73,7 @@ Fragment 5 (PHerc. 1667 Cr 1 Fr 3) is from the same original scroll as Scroll 4 
 
 The fragment data is published on the data server in the `.volpkg` format, which is the data format used by Volume Cartographer (learn more in [Tutorial 3](tutorial3) and on the [Scrolls](data_scrolls#volpkg-format-used-for-both-scrolls-and-fragments) page). It's the same for all the fragments:
 
-* [`/fragments/*.volpkg/`](http://dl.ash2txt.org/fragments/Frag1.volpkg/)
+* [`/fragments/*.volpkg/`](https://dl.ash2txt.org/fragments/Frag1.volpkg/)
     * `/config.json`: Metadata.
     * `/volumes/`: Multiple volumes for the various resolutions and incident energies. For the 2019 scans (fragments 1-4) the different volumes are not aligned, for the 2023 scans (fragments 5-6) they are aligned.
     * `/working/reference/`: Photos of the fragment (normal and infrared).
@@ -98,7 +98,7 @@ Just like with the [segments in the scroll](data_segments), we have made surface
 
 We have also aligned (“registered”) the surface volumes with the infrared photos, and made a binary ink mask of where we think there is ink, in consultation with papyrologists.
 
-* [`/working/54keV_exposed_surface/`](http://dl.ash2txt.org/fragments/Frag1.volpkg/working/54keV_exposed_surface/): Data about the processed surface volume.
+* [`/working/54keV_exposed_surface/`](https://dl.ash2txt.org/fragments/Frag1.volpkg/working/54keV_exposed_surface/): Data about the processed surface volume.
   * `/surface_volume/*.tif`: The actual surface volume of 65 layers.
   * `/ir.png`: Infrared photo, aligned with the surface volume.
   * `/inklabels.png`: Manually created binary labels for the aligned photo (ink vs no-ink).

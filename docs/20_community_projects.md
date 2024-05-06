@@ -259,7 +259,7 @@ Casey Handmer discovered a [“crackle pattern”](https://caseyhandmer.wordpres
 * [Luke’s First Letters Prize model.](https://github.com/lukeboi/scroll-first-letters) By Luke Farritor (@lukeboi on Discord).
 * [Crackle Viewer.](https://github.com/schillij95/Crackle-Viewer) Tool by Julian Schilliger (@RICHI on Discord) to annotate crackles in segments.
 * [Vesuvius Kintsugi.](https://github.com/giorgioangel/vesuvius-kintsugi) Another crackle labeling tool by Giorgio Angelotti (@jordi45698 on Discord).
-* [Crackle labels.](http://dl.ash2txt.org/bruniss-uploads/) Made by Sean Johnson (@bruniss on Discord) using Vesuvius Kintsugi.
+* [Crackle labels.](https://dl.ash2txt.org/bruniss-uploads/) Made by Sean Johnson (@bruniss on Discord) using Vesuvius Kintsugi.
 * [Julian’s (unreleased) crackle model.](https://discord.com/channels/1079907749569237093/1079907750265499772/1145465050509869226) Seems similar to Luke’s model.
 * [Luke’s 4th place Kaggle finetuning.](https://github.com/lukeboi/scroll-fourth-second) This didn’t seem to work.
 * [Luke’s first crackle / ink in PHerc. 1667.](https://discord.com/channels/1079907749569237093/1178882484696535152/1178883029234630736)
