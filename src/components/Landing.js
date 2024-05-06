@@ -606,7 +606,7 @@ const sponsors = [
   {
     name: "Neil Parikh",
     amount: 10000,
-    href: "http://www.neilparikh.com/",
+    href: "https://www.neilparikh.com/",
     image: "/img/landing/Neil Parikh.jpg",
   },
   {
@@ -823,12 +823,12 @@ const team = {
     {
       name: "Claudio Vergara",
       title: "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
-      href: "http://unina.academia.edu/ClaudioVergara",
+      href: "https://unina.academia.edu/ClaudioVergara",
     },
     {
       name: "Rossella Villa",
       title: "Research Assistant in Papyrology, University of Salerno",
-      href: "#0",
+      href: "https://salerno.academia.edu/RossellaVilla",
     },
     {
       name: "Daniel Delattre",
