@@ -38,16 +38,66 @@ hide_table_of_contents: true
 
 Since the Vesuvius Challenge was launched in March 2023, a lot has happened. On this page we document all the prizes that have been won.
 
-We have awarded **$1,201,500** in prizes so far!
+We have awarded **$1,236,500** in prizes so far!
+
+### $35,000 Open Source (April, 2024)
+
+**Goal:** Increase the probability we read 90% of four scrolls in 2024.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/35000-in-april-advancements">Blog post</a>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/ryanchesler/3d-ink-detection">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$20,000</div><span className="font-bold">3D ink detection</span>: Ryan Chesler / @emel_ryan</div>
+    <img src="/img/progress/202404/3dink.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1234943853459669002/1234943853459669002">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Mesh merging</span>: Giorgio Angelotti / @Jordi</div>
+    <img src="/img/progress/202404/merged_meshes.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/JamesDarby345/Vesuvius_3D_datasets">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Instance segmentation labels</span>: James Darby / @james darby</div>
+    <img src="/img/progress/202404/labels.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/ryanchesler/LSM/blob/main/README.md">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Unsupervised pretraining</span>: Ryan Chesler / @emel_ryan</div>
+    <img src="/img/progress/202404/simmim.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1234969334535946303">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">New segments</span>: Sean Johnson / @Bruniss</div>
+    <img src="/img/progress/202404/20240228135119.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/SuperOptimizer/Hraun">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Volumetric processing tools</span>: Forrest McDonald / @VerditeLabs</div>
+    <img src="/img/progress/202404/hraun.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/giorgioangel/vesuvius-compare/">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Point cloud comparison</span>: Giorgio Angelotti / @Jordi</div>
+    <img src="/img/progress/202404/compare.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1235042673899995176/1235042673899995176">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Instance segmentation experiments</span>: James Darby, Ryan Reszetnik, Liamo Pennimpede, Lucas Nelson</div>
+    <img src="/img/progress/202404/instance.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1232307086952501313">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Meshing and chunking</span>: Santiago Pelufo / @spelufo</div>
+    <img src="/img/progress/202404/chunk.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/pipeline-visualize">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Pipeline Visualize</span>: Yao Hsiao / @Yao Hsiao</div>
+    <video autoPlay playsInline muted loop className="w-[100%]">
+      <source src="/img/progress/202404/visualize.webm" type="video/webm"/>
+    </video>
+  </a>
+</div>
 
 ### $42,500 Open Source (March, 2024)
 
-**Goal:** Increase the probability the 2024 Grand Prize gets awarded.<br/>
+**Goal:** Increase the probability we read 90% of four scrolls in 2024.<br/>
 **Announcement:** <a href="https://scrollprize.substack.com/p/42500-in-progress-prizes-awarded">Blog post</a>
 
 <div className="flex flex-row flex-wrap">
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/schillij95/ThaumatoAnakalyptor/pull/6">
-    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$20,000 </div><span className="font-bold">Rendering improvements</span>: Giorgio Angelotti / @Jordi</div>
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$20,000</div><span className="font-bold">Rendering improvements</span>: Giorgio Angelotti / @Jordi</div>
     <img src="/img/progress/os-mar24/timelapse.gif"/>
   </a>
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1193446455504011316">
