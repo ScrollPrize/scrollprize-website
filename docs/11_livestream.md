@@ -40,34 +40,38 @@ Be sure to check [Discord](https://discord.gg/V4fJhvtaQn), [Substack](https://sc
 
 ## Previous livestreams
 
-### 2023 Grand Prize 1st place presentation
+### May 14, 2024 - X Spaces Q&A
+
+On [X](https://x.com/natfriedman/status/1790379272873623743) and [our recording](https://dl.ash2txt.org/other/vesuvius-challenge-spaces-2024-05-14.mp3).
+
+### Apr 29, 2024 - 2023 Grand Prize 1st place presentation
 
 <iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/F5ak1pRaqVo?si=njl57GBT0wFUeTV2"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-### 2023 Grand Prize Celebration talks
+### Mar 15, 2024 - 2023 Grand Prize Celebration talks
 
 <iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/uPefxeXfssA?si=d6IB7KLvskAxFGMc"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-### X Spaces AMA
+### Oct 15, 2023 - X Spaces AMA
 
 On [X](https://twitter.com/i/spaces/1eaJbgEkEnrxX?s=20) and [our recording](https://dl.ash2txt.org/other/vesuvius-challenge-spaces-2023-10-15.m4a).
 
-### First Letters Prize announcement
+### Oct 12, 2023 - First Letters Prize announcement
 
 <iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/w0EsoAbRk1M"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 More videos from the symposium can be found [here](https://www.herculaneum.ox.ac.uk/node/262).
 
-### Papyrology team Q&A
+### May 25, 2023 - Papyrology team Q&A
 
 <iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/gielO5WHdu4"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-### Vesuvius Challenge team Q&A
-
-<iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/Cr8xIqFnBdw"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-
-### Announcing first open source prize winners
+### Apr 14, 2023 - Announcing first open source prize winners
 
 <iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/_LBI0DtTl80"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 With accompanying [newsletter](https://scrollprize.substack.com/p/first-prizes-awarded-open-source).
+
+### Mar 23, 2023 - Vesuvius Challenge team Q&A
+
+<iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/Cr8xIqFnBdw"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
