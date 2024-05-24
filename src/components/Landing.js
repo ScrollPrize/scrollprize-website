@@ -737,6 +737,11 @@ const team = {
       href: "https://danielhavir.com/",
     },
     {
+      name: "Giorgio Angelotti",
+      title: "Machine Learning Advisor",
+      href: "https://www.linkedin.com/in/giorgio-angelotti/",
+    },
+    {
       name: "Ian Janicki",
       title: "Design Advisor",
       href: "https://ianjanicki.com/",
