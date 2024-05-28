@@ -707,6 +707,16 @@ const team = {
       href: "https://www2.cs.uky.edu/dri/stephen-parsons/",
     },
     {
+      name: "Julian Schilliger",
+      title: "Software Engineer",
+      href: "https://www.linkedin.com/in/julian-schilliger-963b21294/",
+    },
+    {
+      name: "Giorgio Angelotti",
+      title: "Machine Learning Consultant",
+      href: "https://www.linkedin.com/in/giorgio-angelotti/",
+    },
+    {
       name: "Ben Kyles",
       title: "Segmentation Team Lead",
       href: "https://twitter.com/ben_kyles",
@@ -720,11 +730,6 @@ const team = {
       name: "Konrad Rosenberg",
       title: "Segmentation Team Member",
       href: "https://twitter.com/germanicgems",
-    },
-    {
-      name: "Julian Schilliger",
-      title: "Software Engineer",
-      href: "https://www.linkedin.com/in/julian-schilliger-963b21294/",
     },
     {
       name: "JP Posma",
