@@ -707,6 +707,16 @@ const team = {
       href: "https://www2.cs.uky.edu/dri/stephen-parsons/",
     },
     {
+      name: "Julian Schilliger",
+      title: "Software Engineer",
+      href: "https://www.linkedin.com/in/julian-schilliger-963b21294/",
+    },
+    {
+      name: "Giorgio Angelotti",
+      title: "Machine Learning Consultant",
+      href: "https://www.linkedin.com/in/giorgio-angelotti/",
+    },
+    {
       name: "Ben Kyles",
       title: "Segmentation Team Lead",
       href: "https://twitter.com/ben_kyles",
@@ -722,11 +732,6 @@ const team = {
       href: "https://twitter.com/germanicgems",
     },
     {
-      name: "Julian Schilliger",
-      title: "Software Engineer",
-      href: "https://www.linkedin.com/in/julian-schilliger-963b21294/",
-    },
-    {
       name: "JP Posma",
       title: "Technical Advisor, former Project Lead",
       href: "https://janpaulposma.nl/",
@@ -735,11 +740,6 @@ const team = {
       name: "Daniel Havíř",
       title: "Machine Learning Advisor",
       href: "https://danielhavir.com/",
-    },
-    {
-      name: "Giorgio Angelotti",
-      title: "Machine Learning Advisor",
-      href: "https://www.linkedin.com/in/giorgio-angelotti/",
     },
     {
       name: "Ian Janicki",
