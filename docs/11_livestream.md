@@ -40,6 +40,10 @@ Be sure to check [Discord](https://discord.gg/V4fJhvtaQn), [Substack](https://sc
 
 ## Previous livestreams
 
+### May 22, 2024 - Office Hours
+
+<iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/odXGROKDdXg?si=unt9yoSRVL3FrEzM"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
 ### May 14, 2024 - X Spaces Q&A
 
 On [X](https://x.com/natfriedman/status/1790379272873623743) and [our recording](https://dl.ash2txt.org/other/vesuvius-challenge-spaces-2024-05-14.mp3).
