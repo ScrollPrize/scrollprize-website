@@ -42,7 +42,11 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <TutorialsTop highlightId={3} />
+
+:::tip
 Please see the accompanying video tutorial for segmentation using Volume Cartographer here: https://www.youtube.com/watch?v=gdQmepxWhuY
+:::
+
 
 As we saw in the ["Scanning" tutorial](/tutorial2), it’s quite hard to extract useful information out of a “word soup”, even when the ink is quite clear. For this tutorial we’ll show how to use virtual unwrapping to produce a flattened image which shows the content clearly.
 
