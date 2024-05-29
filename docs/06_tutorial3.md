@@ -42,8 +42,9 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <TutorialsTop highlightId={3} />
+Please see the accompanying video tutorial for segmentation using Volume Cartographer here: https://www.youtube.com/watch?v=gdQmepxWhuY
 
-As we saw in the ["Scanning" tutorial](/tutorial2), it’s quite hard to extract useful information out of a “word soup”, even when the ink is quite clear. For this tutorial we’ll continue with the [campfire scroll](/data) and show how to use virtual unwrapping to produce a flattened image which shows the content clearly.
+As we saw in the ["Scanning" tutorial](/tutorial2), it’s quite hard to extract useful information out of a “word soup”, even when the ink is quite clear. For this tutorial we’ll show how to use virtual unwrapping to produce a flattened image which shows the content clearly.
 
 Two key steps to virtually unwrapping a scroll or manuscript are _segmenting_ a surface from inside the 3D volume and _flattening_ that surface to 2D. The video below shows the idea quite well; or check out the <a href="https://youtu.be/VG8oOMHCg74?t=37">full version</a> (It was made by Dr. Seales’s son and daughter!). The red line during the reconstruction phase represents the surface that we want to virtually unwrap.
 
@@ -55,15 +56,59 @@ Two key steps to virtually unwrapping a scroll or manuscript are _segmenting_ a 
   <figcaption className="mt-0">The basic principle of “virtual unwrapping” <a href="https://youtu.be/VG8oOMHCg74?t=38">(source)</a></figcaption>
 </figure>
 
-To perform segmentation and flattening, we'll use [Volume Cartographer](https://github.com/educelab/volume-cartographer), a virtual unwrapping toolkit built by [EduceLab](https://www2.cs.uky.edu/dri)’s Seth Parker. Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer includes many tools and utilities. In this tutorial we’ll be looking at the main `VC` GUI as well as the `vc_render` tool.
+To perform segmentation, you have two choices of software: Khartes, and Volume Cartographer. Both of these choices have different strengths and weaknesses, but either can accomplish the task of accurate segmentation. Khartes relies on Volume Cartographer to perform the flattening portion of this guide. Thanks to @hari_seldon and @djosey of the segmentation team for their feedback and help with making this guide!
 
-:::tip
+<Tabs>
+  <TabItem value="Volume Cartogropher" label="Volume Cartogropher" default>
+    .
 
-We’re using the original version of Volume Cartographer in this tutorial. For the latest version, see the [Community Projects](community_projects#volume-cartographer) page or ask in Discord.
+    
+    Strengths:
 
-:::
+      - Faster at creating larger segments
+      - tool-assisted annotation, requiring less clicking
+      - Entire pipeline in one application
+      - No shape limitation (lines can turn in on themselves, can be fully circular)
 
-First, let's install it:
+    Weaknesses: 
+
+      - Can only segment on the Z plane, which is a challenge in some areas
+      - No preview during segmentation
+      - Relatively high hardware requirements
+    
+   
+
+  </TabItem>
+  <TabItem value="Khartes" label="Khartes" default>
+      .
+
+    Strengths:
+
+      - View z, x, and y planes and segment on any of them
+      - Interactive full scroll movement through ome-zarr
+      - Minimal hardware requirements
+      - Live view of segmentation results, enabling very high accuracy
+
+    Weaknesses:
+
+      - Is limited to creating segments that do not contain lines that turn back towards their origin, in essence limiting you to half circles at most. This can be severely limiting in some regions that have severe warping, and its hard to tell when you begin if a sheet will do this eventually.
+      - Requires much more manual clicking than VC
+      - Requires VC in some parts of the rendering / flattening pipeline
+  </TabItem>
+
+</Tabs>
+
+Khartes is written by @khartes_chuck and has extensive documentation on github located [here](https://github.com/KhartesViewer/khartes).
+
+This guide will focus on Volume Cartographer, a virtual unwrapping toolkit built by EduceLab’s Seth Parker. Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer includes many tools and utilities. In this tutorial we’ll be looking at the main VC GUI as well as the vc_render tool.
+
+The segmentation team uses a custom version of Volume Cartographer, initially forked by @RICHI and further enhanced by @spacegaier. These versions include significant improvements, such as Optical Flow Segmentation (OFS), substantial performance increases, ui improvements, and many other changes. The latest fork, maintained by @spacegaier, is available here: https://github.com/spacegaier/volume-cartographer
+
+This guide uses this same version of VC. If you use a different version this guide will vary significantly from your experience, so it is highly recommended to use this version.
+
+### Installing Volume Cartographer
+
+To begin, let's install Volume Cartographer:
 
 :::info OS-specific instructions
 
@@ -74,12 +119,11 @@ First, let's install it:
 2. Run *“XLaunch”* from the Start Menu, or from *“C:\Program Files\VcXsrv\xlaunch.exe”*.
 3. Use the default settings, except: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-1.webp"/>
 4. Check that the X Server is running in the tray: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-2.webp"/>
-5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/), then restart your computer.
-6. Put the extracted `campfire` directory in `C:\` (or update the path in the Docker command below).
-7. Then run:
+5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/).
+6. Pull the latest Docker image by running:
 
-```bash
-docker run -it -v C:\campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/educelab/volume-cartographer
+```bash 
+docker pull ghcr.io/spacegaier/volume-cartographer:edge 
 ```
 
   </TabItem>
@@ -103,18 +147,14 @@ Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab
 4. Go to the *“Security”* tab and ensure *“Allow connections from network clients”* is checked.
 5. Quit XQuartz and restart it.
 6. Install [Docker Desktop](https://docs.docker.com/desktop/install/mac-install/).
-7. Put the extracted `campfire` directory in your home dir (or update the path in the Docker command below).
+7. Pull the latest Docker image by running:
+```bash 
+docker pull ghcr.io/spacegaier/volume-cartographer:edge 
+```
 8. Then run:
 
 ```bash
-# Allow network connections to XQuartz:
 xhost +localhost
-
-# M1 chips:
-docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" --platform linux/arm64 ghcr.io/educelab/volume-cartographer
-
-# Intel chips:
-docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" ghcr.io/educelab/volume-cartographer
 ```
 
 
@@ -123,13 +163,14 @@ docker run -it -v ~/campfire:/campfire --env="DISPLAY=host.docker.internal:0" gh
 
 * We assume that you’re running the X Window System (if you’re unsure, you probably do).
 * First, install [Docker](https://docs.docker.com/engine/install/). Do *not* use Snap to install it.
-* Put the extracted `campfire` directory in your home dir (or update the path in the Docker command below).
+* Pull the latest Docker image by running:
+```bash 
+docker pull ghcr.io/spacegaier/volume-cartographer:edge 
+```
 * Then run:
 
 ```bash
 xhost +local:docker
-
-docker run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/campfire:/campfire ghcr.io/educelab/volume-cartographer
 ```
 
 
@@ -165,38 +206,159 @@ make install
 
 :::
 
-### Creating a `.volpkg`
 
-Volume Cartographer works on `.volpkg` directories, which is a custom format just for Volume Cartographer. Let’s create one using the `vc_packager` tool, by feeding it the tomographically reconstructed volume (represented as a .tif stack) of the [campfire scroll](/data):
+
+
+### Gathering data
+
+Now let's gather our scroll data and setup our folders...
+
+We're going to start with scroll 1 as this is the scroll that the Grand Prize segments were from, and is also the easiest of the current scrolls to segment. VC requires all of the folders listed under the scroll1.volpkg, in addition to the config.json and meta.json files.
+
+If you wish to use a smaller portion of scroll 1 to begin, rather than the entire scroll, you can download any continuous section of .tif files in the volume (for example: 10000.tif to 10750.tif) and place them in the `/volumes/<volumename>` directory. As long as you have the config.json file at the root of the volpkg and the meta.json file in the volume VC can work with it.
+
+
+This is the recommended structure for the full_scrolls folder (with a full example given for scroll1):
+
+```
+.
+└── full_scrolls/
+    ├── scroll1.volpkg/
+    │   ├── volumes/
+    │   │   └── 20230205180739/
+    │   │       ├── 00000.tif
+    │   │       ├── .
+    │   │       ├── .
+    │   │       ├── 14375.tif
+    │   │       └── meta.json
+    │   ├── paths
+    │   ├── renders
+    │   ├── working
+    │   └── config.json
+    ├── scroll2.volpkg
+    ├── pherc0332.volpkg
+    └── pherc1667.volpkg
+```
+
+And this is the recommended structure for your new_segments folder:
+```
+.
+└── new_segments/
+    ├── scroll1
+    ├── scroll2
+    ├── pherc0332
+    ├── pherc1667
+    └── run_vc.sh
+```
+### Running the Volume Cartopgrapher GUI
+
+
+We will use the main `VC` GUI app to perform segmentation: finding a surface of papyrus and exporting it as a 3D mesh.
+
+:::tip
+This guide was written using linux. Most of the commands are similar, but you may need to remove 'sudo' from the front of the commands depending on your operating system.
+
+The -v switch used below is mapping a local path (or volume) to the Docker container. To check if your paths have been created properly you can run the Docker container and initiate a list command by typing:
 
 ```bash
-vc_packager -v campfire.volpkg -m 1000 -n campfire -u 26.3 -s ~/campfire/rec/ # Or /campfire/rec when using Docker
+docker run -v \path\to\full_scrolls\:/full_scrolls ghcr.io/spacegaier/volume-cartographer:edge ls
 ```
 
-The material-thickness flag `-m` is an estimate of the papyrus thickness in microns and is used to help Volume Cartographer's tools automatically decide on good default parameters. Give a descriptive name with the flag `-n` and set the voxel size to 26.3 um with the flag `-u`. The defaults can always be overridden later, so even though they are required, don't worry too much about these values.
+If you see your scroll folders, you’ve probably mapped this correctly.
+:::
 
-The output will look like this:
+Open a terminal and run (replacing the paths with your folder paths to the same folders): 
 
-```text
-Reading the slice directory...
-Slice images found: 477
-Analyzing slices [■■■■■■■■■■■■■■■■■■■■■■] 100% [00m:00s<00m:00s] 477/477
-Saving to volpkg [■■■■■■■■■■■■■■■■■■■■■■] 100% [00m:02s<00m:00s] 477/477
+```bash
+sudo docker run -v /path/to/new_segments/:/new_segments -v /path/to/full_scrolls/:/full_scrolls -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix ghcr.io/spacegaier/volume-cartographer:edge VC
 ```
+Let's take a moment to get oriented before continuing: 
 
-<div>You now have a <code>campfire.volpkg</code> with 4 items in it:</div>
+1. In the top left are the current segmentations, or paths, in the current volume package (from here referred to as a volpkg) along with the file, edit, help and view buttons.
+2. In the bottom left are the current segmentation runs and anchor information for the currently selected segment id.
+3. On the right are your OFS Segmentation settings. 
+4. Located at the bottom is some navigation information. The primary number useful to you here will be the current slice number.
 
-* `/config.json`: Contains some metadata.
-* `/paths`: Currently empty: this is where raw mesh points will be stored, which we’ll be doing soon.
-* `/renders`: Also empty: this is where any rendering data will be stored.
-* `/volumes`: Contains a single directory with the processed `.tif` image stack.
-  * `/volumes/<id>/meta.json`: Contains metadata about the processed image stack.
+<figure>
+<img src="/img/tutorials/vc-open.png" className="rounded-xl"/>
+</figure>
 
-Note that all these directories must be present for Volume Cartographer to work, even if they are empty. This is useful to know if you check these directories into git, since git by default does not keep empty directories. In such cases, it's a good idea to put a `.gitkeep` file in any empty directories (per [convention](https://www.freecodecamp.org/news/what-is-gitkeep/)).
+### Navigating a volpkg
 
-### Creating a new segment
+Now that we’ve oriented ourselves with the UI, let's open our volpkg...
 
-We will use the main `VC` GUI app to perform segmentation of the campfire scroll: finding a surface of papyrus and exporting it as a 3D mesh.
+1. Open a volpkg by clicking file, then open volpkg, and select the volpkg for the volume you wish to segment on, ensuring you select the .volpkg folder, and not one of the subfolders. Click choose, and the volume will open at slice 0.
+2. Practice scrolling through the volume, using shift+scroll wheel to move up and down through slice layers, and ctrl+scroll wheel to zoom in and out. You can right click and drag to pan around the slice.   Move through the layers until you find an area of the sheet that looks “easy” to segment. An ideal area has spacing on the inside face towards the center of the scroll, and maintains this spacing as you scroll through the layers for a time. You can increase the amount of slices you move through with the scroll wheel by pressing Q and E. The small number that shows up next to your cursor is the number of slices skipped each “click” of the scroll wheel.
+3. Look now to the top left in the segments window; my VC shows some segmentations in the segmentation window, but yours at this point will be blank.
+
+<figure>
+  <img src="/img/tutorials/open-volpkg.png" className="rounded-xl"/>
+</figure>
+
+### Creating a segment
+
+We will now create our first segment.
+
+Click "New" in the Volume Package segmentation window on the top left to create a new segment path. Ensure "Display" and "Compute" are both checked.
+
+Click “Pen Tool”, and place points along the sheet by left clicking, placing as many points as necessary to keep the line on the surface of the sheet. Note that you cannot undo or delete points here. This part does not need to be particularly accurate, as you’ll be able to fix it in the next step much easier. When you are happy with the length of the line, click pen tool once again to exit the pen tool.
+
+You’ll notice now that the purple line becomes a series of points. This is your “segmentation line”. It is from this line that VC will create your final flattened surface volume. Ideally, you want this to be on the inside face of the sheet, as this is where we expect to find ink.
+
+
+
+<figure>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/new-pen.png">
+    <source src="/img/tutorials/new_pen_tool.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">Placing our first segmentation line with the pen tool.</figcaption>
+</figure>
+
+Now, click “Segmentation Tool” (You can also enter the segmentation tool by pressing 'T'). Let’s configure our Segmentation settings in the right box to match the ones in this image. The primary parameter you could modify here and see if you have any improvement is 'smoothen curve at bright points'.
+
+<figure>
+  <img src="/img/tutorials/ofs_settings.png" className="rounded-xl"/>
+</figure>
+
+If at this point your segmentation line is off the sheet, you can manipulate it in a few ways. The primary method for manipulating this line is to “snap” it to a point, by clicking. VC will take the X nearest points to the cursor (where X is the input range setting located in the bottom right, also in/decreased by hitting A and D respectively) and snap them to the cursor. You can also click and drag the line itself. Play around with this for a bit before continuing. In addition to just panning along the line with right click, you can press R+Scroll Wheel to follow the segmentation line automatically. This is also mapped to the front and back side mouse buttons, if you have them.
+
+Once you are happy with the location of the line, ensure your slice and anchor settings are correct. If you’re going “up” in the volume, you want forward slice and backward anchor, and conversely if you're going “down” in the volume, you want a forward anchor and “backward slice”. The number in the forward or backward slice is the number the segmentation run will finish at. It is recommended to start low here, between 30 and 50, and depending on how far the line diverges from the sheet, you can increase from there. In areas of particularly damaged papyrus values as low as 10 can be required.
+
+Click “Start” to begin the segmentation run.
+
+<figure>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/new-pen.png">
+    <source src="/img/tutorials/new_seg_run.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">"Snapping" our segmentation line back onto the surface of the sheet.</figcaption>
+</figure>
+
+After a short period of time VC will drop you off at the slice indicated by your previous forward or backward slice setting. Your line of points will now be colored red, and may have wandered slightly from the sheet. VC has attempted to “follow” the sheet from your annotation (or anchor) line to the slice indicated in your forward slice setting. From here, click “segmentation tool” again, and then manipulate the line back onto the sheet. You’ll notice lines you have modified turn yellow, where ones you have not remain red. Pan through the layers a bit if you are having a hard time following the sheet, as it's easier to follow “in motion”. Press space to hide the line if it helps you see. 
+
+:::tip
+You can press T at any time within the segmentation tool to return to the slice you began the segmentation on
+:::
+
+<figure>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/new-pen.png">
+    <source src="/img/tutorials/second_seg_run.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">"Snapping" our segmentation line back onto the surface of the sheet.</figcaption>
+</figure>
+
+After you’ve guided the line along the sheet, hit “Start” again, and repeat the process. This is the general workflow for segments of any size, from the GP winners at over 100cm^2 to the smallest segments. Conceptually, it works something like this:
+
+<figure>
+  <video playsInline muted controls className="max-w-[100%] rounded-xl" poster="/img/tutorials/vc-extrapolation2.jpg">
+    <source src="/img/tutorials/vc-extrapolation2.webm" type="video/webm"/>
+    <source src="/img/tutorials/vc-extrapolation2.mp4" type="video/mp4"/>
+  </video>
+</figure>
+
+
+Be sure to save it using *“File > Save volpkg”*. You can keep segmenting for a bit here to get the hang of VC, but keep the size managable for your first few segments until you get more familiar. 
+
+The process completed during this step looks like this in 3D. We've identified the sheet surface, but still would have a hard time finding ink on a single voxel sheet that is still wrapped in the scroll. In the video below, the sheet is on the visible outside, but most of our segments are completely surrounded by additional sheets.
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/segmentation2.jpg">
@@ -206,154 +368,100 @@ We will use the main `VC` GUI app to perform segmentation of the campfire scroll
   <figcaption className="mt-0">Segmentation: finding a surface of papyrus.</figcaption>
 </figure>
 
-Run `VC` on the command line to open the GUI app (or `open /Applications/VC.app` on macOS with Homebrew).
+### Flattening and texturing
 
-Now open the `campfire.volpkg` directory using *“File > Open volpkg”*. You should see something like this:
+Ok, we've got a line...Now what?
 
-<figure>
-<img src="/img/tutorials/vc-initial.png" className="rounded-xl"/>
-</figure>
+In order to see the content on the surface of our segment, we need to flatten and texture the segment. These steps can be run individually, but it’s highly suggested to use the following process so that you end up with the same format and files as the official segmentations.
 
-Play around a bit with this interface! You can zoom using the buttons, and go to the previous/next “slice” (traversing the z-axis).
+Let's create a bash script to combine a number of different VC apps into one single command:
 
-<div>Now let’s create our first segment (raw mesh):</div>
+1. Open a basic text editor (ex: Notepad)
+2. Copy this code block into the editor
 
-* Zoom in on the top left, until you can’t zoom any further.
-* Click *“New”* on in the menu on the right. This creates a new segment with a unique ID (the current timestamp). You'll need this ID later!
-* Click *“Pen Tool”* at the top.
-* Mark points along the top-left strand of papyrus, as shown in the video below.
-* Click *“Pen Tool”* again to finish.
+```BASH
+#!/bin/bash
 
-<figure>
-  <video playsInline muted controls className="max-w-[100%] rounded-xl" poster="/img/tutorials/vc-pen-tool4.jpg">
-    <source src="/img/tutorials/vc-pen-tool4.webm" type="video/webm"/>
-    <source src="/img/tutorials/vc-pen-tool4.mp4" type="video/mp4"/>
-  </video>
-</figure>
+# Set environment variables
+export SEGMENT=20240227040603 #change to the segment number you've created
+export SCROLL=scroll1 #change to whatever scroll you are currently working in
 
-Note that your colors might be different, depending on your version of Volume Cartographer. You can customize the colors using the color picker at the bottom. We will use bright red dots for visibility.
 
-You have now created the beginning of a mesh: a two-dimensional line on <code>z=0</code>. This line is really only set for <code>z=0</code>, which you can check by clicking *“Next Slice”* and seeing the line disappear. Let’s go back to 0 by clicking *“Previous Slice”*.
+# Navigate to the segment folder, create a directory named after $SEGMENT
+cd ${SCROLL}
+mkdir -p "${SEGMENT}"
+cd "${SEGMENT}"
 
-<div>We can now automatically create more such lines for all <code>z</code> values from 0 to, say, 100:</div>
+# Copy necessary files from the scroll folder to the current directory
+cp "/full_scrolls/${SCROLL}.volpkg/paths/${SEGMENT}/pointset.vcps" .
+cp "/full_scrolls/${SCROLL}.volpkg/paths/${SEGMENT}/meta.json" .
+cp "/full_scrolls/${SCROLL}.volpkg/paths/${SEGMENT}/pointset.vcano" .
 
-* Be sure you’re back at layer 0.
-* Click *“Segmentation Tool”*.
-* Set *“Maxima Window Width”* to *“10”*.
-* Set *“Ending Slice”* to *“100”*.
-* Click *“Start”*.
+# Convert and render pointset, then generate layers and calculate area
+nice vc_convert_pointset -i pointset.vcps -o "${SEGMENT}_points.obj"
+nice vc_render -v "/full_scrolls/${SCROLL}.volpkg/" -s "${SEGMENT}" -o "${SEGMENT}.obj" --output-ppm "${SEGMENT}.ppm" --intermediate-mesh "${SEGMENT}_intermediate_mesh.obj" --save-graph 0 --orient-normals
 
-This runs an automatic segmentation algorithm which attempts to follow the tracked layer across slices, moving “up” the z-axis. Conceptually, it works something like this:
+mkdir -p layers
+nice vc_layers_from_ppm -v "/full_scrolls/${SCROLL}.volpkg" -p "${SEGMENT}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G
 
-<figure>
-  <video playsInline muted controls className="max-w-[100%] rounded-xl" poster="/img/tutorials/vc-extrapolation2.jpg">
-    <source src="/img/tutorials/vc-extrapolation2.webm" type="video/webm"/>
-    <source src="/img/tutorials/vc-extrapolation2.mp4" type="video/mp4"/>
-  </video>
-</figure>
+vc_area "/full_scrolls/${SCROLL}.volpkg" ${SEGMENT} | grep cm | awk '{print $2}' | tee area_cm2.txt
 
-Now click *“Next Slice”* a bunch of times (or hold Shift while clicking to advance by 10 slices) to see how well the algorithm aligned your segment with the papyrus, as shown below.
-
-<figure>
-  <video playsInline muted controls className="max-w-[100%] rounded-xl" poster="/img/tutorials/vc-segmentation3.jpg">
-    <source src="/img/tutorials/vc-segmentation3.webm" type="video/webm"/>
-    <source src="/img/tutorials/vc-segmentation3.mp4" type="video/mp4"/>
-  </video>
-</figure>
-
-If you notice a discrepancy where the points of your segment are no longer aligned with the layer, you can edit the points in *“Segmentation Tool”* and relaunch the segmentation algorithm from that point going forward.
-
-<div>Let’s practice editing the line to match more closely with the papyrus:</div>
-
-* Click *“Segmentation Tool”*.
-* Carefully click and drag on the points you want to move, as shown in the video below.
-* By default, a neighborhood of points is moved when you click and drag. To adjust the size of the neighborhood, adjust the *“Impact Range”* slider in the bottom right.
-* Set *“Ending Slice”* to *“100”*.
-* Click *“Start”*.
-
-<figure>
-  <video playsInline muted controls className="max-w-[100%] rounded-xl" poster="/img/tutorials/vc-editing3.jpg">
-    <source src="/img/tutorials/vc-editing3.webm" type="video/webm"/>
-    <source src="/img/tutorials/vc-editing3.mp4" type="video/mp4"/>
-  </video>
-</figure>
-
-You created your first segment! Be sure to save it using *“File > Save volpkg”*. The point cloud for this segment is stored in `campfire.volpkg/paths/<your-segment-id>/pointset.vcps`. If you want to view the point cloud in MeshLab, you can convert it to an OBJ file using `vc_convert_pointset`:
-
-```bash
-vc_convert_pointset -i campfire.volpkg/paths/<your-segment-id>/pointset.vcps -o points.obj
+# Set author name
+echo '<yournamehere>' > author.txt
 ```
 
-### Rendering the segment
+3. Modify the environment variables at the top of the script, the ones that begin with `export`, and the author at the bottom. You'll want these values to reflect the scroll you're working in, the name of your segment, and who you'd like to list as the author. 
 
-In order to see the content on the surface of our segment, we need to flatten and texture the segment using the `vc_render` tool. While the output from `vc_render` is considered a "final result" that can be placed anywhere, our convention is to place all results in a `working` directory within the `.volpkg` so that all data is kept together:
+4. Name the script `run_vc.sh` and save it to the 'new_segments' directory
 
-```bash
-mkdir campfire.volpkg/working
-cd campfire.volpkg/working
-```
-
-Now run `vc_render` with the following arguments, substituting `<your-segment-id>`:
+Once we have our script created and have the right values for the environment variables, we can now execute the flattening pipeline. Open a new terminal (not the one you have the GUI running in), and enter 
 
 ```bash
-# From within campfire.volpkg/working
-vc_render -v ../ -s <your-segment-id> -o out.obj --output-ppm out.ppm
+sudo docker run -it -v /path/to/new_segments/:/new_segments -v /path/to/full_scrolls/:/full_scrolls -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix ghcr.io/spacegaier/volume-cartographer:edge VC
 ```
+The terminal for the container should open. Enter the following lines:
 
-If you don't remember your segment's ID, you can use `vc_volpkg_explorer` to list all segment IDs, or type `../paths/2023`, hit Tab to autocomplete, and then remove the `../paths/` prefix (e.g. `-s $(basename ../path/20230315130225)`).
-
-Note that sometimes `vc_render` can throw an error or a segmentation fault. When this happens, the first thing to try is to rerun the program, because [there is a non-deterministic bug in `vc_render`](https://github.com/educelab/volume-cartographer/issues/3).
-
-Behind the scenes, `vc_render` will flatten the 3D surface, attempt to detect the object's ink inside the volume data, and output the result as a virtually unwrapped image. You should get 4 files in the `working` directory: .mtl, .obj, .tif, and our explicitly specified `out.ppm`.
-
-* `out.obj` is a “3D mesh object” file, which we can render in [MeshLab](https://www.meshlab.net/), just like in [“Tutorial 2: Scanning”](tutorial2).
-* `out.mtl` is a “material file”, which tells MeshLab and other 3D viewers how to display the OBJ mesh.
-* `out.tif` is a "texture image" for the mesh. In this case, it is the flattened, virtually unwrapped result for our segment!
-* `out.ppm` is a "per-pixel map" which lets us map from 2D to 3D more easily. We'll use it more in a bit.
-
-Let’s look at the unwrapped .tif first, which should look something like this:
+```bash
+cd /new_segments/
+/bin/bash/run_vc.sh
+```
+This command will render your points into a mesh, and then create the surface volume layers from it. This can take a long time depending on the size of your segment, but thankfully you will get some progress information on the console 
 
 <figure>
-  <img src="/img/tutorials/vc-segment.png"/>
+  <img src="/img/tutorials/console-output.png"/>
 </figure>
 
-If you look back to the last page of the campfire scroll (before carbonization), can you see which area of the scroll this segment came from?
+**Congratulations! You've completed your first segment!**
 
-<figure className="max-w-[250px]">
-  <img src="/img/tutorials/campfire-last-page.jpg"/>
-</figure>
+In the new_segments directory you set when you launched VC, you will now have a folder with the name of your new segment, and within that folder a folder called /layers/, and a number of different files, the most important of which are detailed below. Much of this information was gathered from @Seth P. and @khartes_chuck on the discord:
 
-Now open the .obj file in MeshLab to view the 3D structure of the mesh:
 
-<figure>
-  <video playsInline muted controls className="max-w-[100%] rounded-xl" poster="/img/tutorials/meshlab-segment4.jpg">
-    <source src="/img/tutorials/meshlab-segment4.webm" type="video/webm"/>
-    <source src="/img/tutorials/meshlab-segment4.mp4" type="video/mp4"/>
-  </video>
-</figure>
+* /layers/ contains files numbered 00.tif to 64.tif (or 000.tif to 156.tif for 3.24um scans). These are slices of the surface volume, each of a thickness equal to the voxel size of the scroll you are currently segmenting, typically what we call “low res” are the 7.91um voxel spacing, and “high res” would be 3.24um voxel spacing. For a 7.91um volume, this means that each surface volume is 64 tifs * 7.91um, for about 506um thickness, or .506mm
 
-The mesh uses the .tif file as a texture, so you can actually see the 3D placement of the metallic ink.
+* `<segmentationnumber>.obj` this is a 3D image format that stores information about the geometry of a 3D model, such as vertex positions, texture maps, normals, and faces. This is a mesh created from the pointset created by your segmentation line and detailed further below
 
-If you additionally load the full mesh we created at the end of [“Tutorial 2”](tutorial2#meshes), you can more clearly see the location of this segment with respect to the rest of the scroll. For this to work, you might need to generate a full mesh again using Fiji (just like in ["Tutorial 2: Scanning"](tutorial2#meshes)), but this time using the image stack in the `campfire.volpkg/volumes` directory, since `vc_packager` might have done some transformations to the slices.
+* `<segmentationnumber>.tif` is a composite image of maximum intensity pixels from within the surface volume, it is also used for texturing in combination with the mtl file
 
-<figure>
-  <video autoPlay playsInline loop muted className="max-w-[100%] rounded-xl" poster="/img/tutorials/meshlab-full4.jpg">
-    <source src="/img/tutorials/meshlab-full4.webm" type="video/webm"/>
-    <source src="/img/tutorials/meshlab-full4.mp4" type="video/mp4"/>
-  </video>
-</figure>
+* `<segmentationnumber>.mtl` is a text file that contains information about the material, such as opacity, reflectivity, and points to the texture file (the tif in the previous line)
 
-### Ink visibility
+* `<segmentationnumber>.ppm` A simple way to think about this is to think of it as a super dense point cloud that for each voxel in the flattened volume contains a point representing the 3d location in the original volume that voxel came from, and some information about that point. A better explanation is that a .ppm is special case of an ordered pointset, where type = double and dim = 6. It is generated by flattening the segmented surface, discretizing the parameterization, and storing the corresponding 3D point and surface normal for each spot on the surface. Using slice notation, ppm[y, x, 0:3] stores the 3D point and ppm[y, x, 3:6] stores the surface normal. Because the surface does not fill the 2D array entirely, there is a *_mask.png file next to the PPM. It stores which pixels in the PPM have valid values. More info here: Volume Cartographer PPM file format (github.com)
 
-Depending on what surface you chose to segment, you might notice that some of the scroll's ink shows up quite clearly in the texture images but other inks do not. What gives?
+* `<segmentationnumber>_mask.png` as detailed in the ppm description, just denotes areas that do not contain information from the scroll data. 
 
-The answer to this question is that not all inks have the same radiodensity. Some inks, like iron gall, show up quite clearly in CT scans because they absorb more x-rays than the papyrus on which they sit. This creates _high contrast_ between the bright iron gall ink voxels and the less bright papyrus voxels. Carbon-based inks, on the other hand, have a very similar radiodensity to papyrus and thus have _low contrast_ when compared against the papyrus voxels. More often than not, the contrast is so low for carbon ink that it is impossible to differentiate the ink from the papyrus when looking at the volume data with the naked eye.
+* `<segmentnumber>.vcps` this is the pointset created by your segmentation line. A .vcps file stores lists or 2D arrays of N-dimensional, numerical vectors. It starts with a header as described, then the points are written in sequence, usually in binary and rarely in ASCII. The type field in the header tells you the fundamental C++ type stored.
 
-As we will discuss in ["Tutorial 5"](tutorial5), this does not mean that the ink is invisible or undetectable. In fact, we know these inks often _can_ be detected with machine learning, and that's what we're all here to do! Before we do that, though, let's look a little closer at how `vc_render` works and simplify our dataset down to only what's needed.
+* `<segmentationnumber>.vcano` contains information about which points were manually moved, and their original locations
 
-### Surface volumes
+* `Author.txt` contains the name of the person who created it
 
-When looking for ink in the volume, `vc_render` looks at more than just the voxels that directly intersect our segment mesh. It also looks a little bit “above“ and “below“ the mesh, at the neighborhood of voxels that surround our segment. Conceptually, this neighborhood looks something like this (though this video is exaggerated):
+* `Area_cm2.txt` is simply the size of the segment in cm^2
+
+
+### Outputs
+
+So, what did we just do?
+
+When looking for ink in the volume, we need to look at more than just the voxels that directly intersect the segment mesh we just created. We also need to look a little bit “above“ and “below“ the mesh, at the neighborhood of voxels that surround our segment. Conceptually, this neighborhood looks something like this (though this video is exaggerated):
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/surface-volume-extrusion3.jpg">
@@ -363,9 +471,9 @@ When looking for ink in the volume, `vc_render` looks at more than just the voxe
   <figcaption className="mt-0">Building a neighborhood of voxels around our segment. Everything inside the neighborhood is used for texturing.</figcaption>
 </figure>
 
-To generate a single .tif file, `vc_render` searches through this neighborhood, looking for ink, and places the results of that search in the flattened output image. When developing new ink detection methods (as we will be doing in this contest) we also need to have access to this neighborhood so that we can perform our own search for ink. However, we don't want to have to load the full scroll volume since we only need to use a small portion of it. Ideally, we would have a new volume, a “surface volume,” which contains only those voxels that are relevant to the ink detection task. Fortunately, Volume Cartographer gives us a way to do just that!
+To generate the composite .tif file, called `<segmentnumber>.tif`, `vc_render` searched through this neighborhood, gathering the voxel intensities, and placed the results of that search in the flattened output image. 
 
-The `out.ppm` file that we generated with `vc_render` contains a mapping between our flattened output image and the original 3D surface. With this file, we can transform the 3D neighborhood into a simplified surface volume. Conceptually, that process looks something like this:
+The ppm file that we generated contains a mapping between our flattened output image and the original 3D surface. With this file, we transformed the 3D neighborhood into a simplified surface volume. That process looks something like this:
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/surface-volume-flattening4.jpg">
@@ -375,92 +483,24 @@ The `out.ppm` file that we generated with `vc_render` contains a mapping between
   <figcaption className="mt-0">Flattening of the subvolume.</figcaption>
 </figure>
 
-To generate the surface volume, we need to run one more program:
-
-```bash
-# From within campfire.volpkg/working
-mkdir layers
-vc_layers_from_ppm -v ../ -p out.ppm --output-dir layers/
-```
-
-Now in the `layers` directory you’ll find another image stack! You can open this in Fiji again, which should then look something like this:
+The result of this process are the 65 tifs in the /layers/ directory. Each of these .tif images is a "slice" of the surface volume, with 32.tif ideally representing the middle, or the area directly on your segmentation line.
 
 <figure>
-  <video autoPlay playsInline loop muted className="max-w-[100%] rounded-xl mb-[-16px]" poster="/img/tutorials/vc-layers-scrub2.jpg">
-    <source src="/img/tutorials/vc-layers-scrub2.webm" type="video/webm"/>
-    <source src="/img/tutorials/vc-layers-scrub2.mp4" type="video/mp4"/>
+  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/surface-volume-image-stack2.jpg">
+    <source src="/img/tutorials/surface-volume-image-stack2.webm" type="video/webm"/>
+    <source src="/img/tutorials/surface-volume-image-stack2.mp4" type="video/mp4"/>
   </video>
+  <figcaption className="mt-0">The resulting “surface volume” is your .tif image stack in the /layers/ directory.</figcaption>
 </figure>
 
-We can look at this with the Volume Viewer plugin:
 
-<figure>
-  <video playsInline muted controls className="max-w-[100%] rounded-xl" poster="/img/tutorials/vc-layers-volume2.jpg">
-    <source src="/img/tutorials/vc-layers-volume2.webm" type="video/webm"/>
-    <source src="/img/tutorials/vc-layers-volume2.mp4" type="video/mp4"/>
-  </video>
-</figure>
+### Ink detection
 
-### Flattening and render options
+So, where's the ink?
 
-Our segment mesh is 3D, but our output .tif image is 2D, as are each of our images in the “surface volume” image stack. How does this mapping actually work?
+By now you'll notice that, contrary to the ink in some scrolls, the ink in our scrolls is not readily detectable in your images. 
 
-<figure>
-<img src="/img/tutorials/texture-mapping.png"/>
-</figure>
+The reason for this is that not all inks have the same radiodensity. Some inks, like iron gall, show up quite clearly in CT scans because they absorb more x-rays than the papyrus on which they sit. This creates _high contrast_ between the bright iron gall ink voxels and the less bright papyrus voxels. Carbon-based inks, on the other hand, have a very similar radiodensity to papyrus and thus have _low contrast_ when compared against the papyrus voxels. More often than not, the contrast is so low for carbon ink that it is very difficult to differentiate the ink from the papyrus when looking at the volume data with the naked eye.
 
-As mentioned in the first tutorial, this process is called “flattening”. Similar to creating a 2D map of the Earth, there are many methods you can use to convert the 3D mesh of our segment into a flat surface, and each of those methods preserve certain aspects of the 3D shape at the expense of others aspects. Volume Cartographer currently provides three flattening methods:
-- Least-squares conformal maps (LSCM): An angle-preserving method which tries to minimize the error between the mesh's 2D and 3D angles in a least-squares sense. Works well for surfaces with low curvature, but can often result in 2D triangles that are many times larger than they should be.
-- Angle-based Flattening (ABF): An angle-preserving method which additionally uses the error in a triangle's neighbors to reduce area distortion. Much less sensitive to high curvature than LSCM, and is the current default in `vc_render`.
-- [Orthographic projection](https://en.wikipedia.org/wiki/Orthographic_projection): A method that is similar to taking a photograph of the 3D mesh but without the effects of perspective. In particular, objects that are further from the camera *are not* smaller than objects that are closer to the camera. Not a good option for scrolls or surfaces that wrap on themselves, but can work well for surfaces that are already semi-flat (i.e. fragments, pages of books).
+Thankfully, as you'll learn in our next tutorial on [“Ink Detection”](tutorial4), even very difficult to detect ink can still be found...
 
-You can select between the different flattening methods using the `--uv-algorithm` flag in `vc_render`:
-```
-Flattening & UV Options:
-  --uv-algorithm arg (=0)     Select the flattening algorithm:
-                                0 = ABF
-                                1 = LSCM
-                                2 = Orthographic Projection
-```
-
-There lots of other options, too, which you can see by using `vc_render --help`. For example, you can select different texturing methods, instead of just picking the maximum pixel value. You can also run your own texturing methods on the “surface volume” image stack directly. In a sense, the separate [“Ink Detection”](tutorial5) machine learning step can be seen as a particularly fancy texturing method!
-
-Try experimenting with the different options and see what happens.
-
-The tools used in this tutorial have been updated throughout Vesuvius Challenge by EduceLab and our community, and the changes are sure to continue.
-
-A different approach for segmentation involves using `Thaumato Anakalyptor` by Julian Schilliger. A high level explanation of its way of segmenting is outlined in the next tutorial: [“Segmentation for Fishermen”](tutorial4).
-
-Check out [The Segmenter’s Guide to Volume Cartographer (for contractors)](https://docs.google.com/document/d/11B9Gy1gJRye_NQHphwbIxINvactUchJJsJOJi1FKrgI/edit?usp=sharing) and check in on Discord to catch up on the state of the art.
-
-<!--
-### Optional: En-Gedi
-
-For this optional part, first download the `EinGediFull-OffsetScan-2015.volpkg` dataset. Open the Volume Cartographer GUI, and open the `EinGediFull-OffsetScan-2015.volpkg` directory. This dataset already contains “segments”, which are essentially meshes. Explore the different segments by clicking around:
-
-<video controls autoPlay playsInline loop muted className="max-w-[100%]">
-  <source src="/img/tutorials/vc-overview.mp4" type="video/mp4"/>
-</video>
-
-Try rendering some of these fragments, or look at their “surface volume” image stacks. For example, this is `20170221131911`:
-
-<figure className="max-w-[400px]">
-
-![](/img/tutorials/20170221131911_render.png)
-
-</figure>
-
-Can you find where the different segments fit in the full picture of the scroll?
-
-<figure>
-
-<a href="https://archive.org/download/engedi-scroll/EnGedi-MasterView-scale-hires.png">
-
-![](/img/tutorials/EnGedi-MasterView-scale-hires.png)
-
-</a>
-
-<figcaption>The fully stitched together En-Gedi scroll <a href="https://archive.org/details/engedi-scroll/EnGedi-MasterView-scale-hires.png">(source)</a></figcaption>
-
-</figure>
--->
