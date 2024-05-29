@@ -116,7 +116,7 @@ To begin, let's install Volume Cartographer:
   <TabItem value="win" label="Windows">
 
 1. Install the [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv/) or a similar X Server (if you use the Chocolatey package manager: `choco install vcxsrv`).
-2. Run *“XLaunch” from the Start Menu, or from *“C:\Program Files\VcXsrv\xlaunch.exe”*.
+2. Run *“XLaunch”* from the Start Menu, or from *“C:\Program Files\VcXsrv\xlaunch.exe”*.
 3. Use the default settings, except: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-1.webp"/>
 4. Check that the X Server is running in the tray: <br/> <img className="max-w-[400px]" src="/img/tutorials/windows-x11-2.webp"/>
 5. Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/).
@@ -208,6 +208,7 @@ make install
 
 
 
+
 ### Gathering data
 
 Now let's gather our scroll data and setup our folders...
@@ -215,6 +216,7 @@ Now let's gather our scroll data and setup our folders...
 We're going to start with scroll 1 as this is the scroll that the Grand Prize segments were from, and is also the easiest of the current scrolls to segment. VC requires all of the folders listed under the scroll1.volpkg, in addition to the config.json and meta.json files.
 
 If you wish to use a smaller portion of scroll 1 to begin, rather than the entire scroll, you can download any continuous section of .tif files in the volume (for example: 10000.tif to 10750.tif) and place them in the `/volumes/<volumename>` directory. As long as you have the config.json file at the root of the volpkg and the meta.json file in the volume VC can work with it.
+
 
 This is the recommended structure for the full_scrolls folder (with a full example given for scroll1):
 
@@ -454,6 +456,7 @@ In the new_segments directory you set when you launched VC, you will now have a 
 
 * `Area_cm2.txt` is simply the size of the segment in cm^2
 
+
 ### Outputs
 
 So, what did we just do?
@@ -489,6 +492,7 @@ The result of this process are the 65 tifs in the /layers/ directory. Each of th
   </video>
   <figcaption className="mt-0">The resulting “surface volume” is your .tif image stack in the /layers/ directory.</figcaption>
 </figure>
+
 
 ### Ink detection
 

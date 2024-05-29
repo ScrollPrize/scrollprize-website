@@ -272,7 +272,7 @@ Since the input is a “surface volume” consisting of several “slices” of 
   </video>
 </figure>
 
-We go into great detail in [“Tutorial 4: Ink Detection”](tutorial4).
+We go into great detail in [“Tutorial 5: Ink Detection”](tutorial5).
 
 ### 6. Interpretation
 

@@ -46,7 +46,7 @@ Here are the scrolls in question:
   <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/></div>
 </div>
 <div className="flex w-[100%]">
-  <div className="w-[39.2%] mb-2 mr-2"><img src="/img/overview/PHerc0332.jpg" className="w-[100%]"/></div>
+  <div className="w-[39.2%] mb-2 mr-2"><img src="/img/overview/PHerc332.jpg" className="w-[100%]"/></div>
   <div className="w-[60.8%] mb-2"><img src="/img/overview/PHerc1667.jpg" className="w-[100%]"/></div>
 </div>
 

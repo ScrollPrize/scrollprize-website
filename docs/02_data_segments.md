@@ -73,14 +73,14 @@ The `.volpkg` format used by Volume Cartographer (learn more in [Tutorial 3](tut
 * `Scroll1.volpkg/paths/<id>/meta.json`: Metadata of a segment.
 * `Scroll1.volpkg/paths/<id>/pointset.vcps`: Pointset of a segment. This is a custom data format specific to Volume Cartographer. More information [here](https://www.kaggle.com/code/kglspl/simple-vcps-parser), and see the [Volume Cartographer resources list](community_projects#volume-cartographer).
 
-You can find segments from the made by the segmentation team (led by @Hari_Seldon on Discord) on the [data server](https://forms.gle/HV1J6dJbmCB2z5QL8): [`/full-scrolls/Scroll{1,2}.volpkg/paths`](http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/).
+You can find segments from the made by the segmentation team (led by @Hari_Seldon on Discord) on the [data server](https://forms.gle/HV1J6dJbmCB2z5QL8): [`/full-scrolls/Scroll{1,2}.volpkg/paths`](https://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/).
 <!-- 
 ## Weekly releases
 
 Every **Friday at noon PT** we release new segments from the segmentation team:
 
 * See the [Segment Directory](https://docs.google.com/spreadsheets/d/1zC_5vkqWgb_5z4Q9BYsETF7_3r1BYPccdAnS_GRYOaQ/edit#gid=0) to learn which new segments will be released.
-* New segments will be released on the [data server](https://forms.gle/HV1J6dJbmCB2z5QL8): [`/full-scrolls/Scroll{1,2}.volpkg/paths`](http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/).
+* New segments will be released on the [data server](https://forms.gle/HV1J6dJbmCB2z5QL8): [`/full-scrolls/Scroll{1,2}.volpkg/paths`](https://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/).
 * Sometimes the segmentation team will keep working on extending segments that have already been released. When those updated segments are released the following week, the superseded segments will be suffixed with `_superseded` on the data server.
   * The [Segmentation Directory](https://docs.google.com/spreadsheets/d/1zC_5vkqWgb_5z4Q9BYsETF7_3r1BYPccdAnS_GRYOaQ/edit#gid=2051117465) will contain notes on which segments are superseded by which other segments.
   * We typically use similar segment IDs for superseding segments with the final digit incremented. For example, a segment might have ID `123450` and get superseded by segment with ID `123451`.
@@ -103,7 +103,7 @@ The surface volume is the most useful dataset for ink detection. The middle laye
 
 <figure className="max-w-[600px]">
   <img src="/img/data/surface_volume.gif"/>
-  <figcaption className="mt-0">Scrubbing through layers of the surface volume of <a href="http://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/20230827161846/layers/">segment 20230827161846</a></figcaption>
+  <figcaption className="mt-0">Scrubbing through layers of the surface volume of <a href="https://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/20230827161846/layers/">segment 20230827161846</a></figcaption>
 </figure>
 
 All these extra files were generated using the following script: `export SEGMENT=20230827161846 && cd /Scroll1.volpkg/paths/${SEGMENT} && nice vc_convert_pointset -i pointset.vcps -o "${SEGMENT}_points.obj" && nice vc_render -v ../../ -s "${SEGMENT}" -o "${SEGMENT}.obj" --output-ppm "${SEGMENT}.ppm" && mkdir -p layers && nice vc_layers_from_ppm -v ../../ -p "${SEGMENT}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G && vc_area ../.. ${SEGMENT} | grep cm | awk '{print $2}' > area_cm2.txt`

@@ -368,7 +368,7 @@ const prizes = [
   },
   {
     title: "First Automated Segmentation Prize",
-    prizeMoney: "$50,000",
+    prizeMoney: "$100,000",
     description: "Reproduce the 2023 Grand Prize result but faster",
     requirement: "",
     href: "2024_prizes#first-automated-segmentation-prize",
@@ -443,7 +443,12 @@ const sponsors = [
     name: "Matt Mullenweg",
     amount: 150000,
     href: "https://ma.tt/",
-    image: "/img/landing/Matt_Mullenweg.jpg",
+    image: "/img/landing/Matt Mullenweg.jpg",
+  },
+  {
+    name: "Emergent Ventures",
+    amount: 100000,
+    href: "https://www.mercatus.org/emergent-ventures",
   },
   {
     name: "Matt Huang",
@@ -509,6 +514,12 @@ const sponsors = [
     image: "/img/landing/mystery.jpg",
   },
   {
+    name: "Anonymous",
+    amount: 50000,
+    href: "https://www.youtube.com/watch?v=JqrJ4wGid4Y",
+    image: "/img/landing/mystery.jpg",
+  },
+  {
     name: "Aaron Levie",
     amount: 25000,
     href: "https://twitter.com/levie",
@@ -531,6 +542,12 @@ const sponsors = [
     amount: 25000,
     href: "https://twitter.com/AnjneyMidha",
     image: "/img/landing/Anjney Midha.jpg",
+  },
+  {
+    name: "franciscosan.org",
+    amount: 25000,
+    href: "https://franciscosan.org/",
+    image: "/img/landing/franciscosan.jpg",
   },
   {
     name: "John O'Brien",
@@ -585,6 +602,12 @@ const sponsors = [
     amount: 10000,
     href: "https://twitter.com/ivanhzhao",
     image: "/img/landing/Ivan Zhao.jpg",
+  },
+  {
+    name: "Neil Parikh",
+    amount: 10000,
+    href: "https://www.neilparikh.com/",
+    image: "/img/landing/Neil Parikh.jpg",
   },
   {
     name: "Stephanie Sher",
@@ -658,6 +681,12 @@ const sponsors = [
     href: "https://twitter.com/Conaw",
     image: "/img/landing/Conor White-Sullivan.jpg",
   },
+  {
+    name: "Will Fitzgerald",
+    amount: 5000,
+    href: "https://github.com/willf",
+    image: "/img/landing/Will Fitzgerald.jpg",
+  },
 ];
 
 const team = {
@@ -673,9 +702,19 @@ const team = {
       href: "https://dcgross.com/",
     },
     {
-      name: "Dr. Stephen Parsons",
+      name: "Stephen Parsons",
       title: "Project Lead",
       href: "https://www2.cs.uky.edu/dri/stephen-parsons/",
+    },
+    {
+      name: "Julian Schilliger",
+      title: "Software Engineer",
+      href: "https://www.linkedin.com/in/julian-schilliger-963b21294/",
+    },
+    {
+      name: "Giorgio Angelotti",
+      title: "Machine Learning Consultant",
+      href: "https://www.linkedin.com/in/giorgio-angelotti/",
     },
     {
       name: "Ben Kyles",
@@ -683,19 +722,14 @@ const team = {
       href: "https://twitter.com/ben_kyles",
     },
     {
-      name: "Dr. David Josey",
+      name: "David Josey",
       title: "Segmentation Team Member",
       href: "https://www.linkedin.com/in/davidsjosey/",
     },
     {
       name: "Konrad Rosenberg",
       title: "Segmentation Team Member",
-      href: "https://www.linkedin.com/in/konradrosenberg/",
-    },
-    {
-      name: "Julian Schilliger",
-      title: "Software Engineer",
-      href: "https://www.linkedin.com/in/julian-schilliger-963b21294/",
+      href: "https://twitter.com/germanicgems",
     },
     {
       name: "JP Posma",
@@ -718,7 +752,7 @@ const team = {
       href: "https://www.linkedin.com/in/chrisfrangione/",
     },
     {
-      name: "Dr. Garrett Ryan",
+      name: "Garrett Ryan",
       title: "Classics Advisor",
       href: "https://toldinstone.com/",
     },
@@ -735,13 +769,13 @@ const team = {
   ],
   educe: [
     {
-      name: "Dr. Brent Seales",
-      title: "Principal Investigator",
+      name: "Brent Seales",
+      title: "Principal Investigator, Professor of Computer Science",
       href: "https://educelab.engr.uky.edu/w-brent-seales",
     },
     {
       name: "Seth Parker",
-      title: "PhD candidate",
+      title: "Research Manager",
       href: "https://www2.cs.uky.edu/dri/seth-parker/",
     },
     {
@@ -755,7 +789,7 @@ const team = {
       href: "https://www.ccs.uky.edu/about-ccs/staff-directory/mami-hayashida/",
     },
     {
-      name: "Dr. James Brusuelas",
+      name: "James Brusuelas",
       title: "Associate Professor of Classics",
       href: "https://mcl.as.uky.edu/users/jbr454",
     },
@@ -765,12 +799,42 @@ const team = {
       href: "https://www.engr.uky.edu/directory/lutin-elizabeth",
     },
     {
-      name: "Dr. Roger Macfarlane",
+      name: "Roger Macfarlane",
       title: "Professor of Classical Studies",
       href: "https://hum.byu.edu/directory/roger-macfarlane",
     },
   ],
   papyrology: [
+    {
+      name: "Marzia D'Angelo",
+      title: "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
+      href: "https://unina.academia.edu/MDAngelo",
+    },
+    {
+      name: "Kilian Fleischer",
+      title: "Research Director and Papyrologist, University of Tübingen and CNR",
+      href: "https://www.klassphil.uni-wuerzburg.de/team/pd-dr-kilian-fleischer/",
+    },
+    {
+      name: "Alessia Lavorante",
+      title: "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
+      href: "https://unina.academia.edu/AlessiaLavorante",
+    },
+    {
+      name: "Michael McOsker",
+      title: "Researcher, University College London",
+      href: "https://www.ucl.ac.uk/classics/michael-mcosker",
+    },
+    {
+      name: "Claudio Vergara",
+      title: "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
+      href: "https://unina.academia.edu/ClaudioVergara",
+    },
+    {
+      name: "Rossella Villa",
+      title: "Research Assistant in Papyrology, University of Salerno",
+      href: "https://salerno.academia.edu/RossellaVilla",
+    },
     {
       name: "Daniel Delattre",
       title: "Emeritus Research Director and Papyrologist, CNRS and IRHT",
@@ -796,7 +860,7 @@ const team = {
     },
     {
       name: "Federica Nicolardi",
-      title: "Professor of Classics, University of Naples Federico II",
+      title: "Assistant Professor of Papyrology, University of Naples Federico II",
       href: "https://www.docenti.unina.it/federica.nicolardi",
     },
     {
@@ -1358,7 +1422,7 @@ export function Landing() {
                   >
                     <div className="flex flex-col py-4 md:py-5 px-5 md:px-7 ">
                       <h3 className="text-xl md:text-3xl text-white mt-0 mb-1 tracking-tighter !leading-[90%] flex-grow">
-                        $500,000+ in New Prizes
+                        $600,000+ in 2024 Prizes
                       </h3>
                       <AnimatedArrow text="More information" />
                     </div>
@@ -1370,8 +1434,8 @@ export function Landing() {
                       autoFill
                       className="py-1 md:py-2 text-xs md:text-sm font-bold text-[#E34E29] bg-[#68140160]"
                     >
-                      BREAKING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;NEW PRIZES
-                      ANNOUNCED&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+                      PRIZES MONTHLY&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;CLAIM YOURS
+                      &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
                     </Marquee>
                   </div>
                 </a>
