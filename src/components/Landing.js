@@ -1422,7 +1422,7 @@ export function Landing() {
                   >
                     <div className="flex flex-col py-4 md:py-5 px-5 md:px-7 ">
                       <h3 className="text-xl md:text-3xl text-white mt-0 mb-1 tracking-tighter !leading-[90%] flex-grow">
-                        $500,000+ in New Prizes
+                        $600,000+ in 2024 Prizes
                       </h3>
                       <AnimatedArrow text="More information" />
                     </div>
@@ -1434,8 +1434,8 @@ export function Landing() {
                       autoFill
                       className="py-1 md:py-2 text-xs md:text-sm font-bold text-[#E34E29] bg-[#68140160]"
                     >
-                      BREAKING&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;NEW PRIZES
-                      ANNOUNCED&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
+                      PRIZES MONTHLY&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;CLAIM YOURS
+                      &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
                     </Marquee>
                   </div>
                 </a>
