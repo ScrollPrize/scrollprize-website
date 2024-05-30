@@ -63,10 +63,8 @@ Two key steps to virtually unwrapping a scroll or manuscript are _segmenting_ a 
 To perform segmentation, you have two choices of software: Khartes, and Volume Cartographer. Both of these choices have different strengths and weaknesses, but either can accomplish the task of accurate segmentation. Khartes relies on Volume Cartographer to perform the flattening portion of this guide. Thanks to @hari_seldon and @djosey of the segmentation team for their feedback and help with making this guide!
 
 <Tabs>
-  <TabItem value="Volume Cartogropher" label="Volume Cartogropher" default>
-    .
+  <TabItem value="Volume Cartographer" label="Volume Cartographer" default>
 
-    
     Strengths:
 
       - Faster at creating larger segments
@@ -79,12 +77,8 @@ To perform segmentation, you have two choices of software: Khartes, and Volume C
       - Can only segment on the Z plane, which is a challenge in some areas
       - No preview during segmentation
       - Relatively high hardware requirements
-    
-   
-
   </TabItem>
   <TabItem value="Khartes" label="Khartes" default>
-      .
 
     Strengths:
 
@@ -99,14 +93,13 @@ To perform segmentation, you have two choices of software: Khartes, and Volume C
       - Requires much more manual clicking than VC
       - Requires VC in some parts of the rendering / flattening pipeline
   </TabItem>
-
 </Tabs>
 
 Khartes is written by @khartes_chuck and has extensive documentation on github located [here](https://github.com/KhartesViewer/khartes).
 
 This guide will focus on Volume Cartographer, a virtual unwrapping toolkit built by EduceLab’s Seth Parker. Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer includes many tools and utilities. In this tutorial we’ll be looking at the main VC GUI as well as the vc_render tool.
 
-The segmentation team uses a custom version of Volume Cartographer, initially forked by @RICHI and further enhanced by @spacegaier. These versions include significant improvements, such as Optical Flow Segmentation (OFS), substantial performance increases, ui improvements, and many other changes. The latest fork, maintained by @spacegaier, is available here: https://github.com/spacegaier/volume-cartographer
+The segmentation team uses a custom version of Volume Cartographer, initially forked by @RICHI and further enhanced by @spacegaier. These versions include significant improvements, such as Optical Flow Segmentation (OFS), substantial performance increases, ui improvements, and many other changes. The latest fork, maintained by @spacegaier, is available here: https://github.com/spacegaier/volume-cartographer.
 
 This guide uses this same version of VC. If you use a different version this guide will vary significantly from your experience, so it is highly recommended to use this version.
 
@@ -133,6 +126,7 @@ docker pull ghcr.io/spacegaier/volume-cartographer:edge
   </TabItem>
   <TabItem value="mac" label="macOS (using Homebrew)">
 
+Note: this does not install the fork of Volume Cartographer mentioned above.
 
 Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab/casks/volume-cartographer`.
 
@@ -143,7 +137,7 @@ Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab
   </TabItem>
   <TabItem value="mac_docker" label="macOS (using Docker)">
 
-<div>We strongly recommend using Homebrew, since it’s much easier to set up. But if you really prefer Docker, here are the steps:</div>
+<div>If you prefer Docker, here are the steps:</div>
 
 1. Install XQuartz: https://www.xquartz.org/
 2. Log out and back into macOS.
@@ -186,7 +180,7 @@ xhost +local:docker
 
 ```bash
 # Recursive clone, so we get the vc-deps repo, which contains dependencies.
-git clone --recursive https://github.com/educelab/volume-cartographer.git
+git clone --recursive https://github.com/spacegaier/volume-cartographer.git
 
 # Build vc-deps.
 cd volume-cartographer/vc-deps
@@ -217,17 +211,17 @@ make install
 
 Now let's gather our scroll data and setup our folders...
 
-We're going to start with scroll 1 as this is the scroll that the Grand Prize segments were from, and is also the easiest of the current scrolls to segment. VC requires all of the folders listed under the scroll1.volpkg, in addition to the config.json and meta.json files.
+We're going to start with Scroll 1 as this is the scroll that the 2023 Grand Prize segments were from, and is also the easiest of the current scrolls to segment. VC requires all of the folders listed under the scroll1.volpkg, in addition to the config.json and meta.json files.
 
-If you wish to use a smaller portion of scroll 1 to begin, rather than the entire scroll, you can download any continuous section of .tif files in the volume (for example: 10000.tif to 10750.tif) and place them in the `/volumes/<volumename>` directory. As long as you have the config.json file at the root of the volpkg and the meta.json file in the volume VC can work with it.
+If you wish to use a smaller portion of scroll 1 to begin, rather than the entire scroll, you can download any continuous section of .tif files in the volume (for example: 10000.tif to 10750.tif) and place them in the `/volumes/<VolumeName>` directory. As long as you have the config.json file at the root of the volpkg and the meta.json file in the volume VC can work with it.
 
 
-This is the recommended structure for the full_scrolls folder (with a full example given for scroll1):
+This is the recommended structure for the full_scrolls folder (with a full example given for Scroll1):
 
 ```
 .
 └── full_scrolls/
-    ├── scroll1.volpkg/
+    ├── Scroll1.volpkg/
     │   ├── volumes/
     │   │   └── 20230205180739/
     │   │       ├── 00000.tif
@@ -239,28 +233,28 @@ This is the recommended structure for the full_scrolls folder (with a full examp
     │   ├── renders
     │   ├── working
     │   └── config.json
-    ├── scroll2.volpkg
-    ├── pherc0332.volpkg
-    └── pherc1667.volpkg
+    ├── Scroll2.volpkg
+    ├── PHerc0332.volpkg
+    └── PHerc1667.volpkg
 ```
 
 And this is the recommended structure for your new_segments folder:
 ```
 .
 └── new_segments/
-    ├── scroll1
-    ├── scroll2
-    ├── pherc0332
-    ├── pherc1667
+    ├── Scroll1
+    ├── Scroll2
+    ├── PHerc0332
+    ├── PHerc1667
     └── run_vc.sh
 ```
-### Running the Volume Cartopgrapher GUI
+### Running the Volume Cartographer GUI
 
 
 We will use the main `VC` GUI app to perform segmentation: finding a surface of papyrus and exporting it as a 3D mesh.
 
 :::tip
-This guide was written using linux. Most of the commands are similar, but you may need to remove 'sudo' from the front of the commands depending on your operating system.
+This guide was written using Linux. Most of the commands are similar, but you may need to remove 'sudo' from the front of the commands depending on your operating system.
 
 The -v switch used below is mapping a local path (or volume) to the Docker container. To check if your paths have been created properly you can run the Docker container and initiate a list command by typing:
 
@@ -287,11 +281,11 @@ Let's take a moment to get oriented before continuing:
 <img src="/img/tutorials/vc-open.png" className="rounded-xl"/>
 </figure>
 
-### Navigating a volpkg
+### Navigating a .volpkg
 
-Now that we’ve oriented ourselves with the UI, let's open our volpkg...
+Now that we’ve oriented ourselves with the UI, let's open our .volpkg...
 
-1. Open a volpkg by clicking file, then open volpkg, and select the volpkg for the volume you wish to segment on, ensuring you select the .volpkg folder, and not one of the subfolders. Click choose, and the volume will open at slice 0.
+1. Open a .volpkg by clicking file, then open .volpkg, and select the .volpkg for the volume you wish to segment on, ensuring you select the .volpkg folder, and not one of the subfolders. Click choose, and the volume will open at slice 0.
 2. Practice scrolling through the volume, using shift+scroll wheel to move up and down through slice layers, and ctrl+scroll wheel to zoom in and out. You can right click and drag to pan around the slice.   Move through the layers until you find an area of the sheet that looks “easy” to segment. An ideal area has spacing on the inside face towards the center of the scroll, and maintains this spacing as you scroll through the layers for a time. You can increase the amount of slices you move through with the scroll wheel by pressing Q and E. The small number that shows up next to your cursor is the number of slices skipped each “click” of the scroll wheel.
 3. Look now to the top left in the segments window; my VC shows some segmentations in the segmentation window, but yours at this point will be blank.
 
@@ -340,7 +334,7 @@ Click “Start” to begin the segmentation run.
 After a short period of time VC will drop you off at the slice indicated by your previous forward or backward slice setting. Your line of points will now be colored red, and may have wandered slightly from the sheet. VC has attempted to “follow” the sheet from your annotation (or anchor) line to the slice indicated in your forward slice setting. From here, click “segmentation tool” again, and then manipulate the line back onto the sheet. You’ll notice lines you have modified turn yellow, where ones you have not remain red. Pan through the layers a bit if you are having a hard time following the sheet, as it's easier to follow “in motion”. Press space to hide the line if it helps you see. 
 
 :::tip
-You can press T at any time within the segmentation tool to return to the slice you began the segmentation on
+You can press T at any time within the segmentation tool to return to the slice you began the segmentation on.
 :::
 
 <figure>
@@ -360,7 +354,7 @@ After you’ve guided the line along the sheet, hit “Start” again, and repea
 </figure>
 
 
-Be sure to save it using *“File > Save volpkg”*. You can keep segmenting for a bit here to get the hang of VC, but keep the size managable for your first few segments until you get more familiar. 
+Be sure to save it using *“File > Save volpkg”*. You can keep segmenting for a bit here to get the hang of VC, but keep the size manageable for your first few segments until you get more familiar. 
 
 The process completed during this step looks like this in 3D. We've identified the sheet surface, but still would have a hard time finding ink on a single voxel sheet that is still wrapped in the scroll. In the video below, the sheet is on the visible outside, but most of our segments are completely surrounded by additional sheets.
 
@@ -411,7 +405,7 @@ nice vc_layers_from_ppm -v "/full_scrolls/${SCROLL}.volpkg" -p "${SEGMENT}.ppm" 
 vc_area "/full_scrolls/${SCROLL}.volpkg" ${SEGMENT} | grep cm | awk '{print $2}' | tee area_cm2.txt
 
 # Set author name
-echo '<yournamehere>' > author.txt
+echo '<YourNameHere>' > author.txt
 ```
 
 3. Modify the environment variables at the top of the script, the ones that begin with `export`, and the author at the bottom. You'll want these values to reflect the scroll you're working in, the name of your segment, and who you'd like to list as the author. 
@@ -429,7 +423,7 @@ The terminal for the container should open. Enter the following lines:
 cd /new_segments/
 /bin/bash/run_vc.sh
 ```
-This command will render your points into a mesh, and then create the surface volume layers from it. This can take a long time depending on the size of your segment, but thankfully you will get some progress information on the console 
+This command will render your points into a mesh, and then create the surface volume layers from it. This can take a long time depending on the size of your segment, but thankfully you will get some progress information on the console.
 
 <figure>
   <img src="/img/tutorials/console-output.png"/>
@@ -437,28 +431,28 @@ This command will render your points into a mesh, and then create the surface vo
 
 **Congratulations! You've completed your first segment!**
 
-In the new_segments directory you set when you launched VC, you will now have a folder with the name of your new segment, and within that folder a folder called /layers/, and a number of different files, the most important of which are detailed below. Much of this information was gathered from @Seth P. and @khartes_chuck on the discord:
+In the new_segments directory you set when you launched VC, you will now have a folder with the name of your new segment, and within that folder a folder called `layers/`, and a number of different files, the most important of which are detailed below. Much of this information was gathered from @Seth P. and @khartes_chuck on the discord:
 
 
-* /layers/ contains files numbered 00.tif to 64.tif (or 000.tif to 156.tif for 3.24um scans). These are slices of the surface volume, each of a thickness equal to the voxel size of the scroll you are currently segmenting, typically what we call “low res” are the 7.91um voxel spacing, and “high res” would be 3.24um voxel spacing. For a 7.91um volume, this means that each surface volume is 64 tifs * 7.91um, for about 506um thickness, or .506mm
+* `layers/` contains files numbered 00.tif to 64.tif (or 000.tif to 156.tif for 3.24um scans). These are slices of the surface volume, each of a thickness equal to the voxel size of the scroll you are currently segmenting, typically what we call “low res” are the 7.91um voxel spacing, and “high res” would be 3.24um voxel spacing. For a 7.91um volume, this means that each surface volume is 64 tifs * 7.91um, for about 506um thickness, or .506mm.
 
-* `<segmentationnumber>.obj` this is a 3D image format that stores information about the geometry of a 3D model, such as vertex positions, texture maps, normals, and faces. This is a mesh created from the pointset created by your segmentation line and detailed further below
+* `<SegmentNumber>.obj` this is a 3D image format that stores information about the geometry of a 3D model, such as vertex positions, texture maps, normals, and faces. This is a mesh created from the pointset created by your segmentation line and detailed further below.
 
-* `<segmentationnumber>.tif` is a composite image of maximum intensity pixels from within the surface volume, it is also used for texturing in combination with the mtl file
+* `<SegmentNumber>.tif` is a composite image of maximum intensity pixels from within the surface volume, it is also used for texturing in combination with the mtl file.
 
-* `<segmentationnumber>.mtl` is a text file that contains information about the material, such as opacity, reflectivity, and points to the texture file (the tif in the previous line)
+* `<SegmentNumber>.mtl` is a text file that contains information about the material, such as opacity, reflectivity, and points to the texture file (the tif in the previous line).
 
-* `<segmentationnumber>.ppm` A simple way to think about this is to think of it as a super dense point cloud that for each voxel in the flattened volume contains a point representing the 3d location in the original volume that voxel came from, and some information about that point. A better explanation is that a .ppm is special case of an ordered pointset, where type = double and dim = 6. It is generated by flattening the segmented surface, discretizing the parameterization, and storing the corresponding 3D point and surface normal for each spot on the surface. Using slice notation, ppm[y, x, 0:3] stores the 3D point and ppm[y, x, 3:6] stores the surface normal. Because the surface does not fill the 2D array entirely, there is a *_mask.png file next to the PPM. It stores which pixels in the PPM have valid values. More info here: Volume Cartographer PPM file format (github.com)
+* `<SegmentNumber>.ppm` A simple way to think about this is to think of it as a super dense point cloud that for each voxel in the flattened volume contains a point representing the 3d location in the original volume that voxel came from, and some information about that point. A better explanation is that a .ppm is special case of an ordered pointset, where type = double and dim = 6. It is generated by flattening the segmented surface, discretizing the parameterization, and storing the corresponding 3D point and surface normal for each spot on the surface. Using slice notation, ppm[y, x, 0:3] stores the 3D point and ppm[y, x, 3:6] stores the surface normal. Because the surface does not fill the 2D array entirely, there is a *_mask.png file next to the PPM. It stores which pixels in the PPM have valid values. More info here: Volume Cartographer PPM file format (github.com)
 
-* `<segmentationnumber>_mask.png` as detailed in the ppm description, just denotes areas that do not contain information from the scroll data. 
+* `<SegmentNumber>_mask.png` as detailed in the ppm description, just denotes areas that do not contain information from the scroll data. 
 
-* `<segmentnumber>.vcps` this is the pointset created by your segmentation line. A .vcps file stores lists or 2D arrays of N-dimensional, numerical vectors. It starts with a header as described, then the points are written in sequence, usually in binary and rarely in ASCII. The type field in the header tells you the fundamental C++ type stored.
+* `<SegmentNumber>.vcps` this is the pointset created by your segmentation line. A .vcps file stores lists or 2D arrays of N-dimensional, numerical vectors. It starts with a header as described, then the points are written in sequence, usually in binary and rarely in ASCII. The type field in the header tells you the fundamental C++ type stored.
 
-* `<segmentationnumber>.vcano` contains information about which points were manually moved, and their original locations
+* `<SegmentNumber>.vcano` contains information about which points were manually moved, and their original locations.
 
-* `Author.txt` contains the name of the person who created it
+* `Author.txt` contains the name of the person who created it.
 
-* `Area_cm2.txt` is simply the size of the segment in cm^2
+* `Area_cm2.txt` is simply the size of the segment in cm^2.
 
 
 ### Outputs
@@ -475,7 +469,7 @@ When looking for ink in the volume, we need to look at more than just the voxels
   <figcaption className="mt-0">Building a neighborhood of voxels around our segment. Everything inside the neighborhood is used for texturing.</figcaption>
 </figure>
 
-To generate the composite .tif file, called `<segmentnumber>.tif`, `vc_render` searched through this neighborhood, gathering the voxel intensities, and placed the results of that search in the flattened output image. 
+To generate the composite .tif file, called `<SegmentNumber>.tif`, `vc_render` searched through this neighborhood, gathering the voxel intensities, and placed the results of that search in the flattened output image. 
 
 The ppm file that we generated contains a mapping between our flattened output image and the original 3D surface. With this file, we transformed the 3D neighborhood into a simplified surface volume. That process looks something like this:
 
@@ -504,7 +498,7 @@ So, where's the ink?
 
 By now you'll notice that, contrary to the ink in some scrolls, the ink in our scrolls is not readily detectable in your images. 
 
-The reason for this is that not all inks have the same radiodensity. Some inks, like iron gall, show up quite clearly in CT scans because they absorb more x-rays than the papyrus on which they sit. This creates _high contrast_ between the bright iron gall ink voxels and the less bright papyrus voxels. Carbon-based inks, on the other hand, have a very similar radiodensity to papyrus and thus have _low contrast_ when compared against the papyrus voxels. More often than not, the contrast is so low for carbon ink that it is very difficult to differentiate the ink from the papyrus when looking at the volume data with the naked eye.
+The reason for this is that not all inks have the same radio-density. Some inks, like iron gall, show up quite clearly in CT scans because they absorb more x-rays than the papyrus on which they sit. This creates _high contrast_ between the bright iron gall ink voxels and the less bright papyrus voxels. Carbon-based inks, on the other hand, have a very similar radio-density to papyrus and thus have _low contrast_ when compared against the papyrus voxels. More often than not, the contrast is so low for carbon ink that it is very difficult to differentiate the ink from the papyrus when looking at the volume data with the naked eye.
 
 Thankfully, as you'll learn in our next tutorial on [“Ink Detection”](tutorial4), even very difficult to detect ink can still be found...
 
