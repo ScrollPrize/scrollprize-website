@@ -38,7 +38,7 @@ hide_table_of_contents: true
 </head>
 
 Tools keep evolving as the community builds more stuff. We have since published some video tutorials:
-1. [Ben’s Segmentation Tutorial](https://www.youtube.com/watch?v=gcSQKiHdISw). Ben (@Hari_Seldon on Discord) goes into great detail on how to do segmenting.
+1. [Ben’s Segmentation Tutorial](https://www.youtube.com/watch?v=gdQmepxWhuY). Ben (@Hari_Seldon on Discord) goes into great detail on how to do segmenting.
 2. [JP’s Segmentation Party](https://www.youtube.com/watch?v=zKMVNaA2GdU). JP does a bunch of segmentation.
 
 There are several work-in-progress tutorials and docs for various programs that we recommend checking out:
