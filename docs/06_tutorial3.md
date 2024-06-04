@@ -219,34 +219,36 @@ If you wish to use a smaller portion of scroll 1 to begin, rather than the entir
 This is the recommended structure for the full_scrolls folder (with a full example given for Scroll1):
 
 ```
-.
-└── full_scrolls/
-    ├── Scroll1.volpkg/
-    │   ├── volumes/
-    │   │   └── 20230205180739/
-    │   │       ├── 00000.tif
-    │   │       ├── .
-    │   │       ├── .
-    │   │       ├── 14375.tif
-    │   │       └── meta.json
-    │   ├── paths
-    │   ├── renders
-    │   ├── working
-    │   └── config.json
-    ├── Scroll2.volpkg
-    ├── PHerc0332.volpkg
-    └── PHerc1667.volpkg
+full_scrolls/
+  ├── Scroll1/
+  │   └── PHercParis4.volpkg/
+  │       ├── volumes/
+  │       │   └── 20230205180739/
+  │       │       ├── 00000.tif
+  │       │       ├── .
+  │       │       ├── .
+  │       │       ├── 14375.tif
+  │       │       └── meta.json
+  │       ├── paths
+  │       ├── renders
+  │       ├── working
+  │       └── config.json
+  ├── Scroll2
+  │   └── PHercParis3.volpkg/
+  ├── Scroll3
+  │   └── PHerc332.volpkg/
+  └── Scroll4
+      └── PHerc1667.volpkg/
 ```
 
 And this is the recommended structure for your new_segments folder:
 ```
-.
-└── new_segments/
-    ├── Scroll1
-    ├── Scroll2
-    ├── PHerc0332
-    ├── PHerc1667
-    └── run_vc.sh
+new_segments/
+  ├── Scroll1
+  ├── Scroll2
+  ├── Scroll3
+  ├── Scroll4
+  └── run_vc.sh
 ```
 ### Running the Volume Cartographer GUI
 
@@ -382,7 +384,7 @@ Let's create a bash script to combine a number of different VC apps into one sin
 
 # Set environment variables
 export SEGMENT=20240227040603 #change to the segment number you've created
-export SCROLL=scroll1 #change to whatever scroll you are currently working in
+export SCROLL="Scroll1/PHercParis4.volpkg" #change to whatever scroll you are currently working in
 
 
 # Navigate to the segment folder, create a directory named after $SEGMENT
@@ -391,18 +393,18 @@ mkdir -p "${SEGMENT}"
 cd "${SEGMENT}"
 
 # Copy necessary files from the scroll folder to the current directory
-cp "/full_scrolls/${SCROLL}.volpkg/paths/${SEGMENT}/pointset.vcps" .
-cp "/full_scrolls/${SCROLL}.volpkg/paths/${SEGMENT}/meta.json" .
-cp "/full_scrolls/${SCROLL}.volpkg/paths/${SEGMENT}/pointset.vcano" .
+cp "/full_scrolls/${SCROLL}/paths/${SEGMENT}/pointset.vcps" .
+cp "/full_scrolls/${SCROLL}/paths/${SEGMENT}/meta.json" .
+cp "/full_scrolls/${SCROLL}/paths/${SEGMENT}/pointset.vcano" .
 
 # Convert and render pointset, then generate layers and calculate area
 nice vc_convert_pointset -i pointset.vcps -o "${SEGMENT}_points.obj"
-nice vc_render -v "/full_scrolls/${SCROLL}.volpkg/" -s "${SEGMENT}" -o "${SEGMENT}.obj" --output-ppm "${SEGMENT}.ppm" --intermediate-mesh "${SEGMENT}_intermediate_mesh.obj" --save-graph 0 --orient-normals
+nice vc_render -v "/full_scrolls/${SCROLL}/" -s "${SEGMENT}" -o "${SEGMENT}.obj" --output-ppm "${SEGMENT}.ppm" --intermediate-mesh "${SEGMENT}_intermediate_mesh.obj" --save-graph 0 --orient-normals
 
 mkdir -p layers
-nice vc_layers_from_ppm -v "/full_scrolls/${SCROLL}.volpkg" -p "${SEGMENT}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G
+nice vc_layers_from_ppm -v "/full_scrolls/${SCROLL}" -p "${SEGMENT}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G
 
-vc_area "/full_scrolls/${SCROLL}.volpkg" ${SEGMENT} | grep cm | awk '{print $2}' | tee area_cm2.txt
+vc_area "/full_scrolls/${SCROLL}" ${SEGMENT} | grep cm | awk '{print $2}' | tee area_cm2.txt
 
 # Set author name
 echo '<YourNameHere>' > author.txt
