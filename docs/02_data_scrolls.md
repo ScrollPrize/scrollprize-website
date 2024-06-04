@@ -87,7 +87,7 @@ A typical .tif file from the scrolls look like this, giving a cross-section view
 
 ## Data server
 
-You can find the full scroll data on the [data server](https://dl.ash2txt.org/full-scrolls/) in the [`/full-scrolls/`](https://dl.ash2txt.org/full-scrolls/) folder.
+You can find the full scroll data on the [data server](https://dl.ash2txt.org/) in the [`/full-scrolls/`](https://dl.ash2txt.org/full-scrolls/) folder.
 
 * **Scroll 1 (PHerc. Paris. 4):** The scroll for which we have by far the most [segments](data_segments), and in which the [first letters](firstletters) have been discovered and the [2023 Grand Prize](grandprize) was claimed. Half of the scroll has been released in single 54keV volume.
 * **Scroll 2 (PHerc. Paris. 3):** Has proven harder to segment. We do have a 88keV “slab” (partial volume) in addition to the 54keV main volume. Also, the main volume has a scanning artifact in the middle of the volume.
@@ -110,7 +110,7 @@ This is a video montage of Scroll 1:
   * `/volumes_masked/`: Same as `/volumes/`, but with non-scroll data blacked out, and the files compressed. About 2x smaller than the original volumes, though may take longer to load in software due to the compression. See [this repo](https://github.com/JamesDarby345/segment-anything-vesuvius) for more details (and [this thread](https://discord.com/channels/1079907749569237093/1105181650415001741) for details about the compression vs performance tradeoff).
   * `/volume_grids/<volume_id>/cell_yxz_*.tif`: The volume split into “cells” of 500x500x500 voxels. Generated using [`build_grid_layer`](https://github.com/spelufo/vesuvius-build/).
 
-One community member, Ahron Wayne (@WayneWayneHello on Discord), has bought a benchtop CT scanner and has been making various scans with them, with the goal of making a simulated scroll (a “campfire scroll”) that can be used as ground truth data. His scans can be found in [`/waynewaynehello-uploads/`](https://dl.ash2txt.org/community-uploads/waynewaynehello-uploads/).
+One community member, Ahron Wayne (@WayneWayneHello on Discord), has bought a benchtop CT scanner and has been making various scans with them, with the goal of making a simulated scroll (a “campfire scroll”) that can be used as ground truth data. His scans can be found in [`/waynewaynehello-uploads/`](https://dl.ash2txt.org/community-uploads/waynewaynehello/).
 
 <figure className="max-w-[600px]">
   <img src="/img/data/desktop-scan.gif"/>

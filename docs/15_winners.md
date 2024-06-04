@@ -180,7 +180,7 @@ We have awarded **$1,236,500** in prizes so far!
     <div className="mb-4"><div className="text-sm font-bold text-gray-300">$3,000</div><span className="font-bold">Crackle Viewer</span> by Julian Schilliger / @RICHI</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7c460795-c40a-41df-9c51-1e6275791c2a_2490x1415.png"/>
   </a>
-  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://dl.ash2txt.org/luke-farritor-uploads/youssef_uploads/scroll_4/">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://dl.ash2txt.org/community-uploads/luke/youssef_uploads/scroll_4/">
     <div className="mb-4"><div className="text-sm font-bold text-gray-300">$3,000</div><span className="font-bold">Segment maps</span> by Youssef Nader / @YoussefNader</div>
     <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F407f3430-b3fd-4343-ab3b-1b5d5d74e23f_7000x7000.jpeg"/>
   </a>
@@ -212,7 +212,7 @@ We have awarded **$1,236,500** in prizes so far!
     <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Vesuvius Kintsugi</span>: Giorgio Angelotti / @jordi45698</div>
     <img src="/img/progress/os-nov23/5.png"/>
   </a>
-  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://dl.ash2txt.org/bruniss-uploads/">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://dl.ash2txt.org/community-uploads/bruniss/">
     <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Crackle Labels</span>: Sean Johnson / @bruniss</div>
     <img src="/img/progress/os-nov23/6.webp"/>
   </a>
@@ -348,7 +348,7 @@ We have awarded **$1,236,500** in prizes so far!
       <source src="/img/progress/khartes.mp4" type="video/mp4"/>
     </video>
   </a>
-  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/volumes_masked/20230205180739/">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://dl.ash2txt.org/full-scrolls/Scroll1/PHercParis4.volpkg/volumes_masked/20230205180739/">
     <div className="mb-4"><div className="text-sm font-bold text-gray-300">$5,000</div><span className="font-bold"> Masked data</span> by James / @thatGuy</div>
     <img src="/img/progress/masked.png"/>
   </a>

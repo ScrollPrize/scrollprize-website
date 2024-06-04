@@ -73,7 +73,7 @@ The `.volpkg` format used by Volume Cartographer (learn more in [Tutorial 3](tut
 * `Scroll1.volpkg/paths/<id>/meta.json`: Metadata of a segment.
 * `Scroll1.volpkg/paths/<id>/pointset.vcps`: Pointset of a segment. This is a custom data format specific to Volume Cartographer. More information [here](https://www.kaggle.com/code/kglspl/simple-vcps-parser), and see the [Volume Cartographer resources list](community_projects#volume-cartographer).
 
-You can find segments from the made by the segmentation team (led by @Hari_Seldon on Discord) on the [data server](https://forms.gle/HV1J6dJbmCB2z5QL8): [`/full-scrolls/Scroll{1,2}.volpkg/paths`](https://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/).
+You can find segments from the made by the segmentation team (led by @Hari_Seldon on Discord) on the [data server](https://forms.gle/HV1J6dJbmCB2z5QL8): [`/full-scrolls/Scroll{1,2}/PHercParis{4,3}.volpkg/paths`](https://dl.ash2txt.org/full-scrolls/Scroll1/PHercParis4.volpkg/paths/).
 <!-- 
 ## Weekly releases
 
@@ -103,7 +103,7 @@ The surface volume is the most useful dataset for ink detection. The middle laye
 
 <figure className="max-w-[600px]">
   <img src="/img/data/surface_volume.gif"/>
-  <figcaption className="mt-0">Scrubbing through layers of the surface volume of <a href="https://dl.ash2txt.org/full-scrolls/Scroll1.volpkg/paths/20230827161846/layers/">segment 20230827161846</a></figcaption>
+  <figcaption className="mt-0">Scrubbing through layers of the surface volume of <a href="https://dl.ash2txt.org/full-scrolls/Scroll1/PHercParis4.volpkg/paths/20230827161846/layers/">segment 20230827161846</a></figcaption>
 </figure>
 
 All these extra files were generated using the following script: `export SEGMENT=20230827161846 && cd /Scroll1.volpkg/paths/${SEGMENT} && nice vc_convert_pointset -i pointset.vcps -o "${SEGMENT}_points.obj" && nice vc_render -v ../../ -s "${SEGMENT}" -o "${SEGMENT}.obj" --output-ppm "${SEGMENT}.ppm" && mkdir -p layers && nice vc_layers_from_ppm -v ../../ -p "${SEGMENT}.ppm" --output-dir layers/ -r 32 -f tif --cache-memory-limit 50G && vc_area ../.. ${SEGMENT} | grep cm | awk '{print $2}' > area_cm2.txt`
