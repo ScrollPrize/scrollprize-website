@@ -38,7 +38,53 @@ hide_table_of_contents: true
 
 Since the Vesuvius Challenge was launched in March 2023, a lot has happened. On this page we document all the prizes that have been won.
 
-We have awarded **$1,236,500** in prizes so far!
+We have awarded **$1,265,500** in prizes so far!
+
+### $29,000 Open Source (May, 2024)
+
+**Goal:** Increase the probability we read 90% of four scrolls in 2024.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/may-progress-prizes">Blog post</a>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/spacegaier/volume-cartographer">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$10,000</div><span className="font-bold">Volume Cartographer improvements</span>: Philip Allgaier / @spacegaier</div>
+    <img src="/img/progress/202405/screenshot_gui_overview.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/KhartesViewer/khartes">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$10,000</div><span className="font-bold">Khartes improvements</span>: Chuck / @khartes_chuck</div>
+    <video autoPlay playsInline muted loop className="w-[100%]">
+      <source src="/img/progress/202405/layer_offset_mini_demo.mp4" type="video/mp4"/>
+    </video>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1079907750265499772/1245553260362858577">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Scroll 2 segments</span>: Sean Johnson / @Bruniss</div>
+    <img src="/img/progress/202405/32.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/jrudolph/vesuvius-gui">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">vesuvius-gui</span>: Johannes Rudolph / @jrudolph</div>
+    <img src="/img/progress/202405/vesuvius-gui.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/OliverDaubney/vesuvius_basic_compression">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Scroll compression and masking</span>: Oliver Daubney / @O_D</div>
+    <img src="/img/progress/202405/masking.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://docs.google.com/document/d/1SX83Dhz5sJXHhSRbADcNxUmuH53BypLRny01rbizK8I/edit?usp=sharing">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Volumetric segmentation architecture investigation</span>: James Darby / @james_darby</div>
+    <img src="/img/progress/202405/volumetric.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1246129199304151052/1246129199304151052">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Browser-based scroll viewer</span>: Yao Hsiao / @Yao Hsiao</div>
+    <video autoPlay playsInline muted loop className="w-[100%]">
+      <source src="/img/progress/202405/neuroglance-demo.mp4" type="video/mp4"/>
+    </video>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/SuperOptimizer/Hraun">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">3D segmentation prototype</span>: Forrest McDonald / @VerditeLabs</div>
+    <video autoPlay playsInline muted loop className="w-[100%]">
+      <source src="/img/progress/202405/hraun.mp4" type="video/mp4"/>
+    </video>
+  </a>
+</div>
 
 ### $35,000 Open Source (April, 2024)
 
