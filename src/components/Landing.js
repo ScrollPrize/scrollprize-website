@@ -278,6 +278,11 @@ const team = {
       href: "https://twitter.com/ben_kyles",
     },
     {
+      name: "Adrionna Fey",
+      title: "Segmentation Team Member",
+      href: "https://twitter.com/Meadowsnax1",
+    },
+    {
       name: "David Josey",
       title: "Segmentation Team Member",
       href: "https://www.linkedin.com/in/davidsjosey/",
