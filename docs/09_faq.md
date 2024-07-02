@@ -318,7 +318,7 @@ There may be other patterns present that are detectible by machine learning. We 
   <figcaption className="mt-0">Syrup filling in gaps in a waffle <a href="https://youtu.be/mwe9sHZ58A0?t=3168">(source)</a></figcaption>
 </figure>
 
-Ink might also be sitting on top of the papyrus, causing a slight bump on the surface. In [Tutorial 5](tutorial5) we should several examples of where the ink is directly visible in slices of 3D X-ray scans, which is promising. The talks at the top of this page also go into some details.
+Ink might also be sitting on top of the papyrus, causing a slight bump on the surface. In [Tutorial 5](tutorial5) we show several examples of where the ink is directly visible in slices of 3D X-ray scans, which is promising. The talks at the top of this page also go into some details.
 
 There might be some effect of indentation of the writing instrument, but it’s probably not very significant. The thought has generally been that any indentation effect would be even smaller than ink w.r.t. the scan resolution and maybe not significant when compared against the natural relief of the papyrus fibers. However, this has not been explored in detail on this type of material (look at the paper "Revisiting the Jerash Silver Scroll" for work on an etched metal scroll), so we don’t know for sure.
 
