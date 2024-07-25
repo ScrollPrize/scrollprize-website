@@ -38,7 +38,47 @@ hide_table_of_contents: true
 
 Since the Vesuvius Challenge was launched in March 2023, a lot has happened. On this page we document all the prizes that have been won.
 
-We have awarded **$1,265,500** in prizes so far!
+We have awarded **$1,278,000** in prizes so far!
+
+### $12,500 Open Source (June, 2024)
+
+**Goal:** Increase the probability we read 90% of four scrolls in 2024.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/june-progress-prizes">Blog post</a>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/JamesDarby345/Volumetric_Vesuvius_Labelling">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Volumetric segmentation tools</span>: James Darby / @james_darby</div>
+    <img src="/img/progress/202406/napari.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1245402789027254393/1256742790356795413">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Volume Cartographer improvements</span>: Philip Allgaier / @spacegaier</div>
+    <img src="/img/progress/202406/magnets.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/spelufo/stabia/blob/main/docs/sheet_adjustment_and_assembly.pdf">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Segmentation pipeline</span>: Santiago Pelufo / @spelufo</div>
+    <img src="/img/progress/202406/graph.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/Paul-G2/VesuviusScrollAlignment">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Scroll volume alignment</span>: Paul Geiger</div>
+    <img src="/img/progress/202406/align.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1079907750265499772/1256034838969061376">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Updated 3D ink detection volume</span>: Sean Johnson / @Bruniss</div>
+    <img src="/img/progress/202406/3d.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/pocper1/visual-volume">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Web volume viewer</span>: Huang Cheng Jiun / @pocper1, Yao Hsiao / @Yao Hsiao</div>
+    <img src="/img/progress/202406/volume-opt.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/JamesDarby345/3D_sheet_carving">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Seam carving for densification</span>: James Darby / @james_darby</div>
+    <img src="/img/progress/202406/densify.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/JamesDarby345/3D_mesh_chunking">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Mesh chunking</span>: James Darby / @james_darby</div>
+    <img src="/img/progress/202406/chunked.webp"/>
+  </a>
+</div>
 
 ### $29,000 Open Source (May, 2024)
 
