@@ -97,7 +97,7 @@ To perform segmentation, you have two choices of software: Khartes, and Volume C
 
 Khartes is written by @khartes_chuck and has extensive documentation on github located [here](https://github.com/KhartesViewer/khartes).
 
-This guide will focus on Volume Cartographer, a virtual unwrapping toolkit built by EduceLab’s Seth Parker. Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer includes many tools and utilities. In this tutorial we’ll be looking at the main VC GUI as well as the vc_render tool.
+This guide will focus on [Volume Cartographer](https://github.com/educelab/volume-cartographer), a virtual unwrapping toolkit built by EduceLab’s Seth Parker. Volume Cartographer is designed to create meshes along surfaces of a manuscript (e.g. pages or scroll wraps) and then sample the voxels around these meshes to create a 2D image of the manuscript's contents. Volume Cartographer includes many tools and utilities. In this tutorial we’ll be looking at the main VC GUI as well as the vc_render tool.
 
 The segmentation team uses a custom version of Volume Cartographer, initially forked by @RICHI and further enhanced by @spacegaier. These versions include significant improvements, such as Optical Flow Segmentation (OFS), substantial performance increases, ui improvements, and many other changes. The latest fork, maintained by @spacegaier, is available here: https://github.com/spacegaier/volume-cartographer.
 
@@ -175,7 +175,7 @@ xhost +local:docker
   </TabItem>
   <TabItem value="source" label="Build from source">
 
-* First, install basic build dependencies like `build-essential`, `cmake`, and Qt6.
+* First, install basic [build dependencies](https://github.com/educelab/volume-cartographer/blob/develop/README.md) like `build-essential`, `cmake`, and Qt6.
 * Then:
 
 ```bash
@@ -211,9 +211,7 @@ make install
 
 Now let's gather our scroll data and setup our folders...
 
-We're going to start with Scroll 1 as this is the scroll that the 2023 Grand Prize segments were from, and is also the easiest of the current scrolls to segment. VC requires all of the folders listed under the scroll1.volpkg, in addition to the config.json and meta.json files.
-
-If you wish to use a smaller portion of scroll 1 to begin, rather than the entire scroll, you can download any continuous section of .tif files in the volume (for example: 10000.tif to 10750.tif) and place them in the `/volumes/<VolumeName>` directory. As long as you have the config.json file at the root of the volpkg and the meta.json file in the volume VC can work with it.
+We're going to start with Scroll 1 (PHerc. Paris 4) as this is the scroll that the 2023 Grand Prize segments were from, and is also the easiest of the current scrolls to segment. VC requires all of the folders listed under the PHercParis4.volpkg, in addition to the config.json and meta.json files.
 
 
 This is the recommended structure for the full_scrolls folder (with a full example given for Scroll1):
@@ -250,6 +248,23 @@ new_segments/
   ├── Scroll4
   └── run_vc.sh
 ```
+
+To download the data, first navigate to the `/volumes/20230205180739` directory. You can also place the files in `/volumes/20230205180739` after they are downloaded. 
+Use this `rclone` command to download all of the Scroll 1 volumes quickly:
+
+```bash
+rclone copy :http:/full-scrolls/Scroll1/PHercParis4.volpkg/volumes/20230205180739/ . --http-url https://dl.ash2txt.org/ --progress --size-only
+```
+If you wish to begin with a smaller portion of Scroll 1, rather than the entire scroll, you can download 1cm of scan data from the center using:
+
+```bash
+for i in `seq 6000 7250`; do wget http://dl.ash2txt.org/full-scrolls/Scroll1/PHercParis4.volpkg/volumes/20230205180739/0$i.tif; done
+```
+
+Be sure to have the config.json file at the root of the `.volpkg` directory, and the meta.json file in the `volumes` directory so that VC can work with it.
+More information can be found at the [Vesuvius Data Download Repo](https://github.com/JamesDarby345/VesuviusDataDownload).
+
+
 ### Running the Volume Cartographer GUI
 
 
@@ -274,7 +289,7 @@ sudo docker run -v /path/to/new_segments/:/new_segments -v /path/to/full_scrolls
 ```
 Let's take a moment to get oriented before continuing: 
 
-1. In the top left are the current segmentations, or paths, in the current volume package (from here referred to as a volpkg) along with the file, edit, help and view buttons.
+1. In the top left are the current segmentations, or paths, in the current volume package (from here on referred to as a volpkg) along with the file, edit, help and view buttons.
 2. In the bottom left are the current segmentation runs and anchor information for the currently selected segment id.
 3. On the right are your OFS Segmentation settings. 
 4. Located at the bottom is some navigation information. The primary number useful to you here will be the current slice number.
@@ -289,7 +304,7 @@ Now that we’ve oriented ourselves with the UI, let's open our .volpkg...
 
 1. Open a .volpkg by clicking file, then open .volpkg, and select the .volpkg for the volume you wish to segment on, ensuring you select the .volpkg folder, and not one of the subfolders. Click choose, and the volume will open at slice 0.
 2. Practice scrolling through the volume, using shift+scroll wheel to move up and down through slice layers, and ctrl+scroll wheel to zoom in and out. You can right click and drag to pan around the slice.   Move through the layers until you find an area of the sheet that looks “easy” to segment. An ideal area has spacing on the inside face towards the center of the scroll, and maintains this spacing as you scroll through the layers for a time. You can increase the amount of slices you move through with the scroll wheel by pressing Q and E. The small number that shows up next to your cursor is the number of slices skipped each “click” of the scroll wheel.
-3. Look now to the top left in the segments window; my VC shows some segmentations in the segmentation window, but yours at this point will be blank.
+3. Look now to the top left in the segments window; our VC shows some segmentations in the segmentation window, but yours at this point will be blank.
 
 <figure>
   <img src="/img/tutorials/open-volpkg.png" className="rounded-xl"/>
@@ -423,7 +438,7 @@ The terminal for the container should open. Enter the following lines:
 
 ```bash
 cd /new_segments/
-/bin/bash/run_vc.sh
+/bin/bash run_vc.sh
 ```
 This command will render your points into a mesh, and then create the surface volume layers from it. This can take a long time depending on the size of your segment, but thankfully you will get some progress information on the console.
 
