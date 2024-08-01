@@ -177,7 +177,7 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
 
 const prizes = [
   {
-    title: "Grand Prize",
+    title: "2023 Grand Prize",
     prizeMoney: "$850,000",
     description: "First team to read a scroll by December 31st 2023",
     requirement: "Success requires that the Review Team can:",
@@ -220,6 +220,53 @@ const prizes = [
     ],
     bannerImage: "/img/landing/first-letters.png",
     href: "/firstletters",
+  },
+  {
+    title: "Open Source Prizes",
+    prizeMoney: "$170,000",
+    description: "Detect 10 letters in a 4 cm² area in a scroll",
+    requirement: "",
+    winnersLabel: "54 Winners",
+    winners: [
+      // {
+      //   name: "Philip Allgaier",
+      //   image: "https://pbs.twimg.com/profile_images/460039964365836288/n6b-1m3K_400x400.jpeg",
+      // },
+      // {
+      //   name: "Chuck",
+      //   image: "https://avatars.githubusercontent.com/u/133787404?v=4",
+      // },
+      // {
+      //   name: "Sean Johnson",
+      //   image: "https://avatars.githubusercontent.com/u/120566210?v=4",
+      // },
+      {
+        name: "Giorgio Angelotti",
+        image: "/img/landing/giorgio.jpg",
+      },
+      {
+        name: "Yao Hsiao",
+        image: "/img/landing/yao.jpg",
+      },
+      {
+        name: "Brett Olsen",
+        image: "/img/landing/brett.jpg",
+      },
+      // {
+      //   name: "Dalufishe",
+      //   image: "https://avatars.githubusercontent.com/u/118270401?v=4",
+      // },
+      // {
+      //   name: "Santiago Pelufo",
+      //   image: "https://avatars.githubusercontent.com/u/1312203?v=4",
+      // },
+      {
+        name: "Moshe Levy",
+        image: "/img/landing/moshe.jpg",
+      },
+    ],
+    won: true,
+    href: "/winners",
   },
   {
     title: "Ink Detection Prizes",
@@ -269,53 +316,6 @@ const prizes = [
       {
         name: "Yao Hsiao",
         image: "/img/landing/yao.jpg",
-      },
-    ],
-    won: true,
-    href: "/winners",
-  },
-  {
-    title: "Open Source Prizes",
-    prizeMoney: "$47,000",
-    description: "Detect 10 letters in a 4 cm² area in a scroll",
-    requirement: "",
-    winnersLabel: "18 Winners",
-    winners: [
-      // {
-      //   name: "Philip Allgaier",
-      //   image: "https://pbs.twimg.com/profile_images/460039964365836288/n6b-1m3K_400x400.jpeg",
-      // },
-      // {
-      //   name: "Chuck",
-      //   image: "https://avatars.githubusercontent.com/u/133787404?v=4",
-      // },
-      // {
-      //   name: "Sean Johnson",
-      //   image: "https://avatars.githubusercontent.com/u/120566210?v=4",
-      // },
-      {
-        name: "Giorgio Angelotti",
-        image: "/img/landing/giorgio.jpg",
-      },
-      {
-        name: "Yao Hsiao",
-        image: "/img/landing/yao.jpg",
-      },
-      {
-        name: "Brett Olsen",
-        image: "/img/landing/brett.jpg",
-      },
-      // {
-      //   name: "Dalufishe",
-      //   image: "https://avatars.githubusercontent.com/u/118270401?v=4",
-      // },
-      // {
-      //   name: "Santiago Pelufo",
-      //   image: "https://avatars.githubusercontent.com/u/1312203?v=4",
-      // },
-      {
-        name: "Moshe Levy",
-        image: "/img/landing/moshe.jpg",
       },
     ],
     won: true,
@@ -1470,33 +1470,6 @@ export function Landing() {
           {/* Prize */}
           <section className="mb-24 md:mb-36">
             <div className="container mx-auto z-30 relative">
-              <div className="pt-10 md:pt-20 max-w-3xl">
-                <h1 className="text-4xl md:text-7xl font-black !mb-2 leading-none tracking-tighter">
-                  The Vesuvius Challenge
-                </h1>
-                <p className="max-w-xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
-                  2023 was a milestone year that gave us unprecedented access to
-                  scrolls that have not been read in two millennia. Incredible
-                  teams of engineers helped us unlock these secrets. Learn more
-                  about their accomplishments.
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 max-w-7xl">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-6xl">
-                  {prizes
-                    .filter((p) => p.winners && p.bannerImage)
-                    .map((p, i) => (
-                      <Prize prize={p} key={i} />
-                    ))}
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 max-w-6xl">
-                  {prizes
-                    .filter((p) => p.winners && !p.bannerImage)
-                    .map((p, i) => (
-                      <Prize prize={p} key={i} />
-                    ))}
-                </div>
-              </div>
               <div className="flex flex-col py-8 md:py-16 ">
                 <h1 className="text-3xl md:text-6xl font-black !mb-2 leading-none tracking-tighter">
                   <span
@@ -1529,6 +1502,32 @@ export function Landing() {
                         <Prize prize={p} key={i} />
                       ))}
                   </div>
+                </div>
+              </div>
+              <div className="pt-10 md:pt-20 max-w-3xl">
+                <h1 className="text-4xl md:text-7xl font-black !mb-2 leading-none tracking-tighter">
+                  Awarded Prizes
+                </h1>
+                <p className="max-w-xl md:text-xl text-lg font-medium !mb-8 md:w-full w-4/5  !leading-[110%] tracking-tight opacity-60">
+                  Incredible teams of engineers are helping us unlock these secrets,
+                  providing unprecedented access to scrolls that have not been
+                  read in two millennia. Learn more about their accomplishments.
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 max-w-7xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-6xl">
+                  {prizes
+                    .filter((p) => p.winners && p.bannerImage)
+                    .map((p, i) => (
+                      <Prize prize={p} key={i} />
+                    ))}
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 max-w-6xl">
+                  {prizes
+                    .filter((p) => p.winners && !p.bannerImage)
+                    .map((p, i) => (
+                      <Prize prize={p} key={i} />
+                    ))}
                 </div>
               </div>
             </div>
