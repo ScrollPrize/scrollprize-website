@@ -104,44 +104,6 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
     ),
     background: "/img/landing/story3.png",
   },
-  // {
-  //   date: "2019 AD",
-  //   text: "Enter the particle accelerator.",
-  //   description: (
-  //     <>
-  //       <div className="max-w-3xl mb-8">
-  //         Determined to apply virtual unwrapping to the Herculaneum Papyri, Dr.
-  //         Seales and his team set out to test a new idea. Under infrared light,
-  //         some detached fragments of the papyri are readable, and it seems
-  //         possible that these can be used as ground truth data for a machine
-  //         learning model that could detect otherwise invisible ink from X-rays.
-  //       </div>
-  //       {inlineImage("/img/landing/brent1.webp")}
-  //       <div className="max-w-3xl mb-8">
-  //         To get X-rays at the highest possible resolution, the team uses a
-  //         particle accelerator to scan two full scrolls and several fragments.
-  //         At 3-8µm resolution, with 16 bits of density data per voxel, they
-  //         believe machine learning models can pick up subtle surface patterns in
-  //         the papyrus that indicate the presence of carbon-based ink.
-  //       </div>
-  //       <div className="bg-black p-3 rounded-lg sepia-[0.2] opacity-60">
-  //         <video
-  //           // autoPlay
-  //           playsInline
-  //           loop
-  //           muted
-  //           className="w-[100%]"
-  //           poster="img/landing/anim2b_4.png"
-  //           ref={mlVideo}
-  //         >
-  //           <source src="/img/landing/anim2b_4.webm" type="video/webm" />
-  //           <source src="/img/landing/anim2b_4.mp4" type="video/mp4" />
-  //         </video>
-  //       </div>
-  //     </>
-  //   ),
-  //   background: "/img/landing/story4.png",
-  // },
   {
     date: "2023",
     text: "A remarkable breakthrough.",
@@ -360,8 +322,8 @@ const prizes = [
     href: "/winners",
   },
   {
-    title: "2024 Grand Prize",
-    prizeMoney: "$100,000",
+    title: "Grand Prize",
+    prizeMoney: "$200,000",
     description: "Read 90% of each of Scrolls 1-4",
     requirement: "",
     href: "2024_prizes#2024-grand-prize",
@@ -374,9 +336,9 @@ const prizes = [
     href: "2024_prizes#first-automated-segmentation-prize",
   },
   {
-    title: "2024 First Letters Prizes",
-    prizeMoney: "3 x $30,000",
-    description: "Find the first letters in Scrolls 2, 3, and 4",
+    title: "First Letters / First Title Prizes",
+    prizeMoney: "4 x $60,000",
+    description: "Find first letters in Scrolls 2, 3, and 4, or the title of Scroll 1",
     requirement: "",
     href: "2024_prizes#3-first-letters-prizes-scrolls-2-4",
     // tba: true,
@@ -952,7 +914,7 @@ const Story = ({ story, index }) => (
     }}
   >
     <div className="container mx-auto z-30 relative">
-      <div className="py-10 md:py-20 max-w-4xl">
+      <div className="py-10 max-w-4xl">
         <h1 className="text-3xl md:text-6xl font-black mb-2 leading-none tracking-tighter">
           <span
             style={{
@@ -1401,10 +1363,10 @@ export function Landing() {
                 <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
                   <span className=" opacity-80 md:opacity-60">
                     The Vesuvius Challenge is a machine learning and computer
-                    vision competition that in{" "}
+                    vision competition that has{" "}
                   </span>
                   <span className="opacity-100">
-                    2023 cracked the riddle of the Herculaneum Papyri & awarded
+                    broken through with the Herculaneum scrolls & awarded
                     over $1,000,000 in prizes.
                   </span>
                   <br /> <br />
@@ -1439,7 +1401,7 @@ export function Landing() {
                       autoFill
                       className="py-1 md:py-2 text-xs md:text-sm font-bold text-[#E34E29] bg-[#68140160]"
                     >
-                      PRIZES MONTHLY&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;CLAIM YOURS
+                      PRIZES MONTHLY&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;READ THE SCROLLS
                       &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
                     </Marquee>
                   </div>
@@ -1468,6 +1430,13 @@ export function Landing() {
                     />
                   </div>
                 </a>
+              </div>
+              <div className="pt-8 mb-4">
+                <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
+                  <span className=" opacity-80 md:opacity-60">
+                    Our story ↓
+                  </span>
+                </p>
               </div>
             </div>
             <div
@@ -1622,7 +1591,7 @@ export function Landing() {
                   </a>
                 </div>
               </div>
-              <div className="py-10 md:py-20">
+              <div className="py-10">
                 <h1 className="hidden md:block text-4xl md:text-7xl font-black leading-none tracking-tighter ">
                   Team
                 </h1>
@@ -1661,7 +1630,7 @@ export function Landing() {
                   }}
                 />
               </div>
-              <div className="py-10 md:py-20">
+              <div className="py-10">
                 <h1 className="mb-16 text-4xl md:text-7xl font-black leading-none tracking-tighter  mix-blend-exclusion">
                   Partners
                 </h1>
