@@ -36,7 +36,8 @@ hide_table_of_contents: true
   />
 </head>
 
-**To download:** Fill out the [registration form](https://forms.gle/HV1J6dJbmCB2z5QL8) and you will be provided with a download link automatically. The license terms of the data are specified in the form.
+**To download:** Fill out the [registration form](https://forms.gle/HV1J6dJbmCB2z5QL8) and then visit <a href="https://dl.ash2txt.org">the data server</a>.
+The license terms are specified in the form and in the <a href="https://dl.ash2txt.org/LICENSE.txt">LICENSE file</a>.
 
 <div>To learn more about the data, see the linked pages below. Also be sure to check out:</div>
 
