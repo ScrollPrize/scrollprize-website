@@ -38,10 +38,11 @@ hide_table_of_contents: true
 
 ### What are the important dates?
 
-* March 15th, 2023: The Vesuvius Challenge is launched.
-* October 12th, 2023: $60,000 [First Letters Prize](firstletters) awarded for the first discovery of text within the scrolls. $200,000+ in [other  prizes](winners) meanwhile awarded throughout the year.
-* February 5, 2024: $850,000 [2023 Grand Prize](grandprize) awarded for reading four complete passages from inside a Herculaneum scroll. Stage 2 is underway, with [2024 Prizes](2024_prizes) now announced.
-* March 16th, 2024, 4pm PT: Grand Prize celebration at the Getty Villa Museum in Los Angeles, California.
+* **March 15, 2023** - The Vesuvius Challenge is launched.
+* **October 12, 2023** - $60,000 [First Letters Prize](firstletters) awarded for the first discovery of text within the scrolls. $200,000+ in [other  prizes](winners) awarded throughout the year.
+* **February 5, 2024** - $850,000 [2023 Grand Prize](grandprize) awarded for recovering four complete passages from inside a Herculaneum scroll. Stage 2 is launched, with [new prizes](2024_prizes) announced.
+* **March 16, 2024** - [Grand Prize celebration](https://www.youtube.com/watch?v=uPefxeXfssA) at the Getty Villa Museum in Los Angeles, California.
+* **December 31, 2024** - deadline for [2024 prizes](2024_prizes)!
 
 ### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
 
@@ -76,6 +77,10 @@ We very much encourage researchers and students to work on this! Be sure to reac
 If you want to share your work privately with the contest organizers, please email us at team@scrollprize.org. We will keep it completely confidential. We really appreciate you keeping us in the loop!
 
 If you're open to sharing your improvements publicly (and be eligible for progress prizes), you can post in Discord.
+
+### What is the historical background of this collection?
+
+We have [a page](background) for that!
 
 ### What are the key academic papers I should read to understand the work done so far to read the Herculaneum Papyri?
 
@@ -159,7 +164,7 @@ There are two ways you can write on papyrus: horizontally (“volumen”) or [ve
 
 <div>For some good videos about how papyrus is made see:</div>
 
-* [Nat’s tweet](https://twitter.com/i/status/1703422593670541437)
+* [Nat’s post](https://twitter.com/i/status/1703422593670541437)
 * [Meet Some Of The Last Papyrus Makers In Egypt Keeping A 5,000-Year-Old Craft Alive](https://www.youtube.com/watch?v=SBdVhvo2UUM)
 * [Myriam Krutzsch papyrus workshop](https://www.youtube.com/watch?v=3AaZ5C-U-jE)
 
@@ -225,7 +230,7 @@ We take X-ray photographs of the object from different angles. Typically this is
 <div>Just like with any digital camera, there are a lot of settings and parameters. The most important for you to know are:</div>
 
 * **Resolution:** the dimensions of each pixel in an X-ray photo, typically denoted in µm (micrometers or “microns”). Lower is better. We scanned the scrolls at 7.91µm, which we think should be enough to detect ink patterns, but we scanned the fragments at 3.24µm just in case. Renting beam time on a particle accelerator is expensive, but if we need to we can go back and scan objects at even lower resolutions.
-* **Energy level:** the energy of the X-ray electrons, typically expressed in keV (kiloelectronvolts). For particle accelerators this is one precise number, whereas for bench top scanners this is more of a range. We think lower is better, since carbon responds better to lower energy levels. We scanned everything twice, at 54keV and 88keV (though for the scrolls we only had time for a smaller slice at 88keV).
+* **Energy level:** the energy of the X-ray electrons, typically expressed in keV (kilo electronvolts). For particle accelerators this is one precise number, whereas for bench top scanners this is more of a range. We think lower is better, since carbon responds better to lower energy levels. We scanned everything twice, at 54keV and 88keV (though for the scrolls we only had time for a smaller slice at 88keV).
 
 At high resolutions the field of view of the camera is too small to capture the object in its entirety, so multiple passes have to be made. Typically these are stitched together as part of the scanning process.
 
@@ -397,7 +402,7 @@ The story of the eruption of Mount Vesuvius has captured imaginations for centur
 
 <div>Some more resources:</div>
 
-* Wikpedia
+* Wikipedia
     * [Mount Vesuvius](https://en.wikipedia.org/wiki/Mount_Vesuvius)
     * [Eruption of Mount Vesuvius in 79 AD](https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD)
     * [Herculaneum](https://en.wikipedia.org/wiki/Herculaneum)
@@ -451,8 +456,3 @@ Of course (🔊 sound on).
 ### Do you have a super-cringe, over-the-top, and factually questionable trailer video for the competition?
 
 [Naturally.](https://www.youtube.com/watch?v=u9WCapDeKsQ)
-
-
-<!--
-### Tails and serifs
-"Some of the v2 label edits included various tails and serifs that I omitted the first time. This scribe liked little flourishes evidently (even more true of the other scribe on .. fragments - check the upsilon and kappa (YK) in the middle of .. - the tail on the kappa is even longer than it first appears!)." -->

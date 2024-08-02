@@ -1,6 +1,6 @@
 ---
 title: "Vesuvius Challenge 2023 Grand Prize awarded: we can read the scrolls!"
-sidebar_label: "2023 Grand Prize Awarded"
+sidebar_label: "2023 Grand Prize"
 hide_table_of_contents: true
 hide_title: true
 ---
@@ -162,7 +162,7 @@ To date, our efforts have managed to unroll and read about 5% of the first scrol
 
 <div className="ml-8 mb-4">Do things that are available in lesser quantities afford more pleasure than those available in abundance? Our author thinks not: <em>“as too in the case of food, we do not right away believe things that are scarce to be absolutely more pleasant than those which are abundant.”</em> However, is it easier for us naturally to do without things that are plentiful? <em>“Such questions will be considered frequently.”</em></div>
 
-<div className="ml-8 mb-4">Since this is the end of a scroll, this phrasing may suggest that more is coming in subsequent books of the same work. At the beginning of the first text, a certain Xenophantos is mentioned, perhaps the same man — presumably a musician — also mentioned by Philodemus in his work <em>On Music</em>.</div>
+<div className="ml-8 mb-4">Since this is the end of a scroll, this phrasing may suggest that more is coming in subsequent books of the same work. At the beginning of the first text, a certain Xenophantus is mentioned, perhaps the same man — presumably a musician — also mentioned by Philodemus in his work <em>On Music</em>.</div>
 
 [Philodemus](https://plato.stanford.edu/entries/philodemus/), of the Epicurean school, is thought to have been the philosopher-in-residence of the villa, working in the small library in which the scrolls were found.
 
@@ -264,7 +264,7 @@ Finally the scroll concludes:
 
 [Richard Janko](https://lsa.umich.edu/classics/people/departmental-faculty/rjanko.html) writes:
 
-<div className="italic ml-8 mb-4">“Is the author Epicurus' follower, the philosopher and poet Philodemus, the teacher of Vergil? It seems very likely.</div>
+<div className="italic ml-8 mb-4">“Is the author Epicurus' follower, the philosopher and poet Philodemus, the teacher of Virgil? It seems very likely.</div>
 
 <div className="italic ml-8 mb-4">Is he writing about the effect of music on the hearer, and comparing it to other pleasures like those of food and drink? Quite probably.</div>
 
@@ -278,7 +278,7 @@ Finally the scroll concludes:
 
 From [Bob Fowler](https://www.thebritishacademy.ac.uk/fellows/robert-fowler-FBA/):
 
-<div className="italic ml-8 mb-4">“Like other Epicureans, he valued pleasure above all - but pleasure rightly understood, not mere indulgence. Living in ancient Rome - a society not known for abstinence - Philodemus could expect to meet with scepticism from his readers.”</div>
+<div className="italic ml-8 mb-4">“Like other Epicureans, he valued pleasure above all - but pleasure rightly understood, not mere indulgence. Living in ancient Rome - a society not known for abstinence - Philodemus could expect to meet with skepticism from his readers.”</div>
 
 Scholars might call it a philosophical treatise. But it seems familiar to us, and we can’t escape the feeling that the first text we’ve uncovered is a 2000-year-old blog post about how to enjoy life. Is Philodemus throwing shade at the stoics in his closing paragraph, asserting that stoicism is an incomplete philosophy because it has “nothing to say about pleasure?” The questions he seems to discuss — life’s pleasures and what makes life worth living — are still on our minds today.
 

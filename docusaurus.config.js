@@ -9,7 +9,7 @@ const config = {
   title: "Vesuvius Challenge",
   tagline: "A $1,000,000+ machine learning and computer vision competition",
   url: "https://scrollprize.org",
-  baseUrl: "/", // Temporarliy, on https://scrollprize.github.io/scrollprize.org/
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/social/favicon.ico",
@@ -139,6 +139,7 @@ const config = {
         },
       };
     },
+    "./src/plugins/fetch-content",
   ],
 };
 

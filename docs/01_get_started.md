@@ -1,5 +1,5 @@
 ---
-title: "Challenge Overview"
+title: "Get Started"
 hide_table_of_contents: true
 ---
 
@@ -36,7 +36,13 @@ hide_table_of_contents: true
   />
 </head>
 
-In 2023, the Vesuvius Challenge made history by reading the inside of a Herculaneum scroll without opening it.
+<!---
+join the community
+learn what we are doing
+
+-->
+
+In 2023, the Vesuvius Challenge [made history](grandprize) by reading the inside of a Herculaneum scroll without opening it.
 A combination of competition and community collaboration helped us get there.
 In 2024, our goal is to go from reading 5% of a scroll to 90%.
 There is much to be done - please join us!
@@ -53,24 +59,4 @@ Our team is available for any questions and feedback on Discord. You can also em
 
 In 2023 we awarded more than [$1,000,000](winners) across 53 prizes, resulting in the historic breakthrough of reading the inside of a Herculaneum scroll.
 As a part of Stage 2, we have now announced a 2024 Grand Prize, as well as another series of progress prizes, to help us get from 5% to 90% of the scroll.
-Read more about the [2024 prizes here](2024_prizes)!
-
-## Master Plan
-
-Vesuvius Challenge is committed to the mission of reading the Herculaneum scrolls.
-Read more in our [Master Plan](master_plan).
-
-<!-- #### Segmentation
-
-- Recent developments:
-  - [Segmentation Tooling 2 Prize (Oct 3)](winners#segmentation-tooling-2-3-october-2023) completed.
-  - [Open Source Prize (Nov 30)](winners#25000-open-source-november-30-2023) completed.
-- Next milestone: segmenting all papyrus sheets of all scrolls. Better tooling is high on our wish list for [Open Source Prizes](open_source_prizes).
-- Segmentation team makes [weekly releases](data_segments#weekly-releases).
-
-#### Ink Detection
-
-- Recent developments:
-  - [**First Letters Prize Won!**](firstletters) (12 October 2023).
-  - [Open Source Prize (Nov 30)](winners#25000-open-source-november-30-2023) completed.
-- Next milestone: [Grand Prize](grand_prize) and [Open Source Prizes](open_source_prizes). -->
+Read more about the [current prizes here](2024_prizes)!

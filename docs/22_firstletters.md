@@ -189,7 +189,7 @@ Meanwhile, another contestant, Youssef Nader, an Egyptian biorobotics grad stude
   <figcaption className="mt-0">One of the detached fragments with known ground truth being scanned at the particle accelerator.</figcaption>
 </figure>
 
-He submitted his idea for an “Ink Detection Followup Prize” and won a small prize. The idea seemed promising, but as far as we knew, that was that. Several weeks later, Youssef made his own submission to the First Letters prize. He had seen Luke’s early results which had been shared on <a href="https://twitter.com/natfriedman/status/1695870954734490003">Twitter</a> and Discord and decided to focus on the same area within the scroll.
+He submitted his idea for an “Ink Detection Followup Prize” and won a small prize. The idea seemed promising, but as far as we knew, that was that. Several weeks later, Youssef made his own submission to the First Letters prize. He had seen Luke’s early results which had been shared on <a href="https://twitter.com/natfriedman/status/1695870954734490003">X</a> and Discord and decided to focus on the same area within the scroll.
 
 With this modified model from the Kaggle competition, he managed to find some letters, though entirely without relying on Casey’s method of manually looking for crackle. He then annotated what looked like letter shapes to the label data.
 

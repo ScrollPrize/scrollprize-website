@@ -1,5 +1,5 @@
 ---
-title: "The Master Plan"
+title: "Master Plan"
 hide_table_of_contents: true
 ---
 
@@ -38,7 +38,7 @@ hide_table_of_contents: true
 
 ## Vesuvius Challenge – Stage Two
 
-* In 2023 Vesuvius Challenge made a breakthrough, extracting more than four passages of never-before-seen text from inside an unopened (and unopenable) carbonized scroll. We have proven techniques for virtually unrolling the papyrus scroll and recognizing the ink using machine learning. It wasn’t clear it was possible until we did it. This was stage one.
+* In 2023 Vesuvius Challenge [made a breakthrough](grandprize), extracting more than four passages of never-before-seen text from inside an unopened (and unopenable) carbonized scroll. We have proven techniques for virtually unrolling the papyrus scroll and recognizing the ink using machine learning. It wasn’t clear it was possible until we did it. This was stage one.
 * Our next step is to scale these techniques up so that we can read entire scrolls, and to figure out an efficient scanning protocol to allow us to scan and read the 300 extant scrolls, mostly in Naples. Two key technical problems need to be solved: segmentation at scale, and scanning at scale.
 * Segmentation at scale
   * The current bottleneck is tracing the papyrus surface inside the scan of the scroll (we call this “segmentation”). Currently we use manual tracing aided by various algorithms. This is quite expensive – about $100 per square centimeter. We spent about $200,000 so far to trace enough material to read the fifteen partial columns of text that were revealed in 2023.
