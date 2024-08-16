@@ -10,8 +10,9 @@ const config = {
   tagline: "A $1,000,000+ machine learning and computer vision competition",
   url: "https://scrollprize.org",
   baseUrl: "/",
+  onBrokenAnchors: "throw",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenMarkdownLinks: "throw",
   favicon: "img/social/favicon.ico",
 
   // GitHub pages deployment config.

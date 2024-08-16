@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Marquee from "react-fast-marquee";
+import useBrokenLinks from '@docusaurus/useBrokenLinks';
 
 const inlineImage = (src) => (
   <div
@@ -1285,6 +1286,9 @@ const AnimatedArrow = ({ text, button }) => (
 );
 
 export function Landing() {
+  useBrokenLinks().collectAnchor("sponsors");
+  useBrokenLinks().collectAnchor("educelab-funders");
+
   const heroVideo = useRef(null);
   const unrollVideo = useRef(null);
   // const mlVideo = useRef(null);
