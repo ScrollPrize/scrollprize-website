@@ -40,6 +40,23 @@ hide_table_of_contents: true
 join the community
 learn what we are doing
 
+see the data
+neuroglancer https://dl.ash2txt.org/view/Scroll1
+Minecraft
+vesuvius library notebook from Giorgio
+vesuvius library link
+
+AWS image https://github.com/ScrollPrize/cloud-image
+AWS credits (link to form to apply for them)
+
+sheet stitching problem formulations
+sample graph file to share
+thaumato tutorial video
+
+ink detection notebook from Luke
+ink detection Drive from Julian https://drive.google.com/drive/folders/1QI2D8_f74dQufUkgV-nC-2lx47VStoQv?usp=sharing
+
+videos from Dejan or whoever
 -->
 
 In 2023, the Vesuvius Challenge [made history](grandprize) by reading the inside of a Herculaneum scroll without opening it.
