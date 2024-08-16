@@ -13,6 +13,7 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
   {
     date: "79 AD",
     text: "Mount Vesuvius erupts.",
+    anchor: "vesuvius",
     description: (
       <>
         <div className="mb-4 max-w-3xl">
@@ -916,7 +917,7 @@ const Story = ({ story, index }) => (
   >
     <div className="container mx-auto z-30 relative">
       <div className="py-10 max-w-4xl">
-        <h1 className="text-3xl md:text-6xl font-black mb-2 leading-none tracking-tighter">
+        <h1 className="text-3xl md:text-6xl font-black mb-2 leading-none tracking-tighter" id={story.anchor}>
           <span
             style={{
               background:
@@ -1288,6 +1289,7 @@ const AnimatedArrow = ({ text, button }) => (
 export function Landing() {
   useBrokenLinks().collectAnchor("sponsors");
   useBrokenLinks().collectAnchor("educelab-funders");
+  useBrokenLinks().collectAnchor("our-story");
 
   const heroVideo = useRef(null);
   const unrollVideo = useRef(null);
@@ -1405,7 +1407,7 @@ export function Landing() {
                       autoFill
                       className="py-1 md:py-2 text-xs md:text-sm font-bold text-[#E34E29] bg-[#68140160]"
                     >
-                      WIN PRIZES&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;READ SCROLLS
+                      WIN PRIZES&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;READ THE SCROLLS
                       &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
                     </Marquee>
                   </div>
@@ -1437,7 +1439,7 @@ export function Landing() {
               </div>
               <div className="pt-8 mb-4">
                 <p className="max-w-lg md:text-xl text-lg font-medium mb-8 !leading-[110%] tracking-tight">
-                  <span className=" opacity-80 md:opacity-60">
+                  <span id="our-story" className=" opacity-80 md:opacity-60">
                     Our story ↓
                   </span>
                 </p>

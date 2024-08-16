@@ -37,12 +37,8 @@ hide_table_of_contents: true
 </head>
 
 <!---
-join the community
 learn what we are doing
 
-see the data
-neuroglancer https://dl.ash2txt.org/view/Scroll1
-Minecraft
 vesuvius library notebook from Giorgio
 vesuvius library link
 
@@ -59,21 +55,26 @@ ink detection Drive from Julian https://drive.google.com/drive/folders/1QI2D8_f7
 videos from Dejan or whoever
 -->
 
-In 2023, the Vesuvius Challenge [made history](grandprize) by reading the inside of a Herculaneum scroll without opening it.
-A combination of competition and community collaboration helped us get there.
-In 2024, our goal is to go from reading 5% of a scroll to 90%.
-There is much to be done - please join us!
+The Vesuvius Challenge and our community [made history](grandprize) by reading inside a Herculaneum scroll without opening it.
+Now, our goal is to go from reading 5% of a scroll to 90% of four scrolls.
+We need your help!
 
-## Join the community
+You can play a key role in our mission to read the lost library of the Herculaneum scrolls.
+Take a look at [our story](/#our-story), what we've accomplished, and what prizes we are offering now.
 
-- Join our [Discord server](https://discord.gg/V4fJhvtaQn) to ask questions, learn about what is going on, hang out with fellow contestants and interested onlookers, and perhaps find teammates.
-- Receive updates from our [mailing list on Substack](https://scrollprize.substack.com).
-- Follow [@scrollprize](https://twitter.com/scrollprize) on X.
+### 1. Get plugged in
 
-Our team is available for any questions and feedback on Discord. You can also email us at team@scrollprize.org.
+Join our [Discord server](https://discord.gg/V4fJhvtaQn), subscribe to our [mailing list](https://scrollprize.substack.com), and follow [@scrollprize](https://x.com/scrollprize) on X.
 
-## Current state
+### 2. See some data
+
+What is it like to look inside a scroll that has not been opened in 2,000 years? Explore one right now [in your browser](https://dl.ash2txt.org/view/Scroll1)!
+<!-- TODO Minecraft -->
+
+### Current state
 
 In 2023 we awarded more than [$1,000,000](winners) across 53 prizes, resulting in the historic breakthrough of reading the inside of a Herculaneum scroll.
 As a part of Stage 2, we have now announced a 2024 Grand Prize, as well as another series of progress prizes, to help us get from 5% to 90% of the scroll.
 Read more about the [current prizes here](2024_prizes)!
+
+Email us at team@scrollprize.org if you need anything.

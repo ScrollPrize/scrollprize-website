@@ -71,7 +71,7 @@ const sidebars = {
     },
     {
       type: 'link',
-      label: 'Blog',
+      label: 'Mailing list',
       href: 'https://scrollprize.substack.com/',
     },
     {
