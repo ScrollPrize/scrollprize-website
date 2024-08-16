@@ -30,8 +30,7 @@ hide_title: true
   WebkitTextFillColor: "transparent",
   backgroundClip: "text",
   textFillColor: "transparent",
-}}>we can read the first scroll!</span>
-</h1>
+}}>we can read the first scroll!</span></h1>
 
 <div className="md:text-2xl text-lg font-medium mt-6 mb-2 opacity-80 leading-none tracking-tight">The 2000-year-old scroll discusses music, food, and how to enjoy life’s pleasures.</div>
 
@@ -70,10 +69,13 @@ On March 15th, 2023, Nat Friedman, Daniel Gross, and Brent Seales launched the <
 
 <div className="flex flex-wrap mb-4">
   <div className="w-[41%] mr-4 mb-2"><img src="/img/grandprize/seth-diamond.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Seth Parker <a href="https://scrollprize.substack.com/p/new-scans-of-herculaneum-papyri-at">scanning</a> a scroll at the <a href="https://www.diamond.ac.uk/">Diamond Light Source</a> particle accelerator.</figcaption></div>
-  <div className="w-[54%]"><video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/scanning2.jpg">
-    <source src="/img/tutorials/scanning2.webm" type="video/webm"/>
-    <source src="/img/tutorials/scanning2.mp4" type="video/mp4"/>
-  </video><figcaption className="mt-[-6px]">Artistic visualization of constructing a 3D volume.</figcaption></div>
+  <div className="w-[54%]">
+    <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/scanning2.jpg">
+      <source src="/img/tutorials/scanning2.webm" type="video/webm"/>
+      <source src="/img/tutorials/scanning2.mp4" type="video/mp4"/>
+    </video>
+    <figcaption className="mt-[-6px]">Artistic visualization of constructing a 3D volume.</figcaption>
+  </div>
 </div>
 
 A global community of competitors and collaborators assembled to crack the problem with computer vision, machine learning, and hard work.

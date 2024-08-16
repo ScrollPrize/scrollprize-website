@@ -32,8 +32,7 @@ hide_title: true
   WebkitTextFillColor: "transparent",
   backgroundClip: "text",
   textFillColor: "transparent",
-}}>unopened Herculaneum scroll</span> by 21yo computer science student
-</h1>
+}}>unopened Herculaneum scroll</span> by 21yo computer science student</h1>
 
 <div className="md:text-3xl text-lg font-medium mt-6 mb-2 opacity-80 leading-none tracking-tight">Vesuvius Challenge $700,000 Grand Prize “now definitely achievable”</div>
 
