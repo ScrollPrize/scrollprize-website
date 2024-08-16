@@ -323,7 +323,7 @@ These scrolls were scanned at Diamond Light Source, a particle accelerator near 
   <figcaption className="mt-[-6px]">Scrubbing through the slice images of the scroll.</figcaption>
 </figure>
 
-The next step is to identify individual sheets of papyrus in 3D space. For this we primarily use a tool called [Volume Cartographer](community_projects#volume-cartographer), created by Seth Parker and others in Brent Seales’ lab, and augmented by our contestants, primarily Julian Schilliger (Grand Prize winner) and Philip Allgaier.
+The next step is to identify individual sheets of papyrus in 3D space. For this we primarily use a tool called [Volume Cartographer](https://github.com/educelab/volume-cartographer), created by Seth Parker and others in Brent Seales’ lab, and augmented by our contestants, primarily Julian Schilliger (Grand Prize winner) and Philip Allgaier.
 
 Volume Cartographer is operated by our team of full-time segmenters: Ben Kyles, David Josey, and Konrad Rosenberg. They use a combination of automatic algorithms and manual adjustments to map out large areas of papyrus. This is still a painstaking process, with lots of room for improvement if we’re going to segment all the scrolls.
 

@@ -67,7 +67,7 @@ Our Segmentation Team has been mapping select regions of the scrolls. The commun
 
 **INSERT sqcm vs time FIGURE HERE**
 
-You can view the meshes of all our Scroll 1 segments in [Volume Viewer](http://37.19.207.113:5173/) and [Segment Viewer](http://37.19.207.113:5174/) (see [here](community_projects#volume-viewer-and-segment-viewer)).
+You can view the meshes of our Scroll 1 segments in [Volume Viewer](https://github.com/tomhsiao1260/vc-whiteboard/tree/demo-3) (hosted [here](http://37.19.207.113:5174)) and [Segment Viewer](https://github.com/tomhsiao1260/segment-viewer) (hosted [here](http://37.19.207.113:5173)).
 
 For more technical details about how the segmentation team operates, check out this doc: [The Segmenter’s Guide to Volume Cartographer (for contractors)](https://docs.google.com/document/d/11B9Gy1gJRye_NQHphwbIxINvactUchJJsJOJi1FKrgI/edit?usp=sharing).
 

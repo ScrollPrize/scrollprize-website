@@ -461,7 +461,7 @@ This page lists all the prizes awarded so far:
 ### $100,000 Kaggle Ink Detection (July 14, 2023)
 
 **Goal:** Optimize fragment-based ink detection methods.<br/>
-**Announcement:** <a href="https://scrollprize.substack.com/p/12000-ink-detection-followup-prize">Blog post</a> / <a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/overview">Kaggle competition</a> / [More info](community_projects#kaggle-ink-detection)<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/12000-ink-detection-followup-prize">Blog post</a> / <a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/overview">Kaggle competition</a> / [More info](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/leaderboard)<br/>
 
 <div className="flex flex-row flex-wrap">
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/417496">
