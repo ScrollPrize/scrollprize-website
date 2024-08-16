@@ -105,7 +105,7 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
     background: "/img/landing/story3.png",
   },
   {
-    date: "2023",
+    date: "2023 AD",
     text: "A remarkable breakthrough.",
     description: (
       <>
@@ -116,8 +116,8 @@ const stories = ({ unrollVideo, mlVideo, xrayVideo }) => [
           recover 4 passages of 140 characters from a Herculaneum scroll.
         </div>
         <div className="max-w-3xl mb-8">
-          Following a year of remarkable progress, the prize was claimed. After 275
-          years, the ancient puzzle of the Herculaneum Papyri has been solved.
+          Following a year of remarkable progress, <a href="grandprize">the prize was claimed</a>. After 275
+          years, the ancient puzzle of the Herculaneum Papyri has been cracked open.
           But the quest to uncover the secrets of the scrolls is just beginning.
         </div>
         <div className="flex overflow-hidden rounded-lg md:mb-8 mb-4 h-96 relative bg-black">
@@ -1366,19 +1366,19 @@ export function Landing() {
                     vision competition that has{" "}
                   </span>
                   <span className="opacity-100">
-                    broken through with the Herculaneum scrolls & awarded
+                    <a href="grandprize">broken through</a> with the Herculaneum scrolls & awarded
                     over $1,000,000 in prizes.
                   </span>
                   <br /> <br />
                   <span className=" opacity-80 md:opacity-60">
-                    2024's challenge is to go from reading a few passages to entire scrolls.
+                    We're still going. 2024's challenge is to go from reading a few passages to entire scrolls.
                   </span>
                 </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-4 items-stretch max-w-7xl">
                 <a
                   className="cursor-pointer group hover:no-underline"
-                  href="/2024_prizes"
+                  href="/get_started"
                 >
                   <div
                     className="relative rounded-2xl border-solid text-white border border-[#FFFFFF20] bg-[#131114bf] group-hover:-translate-y-2 transition-transform ease-in-out duration-300 flex flex-col overflow-hidden"
@@ -1389,9 +1389,9 @@ export function Landing() {
                   >
                     <div className="flex flex-col py-4 md:py-5 px-5 md:px-7 ">
                       <h3 className="text-xl md:text-3xl text-white mt-0 mb-1 tracking-tighter !leading-[90%] flex-grow">
-                        $600,000+ in 2024 Prizes
+                        Get started
                       </h3>
-                      <AnimatedArrow text="More information" />
+                      <AnimatedArrow text="$1M+ already awarded" />
                     </div>
                     <img
                       className=""
@@ -1401,7 +1401,7 @@ export function Landing() {
                       autoFill
                       className="py-1 md:py-2 text-xs md:text-sm font-bold text-[#E34E29] bg-[#68140160]"
                     >
-                      PRIZES MONTHLY&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;READ THE SCROLLS
+                      WIN PRIZES&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;READ SCROLLS
                       &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;
                     </Marquee>
                   </div>
@@ -1483,7 +1483,7 @@ export function Landing() {
                       textFillColor: "transparent",
                     }}
                   >
-                    2024
+                    2024 AD
                   </span>
                   <br />
                   The Challenge Continues
