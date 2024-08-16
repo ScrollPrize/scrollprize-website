@@ -70,7 +70,7 @@ This depends on the jurisdiction you live in, but generally yes, you do have to 
 * Any publications and presentations must cite the EduceLab-Scrolls Dataset.
 * You won’t publish any revelation of hidden text (or associated code) without the written approval of Vesuvius Challenge.
 
-We very much encourage researchers and students to work on this! Be sure to reach out to us [on Discord or by email](/overview#join-the-community).
+We very much encourage researchers and students to work on this! Be sure to reach out to us [on Discord or by email](/get_started#join-the-community).
 
 ### I have made some progress, who do I inform about this?
 
