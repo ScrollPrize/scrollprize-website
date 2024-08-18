@@ -37,39 +37,56 @@ hide_table_of_contents: true
 </head>
 
 <!---
-learn what we are doing
-
-vesuvius library notebook from Giorgio
-vesuvius library link
-
-AWS image https://github.com/ScrollPrize/cloud-image
-AWS credits (link to form to apply for them)
 
 sheet stitching problem formulations
 sample graph file to share
 thaumato tutorial video
+autosegmentation prize
 
 ink detection notebook from Luke
 ink detection Drive from Julian https://drive.google.com/drive/folders/1QI2D8_f74dQufUkgV-nC-2lx47VStoQv?usp=sharing
+Giorgio ink detection notebook (same one?)
+first letters prizes
+
+AWS image https://github.com/ScrollPrize/cloud-image
+AWS credits (link to form to apply for them)
 
 videos from Dejan or whoever
+intro - where we are
+ink detection
+segmentation
+virtual unwrapping/2023 GP
+scroll walking tour
+
+existing tutorials
+
+visuals from David
+
+data pages, check email from david
 -->
 
 The Vesuvius Challenge and our community [made history](grandprize) by reading inside a Herculaneum scroll without opening it.
 Now, our goal is to go from reading 5% of a scroll to 90% of four scrolls.
 We need your help!
 
-You can play a key role in our mission to read the lost library of the Herculaneum scrolls.
-Take a look at [our story](/#our-story), what we've accomplished, and what prizes we are offering now.
+**You** can play a key role in our mission to read the lost library of the Herculaneum scrolls. Here's how:
 
-### 1. Get plugged in
+### 1. Join the community
 
 Join our [Discord server](https://discord.gg/V4fJhvtaQn), subscribe to our [mailing list](https://scrollprize.substack.com), and follow [@scrollprize](https://x.com/scrollprize) on X.
 
-### 2. See some data
+### 2. See the data
 
-What is it like to look inside a scroll that has not been opened in 2,000 years? Explore one right now [in your browser](https://dl.ash2txt.org/view/Scroll1)!
-<!-- TODO Minecraft -->
+Look inside a scroll that has not been opened in 2,000 years, right now, [in your browser](https://dl.ash2txt.org/view/Scroll1)!
+<!-- TODO * [In a Python notebook](https://github.com/ScrollPrize/vesuvius/blob/main/notebooks/example1_data_access.ipynb) -->
+<!-- TODO (also the Python library) -->
+<!-- TODO * In Minecraft -->
+
+### 3. Find your area
+
+learn what we are doing
+what prizes we have
+what problems we are working on
 
 ### Current state
 

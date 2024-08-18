@@ -264,3 +264,14 @@ main {
 .docs-doc-id-grandprize article h3 {
   line-height: 1.1;
 }
+/* Docusaurus inline table of contents */
+[class*="tableOfContentsInline_node_modules-"] ul li {
+  list-style-type: none; /* Remove bullet points */
+  margin-bottom: 0; /* Tighten up the spacing */
+}
+
+/* Make the links in collapsible detail sections look like the other links */
+[class*="collapsibleContent_node_modules-"] * a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
