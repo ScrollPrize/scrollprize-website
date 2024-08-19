@@ -68,7 +68,7 @@ Join our [Discord server](https://discord.gg/V4fJhvtaQn), subscribe to our [mail
 
 Look inside a scroll that has not been opened in 2,000 years, right now, [in your browser](https://dl.ash2txt.org/view/Scroll1)!
 <!-- TODO * [In a Python notebook](https://github.com/ScrollPrize/vesuvius/blob/main/notebooks/example1_data_access.ipynb) -->
-<!-- TODO (also the Python library) -->
+<!-- TODO (also the Python library de la GitHub) -->
 <!-- TODO * In Minecraft -->
 
 ### 3. Find your area
@@ -82,8 +82,6 @@ what problems we are working on
 thaumato tutorial video
 autosegmentation prize
 
-<!-- TODO ink detection notebook from Luke -->
-<!-- TODO ink detection Drive from Julian https://drive.google.com/drive/folders/1QI2D8_f74dQufUkgV-nC-2lx47VStoQv?usp=sharing -->
 <!-- TODO Giorgio ink detection notebook (same one?) -->
 first letters prizes
 
