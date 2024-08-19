@@ -37,20 +37,6 @@ hide_table_of_contents: true
 </head>
 
 <!---
-
-sheet stitching problem formulations
-sample graph file to share
-thaumato tutorial video
-autosegmentation prize
-
-ink detection notebook from Luke
-ink detection Drive from Julian https://drive.google.com/drive/folders/1QI2D8_f74dQufUkgV-nC-2lx47VStoQv?usp=sharing
-Giorgio ink detection notebook (same one?)
-first letters prizes
-
-AWS image https://github.com/ScrollPrize/cloud-image
-AWS credits (link to form to apply for them)
-
 videos from Dejan or whoever
 intro - where we are
 ink detection
@@ -58,16 +44,19 @@ segmentation
 virtual unwrapping/2023 GP
 scroll walking tour
 
-existing tutorials
-
 visuals from David
 
 data pages, check email from david
+some notes from Ben and David
 -->
 
 The Vesuvius Challenge and our community [made history](grandprize) by reading inside a Herculaneum scroll without opening it.
 Now, our goal is to go from reading 5% of a scroll to 90% of four scrolls.
 We need your help!
+
+In 2023 we awarded more than [$1,000,000](winners) across 53 prizes, resulting in the historic breakthrough of reading the inside of a Herculaneum scroll.
+As a part of Stage 2, we have now announced a 2024 Grand Prize, as well as another series of progress prizes, to help us get from 5% to 90% of the scroll.
+Read more about the [current prizes here](2024_prizes)!
 
 **You** can play a key role in our mission to read the lost library of the Herculaneum scrolls. Here's how:
 
@@ -88,10 +77,21 @@ learn what we are doing
 what prizes we have
 what problems we are working on
 
-### Current state
+<!-- TODO sheet stitching problem formulations -->
+<!-- TODO sample graph file to share -->
+thaumato tutorial video
+autosegmentation prize
 
-In 2023 we awarded more than [$1,000,000](winners) across 53 prizes, resulting in the historic breakthrough of reading the inside of a Herculaneum scroll.
-As a part of Stage 2, we have now announced a 2024 Grand Prize, as well as another series of progress prizes, to help us get from 5% to 90% of the scroll.
-Read more about the [current prizes here](2024_prizes)!
+<!-- TODO ink detection notebook from Luke -->
+<!-- TODO ink detection Drive from Julian https://drive.google.com/drive/folders/1QI2D8_f74dQufUkgV-nC-2lx47VStoQv?usp=sharing -->
+<!-- TODO Giorgio ink detection notebook (same one?) -->
+first letters prizes
+
+### 4. 
+
+awesome scroll tools
+tutorials
+<!-- TODO AWS image https://github.com/ScrollPrize/cloud-image -->
+<!-- TODO AWS credits (link to form to apply for them) -->
 
 Email us at team@scrollprize.org if you need anything.

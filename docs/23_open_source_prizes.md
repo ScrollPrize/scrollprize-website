@@ -58,7 +58,7 @@ In our tradition of progress prizes, we’re awarding four $3,000 prizes for qua
   * Real time papyrus visualization like Khartes
   * Segmenting “at an angle” for tilted papyrus surfaces
 * Tools for detecting overlap in segments, to avoid unwittingly running training and inference on the same data.
-* Tools for merging segments or laying out multiple related segments in 2D (like Marzia D’Angelo’s [fragment map](faq#what-are-some-good-books-that-i-should-read-to-learn-more); more explanation [here](https://discord.com/channels/1079907749569237093/1085972686158712892/1115918553602855002)).
+* Tools for merging segments or laying out multiple related segments in 2D (like Marzia D’Angelo’s [fragment map](faq#books); more explanation [here](https://discord.com/channels/1079907749569237093/1085972686158712892/1115918553602855002)).
 * Auto-segmentation of “mushy” areas: algorithms / models that can detect and follow the papyrus fibers, even where they are bunched up with other layers of papyrus.
 * Comparison of various ink detection model architectures.
 * Anything that comes up in Discord that the community broadly deems useful.
