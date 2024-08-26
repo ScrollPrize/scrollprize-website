@@ -46,30 +46,38 @@ Segmentation involves mapping sheets of papyrus inside a 3D X-ray scroll volume 
   <figcaption className="mt-0">Illustration of Volume Cartographer with an algorithm extrapolating in 3D.</figcaption>
 </figure>
 
-The resulting 3D map is called a “mesh”, which is used to isolate and extract a thin "surface volume" of the mapped papyrus surface. The surface volume is then flattened into a stack of 65 .tif files (layers), where 32.tif is nominally the papyrus surface. 64.tif is “in front” of the surface and 00.tif is “behind”.
+The resulting 3D structure is called a “mesh”, capturing the complex shape of the papyrus sheet.
+
+<div className="flex flex-wrap max-w-[500px]">
+  <div className="w-[100%] max-w-[400px] mb-4"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div><figcaption className="mt-[-6px]">Some segment meshes from Scroll 1.</figcaption></div>
+</div>
+
+The mesh is used to isolate and extract a thin "surface volume" of the mapped papyrus surface in micro-CT. The surface volume is flattened into a stack of 65 image files (layers), where 32.tif is nominally the papyrus surface. 64.tif is “atop” of the surface and 00.tif is “below”.
 
 <div className="flex w-[100%]">
-    <div className="w-[100%] mb-2 mr-2"><img src="/img/data/mesh2surfvol.png" className="w-[100%]"/><figcaption className="mt-0">A flattened surface volume is produced starting from a mesh</figcaption></div>
+    <div className="w-[100%] mb-2 mr-2"><img src="/img/data/mesh2surfvol.png" className="w-[100%]"/><figcaption className="mt-0">A flattened surface volume is produced starting from a mesh.</figcaption></div>
 </div>
 
 <figure className="max-w-[600px]">
   <img src="/img/data/surface_volume.gif"/>
-  <figcaption className="mt-0">Scrubbing through layers of the surface volume of <a href="https://dl.ash2txt.org/full-scrolls/Scroll1/PHercParis4.volpkg/paths/20230827161846/layers/">segment 20230827161846</a></figcaption>
+  <figcaption className="mt-0">Scrubbing through layers of the surface volume of segment <a href="https://dl.ash2txt.org/full-scrolls/Scroll1/PHercParis4.volpkg/paths/20230827161846/layers/">20230827161846</a>.</figcaption>
 </figure>
 
 The flattened surface volume can be used directly to look for ink, either by visual inspection or with machine learning tools.
 
 <div className="flex w-[100%]">
-    <div className="w-[100%] mb-2 mr-2"><img src="/img/data/ML-ink-detection.png" className="w-[100%]"/><figcaption className="mt-0">Machine learning ink detection models finding a pi</figcaption></div>
+  <div className="w-[100%] mb-2 mr-2"><img src="/img/data/ML-ink-detection.png" className="w-[100%]"/><figcaption className="mt-0">Machine learning ink detection models finding a Pi.</figcaption></div>
 </div>
 
-Our Segmentation Team has been mapping select regions of the scrolls. The community has made this a significantly more automated process, but it still involves considerable human input. 
+Our Segmentation Team has been mapping select regions of the scrolls. The community has made this a significantly more automated process with improved tools, but it still involves considerable human input. 
 
-**INSERT sqcm vs time FIGURE HERE**
+<div className="flex w-[100%]">
+  <div className="w-[100%] mb-2 mr-2"><img src="/img/data/segment_areas.png" className="w-[100%]"/><figcaption className="mt-0">Total segment area created over time by our team and community.</figcaption></div>
+</div>
 
 You can view the meshes of our Scroll 1 segments in [Volume Viewer](https://github.com/tomhsiao1260/vc-whiteboard/tree/demo-3) (hosted [here](http://37.19.207.113:5174)) and [Segment Viewer](https://github.com/tomhsiao1260/segment-viewer) (hosted [here](http://37.19.207.113:5173)).
 
-For more technical details about how the segmentation team operates, check out this doc: [The Segmenter’s Guide to Volume Cartographer (for contractors)](https://docs.google.com/document/d/11B9Gy1gJRye_NQHphwbIxINvactUchJJsJOJi1FKrgI/edit?usp=sharing).
+For more technical details about how the segmentation team operates, check out this doc: [The Segmenter’s Guide to Volume Cartographer](https://docs.google.com/document/d/11B9Gy1gJRye_NQHphwbIxINvactUchJJsJOJi1FKrgI/edit?usp=sharing).
 
 ## Data format
 

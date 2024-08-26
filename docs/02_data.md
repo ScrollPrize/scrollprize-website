@@ -109,7 +109,7 @@ Segmentation is the mapping of sheets of papyrus in a 3D X-ray volume. The resul
       <tr>
         <td>
           <div className="flex flex-wrap max-w-[500px]">
-            <div className="w-[100%] max-w-[400px] mb-4"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div><figcaption className="mt-[-6px]">Some segments from Scroll 1</figcaption></div>
+            <div className="w-[100%] max-w-[400px] mb-4"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div><figcaption className="mt-[-6px]">Some segments from Scroll 1.</figcaption></div>
           </div>
         </td>
       </tr>
