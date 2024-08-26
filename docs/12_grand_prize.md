@@ -120,7 +120,7 @@ If you’re competing as a team, please have your team leader submit your result
 
 ### Review process
 
-All submissions will be assessed by the Review Team, which consists of a technical team to review your methodology, and an independent team of papyrologists to review your results. Note that the technical team also judges the [Open Source Prizes](/overview#open-source-prizes-3x-2000).
+All submissions will be assessed by the Review Team, which consists of a technical team to review your methodology, and an independent team of papyrologists to review your results. Note that the technical team also judges the Open Source Prizes.
 
 <div className="font-bold">Technical team</div>
 

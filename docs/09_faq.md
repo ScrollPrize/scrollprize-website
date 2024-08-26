@@ -36,14 +36,113 @@ hide_table_of_contents: true
   />
 </head>
 
-### What are the important dates?
+import TOCInline from '@theme/TOCInline';
 
-* March 15th, 2023: The Vesuvius Challenge is launched.
-* October 12th, 2023: $60,000 [First Letters Prize](firstletters) awarded for the first discovery of text within the scrolls. $200,000+ in [other  prizes](winners) meanwhile awarded throughout the year.
-* February 5, 2024: $850,000 [2023 Grand Prize](grandprize) awarded for reading four complete passages from inside a Herculaneum scroll. Stage 2 is underway, with [2024 Prizes](2024_prizes) now announced.
-* March 16th, 2024, 4pm PT: Grand Prize celebration at the Getty Villa Museum in Los Angeles, California.
+<TOCInline
+  toc={toc}
+/>
 
-### I would like to contribute something, but I don’t have the time to compete for the Grand Prize, what should I do?
+---
+
+### What is the Vesuvius Challenge?
+
+The Vesuvius Challenge is a machine learning and computer vision competition to read the Herculaneum scrolls.
+The scrolls were buried and carbonized by the eruption of Mount Vesuvius in 79 AD.
+After their discovery in the 1750s, some were opened physically, mostly destroying them but revealing some Greek philosophy and Latin works.
+
+A few hundred scrolls were excavated that were never opened, and remain rolled up with their contents sealed away.
+Our community is building methods to read these scrolls using micro-CT and an algorithmic pipeline using machine learning and computer vision.
+
+In 2023 we awarded over $1,000,000 in prizes and broke through, revealing complete passages of Greek philosophy from the inside of a closed Herculaneum scroll for the first time.
+Now we are continuing - we want to go from reading 5% of one scroll to reading multiple complete scrolls.
+Join us to win prizes and be a part of history!
+
+### What dates do I need to know?
+
+* **March 15, 2023** - The Vesuvius Challenge is launched.
+* **February 5, 2024**
+  * [2023 Grand Prize](grandprize) awarded for recovering complete passages from inside a Herculaneum scroll.
+  * Stage 2 is launched with [new prizes](2024_prizes).
+* **December 31, 2024** - [2024 prizes](2024_prizes) deadline!
+
+### How can I learn more about Herculaneum, the scrolls, and this research effort?
+
+We have an [overview page](background) for that! For a deep dive:
+
+#### Academic papers
+
+* Data papers:
+  * 2019: [EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT](https://arxiv.org/abs/2304.02084)
+  * 2023: [EduceLab Herculaneum Scroll Data (2023) Info Sheet](https://drive.google.com/file/d/1I6JNrR6A9pMdANbn6uAuXbcDNwjk8qZ2/view?usp=sharing)
+* [Hard-Hearted Scrolls: A Noninvasive Method for Reading the Herculaneum Papyri](https://uknowledge.uky.edu/cs_etds/138/) (Stephen Parsons’ PhD dissertation)
+* [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable)
+* [From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi](https://www.science.org/doi/10.1126/sciadv.1601247)
+* [Reading the Invisible Library: A Retrospective](/img/faq/retro.pdf) (history preprint)
+* [Revealing Text from a Still-rolled Herculaneum Papyrus Scroll (PHerc. Paris. 4)](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NG2aWmYAAAAJ&citation_for_view=NG2aWmYAAAAJ:_FxGoFyzp5QC) (Vesuvius Challenge First Letters results)
+
+For a comprehensive overview of the field, see [this list by EduceLab](https://educelab.gitlab.io/publications/bibtex-refs/).
+
+#### Talks
+
+* [Reading the Herculaneum Papyri: Yesterday, Today, and Tomorrow](https://www.youtube.com/watch?v=g-7-Xg75CCI&t=4928s)
+* [Digital Restoration Initiative: Reading the Invisible Library](https://www.youtube.com/watch?v=NPy0potyh4c)
+* [Reading the Invisible Library: Virtual Unwrapping and the Scroll from En-Gedi](https://www.youtube.com/watch?v=mwe9sHZ58A0)
+* [2023 symposium](https://www.herculaneum.ox.ac.uk/node/262)
+
+#### Books
+
+The best book we have found is David Sider’s [The Library of the Villa dei Papiri at Herculaneum](https://en.wikipedia.org/wiki/Special:BookSources/9780892367993).
+
+Here are some other excellent books we recommend:
+* [Herculaneum: Italy's Buried Treasure](https://en.wikipedia.org/wiki/Special:BookSources/9780060912055), Joseph Jay Deiss
+* [Buried by Vesuvius: The Villa dei Papiri at Herculaneum](https://en.wikipedia.org/wiki/Special:BookSources/9781606065921), Kenneth Lapatin (ed.)
+* [Rediscovering Antiquity: Karl Weber and the Excavation of Herculaneum, Pompeii, and Stabiae](https://en.wikipedia.org/wiki/Special:BookSources/9780521646642), Christopher Charles Parslow
+* [Scribes and Scholars: A Guide to the Transmission of Greek and Latin Literature](https://en.wikipedia.org/wiki/Special:BookSources/9780198721468), Leighton D. Reynolds & Nigel Guy Wilson
+* [24 Hours in Ancient Rome](https://en.wikipedia.org/wiki/Special:BookSources/9781789291278), Philip Matyszak
+* [Die Papyri Herkulaneums im Digitalen Zeitalter](https://en.wikipedia.org/wiki/Special:BookSources?isbn=9783110766233), Kilian Fleischer
+  * Contains an estimate of how much text we hope to find when we read the scrolls, which we [translated into English](/img/faq/page72to79.pdf).
+* [Opera incerta sugli Dèi](https://cispe.org/philodemus-opus-incertum-pherc-89-1301-1383/), Marzia D’Angelo
+
+<figure className="">
+  <video autoPlay playsInline loop muted className="w-[60%]" poster="/img/faq/maquette2.jpg">
+    <source src="/img/faq/maquette2.webm" type="video/webm"/>
+    <source src="/img/faq/maquette2.mp4" type="video/mp4"/>
+  </video>
+  <figcaption className="mt-0">Herculaneum scroll reconstruction from a <a href="https://bibliopolis.it/shop/opera-incerta-sugli-dei/">book</a> by Marzia D’Angelo <a href="https://cispe.org/philodemus-opus-incertum-pherc-89-1301-1383/">(source)</a>; more explanation <a href="https://discord.com/channels/1079907749569237093/1085972686158712892/1115918553602855002">here</a></figcaption>
+</figure>
+
+#### Videos
+
+* [Secrets of the Villa of the Papyri](https://www.youtube.com/watch?v=nm8Y8fDYKEc)
+* [History of Pompeii: Villa of the Papyri](https://www.wondrium.com/pompeii-daily-life-in-an-ancient-roman-city)
+* [Reading the Papyrus Scrolls found at Herculaneum](https://www.youtube.com/watch?v=rcWpzqzefV4)
+* [Out of the Ashes: Recovering the Lost Library of Herculaneum](https://www.youtube.com/watch?v=98W-j545-0Y)
+* For more videos see [this page](https://www2.cs.uky.edu/dri/videos/)
+
+#### Previous media coverage
+
+* Watch [this interview](https://drive.google.com/file/d/1QPYT0wJOBQEna7-Qo4EZQ-AXvm1UKs-V/view) with Dr. Brent Seales on 60 Minutes!
+* [The UnXplained](https://www.imdb.com/title/tt20234948/)
+* Great article by [Smithsonian Magazine](https://www.smithsonianmag.com/history/buried-ash-vesuvius-scrolls-are-being-read-new-xray-technique-180969358/)
+* More articles and videos on [this page](https://www2.cs.uky.edu/dri/news/)
+
+#### Translations of opened scrolls
+
+Most are by Philodemus. This is a list of English translations we have found so far:
+
+* [Philodemus: On Anger. (2020), David Armstrong & Michael McOsker. SBL. ISBN 1628372699](https://en.wikipedia.org/wiki/Special:BookSources/1628372699)
+* [Philodemus: On Death. (2009), W. Benjamin Henry. SBL. ISBN 1-58983-446-1](https://en.wikipedia.org/wiki/Special:BookSources/1-58983-446-1)
+* [Philodemus: On Frank Criticism. (1998), David Konstan, Diskin Clay, Clarence, E. Glad. SBL. ISBN 1-58983-292-2](https://en.wikipedia.org/wiki/Special:BookSources/1-58983-292-2)
+* [Philodemus, On Piety, Part 1. (1996). Critical Text with Commentary by Dirk Obbink. Oxford University Press. ISBN 0-19-815008-3](https://en.wikipedia.org/wiki/Special:BookSources/0-19-815008-3)
+* [Philodemus, On Poems, Book 1. (2001). Edited with Introduction, Translation, and Commentary by Richard Janko. Oxford University Press. ISBN 0-19-815041-5](https://en.wikipedia.org/wiki/Special:BookSources/0-19-815041-5)
+* [Philodemus, On Poems, Book 2, with the fragments of Heracleodorus and Pausimachus. (2020). Edited with Introduction, Translation, and Commentary by Richard Janko. Oxford University Press. ISBN 9780198835080](https://en.wikipedia.org/wiki/Special:BookSources/9780198835080)
+* [Philodemus, On Poems, Books 3-4, with the Fragments of Aristotle, On Poets. (2010). Edited with Introduction, Translation, and Commentary by Richard Janko. Oxford University Press. ISBN 0-19-957207-0](https://en.wikipedia.org/wiki/Special:BookSources/0-19-957207-0)
+* [Philodemus, On Property Management. (2013), Voula Tsouna. SBL. ISBN 1-58983-667-7](https://en.wikipedia.org/wiki/Special:BookSources/1-58983-667-7)
+* [Philodemus, On Rhetoric Books 1 and 2: Translation and Exegetical Essays. (2005). Clive Chandler (editor). Routledge. ISBN 0-415-97611-1](https://en.wikipedia.org/wiki/Special:BookSources/0-415-97611-1)
+* [David Sider, (1997), The Epigrams of Philodemos. Introduction, Text, and Commentary. Oxford University Press. ISBN 0-19-509982-6](https://en.wikipedia.org/wiki/Special:BookSources/0-19-509982-6)
+* Philodemus: On Methods of Inference. 2nd edition. (1978). Phillip Howard De Lacy, Estelle Allen De Lacy. Bibliopolis.
+
+### What if I would like to contribute, but don’t have time to compete for the Grand Prize?
 
 * Join our [Discord](https://discord.gg/V4fJhvtaQn) to learn about current efforts and how you can pitch in.
 * You can make smaller open source contributions, which would benefit the whole community. Everyone in the community will be grateful for your work, and you might even be able to win a prize - see those [already awarded](winners)!
@@ -62,81 +161,24 @@ Absolutely! As long as we can legally pay you (no US sanctions) you can win priz
 
 This depends on the jurisdiction you live in, but generally yes, you do have to pay taxes. Consult your tax advisor.
 
-### I’m a researcher or student, and I would like work on this. Can I publish my results in journals?
+### I’m a researcher or student. Can I publish my results?
 
 <div>Generally <strong>yes</strong>, with the conditions that are specified in the <a href="https://forms.gle/HV1J6dJbmCB2z5QL8">Data Agreement</a>:</div>
 
 * Any publications and presentations must cite the EduceLab-Scrolls Dataset.
 * You won’t publish any revelation of hidden text (or associated code) without the written approval of Vesuvius Challenge.
 
-We very much encourage researchers and students to work on this! Be sure to reach out to us [on Discord or by email](/overview#join-the-community).
+We very much encourage researchers and students to work on this! Be sure to reach out to us [on Discord or by email](/get_started#1-join-the-community).
 
 ### I have made some progress, who do I inform about this?
 
-If you want to share your work privately with the contest organizers, please email us at team@scrollprize.org. We will keep it completely confidential. We really appreciate you keeping us in the loop!
+Please email us at team@scrollprize.org. We will keep it confidential. We appreciate you keeping us in the loop!
 
 If you're open to sharing your improvements publicly (and be eligible for progress prizes), you can post in Discord.
-
-### What are the key academic papers I should read to understand the work done so far to read the Herculaneum Papyri?
-
-* Data papers:
-  * 2019: [“EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT”](https://arxiv.org/abs/2304.02084)
-  * 2023: [“EduceLab Herculaneum Scroll Data (2023) Info Sheet”](https://drive.google.com/file/d/1I6JNrR6A9pMdANbn6uAuXbcDNwjk8qZ2/view?usp=sharing)
-* [Hard-Hearted Scrolls: A Noninvasive Method for Reading the Herculaneum Papyri](https://uknowledge.uky.edu/cs_etds/138/) (Stephen Parsons’ PhD dissertation)
-* [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable)
-* [From damage to discovery via virtual unwrapping: Reading the scroll from En-Gedi](https://www.science.org/doi/10.1126/sciadv.1601247)
-* [Reading the Invisible Library: A Retrospective](/img/faq/retro.pdf) (history preprint)
-
-For a comprehensive overview of the field, see [this list by EduceLab](https://educelab.gitlab.io/publications/bibtex-refs/).
-
-### What are the best talks that have been given on this work?
-
-* [Reading the Herculaneum Papyri: Yesterday, Today, and Tomorrow](https://www.youtube.com/watch?v=g-7-Xg75CCI&t=4928s)
-* [Digital Restoration Initiative: Reading the Invisible Library](https://www.youtube.com/watch?v=NPy0potyh4c)
-* [Reading the Invisible Library: Virtual Unwrapping and the Scroll from En-Gedi](https://www.youtube.com/watch?v=mwe9sHZ58A0)
-* [2023 symposium](https://www.herculaneum.ox.ac.uk/node/262)
-
-<figure className="">
-<img src="/img/faq/getty-own-photo-small.jpg"/>
-<figcaption className="mt-0">The Getty Villa in California, a reproduction of the Villa of the Papyri</figcaption>
-</figure>
-
-### What are some good books that I should read to learn more?
-
-The best book we have found is [David Sider’s The Library of the Villa dei Papiri at Herculaneum](https://en.wikipedia.org/wiki/Special:BookSources/9780892367993)
-
-Here are some other excellent books we recommend:
-* [Joseph Jay Deiss, Herculaneum: Italy's Buried Treasure](https://en.wikipedia.org/wiki/Special:BookSources/9780060912055)
-* [Kenneth Lapatin (ed.), Buried by Vesuvius: The Villa dei Papiri at Herculaneum](https://en.wikipedia.org/wiki/Special:BookSources/9781606065921)
-* [Christopher Charles Parslow, Rediscovering Antiquity: Karl Weber and the Excavation of Herculaneum, Pompeii, and Stabiae](https://en.wikipedia.org/wiki/Special:BookSources/9780521646642)
-* [Leighton D. Reynolds & Nigel Guy Wilson, Scribes and Scholars: A Guide to the Transmission of Greek and Latin Literature](https://en.wikipedia.org/wiki/Special:BookSources/9780198721468)
-* [Philip Matyszak, 24 Hours in Ancient Rome](https://en.wikipedia.org/wiki/Special:BookSources/9781789291278)
-* A new book about the papyri in German — [Die Papyri Herkulaneums im Digitalen Zeitalter](https://en.wikipedia.org/wiki/Special:BookSources?isbn=9783110766233) by Kilian Fleischer — contains an estimate of how many pages of text we can expect to find if we can make the scrolls readable, which we [translated into English](/img/faq/page72to79.pdf).
-* [Opera incerta sugli Dèi by Marzia D’Angelo](https://cispe.org/philodemus-opus-incertum-pherc-89-1301-1383/) has a cool insert (see below); more explanation [here](https://discord.com/channels/1079907749569237093/1085972686158712892/1115918553602855002).
-
-<figure className="">
-  <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/faq/maquette2.jpg">
-    <source src="/img/faq/maquette2.webm" type="video/webm"/>
-    <source src="/img/faq/maquette2.mp4" type="video/mp4"/>
-  </video>
-  <figcaption className="mt-0">Herculaneum scroll reconstruction from a <a href="https://bibliopolis.it/shop/opera-incerta-sugli-dei/">book</a> by Marzia D’Angelo <a href="https://cispe.org/philodemus-opus-incertum-pherc-89-1301-1383/">(source)</a>; more explanation <a href="https://discord.com/channels/1079907749569237093/1085972686158712892/1115918553602855002">here</a></figcaption>
-</figure>
-
-### What are some good videos I should watch?
-
-* [Secrets of the Villa of the Papyri](https://www.youtube.com/watch?v=nm8Y8fDYKEc)
-* [History of Pompeii: Villa of the Papyri](https://www.wondrium.com/pompeii-daily-life-in-an-ancient-roman-city)
-* [Reading the Papyrus Scrolls found at Herculaneum](https://www.youtube.com/watch?v=rcWpzqzefV4)
-* [Out of the Ashes: Recovering the Lost Library of Herculaneum](https://www.youtube.com/watch?v=98W-j545-0Y)
-* For more videos see [this page](https://www2.cs.uky.edu/dri/videos/)
 
 ### Do we really need 7.91µm or 3.24µm resolution? These data files are huge!
 
 We don't know yet what the minimum resolution necessary to detect ink is, but this paper suggests that it may be 7.91µm: [From invisibility to readability: Recovering the ink of Herculaneum](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0215775&type=printable).
-
-### If an algorithm can read ink from a fragment X-ray, is it likely to work on a scroll?
-
-Yes - there is a known domain shift between the existing CT scans of fragments and scrolls, but the exciting results of the [First Letters](firstletters) and [2023 Grand Prize](grandprize) awards confirm the ink presence is captured in the scroll scans and can be detected!
 
 ### Can machine learning models hallucinate letters that aren't there?
 
@@ -159,7 +201,7 @@ There are two ways you can write on papyrus: horizontally (“volumen”) or [ve
 
 <div>For some good videos about how papyrus is made see:</div>
 
-* [Nat’s tweet](https://twitter.com/i/status/1703422593670541437)
+* [Nat’s post](https://twitter.com/i/status/1703422593670541437)
 * [Meet Some Of The Last Papyrus Makers In Egypt Keeping A 5,000-Year-Old Craft Alive](https://www.youtube.com/watch?v=SBdVhvo2UUM)
 * [Myriam Krutzsch papyrus workshop](https://www.youtube.com/watch?v=3AaZ5C-U-jE)
 
@@ -225,7 +267,7 @@ We take X-ray photographs of the object from different angles. Typically this is
 <div>Just like with any digital camera, there are a lot of settings and parameters. The most important for you to know are:</div>
 
 * **Resolution:** the dimensions of each pixel in an X-ray photo, typically denoted in µm (micrometers or “microns”). Lower is better. We scanned the scrolls at 7.91µm, which we think should be enough to detect ink patterns, but we scanned the fragments at 3.24µm just in case. Renting beam time on a particle accelerator is expensive, but if we need to we can go back and scan objects at even lower resolutions.
-* **Energy level:** the energy of the X-ray electrons, typically expressed in keV (kiloelectronvolts). For particle accelerators this is one precise number, whereas for bench top scanners this is more of a range. We think lower is better, since carbon responds better to lower energy levels. We scanned everything twice, at 54keV and 88keV (though for the scrolls we only had time for a smaller slice at 88keV).
+* **Energy level:** the energy of the X-ray electrons, typically expressed in keV (kilo electronvolts). For particle accelerators this is one precise number, whereas for bench top scanners this is more of a range. We think lower is better, since carbon responds better to lower energy levels. We scanned everything twice, at 54keV and 88keV (though for the scrolls we only had time for a smaller slice at 88keV).
 
 At high resolutions the field of view of the camera is too small to capture the object in its entirety, so multiple passes have to be made. Typically these are stitched together as part of the scanning process.
 
@@ -346,9 +388,9 @@ A great contribution to the community would be to build an open source 3D volume
   <img src="/img/faq/scroll1-orientation.png"/>
 </figure>
 
-The segmentation team believes the orientation of Scroll 1 follows the above image. When viewing one of the TIF cross-sections from the scan, the image number increases from the screen toward the viewer’s eye.
+The orientation of Scroll 1 follows the above image. When viewing one of the TIF cross-sections from the scan, the image number increases from the screen toward the viewer’s eye.
 
-Based on the counterclockwise spiral direction in the middle of Scroll 1, we believe the released scans are of the top of the scroll: Slice 0 is in the middle and Slice 14000+ is the top.
+Based on the counterclockwise spiral direction in the middle of Scroll 1, the released scans are of the top of the scroll: Slice 0 is in the middle and Slice 14000+ is the top.
 
 Lastly, all of the Herculaneum papyri are known to be "volumen"/horizontal scrolls (see FAQ: https://scrollprize.org/faq#what-is-papyrus-and-how-is-it-made).
 
@@ -368,22 +410,6 @@ Assuming consistent handedness, a counterclockwise spiral suggests the released 
 
 The direction of a given line of writing in Scroll 2 would be counterclockwise around the TIF cross-sections, with the bottom of the letters on higher-numbered images and the top of the letters on lower-numbered images.
 
-### I would like to read the works that have been recovered from the scrolls so far, where I can I find them?
-
-<div>Most are by Philodemus. This is a list of English translations we have found so far:</div>
-
-* [Philodemus: On Anger. (2020), David Armstrong & Michael McOsker. SBL. ISBN 1628372699](https://en.wikipedia.org/wiki/Special:BookSources/1628372699)
-* [Philodemus: On Death. (2009), W. Benjamin Henry. SBL. ISBN 1-58983-446-1](https://en.wikipedia.org/wiki/Special:BookSources/1-58983-446-1)
-* [Philodemus: On Frank Criticism. (1998), David Konstan, Diskin Clay, Clarence, E. Glad. SBL. ISBN 1-58983-292-2](https://en.wikipedia.org/wiki/Special:BookSources/1-58983-292-2)
-* [Philodemus, On Piety, Part 1. (1996). Critical Text with Commentary by Dirk Obbink. Oxford University Press. ISBN 0-19-815008-3](https://en.wikipedia.org/wiki/Special:BookSources/0-19-815008-3)
-* [Philodemus, On Poems, Book 1. (2001). Edited with Introduction, Translation, and Commentary by Richard Janko. Oxford University Press. ISBN 0-19-815041-5](https://en.wikipedia.org/wiki/Special:BookSources/0-19-815041-5)
-* [Philodemus, On Poems, Book 2, with the fragments of Heracleodorus and Pausimachus. (2020). Edited with Introduction, Translation, and Commentary by Richard Janko. Oxford University Press. ISBN 9780198835080](https://en.wikipedia.org/wiki/Special:BookSources/9780198835080)
-* [Philodemus, On Poems, Books 3-4, with the Fragments of Aristotle, On Poets. (2010). Edited with Introduction, Translation, and Commentary by Richard Janko. Oxford University Press. ISBN 0-19-957207-0](https://en.wikipedia.org/wiki/Special:BookSources/0-19-957207-0)
-* [Philodemus, On Property Management. (2013), Voula Tsouna. SBL. ISBN 1-58983-667-7](https://en.wikipedia.org/wiki/Special:BookSources/1-58983-667-7)
-* [Philodemus, On Rhetoric Books 1 and 2: Translation and Exegetical Essays. (2005). Clive Chandler (editor). Routledge. ISBN 0-415-97611-1](https://en.wikipedia.org/wiki/Special:BookSources/0-415-97611-1)
-* [David Sider, (1997), The Epigrams of Philodemos. Introduction, Text, and Commentary. Oxford University Press. ISBN 0-19-509982-6](https://en.wikipedia.org/wiki/Special:BookSources/0-19-509982-6)
-* Philodemus: On Methods of Inference. 2nd edition. (1978). Phillip Howard De Lacy, Estelle Allen De Lacy. Bibliopolis.
-
 ### What happened to the people when Mount Vesuvius erupted? 😢
 
 We recommend starting with the only surviving eyewitness account: [Pliny the Younger, Letters 6.16 and 6.20](http://www.u.arizona.edu/~afutrell/404b/web%20rdgs/pliny%20on%20vesuvius.htm).
@@ -397,7 +423,7 @@ The story of the eruption of Mount Vesuvius has captured imaginations for centur
 
 <div>Some more resources:</div>
 
-* Wikpedia
+* Wikipedia
     * [Mount Vesuvius](https://en.wikipedia.org/wiki/Mount_Vesuvius)
     * [Eruption of Mount Vesuvius in 79 AD](https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD)
     * [Herculaneum](https://en.wikipedia.org/wiki/Herculaneum)
@@ -414,24 +440,11 @@ The story of the eruption of Mount Vesuvius has captured imaginations for centur
 
 Nat read [24 Hours in Ancient Rome](https://www.amazon.com/24-Hours-Ancient-Rome-People-ebook/dp/B0758BFFFX) during the 2020 COVID lockdown. He fell into an internet rabbit hole that ended up with him reaching out to Dr. Seales two years later to see how he could help speed up the reading of the Herculaneum Papyri. They came up with the idea of the Vesuvius Challenge. Daniel was intrigued by this idea and decided to co-sponsor it with Nat.
 
-### Is this going to work?
-
-We think so! Based on the results that Dr. Seales and his team have been able to produce so far, as well as the progress that has already resulted from this challenge, we believe that it is possible to read the Herculaneum scrolls using the scans that we already have. We don’t think it’s easy, but we believe it’s possible.
-
-[*edit 2024-02-05: It worked! But there is more to be done.*]
-
 ### I have a lot of money! Can I help sponsor this?
 
 Vesuvius Challenge Inc. is a 501c3 non-profit organization that was formed solely to solve the puzzle of the Herculaneum Papyri. It is currently funded by [the sponsors listed on the homepage](/#sponsors), and by many hours of volunteer contributions.
 
 If you want to contribute money to support our operational costs or to increase the prize amounts, please <a href="mailto:nat@nat.org">get in touch</a>!
-
-### Has the mainstream media covered this work in the past?
-
-* Watch [this interview](https://drive.google.com/file/d/1QPYT0wJOBQEna7-Qo4EZQ-AXvm1UKs-V/view) with Dr. Brent Seales on 60 Minutes!
-* [The UnXplained](https://www.imdb.com/title/tt20234948/)
-* Great article by [Smithsonian Magazine](https://www.smithsonianmag.com/history/buried-ash-vesuvius-scrolls-are-being-read-new-xray-technique-180969358/)
-* More articles and videos on [this page](https://www2.cs.uky.edu/dri/news/)
 
 ### I’m a journalist and I would like to interview someone from the Vesuvius Challenge!
 
@@ -451,8 +464,3 @@ Of course (🔊 sound on).
 ### Do you have a super-cringe, over-the-top, and factually questionable trailer video for the competition?
 
 [Naturally.](https://www.youtube.com/watch?v=u9WCapDeKsQ)
-
-
-<!--
-### Tails and serifs
-"Some of the v2 label edits included various tails and serifs that I omitted the first time. This scribe liked little flourishes evidently (even more true of the other scribe on .. fragments - check the upsilon and kappa (YK) in the middle of .. - the tail on the kappa is even longer than it first appears!)." -->

@@ -43,10 +43,14 @@ import TabItem from '@theme/TabItem';
 
 <TutorialsTop highlightId={3} />
 
+This tutorial walks through a slice-based approach to segmentation, which is helpful background for learning about the task.
+This was used to generate the 2023 [Grand Prize results](grandprize).
+We are now working on more automated, 3D approaches to segmentation.
+For more information on those approaches, see [Segmentation - a different approach](tutorial4).
+
 :::tip
 Please see the accompanying video tutorial for segmentation using Volume Cartographer here: https://www.youtube.com/watch?v=gdQmepxWhuY
 :::
-
 
 As we saw in the ["Scanning" tutorial](/tutorial2), it’s quite hard to extract useful information out of a “word soup”, even when the ink is quite clear. For this tutorial we’ll show how to use virtual unwrapping to produce a flattened image which shows the content clearly.
 
@@ -125,37 +129,31 @@ docker pull ghcr.io/spacegaier/volume-cartographer:edge
 
   </TabItem>
   <TabItem value="mac" label="macOS (using Homebrew)">
+    Note: this does not install the fork of Volume Cartographer mentioned above.
 
-Note: this does not install the fork of Volume Cartographer mentioned above.
+    Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab/casks/volume-cartographer`.
 
-Install [Homebrew](https://brew.sh/). Run `brew install --no-quarantine educelab/casks/volume-cartographer`.
-
-* The GUI app will be installed to `/Applications/VC.app`.
-* The command line tools are installed to `$(brew --prefix)/bin` and should be available in the terminal immediately (e.g. `vc_packager`) — if not, make sure you have `eval $(/opt/homebrew/bin/brew shellenv)` in your shell profile and restart your terminal.
-
-
+    * The GUI app will be installed to `/Applications/VC.app`.
+    * The command line tools are installed to `$(brew --prefix)/bin` and should be available in the terminal immediately (e.g. `vc_packager`) — if not, make sure you have `eval $(/opt/homebrew/bin/brew shellenv)` in your shell profile and restart your terminal.
   </TabItem>
   <TabItem value="mac_docker" label="macOS (using Docker)">
+    <div>If you prefer Docker, here are the steps:</div>
 
-<div>If you prefer Docker, here are the steps:</div>
+    1. Install XQuartz: https://www.xquartz.org/
+    2. Log out and back into macOS.
+    3. Launch XQuartz. Under the XQuartz menu, select *“Preferences”*.
+    4. Go to the *“Security”* tab and ensure *“Allow connections from network clients”* is checked.
+    5. Quit XQuartz and restart it.
+    6. Install [Docker Desktop](https://docs.docker.com/desktop/install/mac-install/).
+    7. Pull the latest Docker image by running:
+    ```bash 
+    docker pull ghcr.io/spacegaier/volume-cartographer:edge 
+    ```
+    8. Then run:
 
-1. Install XQuartz: https://www.xquartz.org/
-2. Log out and back into macOS.
-3. Launch XQuartz. Under the XQuartz menu, select *“Preferences”*.
-4. Go to the *“Security”* tab and ensure *“Allow connections from network clients”* is checked.
-5. Quit XQuartz and restart it.
-6. Install [Docker Desktop](https://docs.docker.com/desktop/install/mac-install/).
-7. Pull the latest Docker image by running:
-```bash 
-docker pull ghcr.io/spacegaier/volume-cartographer:edge 
-```
-8. Then run:
-
-```bash
-xhost +localhost
-```
-
-
+    ```bash
+    xhost +localhost
+    ```
   </TabItem>
   <TabItem value="linux" label="Linux">
 

@@ -1,5 +1,5 @@
 ---
-title: "Prize Winners"
+title: "Winners"
 hide_table_of_contents: true
 ---
 
@@ -36,9 +36,11 @@ hide_table_of_contents: true
   />
 </head>
 
-Since the Vesuvius Challenge was launched in March 2023, a lot has happened. On this page we document all the prizes that have been won.
+Since the Vesuvius Challenge launched in March 2023, we have awarded **$1,278,000** in prizes!
 
-We have awarded **$1,278,000** in prizes so far!
+In 2023, the $850,000 Grand Prize [made history](grandprize) by revealing text from inside a rolled Herculaneum scroll for the first time.
+
+This page lists all the prizes awarded so far:
 
 ### $12,500 Open Source (June, 2024)
 
@@ -459,7 +461,7 @@ We have awarded **$1,278,000** in prizes so far!
 ### $100,000 Kaggle Ink Detection (July 14, 2023)
 
 **Goal:** Optimize fragment-based ink detection methods.<br/>
-**Announcement:** <a href="https://scrollprize.substack.com/p/12000-ink-detection-followup-prize">Blog post</a> / <a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/overview">Kaggle competition</a> / [More info](community_projects#kaggle-ink-detection)<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/12000-ink-detection-followup-prize">Blog post</a> / <a href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/overview">Kaggle competition</a> / [More info](https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/leaderboard)<br/>
 
 <div className="flex flex-row flex-wrap">
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://www.kaggle.com/competitions/vesuvius-challenge-ink-detection/discussion/417496">

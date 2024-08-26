@@ -41,9 +41,11 @@ import { TutorialsTop } from '@site/src/components/TutorialsTop';
 
 <TutorialsTop highlightId={5} />
 
-This tutorial gives a high-level overview on ink detection methods, followed by a more hands-on tutorial [on Kaggle as a notebook](https://www.kaggle.com/code/jpposma/vesuvius-challenge-ink-detection-tutorial).
+This tutorial gives a high-level overview on ink detection methods.
 Since this tutorial was written, ink detection has successfully recovered text from inside the rolled scrolls.
 The technical principles remain the same as what is described here.
+
+The tutorial can be followed by the more hands-on notebooks [on Kaggle](https://www.kaggle.com/code/jpposma/vesuvius-challenge-ink-detection-tutorial) and [a more recent version on Colab](https://colab.research.google.com/github/ScrollPrize/vesuvius/blob/main/notebooks/example2_ink_detection.ipynb).
 
 Ink detection is the task of taking data from a 3D X-ray scan around a papyrus surface, and identifying the locations of the inked parts of the papyrus.
 

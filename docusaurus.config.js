@@ -1,17 +1,18 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = require("prism-react-renderer").themes.github;
+const darkCodeTheme = require("prism-react-renderer").themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Vesuvius Challenge",
   tagline: "A $1,000,000+ machine learning and computer vision competition",
   url: "https://scrollprize.org",
-  baseUrl: "/", // Temporarliy, on https://scrollprize.github.io/scrollprize.org/
+  baseUrl: "/",
+  onBrokenAnchors: "throw",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  onBrokenMarkdownLinks: "throw",
   favicon: "img/social/favicon.ico",
 
   // GitHub pages deployment config.
@@ -139,6 +140,7 @@ const config = {
         },
       };
     },
+    "./src/plugins/fetch-content",
   ],
 };
 

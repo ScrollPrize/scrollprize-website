@@ -1,5 +1,5 @@
 ---
-title: "Segmentation for Fishermen"
+title: "Segmentation - a different approach"
 sidebar_label: "4. Segmentation - a different approach"
 hide_table_of_contents: true
 ---
@@ -41,7 +41,11 @@ import { TutorialsTop } from '@site/src/components/TutorialsTop';
 
 <TutorialsTop highlightId={4} />
 
-This high-level, code-free tutorial explains the main steps of the [`Thaumato Anakalyptor`](https://github.com/schillij95/ThaumatoAnakalyptor) [^1] pipeline.
+This high-level, code-free tutorial explains the main steps of the [`Thaumato Anakalyptor`](https://github.com/schillij95/ThaumatoAnakalyptor) [^1] pipeline for automated segmentation in full 3D.
+For a more technical walkthrough of the pipeline, see this [walkthrough video](https://www.youtube.com/watch?v=80GhWxmMjPE).
+Thaumato is one approach but there may be others - for example, volumetric instance segmentation might be useful as an input to later mesh stitching algorithms.
+If interested, check out [this notebook](https://colab.research.google.com/github/ScrollPrize/vesuvius/blob/main/notebooks/example3_cubes_bootstrap.ipynb) providing easy access to volumetric segmentation labels.
+
 We will tackle the task of segmentation from another perspective: that of a Neapolitan fisherman.
 
 <figure className="text-center mx-auto">

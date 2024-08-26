@@ -36,9 +36,11 @@ hide_table_of_contents: true
   />
 </head>
 
-Be sure to check [Discord](https://discord.gg/V4fJhvtaQn), [Substack](https://scrollprize.substack.com/), and [X](https://twitter.com/scrollprize) for updates!
+Be sure to check [Discord](https://discord.gg/V4fJhvtaQn), [Substack](https://scrollprize.substack.com/), and [X](https://x.com/scrollprize) for livestream announcements!
 
-## Previous livestreams
+### July 31, 2024 - Office Hours
+
+<iframe className="w-[100%] mb-4 aspect-video" src="https://www.youtube.com/embed/0p3dKM41sRw?si=b62rYGLlDMrb1781"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 ### May 22, 2024 - Office Hours
 

@@ -99,10 +99,7 @@ We’ll use the [“Fiji”](https://imagej.net/software/fiji/downloads) open so
 
 <Tabs groupId="operating-systems">
   <TabItem value="win" label="Windows">
-
-* No known issues.
-
-
+    * No known issues.
   </TabItem>
   <TabItem value="mac" label="macOS">
 
@@ -125,10 +122,7 @@ We’ll use the [“Fiji”](https://imagej.net/software/fiji/downloads) open so
 
   </TabItem>
   <TabItem value="linux" label="Linux">
-
-* We recommend downloading the `.app` portable application from their website, instead of using a package manager. It does require you to have the JVM installed.
-
-
+    * We recommend downloading the `.app` portable application from their website, instead of using a package manager. It does require you to have the JVM installed.
   </TabItem>
 </Tabs>
 

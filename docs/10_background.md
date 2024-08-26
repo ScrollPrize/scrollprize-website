@@ -105,12 +105,12 @@ We have not yet found the villa’s main library, which would have contained a m
 ## A New Chapter
 
 In 2023, the Vesuvius Challenge added to this story by recovering text from one of the still-rolled Herculaneum scrolls.
-In 2024, we want to get from reading 5% of the scroll to reading 90% of the scroll.
-We hope you will join us!
+In 2024, we want to get from reading 5% of one scroll to 90% of four scrolls.
+Join us!
 
 <figure>
 
 ![](/img/landing/scroll-full-min.jpg)
 
-<figcaption>15 columns of text from PHerc.Paris. 4 (Institut de France), a.k.a. Scroll 1. Read more in the <a href="grandprize">2023 Grand Prize announcement</a>.</figcaption>
+<figcaption>15 columns of text from PHerc. Paris. 4 (Scroll 1). Read more in the <a href="grandprize">2023 Grand Prize announcement</a>.</figcaption>
 </figure>

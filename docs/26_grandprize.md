@@ -1,6 +1,6 @@
 ---
 title: "Vesuvius Challenge 2023 Grand Prize awarded: we can read the scrolls!"
-sidebar_label: "2023 Grand Prize Awarded"
+sidebar_label: "2023 Grand Prize"
 hide_table_of_contents: true
 hide_title: true
 ---
@@ -30,8 +30,7 @@ hide_title: true
   WebkitTextFillColor: "transparent",
   backgroundClip: "text",
   textFillColor: "transparent",
-}}>we can read the first scroll!</span>
-</h1>
+}}>we can read the first scroll!</span></h1>
 
 <div className="md:text-2xl text-lg font-medium mt-6 mb-2 opacity-80 leading-none tracking-tight">The 2000-year-old scroll discusses music, food, and how to enjoy life’s pleasures.</div>
 
@@ -70,10 +69,13 @@ On March 15th, 2023, Nat Friedman, Daniel Gross, and Brent Seales launched the <
 
 <div className="flex flex-wrap mb-4">
   <div className="w-[41%] mr-4 mb-2"><img src="/img/grandprize/seth-diamond.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Seth Parker <a href="https://scrollprize.substack.com/p/new-scans-of-herculaneum-papyri-at">scanning</a> a scroll at the <a href="https://www.diamond.ac.uk/">Diamond Light Source</a> particle accelerator.</figcaption></div>
-  <div className="w-[54%]"><video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/scanning2.jpg">
-    <source src="/img/tutorials/scanning2.webm" type="video/webm"/>
-    <source src="/img/tutorials/scanning2.mp4" type="video/mp4"/>
-  </video><figcaption className="mt-[-6px]">Artistic visualization of constructing a 3D volume.</figcaption></div>
+  <div className="w-[54%]">
+    <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/scanning2.jpg">
+      <source src="/img/tutorials/scanning2.webm" type="video/webm"/>
+      <source src="/img/tutorials/scanning2.mp4" type="video/mp4"/>
+    </video>
+    <figcaption className="mt-[-6px]">Artistic visualization of constructing a 3D volume.</figcaption>
+  </div>
 </div>
 
 A global community of competitors and collaborators assembled to crack the problem with computer vision, machine learning, and hard work.
@@ -162,7 +164,7 @@ To date, our efforts have managed to unroll and read about 5% of the first scrol
 
 <div className="ml-8 mb-4">Do things that are available in lesser quantities afford more pleasure than those available in abundance? Our author thinks not: <em>“as too in the case of food, we do not right away believe things that are scarce to be absolutely more pleasant than those which are abundant.”</em> However, is it easier for us naturally to do without things that are plentiful? <em>“Such questions will be considered frequently.”</em></div>
 
-<div className="ml-8 mb-4">Since this is the end of a scroll, this phrasing may suggest that more is coming in subsequent books of the same work. At the beginning of the first text, a certain Xenophantos is mentioned, perhaps the same man — presumably a musician — also mentioned by Philodemus in his work <em>On Music</em>.</div>
+<div className="ml-8 mb-4">Since this is the end of a scroll, this phrasing may suggest that more is coming in subsequent books of the same work. At the beginning of the first text, a certain Xenophantus is mentioned, perhaps the same man — presumably a musician — also mentioned by Philodemus in his work <em>On Music</em>.</div>
 
 [Philodemus](https://plato.stanford.edu/entries/philodemus/), of the Epicurean school, is thought to have been the philosopher-in-residence of the villa, working in the small library in which the scrolls were found.
 
@@ -264,7 +266,7 @@ Finally the scroll concludes:
 
 [Richard Janko](https://lsa.umich.edu/classics/people/departmental-faculty/rjanko.html) writes:
 
-<div className="italic ml-8 mb-4">“Is the author Epicurus' follower, the philosopher and poet Philodemus, the teacher of Vergil? It seems very likely.</div>
+<div className="italic ml-8 mb-4">“Is the author Epicurus' follower, the philosopher and poet Philodemus, the teacher of Virgil? It seems very likely.</div>
 
 <div className="italic ml-8 mb-4">Is he writing about the effect of music on the hearer, and comparing it to other pleasures like those of food and drink? Quite probably.</div>
 
@@ -278,7 +280,7 @@ Finally the scroll concludes:
 
 From [Bob Fowler](https://www.thebritishacademy.ac.uk/fellows/robert-fowler-FBA/):
 
-<div className="italic ml-8 mb-4">“Like other Epicureans, he valued pleasure above all - but pleasure rightly understood, not mere indulgence. Living in ancient Rome - a society not known for abstinence - Philodemus could expect to meet with scepticism from his readers.”</div>
+<div className="italic ml-8 mb-4">“Like other Epicureans, he valued pleasure above all - but pleasure rightly understood, not mere indulgence. Living in ancient Rome - a society not known for abstinence - Philodemus could expect to meet with skepticism from his readers.”</div>
 
 Scholars might call it a philosophical treatise. But it seems familiar to us, and we can’t escape the feeling that the first text we’ve uncovered is a 2000-year-old blog post about how to enjoy life. Is Philodemus throwing shade at the stoics in his closing paragraph, asserting that stoicism is an incomplete philosophy because it has “nothing to say about pleasure?” The questions he seems to discuss — life’s pleasures and what makes life worth living — are still on our minds today.
 
@@ -321,7 +323,7 @@ These scrolls were scanned at Diamond Light Source, a particle accelerator near 
   <figcaption className="mt-[-6px]">Scrubbing through the slice images of the scroll.</figcaption>
 </figure>
 
-The next step is to identify individual sheets of papyrus in 3D space. For this we primarily use a tool called [Volume Cartographer](community_projects#volume-cartographer), created by Seth Parker and others in Brent Seales’ lab, and augmented by our contestants, primarily Julian Schilliger (Grand Prize winner) and Philip Allgaier.
+The next step is to identify individual sheets of papyrus in 3D space. For this we primarily use a tool called [Volume Cartographer](https://github.com/educelab/volume-cartographer), created by Seth Parker and others in Brent Seales’ lab, and augmented by our contestants, primarily Julian Schilliger (Grand Prize winner) and Philip Allgaier.
 
 Volume Cartographer is operated by our team of full-time segmenters: Ben Kyles, David Josey, and Konrad Rosenberg. They use a combination of automatic algorithms and manual adjustments to map out large areas of papyrus. This is still a painstaking process, with lots of room for improvement if we’re going to segment all the scrolls.
 
