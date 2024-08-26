@@ -40,7 +40,7 @@ hide_table_of_contents: true
 
 Our datasets are 3D X-ray micro-CT scans of Herculaneum scrolls and fragments. Segments are extracted from scroll or fragment scans. Scroll 1 scans and segments were used to win the 2023 Grand Prize.
 
-To access the data in 1-2 lines of Python without navigating the data server or large downloads, see the [vesuvius](https://github.com/scrollprize/vesuvius) library.
+To access the data in 1-2 lines of Python without navigating the data server or large downloads, see the [vesuvius](https://github.com/scrollprize/vesuvius) library and [associated notebook](https://colab.research.google.com/github/ScrollPrize/vesuvius/blob/main/notebooks/example1_data_access.ipynb).
 
 <div>
   <table>

@@ -88,9 +88,3 @@ segmentation
 virtual unwrapping/2023 GP
 scroll walking tour
 -->
-
-<!-- sheet stitching problem formulation & graph file -->
-<!-- thaumato tutorial video -->
-<!-- ink detection notebook -->
-<!-- add each of the new notebooks somewhere (data pages and/or tutorial pages) -->
-<!-- some notes from Ben and David -->
