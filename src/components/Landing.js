@@ -1395,7 +1395,7 @@ export function Landing() {
                   >
                     <div className="flex flex-col py-4 md:py-5 px-5 md:px-7 ">
                       <h3 className="text-xl md:text-3xl text-white mt-0 mb-1 tracking-tighter !leading-[90%] flex-grow">
-                        Get started
+                        Get Started
                       </h3>
                       <AnimatedArrow text="$1M+ already awarded" />
                     </div>

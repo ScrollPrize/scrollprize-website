@@ -46,7 +46,7 @@ Join our [Discord server](https://discord.gg/V4fJhvtaQn), subscribe to our [mail
 
 ### 2. See a scroll
 
-Get a feel for the data by looking inside a scroll that has not been opened in 2,000 years:
+Get a feel for [the data](data) by looking inside a scroll that has not been opened in 2,000 years:
 * [In your browser](https://dl.ash2txt.org/view/Scroll1)
 * [In 1-2 lines of Python](https://github.com/ScrollPrize/vesuvius) (or [in C](https://github.com/ScrollPrize/vesuvius-c)!)
 
@@ -55,19 +55,19 @@ Get a feel for the data by looking inside a scroll that has not been opened in 2
 Our goal is to read 90% of each of four scrolls:
 
 <Admonition type="tip" icon="📜" title="Grand Prize">
-* Relevant prizes: $200,000 [Grand Prize](2024_prizes#2024-grand-prize)
-* Starting point: [Tutorials](tutorial1)
+* Prizes: $200,000 [Grand Prize](2024_prizes#2024-grand-prize)
+* Starting point: [The Data](data), [Tutorials](tutorial1)
 </Admonition>
 
-There are two primary subproblems where help is needed:
+There are currently two primary subproblems where we need your help:
 
 <Admonition type="info" icon="⚙️" title="Segmentation">
-* Relevant prizes: $100,000 [First Automated Segmentation Prize](2024_prizes#first-automated-segmentation-prize)
+* Prizes: $100,000 [First Automated Segmentation Prize](2024_prizes#first-automated-segmentation-prize)
 * Starting point: [Segmentation tutorial](tutorial3) and [Segmentation - a different approach](tutorial4)
 </Admonition>
 
 <Admonition type="info" icon="🖋️" title="Ink Detection">
-* Relevant prizes: 4 x $60,000 [First Letters and First Title Prizes](2024_prizes#3-first-letters-prizes--first-title-prize)
+* Prizes: 4 x $60,000 [First Letters and First Title Prizes](2024_prizes#3-first-letters-prizes--first-title-prize)
 * Starting point: [Ink detection tutorial](tutorial5)
 </Admonition>
 
@@ -75,10 +75,10 @@ There are two primary subproblems where help is needed:
 
 Find more information about our datasets ([data page](data)) and what to do with them ([tutorials](tutorial1)).
 
-There is an abundance of great tools and resources that you can use and contribute to:
+There are many great tools and resources that you can use and contribute to:
 
 <Admonition type="danger" icon="🌎" title="Open Source">
-* Relevant prizes: $350,000 [Monthly Progress Prizes](2024_prizes#monthly-progress-prizes)
+* Prizes: $350,000 [Monthly Progress Prizes](2024_prizes#monthly-progress-prizes)
 * Starting point: [Awesome Scroll Tools](community_projects) and [Progress Prizes Wish List](2024_prizes#monthly-progress-prizes)
 </Admonition>
 

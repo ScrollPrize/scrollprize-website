@@ -38,15 +38,26 @@ hide_table_of_contents: true
 
 **To download:** Fill out the [registration form](https://forms.gle/HV1J6dJbmCB2z5QL8) and then visit the [data server](https://dl.ash2txt.org) ([LICENSE](https://dl.ash2txt.org/LICENSE.txt)).
 
-Our datasets are 3D X-ray micro-CT scans of Herculaneum scrolls and fragments. Segments are extracted from scroll or fragment scans. Scroll 1 scans and segments were used to win the 2023 Grand Prize.
+To learn more about the data, see the linked pages below.
+Also be sure to check out:
 
-To access the data in 1-2 lines of Python without navigating the data server or large downloads, see the [vesuvius](https://github.com/scrollprize/vesuvius) library and [associated notebook](https://colab.research.google.com/github/ScrollPrize/vesuvius/blob/main/notebooks/example1_data_access.ipynb).
+* [EduceLab-Scrolls (2019)](https://arxiv.org/abs/2304.02084): technical paper describing the original data.
+* [EduceLab Data Sheet (2023)](https://drive.google.com/file/d/1I6JNrR6A9pMdANbn6uAuXbcDNwjk8qZ2/view?usp=sharing): technical paper describing more recent scans added to the dataset.
+* [Tutorials](tutorial1): what to do with the data.
+* [Python library](https://github.com/scrollprize/vesuvius) and [intro notebook](https://colab.research.google.com/github/ScrollPrize/vesuvius/blob/main/notebooks/example1_data_access.ipynb): access data in 1-2 lines of code.
+
+## Scrolls
+
+Micro-CT scans of intact Herculaneum scrolls.
+The mission is to virtually unwrap the contents of the scrolls from the CT scans, revealing the text hidden within.
+Scroll 1 was used to win the 2023 Grand Prize, but 95% of the scroll remains unread!
+
+[More information](data_scrolls)
 
 <div>
   <table>
     <tbody>
       <tr>
-        <td><a href="/data_scrolls">Scrolls</a></td>
         <td>
           <div className="flex flex-wrap max-w-[500px]">
             <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 1 (PHerc. Paris. 4)</figcaption></div>
@@ -56,20 +67,21 @@ To access the data in 1-2 lines of Python without navigating the data server or 
           </div>
         </td>
       </tr>
+    </tbody>
+  </table>
+</div>
+
+## Fragments
+
+Micro-CT scans of detached scroll fragments.
+Since the fragments have exposed text on their surfaces, they can be used as ground truth for machine learning-based ink detection approaches (see [Tutorial 5: Ink Detection](tutorial5)).
+
+[More information](data_fragments)
+
+<div>
+  <table>
+    <tbody>
       <tr>
-        <td><a href="/data_segments">Segments</a></td>
-        <td>
-          <div className="flex flex-wrap max-w-[500px]">
-            <div className="w-[100%] max-w-[400px] mb-4"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div><figcaption className="mt-[-6px]">Some segments from Scroll 1</figcaption></div>
-            <div className="w-[100%] max-w-[484px]">
-              <iframe width="484" height="293" className="w-[100%]" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRQxQefw-7rl3Hnt1Q7MFpI27FtzsvFo2x9q6egW8vN5am8QlQLE20BAjOSPZ2teztjdgMUOGc6FV7Y/pubchart?oid=1982586813&amp;format=interactive"></iframe>
-              <figcaption className="mt-0">Progress of mapping the scrolls, in area (cm²), from the <a href="https://docs.google.com/spreadsheets/d/1zC_5vkqWgb_5z4Q9BYsETF7_3r1BYPccdAnS_GRYOaQ/edit#gid=2051117465">Segment Directory spreadsheet</a></figcaption>
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td><a href="/data_fragments">Fragments</a></td>
         <td>
           <div className="flex flex-wrap">
             <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr1.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 1 (PHerc. Paris. 2 Fr 47)</figcaption></div>
@@ -81,11 +93,23 @@ To access the data in 1-2 lines of Python without navigating the data server or 
           </div>
         </td>
       </tr>
+    </tbody>
+  </table>
+</div>
+
+## Segments
+
+Segmentation is the mapping of sheets of papyrus in a 3D X-ray volume. The resulting surface volumes can be used directly to look for ink.
+
+[More information](data_segments)
+
+<div>
+  <table>
+    <tbody>
       <tr>
-        <td><a href="https://dl.ash2txt.org/other/campfire.zip">campfire.zip</a><br/>338MB</td>
         <td>
-          <div className="flex flex-wrap">
-            <div className="sm:w-[35%] max-w-[100px] sm:max-w-[1000px] mb-2 mr-2"><img src="/img/tutorials/campfire-rolled2.jpg" className="max-w-[100px]"/><br/><figcaption className="mt-[-6px]">Campfire scroll</figcaption></div>
+          <div className="flex flex-wrap max-w-[500px]">
+            <div className="w-[100%] max-w-[400px] mb-4"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div><figcaption className="mt-[-6px]">Some segments from Scroll 1</figcaption></div>
           </div>
         </td>
       </tr>
