@@ -36,18 +36,17 @@ hide_table_of_contents: true
   />
 </head>
 
-**To download:** Fill out the [registration form](https://forms.gle/HV1J6dJbmCB2z5QL8) and then visit <a href="https://dl.ash2txt.org">the data server</a>.
-The license terms are specified in the form and in the <a href="https://dl.ash2txt.org/LICENSE.txt">LICENSE file</a>.
+**To download:** Fill out the [registration form](https://forms.gle/HV1J6dJbmCB2z5QL8) and then visit the [data server](https://dl.ash2txt.org) ([LICENSE](https://dl.ash2txt.org/LICENSE.txt)).
 
-<div>3D X-ray scans of scrolls and fragments, scanned in horizontal slices from bottom to top. Segments are extracted from scroll or fragment scans. Scroll 1 scans and segments were used to win the 2023 Grand Prize.</div>
+Our datasets are 3D X-ray micro-CT scans of Herculaneum scrolls and fragments. Segments are extracted from scroll or fragment scans. Scroll 1 scans and segments were used to win the 2023 Grand Prize.
 
-<div>To learn more about the data, see the linked pages below. Also be sure to check out:</div>
+To access the data in 1-2 lines of Python without navigating the data server or large downloads, see the [vesuvius](https://github.com/scrollprize/vesuvius) library.
 
 <div>
   <table>
     <tbody>
       <tr>
-        <td><a href="/data_scrolls">Scrolls</a><br/>5.5+TB</td>
+        <td><a href="/data_scrolls">Scrolls</a></td>
         <td>
           <div className="flex flex-wrap max-w-[500px]">
             <div className="sm:w-[45%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Scroll 1 (PHerc. Paris. 4)</figcaption></div>
@@ -58,7 +57,7 @@ The license terms are specified in the form and in the <a href="https://dl.ash2t
         </td>
       </tr>
       <tr>
-        <td><a href="/data_segments">Segments</a><br/>300-400GB</td>
+        <td><a href="/data_segments">Segments</a></td>
         <td>
           <div className="flex flex-wrap max-w-[500px]">
             <div className="w-[100%] max-w-[400px] mb-4"><div className="overflow-hidden mb-2"><img loading="eager" src="/img/data/segmentation-animation.webp" className="w-[100%] mt-[-30px] mb-[-50px]"/></div><figcaption className="mt-[-6px]">Some segments from Scroll 1</figcaption></div>
@@ -70,7 +69,7 @@ The license terms are specified in the form and in the <a href="https://dl.ash2t
         </td>
       </tr>
       <tr>
-        <td><a href="/data_fragments">Fragments</a><br/>2.4TB</td>
+        <td><a href="/data_fragments">Fragments</a></td>
         <td>
           <div className="flex flex-wrap">
             <div className="sm:w-[45%] max-w-[200px] mb-2 mr-2"><img src="/img/data/fr1.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 1 (PHerc. Paris. 2 Fr 47)</figcaption></div>
@@ -83,7 +82,7 @@ The license terms are specified in the form and in the <a href="https://dl.ash2t
         </td>
       </tr>
       <tr>
-        <td><a href="https://gist.github.com/janpaul123/280262ebce904f7366fe4cc155593e90">campfire.zip</a><br/>338MB</td>
+        <td><a href="https://dl.ash2txt.org/other/campfire.zip">campfire.zip</a><br/>338MB</td>
         <td>
           <div className="flex flex-wrap">
             <div className="sm:w-[35%] max-w-[100px] sm:max-w-[1000px] mb-2 mr-2"><img src="/img/tutorials/campfire-rolled2.jpg" className="max-w-[100px]"/><br/><figcaption className="mt-[-6px]">Campfire scroll</figcaption></div>

@@ -1,5 +1,5 @@
 ---
-title: "Segmentation for Fishermen"
+title: "Segmentation - a different approach"
 sidebar_label: "4. Segmentation - a different approach"
 hide_table_of_contents: true
 ---

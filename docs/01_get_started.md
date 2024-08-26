@@ -36,60 +36,61 @@ hide_table_of_contents: true
   />
 </head>
 
-<!---
-videos from Dejan or whoever
-intro - where we are
-ink detection
-segmentation
-virtual unwrapping/2023 GP
-scroll walking tour
-
-visuals from David
-
-data pages, check email from david
-some notes from Ben and David
--->
-
-The Vesuvius Challenge and our community [made history](grandprize) by reading inside a Herculaneum scroll without opening it.
-Now, our goal is to go from reading 5% of a scroll to 90% of four scrolls.
-We need your help!
-
-In 2023 we awarded more than [$1,000,000](winners) across 53 prizes, resulting in the historic breakthrough of reading the inside of a Herculaneum scroll.
-As a part of Stage 2, we have now announced a 2024 Grand Prize, as well as another series of progress prizes, to help us get from 5% to 90% of the scroll.
-Read more about the [current prizes here](2024_prizes)!
-
-**You** can play a key role in our mission to read the lost library of the Herculaneum scrolls. Here's how:
+**You** can make history, win prizes, and help read the lost library of the Herculaneum scrolls. Here's how:
 
 ### 1. Join the community
 
 Join our [Discord server](https://discord.gg/V4fJhvtaQn), subscribe to our [mailing list](https://scrollprize.substack.com), and follow [@scrollprize](https://x.com/scrollprize) on X.
 
-### 2. See the data
+### 2. See a scroll
 
-Look inside a scroll that has not been opened in 2,000 years, right now, [in your browser](https://dl.ash2txt.org/view/Scroll1)!
-<!-- TODO * [In a Python notebook](https://github.com/ScrollPrize/vesuvius/blob/main/notebooks/example1_data_access.ipynb) -->
-<!-- TODO (also the Python library de la GitHub) -->
-<!-- TODO * In Minecraft -->
+Get a feel for the data by looking inside a scroll that has not been opened in 2,000 years:
+* [In your browser](https://dl.ash2txt.org/view/Scroll1)
+* [In 1-2 lines of Python](https://github.com/ScrollPrize/vesuvius) (or [in C](https://github.com/ScrollPrize/vesuvius-c)!)
 
-### 3. Find your area
+### 3. Dive in
 
-learn what we are doing
-what prizes we have
-what problems we are working on
+Our goal is to read 90% of each of four scrolls.
 
-<!-- TODO sheet stitching problem formulations -->
-<!-- TODO sample graph file to share -->
-thaumato tutorial video
-autosegmentation prize
+* Relevant prizes: $200,000 [Grand Prize](2024_prizes#2024-grand-prize)
+* Starting point: [Tutorials](tutorial1)
 
-<!-- TODO Giorgio ink detection notebook (same one?) -->
-first letters prizes
+One of the main subproblems that must be solved is **segmentation**:
 
-### 4. 
+* Relevant prizes: $100,000 [First Automated Segmentation Prize](2024_prizes#first-automated-segmentation-prize)
+* Starting point: [Segmentation tutorial](tutorial3) and [Segmentation - a different approach](tutorial4)
 
-awesome scroll tools
-tutorials
-<!-- TODO AWS image https://github.com/ScrollPrize/cloud-image -->
-<!-- TODO AWS credits (link to form to apply for them) -->
+The other major subproblem is **ink detection**:
 
-Email us at team@scrollprize.org if you need anything.
+* Relevant prizes: 4 x $60,000 [First Letters and First Title Prizes](2024_prizes#3-first-letters-prizes--first-title-prize)
+* Starting point: [Ink detection tutorial](tutorial5)
+
+### 4. Utilize resources
+
+Find more information about our datasets ([data page](data)) and what to do with them ([tutorials](tutorial1)).
+
+There is an abundance of great tools and resources that you can use and contribute to:
+
+* Relevant prizes: $350,000 [Monthly Progress Prizes](2024_prizes#monthly-progress-prizes)
+* Starting point: [Awesome Scroll Tools](community_projects) and [Progress Prizes Wish List](2024_prizes#monthly-progress-prizes)
+
+Reach out to our [Discord community](https://discord.gg/V4fJhvtaQn) and [team](mailto:team@scrollprize.org) with your questions!
+
+<!-- cloud image https://github.com/ScrollPrize/cloud-image -->
+<!-- cloud credits (link to form to apply for them) -->
+<!-- Minecraft -->
+
+<!--
+2min intro videos:
+intro - where we are
+ink detection
+segmentation
+virtual unwrapping/2023 GP
+scroll walking tour
+-->
+
+<!-- sheet stitching problem formulation & graph file -->
+<!-- thaumato tutorial video -->
+<!-- ink detection notebook -->
+<!-- add each of the new notebooks somewhere (data pages and/or tutorial pages) -->
+<!-- some notes from Ben and David -->
