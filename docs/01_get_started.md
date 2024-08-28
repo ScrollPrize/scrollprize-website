@@ -95,4 +95,5 @@ ink detection
 segmentation
 virtual unwrapping/2023 GP
 scroll walking tour
+existing papyrus video? should be on website somewhere! https://x.com/natfriedman/status/1703422593670541437
 -->
