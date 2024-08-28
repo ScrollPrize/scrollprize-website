@@ -63,7 +63,7 @@ There are currently two primary subproblems where we need your help:
 
 <Admonition type="info" icon="⚙️" title="Segmentation">
 * Prizes: $100,000 [First Automated Segmentation Prize](2024_prizes#first-automated-segmentation-prize)
-* Starting point: [Segmentation tutorial](tutorial3) and [Segmentation - a different approach](tutorial4)
+* Starting point: [Segmentation tutorial](tutorial3), [Segmentation - a different approach](tutorial4), and [Sheet Stitching Problem Playground](https://github.com/schillij95/graph_problem/tree/main)
 </Admonition>
 
 <Admonition type="info" icon="🖋️" title="Ink Detection">

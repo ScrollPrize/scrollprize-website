@@ -41,10 +41,16 @@ import { TutorialsTop } from '@site/src/components/TutorialsTop';
 
 <TutorialsTop highlightId={4} />
 
+### Background
+
 This high-level, code-free tutorial explains the main steps of the [`Thaumato Anakalyptor`](https://github.com/schillij95/ThaumatoAnakalyptor) [^1] pipeline for automated segmentation in full 3D.
 For a more technical walkthrough of the pipeline, see this [walkthrough video](https://www.youtube.com/watch?v=80GhWxmMjPE).
+For an introduction to one of the core problems in this pipeline where we need your help, check out the [Sheet Stitching Problem Playground](https://github.com/schillij95/graph_problem/tree/main).
+
 Thaumato is one approach but there may be others - for example, volumetric instance segmentation might be useful as an input to later mesh stitching algorithms.
 If interested, check out [this notebook](https://colab.research.google.com/github/ScrollPrize/vesuvius/blob/main/notebooks/example3_cubes_bootstrap.ipynb) providing easy access to volumetric segmentation labels.
+
+### Walkthrough
 
 We will tackle the task of segmentation from another perspective: that of a Neapolitan fisherman.
 
