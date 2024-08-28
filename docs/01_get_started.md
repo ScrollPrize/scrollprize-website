@@ -82,6 +82,8 @@ There are many great tools and resources that you can use and contribute to:
 * Starting point: [Awesome Scroll Tools](community_projects) and [Progress Prizes Wish List](2024_prizes#monthly-progress-prizes)
 </Admonition>
 
+For prototyping new ideas, we particularly recommend the [Python](https://github.com/ScrollPrize/vesuvius) and [C](https://github.com/ScrollPrize/vesuvius-c) libraries for easily working with scroll data.
+
 Reach out to our [Discord community](https://discord.gg/V4fJhvtaQn) and [team](mailto:team@scrollprize.org) with your questions!
 
 <!-- cloud image https://github.com/ScrollPrize/cloud-image -->

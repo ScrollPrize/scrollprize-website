@@ -44,7 +44,7 @@ Also be sure to check out:
 * [EduceLab-Scrolls (2019)](https://arxiv.org/abs/2304.02084): technical paper describing the original data.
 * [EduceLab Data Sheet (2023)](https://drive.google.com/file/d/1I6JNrR6A9pMdANbn6uAuXbcDNwjk8qZ2/view?usp=sharing): technical paper describing more recent scans added to the dataset.
 * [Tutorials](tutorial1): what to do with the data.
-* [Python library](https://github.com/scrollprize/vesuvius) and [intro notebook](https://colab.research.google.com/github/ScrollPrize/vesuvius/blob/main/notebooks/example1_data_access.ipynb): access data in 1-2 lines of code.
+* Our libraries to access data in 1-2 lines of code: in [Python](https://github.com/scrollprize/vesuvius) (with [intro notebook](https://colab.research.google.com/github/ScrollPrize/vesuvius/blob/main/notebooks/example1_data_access.ipynb)) and [in C](https://github.com/scrollprize/vesuvius-c)!
 
 ## Scrolls
 
