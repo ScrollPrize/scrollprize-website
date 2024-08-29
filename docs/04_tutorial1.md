@@ -290,3 +290,9 @@ We go into great detail in [“Tutorial 5: Ink Detection”](tutorial5).
 </figure>
 
 Your work ends at ink detection. But for the world's papyrologists and classicists, this is where the excitement begins! Papyrologists can often extract more information than you might think. They are used to working with damaged, incomplete information, interpreting it, putting it into a historical context, and making history.
+
+### Visual summary
+
+<figure className="">
+  <img src="/img/tutorials/mermaid-diagram.png" />
+</figure>
