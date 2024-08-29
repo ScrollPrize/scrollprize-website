@@ -14,6 +14,10 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "throw",
   favicon: "img/social/favicon.ico",
+  markdown: {
+    mermaid: true,
+  },
+  themes: ["@docusaurus/theme-mermaid"],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

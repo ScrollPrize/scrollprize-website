@@ -293,6 +293,31 @@ Your work ends at ink detection. But for the world's papyrologists and classicis
 
 ### Visual summary
 
-<figure className="">
-  <img src="/img/tutorials/mermaid-diagram.png" />
-</figure>
+```mermaid
+%%{init: {'theme':'dark'}}%%
+graph TD
+
+classDef substep fill:#223B46
+
+Scanning["1. Micro-CT scan"]:::substep
+Papyrus([Papyrus scroll]) --> Scanning --> tif[/"Scroll volume (.tif stack)"/]
+
+Segmentation["2. Segmentation"]:::substep
+tif --> Segmentation --> obj[/"3D mesh (.obj)"/]
+
+Volumes["3. Flattening and rendering"]:::substep
+tif --> Volumes
+obj --> Volumes
+Volumes --> surfVol[/"Surface volume (.tif stack)"/]
+
+Alignment["4. Ground data truth alignment"]:::substep
+Infrared[/Infrared photo/] --> Alignment --> alInf[/Aligned infrared/] --> labels[/Hand-labeled binary mask/]
+surfVol --> Alignment
+
+Ink["5. Ink detection"]:::substep
+surfVol --> Ink
+labels --> Ink --> predInk[/Ink predictions/]
+
+Interpretation["6. Interpretation"]:::substep
+predInk --> Interpretation --> Knowledge([New knowledge])
+```
