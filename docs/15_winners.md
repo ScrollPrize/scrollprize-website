@@ -36,11 +36,39 @@ hide_table_of_contents: true
   />
 </head>
 
-Since the Vesuvius Challenge launched in March 2023, we have awarded **$1,278,000** in prizes!
+Since the Vesuvius Challenge launched in March 2023, we have awarded **$1,289,000** in prizes!
 
 In 2023, the $850,000 Grand Prize [made history](grandprize) by revealing text from inside a rolled Herculaneum scroll for the first time.
 
 This page lists all the prizes awarded so far:
+
+### $11,000 Open Source (July, 2024)
+
+**Goal:** Increase the probability we read 90% of four scrolls in 2024.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/it-has-never-been-easier-to-look">Blog post</a>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1268406489471520792/1268406489471520792">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">3D instance segmentation improvements</span>: James Darby / @james_darby</div>
+    <img src="/img/progress/202407/james.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/jaredlandau/Vesuvius-Grandprize-Winner-Plus">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Vesuvius GP+</span>: Jared Landau / @tetradrachm</div>
+    <img src="/img/progress/202407/jared.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/jgcarrasco/dino-ink-detection">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">DINO ink detection</span>: Jorge García Carrasco / @jgcarrasco</div>
+    <img src="/img/progress/202407/jorge.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/SuperOptimizer/Hraun">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Hraun updates</span>: Forrest McDonald / @verditelabs</div>
+    <img src="/img/progress/202407/hraun.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/wj-wt-ftt/">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Web volume annotator</span>: Yao Hsiao / @Yao Hsiao, Dalufishe / @Dalufish</div>
+    <img src="/img/progress/202407/yao.gif"/>
+  </a>
+</div>
 
 ### $12,500 Open Source (June, 2024)
 
