@@ -410,6 +410,8 @@ Assuming consistent handedness, a counterclockwise spiral suggests the released 
 
 The direction of a given line of writing in Scroll 2 would be counterclockwise around the TIF cross-sections, with the bottom of the letters on higher-numbered images and the top of the letters on lower-numbered images.
 
+Note: Scrolls 3 & 4 are both oriented like Scroll 2, with counterclockwise spirals.
+
 ### What happened to the people when Mount Vesuvius erupted? 😢
 
 We recommend starting with the only surviving eyewitness account: [Pliny the Younger, Letters 6.16 and 6.20](http://www.u.arizona.edu/~afutrell/404b/web%20rdgs/pliny%20on%20vesuvius.htm).
