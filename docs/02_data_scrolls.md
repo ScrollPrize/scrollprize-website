@@ -71,6 +71,7 @@ The main volume has a scanning artifact in the middle of the volume, but much an
 <div className="flex w-[100%]">
   <div className="w-[100%] mb-2"><img src="/img/overview/scroll2-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 2 (PHerc. Paris. 3)</figcaption></div>
 </div>
+<iframe className="w-[100%] max-w-[500px] mb-4 aspect-square" src="https://www.youtube.com/embed/RD-xyI8zefY"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 Volumes:
 
@@ -87,6 +88,7 @@ Due to the small size, could be scanned in entirety at extremely high resolution
 <div className="flex w-[100%]">
   <div className="sm:w-[35.5%] mb-2 mr-2"><img src="/img/overview/PHerc332.jpg" className="w-[100%]"/><figcaption className="mt-[0]">Scroll 3 (PHerc. 332)</figcaption></div>
 </div>
+<iframe className="w-[100%] max-w-[500px] mb-4 aspect-square" src="https://www.youtube.com/embed/58mBW1hACuA"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 Volumes:
 
@@ -102,6 +104,7 @@ Similar in size to Scroll 3.
 <div className="flex w-[100%]">
   <div className="sm:w-[55%] mb-2"><img src="/img/overview/PHerc1667.jpg" className="w-[100%]"/><figcaption className="mt-[0]">Scroll 4 (PHerc. 1667)</figcaption></div>
 </div>
+<iframe className="w-[100%] max-w-[500px] mb-4 aspect-square" src="https://www.youtube.com/embed/SyCZG6dc29c"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
 Volumes:
 
