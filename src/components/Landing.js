@@ -1586,7 +1586,7 @@ export function Landing() {
                     ))}
                 </div>
                 <div className="flex justify-center py-8">
-                  <a href="mailto:nat@nat.org">
+                  <a href="https://donate.stripe.com/aEUg101vt9eN8gM144">
                     <button
                       className="px-4 py-3 uppercase font-bold rounded-full border-[#F5653F] border-solid text-[#F5653F] bg-transparent cursor-pointer group
                     "
