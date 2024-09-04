@@ -42,7 +42,7 @@ import Admonition from '@theme/Admonition';
 
 ### 1. Join the community
 
-Join our [Discord server](https://discord.gg/V4fJhvtaQn), subscribe to our [mailing list](https://scrollprize.substack.com), and follow [@scrollprize](https://x.com/scrollprize) on X.
+Join our [Discord server](https://discord.gg/V4fJhvtaQn), subscribe to our [mailing list](https://scrollprize.substack.com), follow [@scrollprize](https://x.com/scrollprize) on X, and complete our [community survey](https://forms.gle/mtA3B4uQusVFTEDu9).
 
 ### 2. See a scroll
 
