@@ -309,6 +309,18 @@ From the X-ray photos from different angles we can reconstruct a 3D volume, usin
 
 The resulting 3D volume is like a 3D image. Each unit is called a “voxel” (instead of “pixel”), and has a particular brightness (it’s greyscale). This 3D volume is typically represented as a “.tif image stack”. This is just a bunch of .tif images where each image (called a “slice”) represents a different layer the z-direction, typically starting at the bottom and moving upwards.
 
+### How does CT reconstruction work?
+
+[Tomographic reconstruction](https://en.wikipedia.org/wiki/Tomographic_reconstruction) is a well known problem with multiple established solutions.
+We use filtered backprojection.
+In the case of scrolls scanned at the parallel beam of a synchrotron, we typically also employ a grid scan that allows high resolution scans of objects larger than the sensor field of view (FOV).
+
+Specifically, we use the [algotom](ttps://github.com/algotom/algotom) package to implement the various filters and steps of the reconstruction pipeline.
+The algotom white paper, ["Data processing methods and data acquisition for samples larger than the field of view in parallel-beam tomography"](https://opg.optica.org/oe/fulltext.cfm?uri=oe-29-12-17849&id=451366), was written by the beamline scientists from the [I12 beamline](https://www.diamond.ac.uk/Instruments/Imaging-and-Microscopy/I12.html) at [Diamond Light Source](https://www.diamond.ac.uk/Home.html), where we often scan scrolls.
+
+Reconstruction is largely out of scope for Vesuvius Challenge, as we have a working solution and are focusing our efforts on segmentation and ink detection in the reconstructed data.
+That said, if you have taken a look at the implementation and paper above and have specific ideas you would like to share with us, please do so by reaching out to team@scrollprize.org!
+
 ### How should the intensity values in the CT scans be interpreted?
 
 The intensity values should be considered relative: within a CT scan, a higher value indicates higher [radiodensity](https://en.wikipedia.org/wiki/Radiodensity) compared to a lower value from the same scan.
