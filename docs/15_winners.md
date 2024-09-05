@@ -36,11 +36,51 @@ hide_table_of_contents: true
   />
 </head>
 
-Since the Vesuvius Challenge launched in March 2023, we have awarded **$1,289,000** in prizes!
+Since the Vesuvius Challenge launched in March 2023, we have awarded **$1,330,000** in prizes!
 
 In 2023, the $850,000 Grand Prize [made history](grandprize) by revealing text from inside a rolled Herculaneum scroll for the first time.
 
 This page lists all the prizes awarded so far:
+
+### $41,000 Open Source (August, 2024)
+
+**Goal:** Increase the probability we read 90% of four scrolls in 2024.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/41000-in-progress-prizes-awarded">Blog post</a>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/jrudolph/vesuvius-browser">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$10,000</div><span className="font-bold">Segment Browser</span>: Johannes Rudolph / @jrudolph</div>
+    <img src="/img/progress/202408/browser.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/JamesDarby345/Volumetric_Vesuvius_Labelling/tree/main">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$10,000</div><span className="font-bold">Volumetric instance labeling</span>: James Darby / @james darby</div>
+    <img src="/img/progress/202408/mesh_after.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/KhartesViewer/khartes">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$10,000</div><span className="font-bold">Khartes3D</span>: Chuck / @khartes_chuck</div>
+    <img src="/img/progress/202408/khartes.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://dl.ash2txt.org/community-uploads/jrudolph/rescaled-fragments/">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Rescaled fragment surface volumes</span>: Johannes Rudolph / @jrudolph</div>
+    <img src="/img/progress/202408/frag_texture.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/WillStevens/scrollreading">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Flood fill for segmentation</span>: Will Stevens / @Will Stevens</div>
+    <img src="/img/progress/202408/ff_after.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/JamesDarby345/Volumetric_Instance_to_Mesh/tree/main">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Convert volumetric segmentations to meshes</span>: James Darby / @james darby</div>
+    <img src="/img/progress/202408/meshes.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://drive.google.com/drive/folders/1HM_aWmZBfCbaX9tNYgy6iC8nWkEUZzrj?usp=drive_linkx">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Ink detection patch aggregation report</span>: Arefeh Sherafati / @arefeh, Lou Schlessinger</div>
+    <img src="/img/progress/202408/patches.webp"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/wj-wt-ftt/">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">wj-wt-ftt</span>: Yao Hsiao / @Yao Hsiao, Dalufishe / @Dalufish</div>
+    <img src="/img/progress/202408/web.gif"/>
+  </a>
+</div>
 
 ### $11,000 Open Source (July, 2024)
 
