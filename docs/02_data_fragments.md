@@ -42,48 +42,48 @@ Scanning sessions and data format are very similar to those of the [full scrolls
 <div className="flex flex-wrap mb-4">
   <div className="w-[45%] mb-2 mr-2 max-w-[200px]"><img src="/img/data/fr1.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 1 (PHerc. Paris. 2 Fr 47)</figcaption></div>
 </div>
-Volume [20230205142449](https://dl.ash2txt.org/fragments/Frag1/PHercParis2Fr47.volpkg/volumes/20230205142449/): 3.24µm, 54keV, 7219 x 20MB .tif files.
-Volume [20230213100222](https://dl.ash2txt.org/fragments/Frag1/PHercParis2Fr47.volpkg/volumes/20230213100222/): 3.24µm, 88keV, 7229 x 24MB .tif files.
+<p>Volume [20230205142449](https://dl.ash2txt.org/fragments/Frag1/PHercParis2Fr47.volpkg/volumes/20230205142449/): 3.24µm, 54keV, 7219 x 20MB .tif files.</p>
+<p>Volume [20230213100222](https://dl.ash2txt.org/fragments/Frag1/PHercParis2Fr47.volpkg/volumes/20230213100222/): 3.24µm, 88keV, 7229 x 24MB .tif files.</p>
 
 **Fragment 2 (PHerc. Paris 2 Fr 143)**
 <div className="flex flex-wrap mb-4">
   <div className="w-[45%] mb-2 mr-2 max-w-[200px]"><img src="/img/data/fr2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 2 (PHerc. Paris. 2 Fr 143)</figcaption></div>
 </div>
-Volume [20230216174557](https://dl.ash2txt.org/fragments/Frag2/PHercParis2Fr143.volpkg/volumes/20230216174557/): 3.24µm, 54keV, 14111 x 46MB .tif files.
-Volume [20230226143835](https://dl.ash2txt.org/fragments/Frag2/PHercParis2Fr143.volpkg/volumes/20230226143835/): 3.24µm, 88keV, 14144 x 43MB .tif files.
+<p>Volume [20230216174557](https://dl.ash2txt.org/fragments/Frag2/PHercParis2Fr143.volpkg/volumes/20230216174557/): 3.24µm, 54keV, 14111 x 46MB .tif files.</p>
+<p>Volume [20230226143835](https://dl.ash2txt.org/fragments/Frag2/PHercParis2Fr143.volpkg/volumes/20230226143835/): 3.24µm, 88keV, 14144 x 43MB .tif files.</p>
 
 
 **Fragment 3 (PHerc. Paris 1 Fr 34)**
 <div className="flex flex-wrap mb-4">
   <div className="w-[45%] mb-2 mr-2 max-w-[220px]"><img src="/img/data/fr3.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 3 (PHerc. Paris. 1 Fr 34)</figcaption></div>
 </div>
-Volume [20230212182547](https://dl.ash2txt.org/fragments/Frag3/PHercParis1Fr34.volpkg/volumes/20230212182547/): 3.24µm, 88keV, 6650 x 20MB .tif files.
-Volume [20230215142309](https://dl.ash2txt.org/fragments/Frag3/PHercParis1Fr34.volpkg/volumes/20230215142309/): 3.24µm, 54keV, 6656 x 18MB .tif files.
+<p>Volume [20230212182547](https://dl.ash2txt.org/fragments/Frag3/PHercParis1Fr34.volpkg/volumes/20230212182547/): 3.24µm, 88keV, 6650 x 20MB .tif files.</p>
+<p>Volume [20230215142309](https://dl.ash2txt.org/fragments/Frag3/PHercParis1Fr34.volpkg/volumes/20230215142309/): 3.24µm, 54keV, 6656 x 18MB .tif files.</p>
 
 **Fragment 4 (PHerc. Paris 1 Fr 39)**
 Originally held back for automated scoring in the [Kaggle](https://kaggle.com/competitions/vesuvius-challenge-ink-detection/) competition, this fragment has since been released.
 <div className="flex flex-wrap mb-4">
   <div className="w-[45%] mb-2 mr-2 max-w-[170px]"><img src="/img/data/fr4.png" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 4 (PHerc. Paris. 1 Fr 39)</figcaption></div>
 </div>
-Volume [20230215185642](https://dl.ash2txt.org/fragments/Frag4/PHercParis1Fr39.volpkg/volumes/20230215185642/): 3.24µm, 54keV, 9231 x 23MB .tif files.
-Volume [20230222173037](https://dl.ash2txt.org/fragments/Frag4/PHercParis1Fr39.volpkg/volumes/20230222173037/): 3.24µm, 88keV, 9209 x 24MB .tif files.
+<p>Volume [20230215185642](https://dl.ash2txt.org/fragments/Frag4/PHercParis1Fr39.volpkg/volumes/20230215185642/): 3.24µm, 54keV, 9231 x 23MB .tif files.</p>
+<p>Volume [20230222173037](https://dl.ash2txt.org/fragments/Frag4/PHercParis1Fr39.volpkg/volumes/20230222173037/): 3.24µm, 88keV, 9209 x 24MB .tif files.</p>
 
 **Fragment 5 (PHerc. 1667 Cr 1 Fr 3)**
 From the same original scroll as Scroll 4 (PHerc. 1667), which was partially unrolled in 1987 using the Oslo method. Find this fragment on [Chartes.it](https://www.chartes.it/index.php?r=document/view&id=1691).
 <div className="flex flex-wrap mb-4">
   <div className="w-[45%] mb-2 mr-2 max-w-[300px]"><img src="/img/data/fr5-2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 5 (PHerc. 1667 Cr 1 Fr 3)</figcaption></div>
 </div>
-Volume [20231121133215](https://dl.ash2txt.org/fragments/Frag5/PHerc1667Cr1Fr3.volpkg/volumes/20231121133215/): 3.24µm, 70keV, 7010 x 13MB .tif files.
-Volume [20231130111236](https://dl.ash2txt.org/fragments/Frag5/PHerc1667Cr1Fr3.volpkg/volumes/20231130111236/): 7.91µm, 70keV, 3131 x 3MB .tif files.
+<p>Volume [20231121133215](https://dl.ash2txt.org/fragments/Frag5/PHerc1667Cr1Fr3.volpkg/volumes/20231121133215/): 3.24µm, 70keV, 7010 x 13MB .tif files.</p>
+<p>Volume [20231130111236](https://dl.ash2txt.org/fragments/Frag5/PHerc1667Cr1Fr3.volpkg/volumes/20231130111236/): 7.91µm, 70keV, 3131 x 3MB .tif files.</p>
 
 **Fragment 6 (PHerc. 51 Cr 4 Fr 8)**
 <div className="flex flex-wrap mb-4">
   <div className="w-[45%] mb-2 mr-2 max-w-[325px]"><img src="/img/data/fr6-2.jpg" className="w-[100%]"/><figcaption className="mt-[-6px]">Fragment 6 (PHerc. 51 Cr 4 Fr 48)</figcaption></div>
 </div>
-Volume [20231121152933](https://dl.ash2txt.org/fragments/Frag6/PHerc51Cr4Fr8.volpkg/volumes/20231121152933/): 3.24µm, 53keV, 8855 x 29MB .tif files.
-Volume [20231130112027](https://dl.ash2txt.org/fragments/Frag6/PHerc51Cr4Fr8.volpkg/volumes/20231130112027/): 7.91µm, 53keV, 3683 x 6MB .tif files.
-Volume [20231201112849](https://dl.ash2txt.org/fragments/Frag6/PHerc51Cr4Fr8.volpkg/volumes/20231201112849/): 3.24µm, 88keV, 8855 x 29MB .tif files.
-Volume [20231201120546](https://dl.ash2txt.org/fragments/Frag6/PHerc51Cr4Fr8.volpkg/volumes/20231201120546/): 3.24µm, 70keV, 8855 x 29MB .tif files.
+<p>Volume [20231121152933](https://dl.ash2txt.org/fragments/Frag6/PHerc51Cr4Fr8.volpkg/volumes/20231121152933/): 3.24µm, 53keV, 8855 x 29MB .tif files.</p>
+<p>Volume [20231130112027](https://dl.ash2txt.org/fragments/Frag6/PHerc51Cr4Fr8.volpkg/volumes/20231130112027/): 7.91µm, 53keV, 3683 x 6MB .tif files.</p>
+<p>Volume [20231201112849](https://dl.ash2txt.org/fragments/Frag6/PHerc51Cr4Fr8.volpkg/volumes/20231201112849/): 3.24µm, 88keV, 8855 x 29MB .tif files.</p>
+<p>Volume [20231201120546](https://dl.ash2txt.org/fragments/Frag6/PHerc51Cr4Fr8.volpkg/volumes/20231201120546/): 3.24µm, 70keV, 8855 x 29MB .tif files.</p>
 
 For more technical details, see [EduceLab-Scrolls: Verifiable Recovery of Text from Herculaneum Papyri using X-ray CT](https://arxiv.org/abs/2304.02084) and [EduceLab Herculaneum Scroll Data (2023) Info Sheet](https://drive.google.com/file/d/1I6JNrR6A9pMdANbn6uAuXbcDNwjk8qZ2/view?usp=sharing)
 
