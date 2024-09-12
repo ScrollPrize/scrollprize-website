@@ -1,6 +1,5 @@
 ---
-title: "Tutorial 1: Technical Overview"
-sidebar_label: "1. Technical Overview"
+title: "The Tutorials"
 hide_table_of_contents: true
 ---
 
