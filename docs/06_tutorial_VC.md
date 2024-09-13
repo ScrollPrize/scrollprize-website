@@ -46,7 +46,7 @@ Volume Cartographer has been a popular option for manual segmentation.
 
 Strengths:
 
-  - Fastest manual tool for creating accurate segments >100 cm^2^
+  - Fastest manual tool for creating accurate segments >100 cm^^2^^
   - Tool-assisted annotation, requiring less clicking
   - Entire pipeline in one application
 
