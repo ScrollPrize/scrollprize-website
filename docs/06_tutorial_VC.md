@@ -36,6 +36,9 @@ hide_table_of_contents: true
   />
 </head>
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 Volume Cartographer was used to generate the 2023 [Grand Prize results](grandprize). This guide was made by @bruniss with feedback and help from @hari_seldon and @djosey of the segmentation team.
 
 :::tip
