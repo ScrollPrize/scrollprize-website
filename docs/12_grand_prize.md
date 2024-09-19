@@ -64,7 +64,7 @@ You can approach this challenge through any means necessary: machine learning, c
 
 #### Why is this difficult?
 
-As you will read in the [tutorials](/tutorial1), advanced tools and techniques exist for virtually unwrapping papyrus scrolls. This was demonstrated in 2015 when Dr. Seales's team [unwrapped the En-Gedi scroll](https://www2.cs.uky.edu/dri/the-scroll-from-en-gedi/), and in their recent result [identifying ink from 3D X-ray scans in the Herculaneum scrolls](https://arxiv.org/abs/2304.02084).
+As you will read in the [tutorials](/tutorial), advanced tools and techniques exist for virtually unwrapping papyrus scrolls. This was demonstrated in 2015 when Dr. Seales's team [unwrapped the En-Gedi scroll](https://www2.cs.uky.edu/dri/the-scroll-from-en-gedi/), and in their recent result [identifying ink from 3D X-ray scans in the Herculaneum scrolls](https://arxiv.org/abs/2304.02084).
 
 <div>But the Herculaneum scrolls have proved more challenging. The remaining challenges include:</div>
 
