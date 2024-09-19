@@ -56,7 +56,7 @@ Our goal is to read 90% of each of four scrolls:
 
 <Admonition type="tip" icon="📜" title="Grand Prize">
 * Prizes: $200,000 [Grand Prize](2024_prizes#2024-grand-prize)
-* Starting point: [The Data](data), [Tutorials](tutorial1)
+* Starting point: [The Data](data), [Tutorials](tutorial)
 </Admonition>
 
 There are currently two primary subproblems where we need your help:
