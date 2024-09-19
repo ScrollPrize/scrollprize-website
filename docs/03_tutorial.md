@@ -104,7 +104,7 @@ Remember that each pixel in the image stack actually represents a cube (voxel) o
 </div>
 <iframe className="w-[100%] max-w-[500px] mb-4 aspect-square" src="https://www.youtube.com/embed/cY5BIxkf5m0"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
-Image stacks can be visualized using 3D volume rendering software. We will learn how to do this in the [Scanning Tutorial](tutorial2).
+Image stacks can be visualized using 3D volume rendering software. We will learn how to do this in the [Scanning Tutorial](tutorial1).
 
 ### 2. Segmentation
 
