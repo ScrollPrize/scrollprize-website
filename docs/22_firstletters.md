@@ -67,7 +67,7 @@ That is until Luke Farritor, a contestant of the <a href="/">Vesuvius Challenge<
   </figure>
   <figure className="w-[50%] max-w-[250px]">
     <img className="w-[250px]" src="/img/firstletters/luke.jpg" />
-    <figcaption className="mt-0">Luke holding the <a href="tutorial2#campfire-scroll">campfire scroll</a> at EduceLab.</figcaption>
+    <figcaption className="mt-0">Luke holding the <a href="tutorial1#campfire-scroll">campfire scroll</a> at EduceLab.</figcaption>
   </figure>
 </div>
 
