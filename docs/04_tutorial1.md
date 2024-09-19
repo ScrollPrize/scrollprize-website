@@ -1,6 +1,6 @@
 ---
-title: "Tutorial 2: Scanning"
-sidebar_label: "2. Scanning"
+title: "Tutorial 1: Scanning"
+sidebar_label: "1. Scanning"
 hide_table_of_contents: true
 ---
 
