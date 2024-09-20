@@ -43,14 +43,15 @@ These tutorials share the best tools and techniques for virtually unwrapping and
 
 We expect you will build on these techniques, improving the tools and models. But of course, you may have better ideas, and are free to approach the Vesuvius Challenge any way you think will work!
 
-There are four steps in our process for reading a carbonized scroll:
+There are five steps in our process for reading a carbonized scroll:
 
 <TutorialsTop/>
 
 1. <b>Scan:</b> use X-ray tomography to create a 3D scan of a scroll or fragment. The digital twin is a volumetric image where each voxel (3D pixel) represents the average density of the material at the scan resolution.
-2. <b>Segmentation::</b> mapping and transforming the written surface into a flat, 2D projection and sampling nearby voxels to create a flattened volume that contains all surface features.
-3. <b>Ink Detection:</b> identifying the inked regions in the flattened surface volume using a machine learning model
-4. <b>Read:</b> decipher ink strokes, interpret meaning, unlock history
+2. <b>Representation:</b> choosing a digital or mathematical representation for data manipulation. Scanning outputs voxels in a 3D grid, but other options like point clouds exist. Switching between representations is possible if no important information is lost.
+3. <b>Segmentation::</b> mapping and transforming the written surface into a flat, 2D projection and sampling nearby voxels to create a flattened volume that contains all surface features.
+4. <b>Ink Detection:</b> identifying the inked regions in the flattened surface volume using a machine learning model
+5. <b>Read:</b> decipher ink strokes, interpret meaning, unlock history
 
 ### Where we are now
 
@@ -86,7 +87,6 @@ Scanning involves capturing hundreds to thousands of X-ray photographs of the ob
 
 The X-ray photos are combined into a 3D scan volume using [tomographic reconstruction](https://en.wikipedia.org/wiki/Tomographic_reconstruction) algorithms, typically by software that comes with the scanner. A volume is a 3D picture made up of 3D pixel cubes called voxels. The voxel size tells us the physical size of the cube, and the value stored in the voxel is that location's relative radiodensity.
 
-
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/scanning2.jpg">
     <source src="/img/tutorials/scanning2.webm" type="video/webm"/>
@@ -106,7 +106,20 @@ Remember that each pixel in the image stack actually represents a cube (voxel) o
 
 Image stacks can be visualized using 3D volume rendering software. We will learn how to do this in the [Scanning Tutorial](tutorial1).
 
-### 2. Segmentation
+### 2. Representation
+
+<div className="bg-gray-800 p-4 rounded mb-4">
+<strong>Input:</strong> 3D scan volume (.tif “image stack”).<br/>
+<strong>Output:</strong> modified 3D volume (.tif “image stack”), pointclouds (.ply), other?
+</div>
+
+Rather than working directly from the raw scan volume, some of our techniques leverage various mathematical transformations to render new, processed volumes. Choosing an appropriate digital or mathematical representation is important for effectively manipulating the scroll data. While the raw scan is represented by voxels in a 3D grid, this isn’t the only option.
+
+For example, if we map each voxel to a point in Euclidean space based on its grid coordinates, we create a point cloud. Each representation has its own advantages and disadvantages and may be more suitable for certain geometrical processing and machine learning algorithms. As long as we retain all important information, we can switch between different representations as needed.
+
+The [Representation Tutorial](tutorial2) provides an in-depth explanation of how to create representations and the reasons behind their use.
+
+### 3. Segmentation
 
 <div className="bg-gray-800 p-4 rounded mb-4">
 <strong>Input:</strong> 3D volume (.tif “image stack”).<br/>
@@ -135,7 +148,7 @@ The output of this process is a flattened 3D volume of the voxels around the map
 
 In ["Tutorial: Segmentation and Flattening"](tutorial3) we’ll dive deeper into segmentation and virtual unwrapping.
 
-### 3. Ink detection
+### 4. Ink detection
 
 <div className="bg-gray-800 p-4 rounded mb-4">
 <strong>Input:</strong> 3D “surface volume” around the mesh (.tif “image stack”), hand-labeled binary mask<br/>
@@ -157,7 +170,7 @@ Fragments have exposed regions of ink on the surface that can be photographed. T
 
 We go into great detail in [“Tutorial 5: Ink Detection”](tutorial5).
 
-### 4. Read
+### 5. Read
 
 <div className="bg-gray-800 p-4 rounded mb-4">
 <strong>Input:</strong> One or more predicted ink masks.<br/>
