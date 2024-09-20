@@ -52,7 +52,7 @@ For more information on those approaches, see [Segmentation - a different approa
 Please see the accompanying video tutorial for segmentation using Volume Cartographer here: https://www.youtube.com/watch?v=gdQmepxWhuY
 :::
 
-As we saw in the ["Scanning" tutorial](/tutorial2), it’s quite hard to extract useful information out of a “word soup”, even when the ink is quite clear. For this tutorial we’ll show how to use virtual unwrapping to produce a flattened image which shows the content clearly.
+As we saw in the ["Scanning" tutorial](/tutorial1), it’s quite hard to extract useful information out of a “word soup”, even when the ink is quite clear. For this tutorial we’ll show how to use virtual unwrapping to produce a flattened image which shows the content clearly.
 
 Two key steps to virtually unwrapping a scroll or manuscript are _segmenting_ a surface from inside the 3D volume and _flattening_ that surface to 2D. The video below shows the idea quite well; or check out the <a href="https://youtu.be/VG8oOMHCg74?t=37">full version</a> (It was made by Dr. Seales’s son and daughter!). The red line during the reconstruction phase represents the surface that we want to virtually unwrap.
 

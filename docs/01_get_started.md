@@ -56,7 +56,7 @@ Our goal is to read 90% of each of four scrolls:
 
 <Admonition type="tip" icon="📜" title="Grand Prize">
 * Prizes: $200,000 [Grand Prize](2024_prizes#2024-grand-prize)
-* Starting point: [The Data](data), [Tutorials](tutorial1)
+* Starting point: [The Data](data), [The Tutorials](tutorial)
 </Admonition>
 
 There are currently two primary subproblems where we need your help:
@@ -73,7 +73,7 @@ There are currently two primary subproblems where we need your help:
 
 ### 4. Utilize resources
 
-Find more information about our datasets ([data page](data)) and what to do with them ([tutorials](tutorial1)).
+Find more information about our datasets ([data page](data)) and what to do with them ([tutorials](tutorial)).
 
 There are many great tools and resources that you can use and contribute to:
 

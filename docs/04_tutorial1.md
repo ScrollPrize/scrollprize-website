@@ -1,5 +1,6 @@
 ---
-title: "The Tutorials"
+title: "Tutorial 1: Scanning"
+sidebar_label: "1. Scanning"
 hide_table_of_contents: true
 ---
 
@@ -37,169 +38,249 @@ hide_table_of_contents: true
 </head>
 
 import { TutorialsTop } from '@site/src/components/TutorialsTop';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-These tutorials share the best tools and techniques for virtually unwrapping and reading carbonized papyrus scrolls.
+<TutorialsTop highlightId={2} />
 
-We expect you will build on these techniques, improving the tools and models. But of course, you may have better ideas, and are free to approach the Vesuvius Challenge any way you think will work!
+### Campfire scroll
 
-There are four steps in our process for reading a carbonized scroll:
+To get a basic understanding of the kind of data we’re working with, it’s useful to look at it directly. Our goal will be to look at a scroll in two ways: 1) a “word soup” of floating letters, and 2) a mesh representation:
 
-<TutorialsTop/>
-
-1. <b>Scan:</b> use X-ray tomography to create a 3D scan of a scroll or fragment. The digital twin is a volumetric image where each voxel (3D pixel) represents the average density of the material at the scan resolution.
-2. <b>Segmentation::</b> mapping and transforming the written surface into a flat, 2D projection and sampling nearby voxels to create a flattened volume that contains all surface features.
-3. <b>Ink Detection:</b> identifying the inked regions in the flattened surface volume using a machine learning model
-4. <b>Read:</b> decipher ink strokes, interpret meaning, unlock history
-
-### Where we are now
-
-Before we dive into the Herculaneum papyri with their [radiolucent](https://en.wikipedia.org/wiki/Radiodensity) ink, it's helpful to understand how the En-Gedi scroll was virtually unwrapped in 2015.
-
-Here is an excellent 2 minute overview of how this was achieved:
-
-<iframe className="w-[100%] aspect-video mb-4" src="https://www.youtube.com/embed/GduCExxB0vw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>
-
-For the Herculaneum papyri, many of the same steps apply, with one key change - the ink is much less readily visible. There is much room for improvement in each step of the pipeline: We can currently only read 5% of a complete scroll. We would like to read 90% in 2024. That is your goal!
-
-
-Let's go through each of the key steps one by one.
-
-### 1. Scan
-
-<div className="bg-gray-800 p-4 rounded mb-4">
-<strong>Input:</strong> physical scroll or fragment.<br/>
-<strong>Output:</strong> 3D scan volume (voxels in .tif “image stack”)
+<div className="flex flex-wrap items-start">
+  <figure className="sm:w-[48.4%]">
+    <img src="/img/tutorials/en-gedi-word-soup.gif"/>
+    <figcaption className="mt-0">Word soup in a simulated scroll <a href="https://www.youtube.com/watch?v=tL7rhIFNtQg">(source)</a></figcaption>
+  </figure>
+  <figure className="sm:w-[50%]">
+    <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/meshlab-small2.jpg">
+      <source src="/img/tutorials/meshlab-small2.webm" type="video/webm"/>
+      <source src="/img/tutorials/meshlab-small2.mp4" type="video/mp4"/>
+    </video>
+    <figcaption className="mt-0">Mesh representation of the “campfire scroll”</figcaption>
+  </figure>
 </div>
 
-If you've ever had a CT scan at a hospital, this is the same process, except our scans were made in a particle accelerator and are much higher resolution.
+We’ll use [Stephen Parsons’s](https://www2.cs.uky.edu/dri/stephen-parsons/) “campfire scroll” proxy (available on the <a href="/data">Data page</a>). He made this scroll by writing on papyrus with both carbon ink (low contrast with papyrus in CT scans) and iron gall ink (high contrast with papyrus in CT scans). We won’t give away all the reference pictures, but here is the last page of the scroll:
 
-Scanning involves capturing hundreds to thousands of X-ray photographs of the object from different rotational angles. Typically this is accomplished using an X-ray source on one side of the object, and an X-ray camera on the other side, and rotating the object 360° on a platform.
+<figure className="max-w-[250px]">
+
+![](/img/tutorials/campfire-last-page.jpg)
+
+<figcaption>Last page of the campfire scroll, with nonsense words</figcaption>
+</figure>
+
+Stephen then _carbonized_ the scroll through a process that is similar to that of making charcoal: he rolled up the scroll, sealed it in a cookie tin with a tiny hole poked in the top, and heated the tin in a campfire. In a hot, oxygen-poor environment like the cookie tin, the papyrus turns to carbon rather than catching on fire. He then put the resulting carbonized scroll in a benchtop CT scanner (Bruker SkyScan 1173).
 
 <figure className="">
-  <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/fragment-rotating2.jpg">
-    <source src="/img/tutorials/fragment-rotating2.webm" type="video/webm"/>
-    <source src="/img/tutorials/fragment-rotating2.mp4" type="video/mp4"/>
-  </video>
-  <figcaption className="mt-0">A fragment rotating, with an X-ray source (from a particle accelerator) on one side, and an X-ray camera on the other side <a href="https://www.youtube.com/watch?v=fg_08ukGlMw">(source)</a></figcaption>
+  <div className="flex flex-wrap">
+    <img className="max-h-[250px]" src="/img/tutorials/campfire-rolled2.jpg"/>
+    <img className="max-h-[250px]" src="/img/tutorials/campfire-rolled.jpg"/>
+    <img className="max-h-[250px]" src="/img/tutorials/campfire-camp.jpg"/>
+    <img className="max-h-[250px]" src="/img/tutorials/campfire-container.jpg"/>
+    <img className="max-h-[250px]" src="/img/tutorials/campfire-result.jpg"/>
+    <img className="max-h-[250px]" src="/img/tutorials/campfire-scanning.jpg"/>
+    <img className="max-h-[250px]" src="/img/tutorials/campfire-scanning2.jpg"/>
+  </div>
+  <figcaption className="mt-1">Making of the campfire scroll</figcaption>
 </figure>
 
-The X-ray photos are combined into a 3D scan volume using [tomographic reconstruction](https://en.wikipedia.org/wiki/Tomographic_reconstruction) algorithms, typically by software that comes with the scanner. A volume is a 3D picture made up of 3D pixel cubes called voxels. The voxel size tells us the physical size of the cube, and the value stored in the voxel is that location's relative radiodensity.
+### Fiji
 
+:::tip
+
+We now also have a community-contributed program that is worth trying out: [Scroll Viewer](https://github.com/lukeboi/scroll-viewer).
+
+:::
+
+We’ll use the [“Fiji”](https://imagej.net/software/fiji/downloads) open source program, which is a versatile tool for all sorts of image-based operations. It is a distribution of ImageJ, but the main version of ImageJ doesn’t include all the features we need. (In fact, “Fiji” is a recursive acronym for “Fiji Is Just ImageJ”.)
+
+:::info OS-specific instructions
+
+<Tabs groupId="operating-systems">
+  <TabItem value="win" label="Windows">
+    * No known issues.
+  </TabItem>
+  <TabItem value="mac" label="macOS">
+
+* Even if you’re using an M1/M2 processor, please use the x86_64 version.
+* If you get a popup saying that the app can’t be opened, be sure to *right click > Open* to circumvent the blocking.
+
+<figure className="max-w-[400px]">
+
+![](/img/tutorials/right-click-open.png)
+
+</figure>
+
+* Alternatively, you can use the “Open Anyway” trick: go to *“System Preferences > Security & Privacy > General > Open Anyway”*.
+
+<figure className="max-w-[400px]">
+
+![](/img/tutorials/macos-open-anyway.png)
+
+</figure>
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+    * We recommend downloading the `.app` portable application from their website, instead of using a package manager. It does require you to have the JVM installed.
+  </TabItem>
+</Tabs>
+
+:::
+
+<div>To follow along, download the tutorial data: <a href="https://gist.github.com/janpaul123/280262ebce904f7366fe4cc155593e90">campfire.zip</a>. In here there are three folders:</div>
+
+* `raw`: the raw X-ray photos of the scroll.
+* `rec`: the reconstructed 3D image volume (“rec” = “reconstructed”).
+* `logs`: log files during scanning and reconstruction.
+
+Let’s start with `raw`. These are the raw X-ray photos of the scroll, taken in 0.15 degree steps for a full 360 degree rotation, so there are 2400 photos in total (you can see these details in `logs/carbonized01-45kV_.log` and `logs/carbonized01-45kV__TS.csv`).
+
+However, to keep this tutorial dataset small, we have resized these photos to 1/4th their size and kept only every 4th photo. This effectively reduces the voxel size of these scans from the original 26µm to 104µm. We also reduced the bit depth from 16 bits to 8 bits.
+
+We don’t typically use these photos directly, but they are useful to understand how CT scanning works.
+
+<figure className="max-w-[556px]">
+
+![](/img/tutorials/imagej-import2.png)
+
+</figure>
+
+1. In Fiji navigate to *“File > Import > Image Sequence”*. Then *“Browse”* to select `campfire/raw`.
+2. The *“Count”* should show exactly 600.<br/>
+**If the count is not exactly 600**: double-check that the unzipping of the dataset resulted in multiple directories. Sometimes zip programs put all files inside one big directory.
+3. Click *“OK”* to load the image stack.
+
+:::tip
+
+If Fiji crashes, or you run into other issues, try to increase the memory limit: *“Edit > Options > Memory and Threads”.*
+
+:::
+
+Note that when you are loading a dataset that hasn’t been reduced in size beforehand, you can do that here. For example, we could have set *“Scale”* to *“25%”* and *“Step”* to *“4”*, to get a similar result.
+
+In the resulting scan you can vaguely see some features, perhaps even some ink, but it's hard to see what is actually in there:
 
 <figure>
-  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/scanning2.jpg">
-    <source src="/img/tutorials/scanning2.webm" type="video/webm"/>
-    <source src="/img/tutorials/scanning2.mp4" type="video/mp4"/>
+  <video autoPlay playsInline loop muted className="max-w-[100%] rounded-xl" poster="/img/tutorials/imagej-raw-xrays2.jpg">
+    <source src="/img/tutorials/imagej-raw-xrays2.webm" type="video/webm"/>
+    <source src="/img/tutorials/imagej-raw-xrays2.mp4" type="video/mp4"/>
   </video>
-  <figcaption className="mt-0">Artistic visualization of constructing a 3D volume; in reality the object rotates as it is scanned.</figcaption>
 </figure>
 
-We store the 3D scan volume as a directory full of .tif files, where each file represents one horizontal cross-section or "slice" of the object, typically starting at the bottom of the scroll or scroll fragment and moving upwards. We call this a .tif image stack. You can view and explore a 3D scan volume of a scroll in your browser right now in [one click](https://dl.ash2txt.org/view/Scroll1), or with a few lines of code ([Python](https://github.com/ScrollPrize/vesuvius), [C](https://github.com/ScrollPrize/vesuvius-c)).
+### Volumes
 
-Remember that each pixel in the image stack actually represents a cube (voxel) of physical space. If your volume has a 10um voxel size, then 100 slices will be 1mm (1000um) of the object.
+However, this is not yet the data we use for virtual unwrapping or machine learning. For that, these x-ray projection images are combined using a process called [tomographic reconstruction](https://en.wikipedia.org/wiki/Tomographic_reconstruction). This is typically done by software that comes with the CT scanner, so we already have done this, in our case using the Bruker SkyScan NRecon tool.
 
-<div className="flex w-[100%]">
-  <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1 (PHerc. Paris. 4)</figcaption></div>
-</div>
-<iframe className="w-[100%] max-w-[500px] mb-4 aspect-square" src="https://www.youtube.com/embed/cY5BIxkf5m0"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+The result of reconstruction is a 3D image, or volume, which is made up of 3D pixel cubes called voxels. The *voxel size* of the volume tells us the physical size of the cube, and the value stored in the voxel is an estimate of that location's radiodensity. Like the x-ray images, the volume is stored as a .tif image stack, but this time each image represents a slice along the “z” axis of the volume.
 
-Image stacks can be visualized using 3D volume rendering software. We will learn how to do this in the [Scanning Tutorial](tutorial2).
+<figure className="max-w-[556px]">
 
-### 2. Segmentation
+![](/img/tutorials/imagej-import-rec2.png)
 
-<div className="bg-gray-800 p-4 rounded mb-4">
-<strong>Input:</strong> 3D volume (.tif “image stack”).<br/>
-<strong>Output:</strong> 3D flattened “surface volume” (.tif “image stack”)
-</div>
+</figure>
 
-The goal of segmentation is to map and capture information near the written surface of the rolled papyrus scroll. Each section of the written surface that we have mapped within the 3D volume and converted into a surface volume is called a "segment".
+* First close the existing window with the image stack.
+* Then open our reconstructed slices `campfire/rec` in the same way into Fiji (*“File > Import > Image Sequence”*).
+* The count should be **477** now.
+
+The result should look like this:
 
 <figure>
-  <video autoPlay playsInline loop muted className="w-[100%] rounded-xl" poster="/img/tutorials/segmentation2.jpg">
-    <source src="/img/tutorials/segmentation2.webm" type="video/webm"/>
-    <source src="/img/tutorials/segmentation2.mp4" type="video/mp4"/>
+  <video autoPlay playsInline loop muted className="w-[100%] max-w-[400px] rounded-xl" poster="/img/tutorials/imagej-slices2.jpg">
+    <source src="/img/tutorials/imagej-slices2.webm" type="video/webm"/>
+    <source src="/img/tutorials/imagej-slices2.mp4" type="video/mp4"/>
   </video>
-  <figcaption className="mt-0">Segmentation: finding a surface of papyrus.</figcaption>
 </figure>
 
+In these images, radiodense materials have bright pixel values while more radiolucent materials have darker pixel values. As a result, you can see the iron gall ink light up quite clearly in these slices as bright lines which follow the wraps of the scroll. However, it’s impossible to make out any letters from this "top-down" view of the volume.
 
-<div>There are four steps to segmentation:</div>
-
-* **Map.** Working from the chosen representation, map the surface (VC, Khartes, Thaumato) or volume (Slicer, Napari, Dragonfly) of the targeted scroll section.
-* **Mesh.** Once the surface has been mapped in three dimensions, we need to start preparing the ground to visualize the results. In computer vision, the common approach is triangulating the surface obtaining a “triangular mesh”. Triangular meshes allow coherent texturization and rendering of the surface for both enhanced 3D visualization and flattened 2D visualization. The triangular mesh is stored in a “.obj” file. 
-* **Subvolume.** Sample voxels around the mesh to extract a subvolume containing information around the surface (surface volume).
-* **Flatten.** Transform this subvolume into a new .tif image stack where each layer is 2D, similar to creating a map of the earth on flat paper
-
-The output of this process is a flattened 3D volume of the voxels around the mapped surface, which we call a “surface volume”. This is again a .tif image stack, just like our original volume. However, it is much smaller than the original volume and more consistent since the papyrus always sits roughly in the middle of the volume.
-
-In ["Tutorial: Segmentation and Flattening"](tutorial3) we’ll dive deeper into segmentation and virtual unwrapping.
-
-### 3. Ink detection
-
-<div className="bg-gray-800 p-4 rounded mb-4">
-<strong>Input:</strong> 3D “surface volume” around the mesh (.tif “image stack”), hand-labeled binary mask<br/>
-<strong>Output:</strong> Predicted ink mask
-</div>
-
-We use machine learning models to detect ink, training them on previously identified regions of ink. The trained models predict new regions of ink, which can be iteratively added to the training sets.
+* Go to *“Plugins > Volume Viewer”*.
+  * It can take a while to load — there is a status bar with a loading bar on the main Fiji window.
+  * In the top bar select *“Mode > Volume (4)”*
+  * And *“Interpolation: Nearest Neighbor (0)”*
+  * Check all 3 checkboxes at the bottom (*“Axes”*, *“Clipping”*, and *“Slice positions”*).
+* Click the *“xy”* button at the bottom so you get a top down view
+  * Then click and drag up on the visualization to rotate it down.
 
 <figure>
-  <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/ink-detection-anim2-dark.jpg">
-    <source src="/img/tutorials/ink-detection-anim2-dark.webm" type="video/webm"/>
-    <source src="/img/tutorials/ink-detection-anim2-dark.mp4" type="video/mp4"/>
+  <video autoPlay playsInline loop muted className="w-[100%] max-w-[700px] rounded-xl" poster="/img/tutorials/drag-up2.jpg">
+    <source src="/img/tutorials/drag-up2.webm" type="video/webm"/>
+    <source src="/img/tutorials/drag-up2.mp4" type="video/mp4"/>
   </video>
 </figure>
 
-Regions that contain ink can also be located via “persistent direct visual inspection” - staring at the surface volume images to identify characteristics of ink signal (crackle).
+* Next, draw the alpha graph to be roughly a diagonal line.
+  * The x-axis represents the brightness of the color (left = dark, right = bright).
+  * The y-axis represents the opacity that we’ll draw with.
+  * A diagonal line means low opacity (= high translucency) for dark colors, which makes the parts without ink transparent, so we can see the ink shine through.
+  * You have to do the drawing in one go, because Fiji can hang for a while when it decides to rerender the image.
 
-Fragments have exposed regions of ink on the surface that can be photographed. The visibility of the ink is enhanced with IR imaging. IR photographs have been aligned with surface volumes of the top layer and included alongside binary masks for each fragment. Most fragments consist of multiple layers adhered together, which can be segmented to search for hidden ink.
-
-We go into great detail in [“Tutorial 5: Ink Detection”](tutorial5).
-
-### 4. Read
-
-<div className="bg-gray-800 p-4 rounded mb-4">
-<strong>Input:</strong> One or more predicted ink masks.<br/>
-<strong>Output:</strong> Words, sentences, whole books, translations, journal papers, worldwide news coverage, eternal fame.
-</div>
-
-<figure className="">
-  <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/engedi-reconstruction3.webm">
-    <source src="/img/tutorials/engedi-reconstruction3.webm" type="video/webm"/>
-    <source src="/img/tutorials/engedi-reconstruction3.mp4" type="video/mp4"/>
+<figure>
+  <video autoPlay playsInline loop muted className="w-[100%] max-w-[300px] rounded-xl" poster="/img/tutorials/alpha-graph2.jpg">
+    <source src="/img/tutorials/alpha-graph2.webm" type="video/webm"/>
+    <source src="/img/tutorials/alpha-graph2.mp4" type="video/mp4"/>
   </video>
-  <figcaption className="mt-0">En-Gedi reconstruction of multiple segments, showing Hebrew text. Can you read it? <a href="https://www.youtube.com/watch?v=tL7rhIFNtQg">(source)</a></figcaption>
 </figure>
 
-Your work ends at ink detection. But for the world's papyrologists and classicists, this is where the excitement begins! Papyrologists can often extract more information than you might think. They are used to working with damaged, incomplete information, interpreting it, putting it into a historical context, and making history.
 
-### Visual summary
+* Now you can play with the *“Distance”* and *“Scale”* sliders.
+  * *“Distance”* slices the volume away from the camera, revealing more of the inner structure.
+  * *“Scale”* is simple zooming.
+* See if you can uncover the spiral on the last page of the scroll:
 
-```mermaid
-%%{init: {'theme':'dark'}}%%
-graph TD
+<figure>
+  <img src="/img/tutorials/spiral.png" />
+</figure>
 
-classDef substep fill:#223B46
+Here is a video showing the whole process:
 
-Scanning["1. Micro-CT scan"]:::substep
-Papyrus([Papyrus scroll]) --> Scanning --> tif[/"Scroll volume (.tif stack)"/]
+<figure>
+  <video controls playsInline muted className="w-[100%] rounded-xl" poster="/img/tutorials/imagej-word-soup2.jpg">
+    <source src="/img/tutorials/imagej-word-soup2.webm" type="video/webm"/>
+    <source src="/img/tutorials/imagej-word-soup2.mp4" type="video/mp4"/>
+  </video>
+</figure>
 
-Segmentation["2. Segmentation"]:::substep
-tif --> Segmentation --> obj[/"3D mesh (.obj)"/]
+That is a what we call a “word soup” — letters floating in the air. Our real datasets aren’t nearly as pretty as this, but this should give you some idea of what volumetric data of papyrus scrolls looks like in the best case scenario.
 
-Volumes["3. Flattening and rendering"]:::substep
-tif --> Volumes
-obj --> Volumes
-Volumes --> surfVol[/"Surface volume (.tif stack)"/]
+However, it’s still hard to read anything. [“Tutorial 3: Segmentation and Flattening”](tutorial3) should help with this.
 
-Alignment["4. Ground data truth alignment"]:::substep
-Infrared[/Infrared photo/] --> Alignment --> alInf[/Aligned infrared/] --> labels[/Hand-labeled binary mask/]
-surfVol --> Alignment
+### Meshes
 
-Ink["5. Ink detection"]:::substep
-surfVol --> Ink
-labels --> Ink --> predInk[/Ink predictions/]
+There is another way we can visualize the volume: we can convert it into triangles. A set of triangles is called a “mesh”, and it allows us to view our volume in tools that don’t support image stacks directly, which is sometimes useful. For this, we need to export to a mesh from Fiji:
 
-Interpretation["6. Interpretation"]:::substep
-predInk --> Interpretation --> Knowledge([New knowledge])
-```
+* Go back to the tomographically reconstructed image stack in Fiji (or import it again using *“File > Import > Image Sequence”*).
+* Go to *“Image > Type (at the very top) > RGB Color”* (this is required for the meshing algorithm).
+* Go to *“File > Save As > Wavefront .OBJ (near the bottom)”*
+* Now choose an intensity threshold above which we consider the object “solid”. A value of *“40”* works well for the campfire scroll.
+* Press *“OK”* and save the file somewhere.
+* Wait a moment until the file is saved. It should be around 400MB.
+
+<figure className="max-w-[200px]">
+  <img src="/img/tutorials/mesh-export2.png" />
+</figure>
+
+Now, download and install [MeshLab](https://www.meshlab.net/#download).
+
+* Use *“File > Import”*, or drag the file into MeshLab.
+  * It can take a while to import; there is a progress bar at the bottom.
+* In the right panel, click on the cylinder icon (see screenshot below), then click on *“Back-Face > Double”*.
+* Drag around using the left mouse button to rotate the mesh.
+
+<figure>
+  <img src="/img/tutorials/meshlab.png" className="rounded-xl" />
+</figure>
+
+You can quite clearly see the different pieces of papyrus, and even the container holding the scroll in place inside the scanner. However, all information of letters contained in the data is lost.
+
+We’ll use Meshlab in later tutorials, so it’s useful to have seen it.
+
+Here is a video where we navigate around the model in Meshlab:
+
+<figure>
+  <video controls playsInline muted className="w-[100%] rounded-xl" poster="/img/tutorials/meshlab2.jpg">
+    <source src="/img/tutorials/meshlab2.webm" type="video/webm"/>
+    <source src="/img/tutorials/meshlab2.mp4" type="video/mp4"/>
+  </video>
+</figure>

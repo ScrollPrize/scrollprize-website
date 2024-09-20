@@ -307,7 +307,7 @@ Machine learning models are infamous for “hallucinating”: making up text or 
 
 ## How does the unrolling work?
 
-<div>Roughly, virtual unwrapping works in <a href="tutorial1">three steps:</a></div>
+<div>Roughly, virtual unwrapping works in <a href="tutorial">three steps:</a></div>
 
 1. **Scanning:** creating a 3D scan of a scroll or fragment using X-ray tomography.
 2. **Segmentation:** tracing the crumpled layers of the rolled papyrus in the 3D scan and then unrolling, or flattening, them.

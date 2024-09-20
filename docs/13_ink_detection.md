@@ -36,7 +36,7 @@ hide_table_of_contents: true
   />
 </head>
 
-As you will learn in the [tutorials](/tutorial1), one of the big challenges of reading the Herculaneum Papyri is detecting the ink in the 3D X-ray scans.
+As you will learn in the [tutorials](/tutorial), one of the big challenges of reading the Herculaneum Papyri is detecting the ink in the 3D X-ray scans.
 
 <figure>
   <video autoPlay playsInline loop muted className="w-[100%]" poster="/img/tutorials/ink-detection-anim2-dark.jpg">

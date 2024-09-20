@@ -54,8 +54,9 @@ const sidebars = {
       label: 'Tutorials',
       collapsible: true,
       collapsed: true,
-      link: { type: 'doc', id: 'tutorial1' },
+      link: { type: 'doc', id: 'tutorial' },
       items: [
+        { type: 'doc', id: 'tutorial1' },
         { type: 'doc', id: 'tutorial2' },
         { type: 'doc', id: 'tutorial3' },
         { type: 'doc', id: 'tutorial4' },

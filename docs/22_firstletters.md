@@ -67,7 +67,7 @@ That is until Luke Farritor, a contestant of the <a href="/">Vesuvius Challenge<
   </figure>
   <figure className="w-[50%] max-w-[250px]">
     <img className="w-[250px]" src="/img/firstletters/luke.jpg" />
-    <figcaption className="mt-0">Luke holding the <a href="tutorial2#campfire-scroll">campfire scroll</a> at EduceLab.</figcaption>
+    <figcaption className="mt-0">Luke holding the <a href="tutorial1#campfire-scroll">campfire scroll</a> at EduceLab.</figcaption>
   </figure>
 </div>
 
@@ -243,7 +243,7 @@ In this image you can clearly see four and a half columns of text, separated by 
 
 These advancements demonstrate that the <a href="grand_prize">$700,000 Grand Prize</a> is within reach. Our optimism is at an all time high.
 
-Now is the best time to get involved! Join our vibrant <a href="https://discord.gg/V4fJhvtaQn">Discord community</a>, sign up to receive <a href="https://scrollprize.substack.com/">newsletters via Substack</a>, or follow <a href="https://twitter.com/scrollprize">@scrollprize</a> on X. To get started, download some <a href="data">data</a>, walk through some of our <a href="tutorial1">tutorials</a>, and catch up on the progress made by contestants by looking at the <a href="winners">prize winners</a> and <a href="community_projects">community tools</a>.
+Now is the best time to get involved! Join our vibrant <a href="https://discord.gg/V4fJhvtaQn">Discord community</a>, sign up to receive <a href="https://scrollprize.substack.com/">newsletters via Substack</a>, or follow <a href="https://twitter.com/scrollprize">@scrollprize</a> on X. To get started, download some <a href="data">data</a>, walk through some of our <a href="tutorial">tutorials</a>, and catch up on the progress made by contestants by looking at the <a href="winners">prize winners</a> and <a href="community_projects">community tools</a>.
 
 Will you be the one unlocking the knowledge in hundreds of scrolls — doubling the amount of texts from antiquity — and potentially thousands more that are yet to be excavated, becoming the last hero of the Roman Empire and winning $700,000 while you’re at it?
 
