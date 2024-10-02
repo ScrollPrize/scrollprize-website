@@ -53,7 +53,7 @@ From the [Institut de France](https://www.institutdefrance.fr/en/home/).
 The scroll for which we have by far the most [segments](data_segments), and in which the [first letters](firstletters) have been discovered and the [2023 Grand Prize](grandprize) was claimed.
 
 <div className="flex w-[100%]">
-  <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-small-actual.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1 (PHerc. Paris. 4)</figcaption></div>
+  <div className="w-[100%] mb-2 mr-2"><img src="/img/overview/scroll1-actual-new.jpg" className="w-[100%]"/><figcaption className="mt-0">Scroll 1 (PHerc. Paris. 4)</figcaption></div>
 </div>
 <iframe className="w-[100%] max-w-[500px] mb-4 aspect-square" src="https://www.youtube.com/embed/cY5BIxkf5m0"  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
