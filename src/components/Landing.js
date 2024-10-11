@@ -681,6 +681,11 @@ const team = {
       href: "https://www.linkedin.com/in/giorgio-angelotti/",
     },
     {
+      name: "Youssef Nader",
+      title: "Machine Learning Researcher",
+      href: "https://youssefnader.com/",
+    },
+    {
       name: "Ben Kyles",
       title: "Segmentation Team Lead",
       href: "https://twitter.com/ben_kyles",
