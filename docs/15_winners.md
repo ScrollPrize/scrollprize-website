@@ -73,7 +73,7 @@ This page lists all the prizes awarded so far:
     <img src="/img/progress/202408/meshes.webp"/>
   </a>
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://drive.google.com/drive/folders/1HM_aWmZBfCbaX9tNYgy6iC8nWkEUZzrj?usp=drive_linkx">
-    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Ink detection patch aggregation report</span>: Arefeh Sherafati / @arefeh, Lou Schlessinger</div>
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Ink detection patch aggregation report</span>: Arefeh Sherafati / @arefeh, Lou Schlessinger / @ls_96</div>
     <img src="/img/progress/202408/patches.webp"/>
   </a>
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/tomhsiao1260/wj-wt-ftt/">
