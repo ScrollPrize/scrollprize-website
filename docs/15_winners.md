@@ -36,11 +36,71 @@ hide_table_of_contents: true
   />
 </head>
 
-Since the Vesuvius Challenge launched in March 2023, we have awarded **$1,330,000** in prizes!
+Since the Vesuvius Challenge launched in March 2023, we have awarded **$1,378,500** in prizes!
 
 In 2023, the $850,000 Grand Prize [made history](grandprize) by revealing text from inside a rolled Herculaneum scroll for the first time.
 
 This page lists all the prizes awarded so far:
+
+### $48,500 Open Source (September, 2024)
+
+**Goal:** Increase the probability we read 90% of four scrolls in 2024.<br/>
+**Announcement:** <a href="https://scrollprize.substack.com/p/exciting-acceleration-in-community">Blog post</a>
+
+<div className="flex flex-row flex-wrap">
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/bruniss/vesuvius-fibers">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$20,000</div><span className="font-bold">Fiber following</span>: Sean Johnson / @sean (bruniss)</div>
+    <img src="/img/progress/202409/fibers.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/younader/Inkalyzer">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$10,000</div><span className="font-bold">Inkalyzer</span>: Youssef Nader / @YoussefNader</div>
+    <img src="/img/progress/202409/attribution.gif"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1279263442913591349">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Fragment ink labeling</span>: Youssef Nader / @YoussefNader</div>
+    <img src="/img/progress/202409/fragments.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/hendrikschilling/volume-cartographer/tree/dev-zarr">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Fast meshing and flattening</span>: Hendrik Schilling / @waldkauz</div>
+    <img src="/img/progress/202409/VC.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/JamesDarby345/Volumetric_Instance_to_Mesh">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Meshes from volumetric labels</span>: James Darby / @james darby</div>
+    <img src="/img/progress/202409/james.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/jrudolph/vesuvius-gui">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">vesuvius-gui improvements</span>: Johannes Rudolph / @jrudolph</div>
+    <img src="/img/progress/202409/vesuvius-gui.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://drive.google.com/file/d/1wAEMLT3dd1bHMhL-UNKREKi2vVhQB-Ux/view?usp=drive_link">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Self-supervised ink detection</span>: Jorge García-Carrasco / @jgcarracsco, Andoni Irazusta-Garmendia</div>
+    <img src="/img/progress/202409/dino.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1290364437836075231">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Segmentation optimization</span>: Hendrik Schilling / @waldkauz</div>
+    <img src="/img/progress/202409/optimized.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://docs.google.com/document/d/1wM0yOsfJRqmB_8Bfr8eWChPL5DhHP_f8SX5DfwQdH9c/edit?usp=sharing">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Volumetric labeling improvements</span>: James Darby / @james darby</div>
+    <img src="/img/progress/202409/napari.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/Paul-G2/ScrollSleuth">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Scroll Sleuth</span>: Paul Geiger / @PaulG</div>
+    <img src="/img/progress/202409/sleuth.jpg"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/WillStevens/scrollreading/blob/main/report2.pdf">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Small surface segmentation</span>: William Stevens / @Will Stevens</div>
+    <img src="/img/progress/202409/stevens.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/KhartesViewer/khartes/tree/khartes3d-beta">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Data streaming in Khartes</span>: Chuck / @khartes_chuck</div>
+    <img src="/img/progress/202409/khartes.png"/>
+  </a>
+  <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://github.com/StewartSethA/VesuviusInkGenerator">
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$1,000</div><span className="font-bold">Vesuvius Ink Generator</span>: Seth Stewart</div>
+    <img src="/img/progress/202409/inkyness.png"/>
+  </a>
+</div>
 
 ### $41,000 Open Source (August, 2024)
 
