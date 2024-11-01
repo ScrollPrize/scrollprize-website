@@ -871,6 +871,10 @@ const partners = [
     icon: "/img/landing/kaggle.svg",
     href: "https://www.kaggle.com/",
   },
+  {
+    icon: "/img/landing/panua.svg",
+    href: "https://panua.ch/",
+  },
 ];
 
 const educelabFunders = [
