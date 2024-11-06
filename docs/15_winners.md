@@ -73,7 +73,7 @@ This page lists all the prizes awarded so far:
     <img src="/img/progress/202409/vesuvius-gui.png"/>
   </a>
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://drive.google.com/file/d/1wAEMLT3dd1bHMhL-UNKREKi2vVhQB-Ux/view?usp=drive_link">
-    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Self-supervised ink detection</span>: Jorge García-Carrasco / @jgcarracsco, Andoni Irazusta-Garmendia</div>
+    <div className="mb-4"><div className="text-sm font-bold text-gray-300">$2,500</div><span className="font-bold">Self-supervised ink detection</span>: Jorge García-Carrasco / @jgcarracsco, Andoni Irazusta-Garmendia / @theleprechaun25</div>
     <img src="/img/progress/202409/dino.png"/>
   </a>
   <a className="max-w-[200px] mr-4 mb-4 text-gray-100 bg-[#444] hover:bg-[#555] hover:text-[unset] p-4 rounded-lg flex flex-col justify-between" href="https://discord.com/channels/1079907749569237093/1290364437836075231">
