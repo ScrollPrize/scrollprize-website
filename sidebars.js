@@ -64,7 +64,6 @@ const sidebars = {
       ],
     },
     { type: 'doc', id: 'faq' },
-    { type: 'doc', id: 'livestream' },
     {
       type: 'link',
       label: 'Discord',
@@ -80,6 +79,11 @@ const sidebars = {
       label: 'X',
       href: 'https://x.com/scrollprize',
     },
+    {
+      type: 'link',
+      label: 'Donate',
+      href: 'https://donate.stripe.com/aEUg101vt9eN8gM144',
+    }
   ],
   archiveSidebar: [
     {
@@ -89,6 +93,7 @@ const sidebars = {
     { type: 'doc', id: 'background' },
     { type: 'doc', id: 'firstletters' },
     { type: 'doc', id: 'grandprize' },
+    { type: 'doc', id: 'livestream' },
   ],
 };
 
