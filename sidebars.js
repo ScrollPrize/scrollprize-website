@@ -76,7 +76,7 @@ const sidebars = {
     },
     {
       type: 'link',
-      label: 'X',
+      label: '𝕏',
       href: 'https://x.com/scrollprize',
     },
     {
