@@ -778,7 +778,12 @@ const team = {
       href: "https://hum.byu.edu/directory/roger-macfarlane",
     },
   ],
-  papyrology: [
+  papyrology2024: [
+    {
+      name: "Federica Nicolardi (coordinator)",
+      title: "Assistant Professor of Papyrology, University of Naples Federico II",
+      href: "https://www.docenti.unina.it/federica.nicolardi",
+    },
     {
       name: "Marzia D'Angelo",
       title: "Postdoctoral Fellow in Papyrology, University of Naples Federico II",
@@ -809,6 +814,8 @@ const team = {
       title: "Research Assistant in Papyrology, University of Salerno",
       href: "https://salerno.academia.edu/RossellaVilla",
     },
+  ],
+  papyrology2023: [
     {
       name: "Daniel Delattre",
       title: "Emeritus Research Director and Papyrologist, CNRS and IRHT",
@@ -1628,9 +1635,17 @@ export function Landing() {
                   </div>
                   <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
                     <h3 className="text-3xl font-black tracking-tighter text=[--ifm-color-primary]">
-                      Papyrology Team
+                      2024 Papyrology Team
                     </h3>
-                    {team.papyrology.map((t, i) => (
+                    {team.papyrology2024.map((t, i) => (
+                      <Link link={t} key={i} />
+                    ))}
+                  </div>
+                  <div className="flex-1 flex-col lg:gap-0 gap-2 mt-8 min-w-[100%] md:min-w-[50%] pr-4 lg:pr-12">
+                    <h3 className="text-3xl font-black tracking-tighter text=[--ifm-color-primary]">
+                      2023 Papyrology Team
+                    </h3>
+                    {team.papyrology2023.map((t, i) => (
                       <Link link={t} key={i} />
                     ))}
                   </div>
