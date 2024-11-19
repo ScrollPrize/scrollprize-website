@@ -1,3 +1,5 @@
+> **_NOTE:_** Now maintained at https://github.com/ScrollPrize/villa (this repository archived)
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
